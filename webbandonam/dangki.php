@@ -3,7 +3,7 @@
  $servername = "localhost";
  $username = "root";
  $password = "";
- $dbname = "vuthibacdk12cntt2";
+ $dbname = "tunnbeoo";
 
  //B1: Create connetion
  

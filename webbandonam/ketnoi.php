@@ -3,7 +3,7 @@
    private    $servername = "localhost";
    private  $username = "root";
    private   $password = "";
-   private  $dbname = "vuthibacdk12cntt2";
+   private  $dbname = "tunnbeoo";
 protected $conn="";
     //B1: Create connetion
     function __construct(){
