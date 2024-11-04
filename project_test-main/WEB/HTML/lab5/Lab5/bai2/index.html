@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            height: 200px;
+            width: 400px;
+            text-align: center;
+            background: whitesmoke;
+            font-weight: bold;
+        }
+        h1{
+            color: rgb(0, 179, 255);
+        }
+        td{
+            background: white;
+        }
+        table{
+            font-size: 21px;
+        }
+</style>  
+<head>
+    <script>
+        function them(button){ 
+            var row = button.parentElement.parentElement.cloneNode(true);
+            var btnXoa = row.getElementsByTagName("button")[0];
+            btnXoa.innerText = "Xóa";
+            btnXoa.setAttribute('onclick','xoa(this)');
+            document.getElementById("cash").appendChild(row);
+            tinhtong();
+        } 
+
+        function xoa(button){
+            var row = button.parentElement.parentElement;
+            document.getElementById("cash").removeChild(row);
+            tinhtong();
+        }
+
+        function tinhtong(){
+            var cash = document.getElementById("cash");
+            var rows = cash.getElementsByTagName("tr");
+            var tong = 0;
+            for(let i = 0; i< rows.length; i++){
+                var cells = rows[i].getElementsByTagName("td");
+                var price = cells[1].innerText.substring(1);
+                tong+= Number(price);
+            }
+            document.getElementById("amount").innerText = tong;
+        }
+    </script>
+</head>
+<body align="center">
+    <h1 >DANH MỤC BÁN HÀNG</h1>
+        <table border ="1" align="center">
+            <tr>
+                <td>iPhone 9</td>
+                <td>$2700</td>
+                <td><button onclick="them(this)">Thêm</button></td>
+            </tr>
+            <tr>
+                <td>Samsung Star</td>
+                <td>$1500</td>
+                <td><button onclick="them(this)">Thêm</button></td>
+            </tr>
+            <tr>
+                <td>Nokia 2020</td>
+                <td>$1200</td>
+                <td><button onclick="them(this)">Thêm</button></td>
+            </tr>
+            <tr>
+                <td>Sony Xperia</td>
+                <td>$1700</td>
+                <td><button onclick="them(this)">Thêm</button></td>
+            </tr>
+        </table>
+        <h1 >GIỎ HÀNG CỦA BẠN</h1>
+        <table border ="1"  id="cash" align="center">
+
+        </table>
+        <h4 >TỔNG TIỀN: $<span id="amount">0</span></h4>
+</body>
+</html>

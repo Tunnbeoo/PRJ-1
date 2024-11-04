@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/HTML/css/projectdivice.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/HTML/JS/projectdv.js">
+</head>
+<body>
+    <div class="header">
+        <div class="header_in">
+            <div class="haeder_in-left"><a href="">Divine Shop tuyển dụng</a></div>
+            <div class="haeder_in-right">
+                <li><i class="fa-solid fa-book"></i><a href="">Hướng dẫn mua hàng</a></li>
+                <li><i class="fa-light fa-percent"></i><a href="">Ưu đãi khách hàng</a></li>
+                <li><i class="fa fa-phone-alt ro"></i><a href="">Thông tin liên hệ</a></li>
+                <li><i class="fa fa-credit-card"></i><a href="">Hình thức thanh toán</a></li>   
+            </div>
+        </div>
+    </div>
+    <div class="next-header">
+        <div class="next-header_in">
+            <div class="logo_text" title="Trang chủ">
+                <a href="/WEB/HTML/ASMfinal.html"><img height="100%" src="https://cdn.divineshop.vn/static/b1402e84a947ed36cebe9799e47f61c2.svg" title="Trang chủ"></a>
+                <h2>Divine Shop</h2>
+            </div>
+            <div class="seacher">
+                <input type="text" name="" id="" placeholder="Tìm kiếm sản phẩm">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="form">  
+                <div class="lopdangnhapchung">
+                  <i class="fa-solid fa-circle-user"></i>
+                  <div class="dangnhap1">
+                    <li><a href="#" title="Đăng nhập">Đăng nhập /</a></li>
+                  </div>
+                  <div class="dangky001">
+                  <li><a href="#" title="Đăng ký"> Đăng ký</a></li>
+                  </div>
+                </div>
+            </div>
+            <div class="cart">
+              <li><i class="fas fa-shopping-cart"></i><a href="/WEB/HTML/giohang.html">Giỏ hàng</a></li>
+          </div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="content-text">
+          <li><i class="fas fa-gamepad"></i><a href="">Giải trí</a></li>
+          <li><i class="fas fa-briefcase"></i><a href="">Làm việc</a></li>
+          <li><i class="fas fa-graduation-cap"></i><a href="">Học tập</a></li>
+          <li><i class="fab fa-steam"></i><a href="">Game stream</a></li>
+          <li><i class="fas fa-trophy"></i><a href="">Game Origin</a></li>
+          <li><i class="fab fa-windows"></i><a href="">Window, Office</a></li>
+          <li><i class="fab fa-google-drive"></i><a href="">Google Drive</a></li>
+          <li><i class="fas fa-wallet"></i><a href="">Steam Wallet</a></li>
+          <li><i class="fas fa-wifi"></i><a href="">Gói Data Mobile</a></li>
+          <li><i class="fab fa-google-play"></i><a href="">Google Play, iTunes</a></li>
+      </div>
+      <div class="content-midle">
+          <div class="img1">
+            <section aria-label="Newest Photos">
+              <div class="carousel" data-carousel>
+                <button class="carousel-button prev" data-carousel-button="prev">&#8656;</button>
+                <button class="carousel-button next" data-carousel-button="next">&#8658;</button>
+                <div class="slide_screen">
+                  <ul class="slide_main"> 
+                    <li class="slide" data-active>
+                      <img src="/img/OpenAI - ChatGPT-37620.jpg" alt="Nature Image #1">
+                    </li>
+                    <li class="slide">
+                      <img src="/img/Atomic Heart1-62377.jpg" alt="Nature Image #2">
+                    </li>
+                    <li class="slide">
+                      <img src="/img/netflix-49596.png" alt="Nature Image #3">
+                    </li>
+                    <li class="slide">
+                        <img src="/img/tối ưu công việc-45178.png" alt="Nature Image #3">
+                    </li>
+                    <li class="slide">
+                        <img src="/img/Divine Shop tuyển dụng-66809.png" alt="Nature Image #3">
+                    </li>
+                    <li class="slide">
+                      <img src="/img/banner Google One (3)-10567.png" alt="Nature Image #3">
+                    </li>
+                    <li class="slide">
+                      <img src="/img/AutoDesk Main banner-89472.png" alt="Nature Image #3">
+                    </li>
+                  </ul>
+                </div>
+              </div>
+          </section>
+          </div>
+          <div class="img2"><img src="/img/Fake IP-93612.png" alt=""></div>
+          <div class="img3"><img src="/img/Spotify (3)-78485.png" alt=""></div>
+      </div>
+      <div class="content-bottom">
+        <div class="img_1"><img src="/img/Steam (1)-63472.png" alt=""></div>
+        <div class="img_2"><img src="/img/ChatGPT-36911.png" alt=""></div>
+        <div class="img_3"><img src="/img/gmail (1)-68843.png" alt=""></div>
+        <div class="img_4"><img src="/img/Microsoft Office (1)-79722.png" alt=""></div>
+      </div>
+    </div>
+</body>
+<script>
+    var marginLeft = 0;
+document.querySelector('.next').addEventListener('click',()=>{
+  marginLeft -= 720; 
+  if(marginLeft < -(720*6)){
+    marginLeft = 0;
+  }
+  document.querySelector('.slide_main').style.marginLeft = marginLeft + `px`
+})
+document.querySelector('.prev').addEventListener('click',()=>{
+  marginLeft += 720; 
+  if(marginLeft > 0){
+    marginLeft = -(720*6);
+  }
+  document.querySelector('.slide_main').style.marginLeft = marginLeft + `px`
+})
+</script>
+</html>

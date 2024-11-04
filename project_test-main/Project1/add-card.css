@@ -1,0 +1,50 @@
+.content-card{
+    margin: 12px 0;
+    display: flex;
+    align-items: center;
+}
+.row{
+    margin: 0 !important;
+}
+.item{
+    margin-right: 20px;
+}
+.item a{
+    color: #666;
+}
+.item::after{
+    content: "/";
+    margin-left: 10px ;
+}
+td{
+    display: table-cell;
+    vertical-align: inherit;
+}
+tr{
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+button, input,optgroup,
+select, textarea{
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+button, input{
+    overflow: visible;
+}
+b, strong{
+    font-weight: bolder;
+}
+.clear{
+    clear: both;
+}
+.space_10{
+    height: 10px;
+    clear: both;
+}
+.table-cell{
+    border-collapse:collapse ;
+}

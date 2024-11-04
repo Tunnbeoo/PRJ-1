@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: rgb(255, 255, 255);
+        }
+        label{
+            font-weight: bold;
+            font-size: 30px;
+            color: red;
+        }
+        h3{
+            color: blue;
+        }
+        span{
+            color: rgb(0, 236, 43);
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <label id="pro" data-price="1950">Iphone 9</label>
+    <input id="qty" value="1" type="number">
+    <button onclick="display()">OK</button>
+    <hr>
+    <h3>Name : <span id="name">?</span></h3>
+    <h3>Amount : <span id="amount">?</span></h3>
+
+    <script>
+        function display(){
+            var pro = document.getElementById('pro');
+            var name = pro.innerText;
+            var price = pro.getAttribute('data-price');
+            var quantity = document.getElementById('qty').value;
+            var amount = price * quantity;
+            document.getElementById('name').innerText = name;
+            document.getElementById('amount').innerText = amount+"$"; 
+        }
+    </script>
+</body>
+</html>

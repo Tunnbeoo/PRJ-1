@@ -1,0 +1,328 @@
+html{
+    width: auto;
+    height: auto;
+}
+.content1{
+    width: 1200px;
+    height: auto;
+    margin-top: 21px;
+    margin-bottom: 21px;
+    margin: 0 auto;
+    padding-left: 21px;
+    padding-right: 21px;
+    background: #fff;
+    box-sizing: content-box;
+    display: block;
+    line-height: 21px;
+}
+.lopchothanhtoan{
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding-top: 5px;
+    padding-left: 21px;
+    padding-right: 21px;
+    width: 100%;
+    height: 27px;
+    
+}
+.giohang{
+    width: 90px;
+    height: 22px;
+    color: #2579f2;
+    align-items: center;
+    box-sizing: border-box;
+}
+.icongiohang{
+    width: 18px;
+    height: 18px;
+    border-radius: 9999px;
+    background-color: #2579f2;
+    margin-right: 0px;
+    position: absolute;
+    box-sizing: border-box;
+    display: block;
+    top: 165px;
+}
+.giohang1>.gh{
+    padding-left: 25px;
+    /* padding-top: 5px; */
+}
+/* .giohang1>.trong{
+    width: 403px;
+    height: 1px;
+    border: 1px;
+    margin-left: 14px;
+} */
+.xacnhan{
+    margin-left: 14px;
+    display: flex;
+    width: 630px;
+    height: 22px;
+    align-items: center;
+    box-sizing: border-box;
+    color: #9ca3af;
+    padding-left: 370px;
+}
+.iconxacnhan{
+    width: 18px;
+    height: 18px;
+    box-sizing: border-box;
+    border-radius: 9999px;
+    background-color: #9ca3af;
+    justify-content: center;
+    margin-right: 10px;
+}
+.thanhtoan{
+    width: 400px;
+    padding-left: 200px;
+    color: #9ca3af;
+    height: 22px;
+}
+.iconthanhtoan{
+    border-radius: 9999px;
+    background-color: #9ca3af;
+    width: 18px;
+    height: 18px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 165px;
+}
+.tt{
+    margin-left: 25px;
+}
+.lopgiohang{
+    width: 1200px;
+    height: 415px;
+    border: 1px;
+    padding: 35px;
+    margin-top: 21px;
+}
+.lopgiohang1{
+    width: 1150px;
+    height: 364px;
+    display: flex;
+}
+.giohangtrong{
+    width: 814.5px;
+    height: 364px;
+    padding: 10.5px;
+    box-sizing: border-box;
+}
+.themsanpham{
+    width: 793.2px;
+    height: 343px;
+    display: flex;
+    flex-direction: column;
+}
+.themsanpham>.giohangtrong1{
+    margin-right: 50px;
+    padding-top: 20px;
+}
+.giohangtrong1{
+    width: 440px;
+    height: 63px;
+    text-align: center;
+    font-size: 22px;
+    
+}
+.giohangtrong1>h4{
+    width: 200px;
+    margin: 0px;
+    /* padding-right: ; */
+}
+.themsanpham1{
+    margin-top: 14px;
+    width: 440px;
+    height: 23px;
+    font-size: 15px;
+}
+.sanpham1{
+    width: 100%;
+    height: 150px;
+}
+.thechung1{
+    width: 775px;
+    height: 150px;
+    display: flex;
+    border-radius: 5px;
+
+}
+.thechung1>img{
+    width: 273px;
+    height: 132.250px;
+    padding: 8.5px;
+}
+.theten1{
+    width: 484px;
+    height: 150px;
+    padding: 8.750px;
+    position: absolute;
+    top: 265px;
+    right: 530px;
+}
+.thetenchung1{
+    width: 466px;
+    height: 132.5px;
+    display: flex;
+}
+.tencuasp>h6{
+    font-size: 15px;
+    margin: 0px;
+}
+.giatiensp{
+    width: 170px;
+    height: 50px;
+}
+.giatiensp>h5{
+    margin: 0px;
+}
+.giamgiaphantram{
+    width: 40px;
+    height: 20px;
+    box-sizing: border-box;
+    background-color: red;
+    color: #fff;
+    padding-left: 2px;
+    border-radius: 5px;
+}
+
+article{
+    height: auto;
+    width: 100%;
+}
+footer{
+    width: 100%;
+    height: auto;
+    margin-top: 50px
+}
+.shop{
+    width: 65%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border: 1p0x solid lightgray;
+}
+
+table{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.ttsp{
+    width: 100%;
+    height: auto;
+}
+#sosp{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    border: 1px solid transparent;
+    width: 18px;
+    border-radius: 10px;
+    background: white;
+    color: red;
+    font-weight: bold;
+}
+#cart{
+    height: 100%;
+    width: 100%;
+    margin-top: 40px;
+    display: block;
+}
+#cart>tr{
+    width: 100%;
+    display: block;
+}
+#cart>tr>td{
+    width: 19%;
+    height: 100px;
+    border-bottom: 1px solid lightgray;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.titlee{
+    height: 50px;
+    border-bottom: 1px solid lightgray;
+}
+.titlee>h2{
+    line-height: 50px;
+    color: red;
+    margin-left: 30px;
+    font-size: 30px;
+}
+#cart>tr>td>img{
+    height: 70px;
+}
+#cart>tr>td>.name{
+    width: 100%;
+    text-align: center;
+}
+#cart>tr>td>input{
+    width: 80px;
+    height: 25px;
+    text-align: center;
+}
+#cart>tr>td>.price{
+    float: right;
+    width: 25%;
+    text-align: center;
+}
+#cart>tr>td>.price>p{
+    color: red;
+    font-weight: bold;
+}
+#cart>tr>td>.price>del{
+    color: rgb(162, 162, 162);
+}
+#cart>tr>td>select{
+   text-align: center;
+   width: 80px;
+   height: 20px;
+   margin-top: 10px;
+   margin-right: 255px;
+}
+#cart>tr>td>button{
+    width: 50px;
+    font-size: xx-small;
+    background: whitesmoke;
+    border: 1px solid gray;
+    height: 15px;
+    color: gray;
+}
+.tongtien{
+    width: 100%;
+    height: 120px;
+    padding: 0 195px;
+}
+.sotien{
+    width: 59%;
+    height: 100%;
+    line-height: 30px;
+    margin-left: 20px;
+    font-size: medium;
+    float: left;
+}
+.btndathang{
+    width: 38%;
+    height: 100%;
+    float: right;
+}
+.btndathang>a>button{
+    width: 200px;
+    height: 50px;
+    margin-top: 30px;
+    margin-left: 60px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background: red;
+    border: none;
+}
+.btndathang>a>button:hover{
+    background: darkred;
+    cursor: pointer;
+}

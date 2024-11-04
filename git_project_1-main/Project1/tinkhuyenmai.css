@@ -1,0 +1,53 @@
+.tintuc-right{
+max-width: 300px;
+background-color: white;
+padding: 15px;
+left: 15px;
+position: relative;
+}
+.tintuc-right h3{
+color: #2b80dd;
+font-family: Montserrat;
+font-weight: bold;
+}
+.tintuc-right p{
+    font-family: Montserrat;
+    font-weight: bold;
+}
+.tintuc-right h5{
+    text-align: center;
+    padding: 10px;
+}
+.alltinsanpham .tinsanpham{
+    width: 50%;
+    padding: 5px;
+}
+.alltinsanpham{
+    display:flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.tintucchitiet{
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border:1px groove;
+    padding: 5px;
+}
+.tintucchitiet img{
+    width: 200px;
+    height: 185px;
+}
+.tintucchitiet .texttintuc{
+    left: 0px;
+    position: relative;
+    bottom: 0px;
+    width: 600px;
+}
+.tintucchitiet .texttintuc .date{
+    top: 20%;
+    position: relative;
+
+}

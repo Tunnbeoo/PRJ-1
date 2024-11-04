@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/Project1/index.css">
+    <link rel="stylesheet" href="/Project1/dell-xps.css">
+
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="align-items-center justify-content-between d-flex">
+            <a class="logo" href="/Project1/index.php">
+                <img alt="laptopaz.com chuyên laptop cũ, bán laptop cũ uy tín Hà Nội và toàn quốc" src="/Project1/img/COMPUTER.png" class="img-fluid">
+            </a>
+
+            <div class="search-form">
+                <!-- form search -->
+                <form id="frm-search" name="search" action="/tim">
+                    <button type="submit" id="sbutton"><i class="fa fa-search" aria-hidden="true"></i>
+                    </button>
+                    <input type="text" placeholder="Bạn muốn tìm sản phẩm gì?" value="" name="q" id="stext" autocomplete="off">
+                </form>
+                <div class="autocomplete-suggestions">
+                    <div class="suggest-container"></div>
+                </div>
+                <!-- end form search -->
+            </div>
+
+            <div class="box-hotline d-flex align-items-center flex-column" style="margin-top: 12px;line-height: 25px;font-weight: bold;">
+                <p class="m-0 red text-18 text-uppercase">
+                  <i class="fa fa-phone mr-2 text-20" aria-hidden="true"></i>Hotline</p>
+                <p class="font-weight-bold hotline text-20 text-bold m-0"> 0825 233 233 </p>
+            </div>
+
+            <div class="align-items-center cart d-flex flex-column mt25 position-relative">
+                <i class="fa fa-shopping-cart text-24 red" aria-hidden="true"></i>
+                <a href="/cart" class="text-16"> Giỏ hàng </a>
+                <span class="cart-quantity-counter" id="count_shopping_cart_store">0</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="menu" id="menu">
+        <div class="container">
+            <div class="d-flex position-relative menu-list">
+                <div class="item js-hover-menu" data-id="42">                   
+                    <span class="icon_root transition">
+                        <img src="/media/category/cb_e90d157ceaa8bd152905d6b420c3bd29.png" alt=""></span>                   
+                    <a href="/laptop-moi.html" class="root">LAPTOP MỚI</a>
+                    <div class="sub_nav">
+                      <div class="sub_filter">
+                        <div class="list-unstyled sub_list-attr list_2col m-0 p-0 d-flex flex-wrap"> 
+                            <div class="danhmuc-2">
+                              <a href="/laptop-dell-moi.html" title="Laptop Dell Mới" class="title-danhmuc-2">Laptop Dell Mới</a>
+                              <div class="danhmuc-3 d-flex flex-wrap">
+                                <div class="d-flex align-items item-3"><!--<i class="fa fa-angle-double-right" style="padding-right:3px;"></i>-->
+                                  <a href="/dell-alienware.html" title="Dell Alienware">Dell Alienware</a>
+                                </div>
+                                <div class="d-flex align-items item-3"><!--<i class="fa fa-angle-double-right" style="padding-right:3px;"></i>-->
+                                  <a href="/dell-inspiron.html" title="Dell Inspiron">Dell Inspiron</a>
+                                </div>
+                                <div class="d-flex align-items item-3"><!--<i class="fa fa-angle-double-right" style="padding-right:3px;"></i>-->
+                                  <a href="/dell-precision.html" title="Dell Precision">Dell Precision</a>
+                                </div>
+                                <div class="d-flex align-items item-3"><!--<i class="fa fa-angle-double-right" style="padding-right:3px;"></i>-->
+                                  <a href="/dell-latitude.html" title="Dell Latitude">Dell Latitude</a>
+                                </div>
+                                <div class="d-flex align-items item-3"><!--<i class="fa fa-angle-double-right" style="padding-right:3px;"></i>-->
+                                  <a href="/dell-xps.html" title="Dell XPS">Dell XPS</a>
+                                </div>
+                                <div class="d-flex align-items item-3"><!--<i class="fa fa-angle-double-right" style="padding-right:3px;"></i>-->
+                                  <a href="/dell-g-seri.html" title="Dell G-Seri">Dell G-Seri</a>
+                                </div>
+                                <div class="d-flex align-items item-3"><!--<i class="fa fa-angle-double-right" style="padding-right:3px;"></i>-->
+                                  <a href="/dell-vostro.html" title="Dell Vostro">Dell Vostro</a>
+                                </div>
+                              </div>
+                          	</div>
+                            <div class="danhmuc-2">
+                              <a href="/laptop-lenovo-moi.html" title="Laptop Lenovo Mới" class="title-danhmuc-2">Laptop Lenovo Mới</a>
+                              <div class="danhmuc-3 d-flex flex-wrap">
+                                <div class="d-flex align-items item-3"><!--<i class="fa fa-angle-double-right" style="padding-right:3px;"></i>-->
+                                  <a href="/lenovo-ideapad.html" title="Lenovo Ideapad">Lenovo Ideapad</a>
+                                </div>
+                                <div class="d-flex align-items item-3"><!--<i class="fa fa-angle-double-right" style="padding-right:3px;"></i>-->
+                                  <a href="/lenovo-legion.html" title="Lenovo Legion">Lenovo Legion</a>
+                                </div>
+                                <div class="d-flex align-items item-3"><!--<i class="fa fa-angle-double-right" style="padding-right:3px;"></i>-->
+                                  <a href="/lenovo-thinkbook.html" title="Lenovo ThinkBook">Lenovo ThinkBook</a>
+                                </div>
+                                <div class="d-flex align-items item-3"><!--<i class="fa fa-angle-double-right" style="padding-right:3px;"></i>-->
+                                  <a href="/lenovo-thinkpad.html" title="Lenovo Thinkpad">Lenovo Thinkpad</a>
+                                </div>
+                                <div class="d-flex align-items item-3"><!--<i class="fa fa-angle-double-right" style="padding-right:3px;"></i>-->
+                                  <a href="/lenovo-yoga.html" title="Lenovo Yoga">Lenovo Yoga</a>
+                                </div>
+                              </div>
+                          	</div>
+                            <div class="danhmuc-2">
+                              <a href="/laptop-acer-moi-100.html" title="Laptop Acer Mới" class="title-danhmuc-2">Laptop Acer Mới</a>
+                              <div class="danhmuc-3 d-flex flex-wrap">
+                                <div class="d-flex align-items item-3"><!--<i class="fa fa-angle-double-right" style="padding-right:3px;"></i>-->
+                                  <a href="/acer-aspire.html" title="Acer Aspire">Acer Aspire</a>
+                                </div>
+                                <div class="d-flex align-items item-3"><!--<i class="fa fa-angle-double-right" style="padding-right:3px;"></i>-->
+                                  <a href="/acer-predator.html" title="Acer Predator">Acer Predator</a>
+                                </div>
+                                <div class="d-flex align-items item-3"><!--<i class="fa fa-angle-double-right" style="padding-right:3px;"></i>-->
+                                  <a href="/acer-nitro.html" title="Acer Nitro">Acer Nitro</a>
+                                </div>
+                                <div class="d-flex align-items item-3"><!--<i class="fa fa-angle-double-right" style="padding-right:3px;"></i>-->
+                                  <a href="/acer-swift.html" title="Acer Swift">Acer Swift</a>
+                                </div>
+                                <div class="d-flex align-items item-3"><!--<i class="fa fa-angle-double-right" style="padding-right:3px;"></i>-->
+                                  <a href="/acer-spin.html" title="Acer Spin">Acer Spin</a>
+                                </div>
+                              </div>
+                          	</div>
+                            <div class="danhmuc-2">
+                              <a href="/laptop-hp-moi.html" title="Laptop HP Mới" class="title-danhmuc-2">Laptop HP Mới</a>
+                              <div class="danhmuc-3 d-flex flex-wrap">
+                                <div class="d-flex align-items item-3"><!--<i class="fa fa-angle-double-right" style="padding-right:3px;"></i>-->
+                                  <a href="/hp-elitebook.html" title="HP Elitebook">HP Elitebook</a>
+                                </div>
+                                <div class="d-flex align-items item-3"><!--<i class="fa fa-angle-double-right" style="padding-right:3px;"></i>-->
+                                  <a href="/hp-omen.html" title="HP Omen">HP Omen</a>
+                                </div>
+                                <div class="d-flex align-items item-3"><!--<i class="fa fa-angle-double-right" style="padding-right:3px;"></i>-->
+                                  <a href="/hp-spectre.html" title="HP Spectre">HP Spectre</a>
+                                </div>
+                                <div class="d-flex align-items item-3"><!--<i class="fa fa-angle-double-right" style="padding-right:3px;"></i>-->
+                                  <a href="/hp-envy.html" title="HP Envy">HP Envy</a>
+                                </div>
+                                <div class="d-flex align-items item-3"><!--<i class="fa fa-angle-double-right" style="padding-right:3px;"></i>-->
+                                  <a href="/hp-pavilion.html" title="HP Pavilion">HP Pavilion</a>
+                                </div>
+                                <div class="d-flex align-items item-3"><!--<i class="fa fa-angle-double-right" style="padding-right:3px;"></i>-->
+                                  <a href="/hp-zbook.html" title="HP Zbook">HP Zbook</a>
+                                </div>
+                                <div class="d-flex align-items item-3"><!--<i class="fa fa-angle-double-right" style="padding-right:3px;"></i>-->
+                                  <a href="/hp-probook.html" title="HP Probook">HP Probook</a>
+                                </div>
+                              </div>
+                          	</div>
+                            <div class="danhmuc-2">
+                              <a href="/laptop-asus-moi.html" title="Laptop Asus Mới" class="title-danhmuc-2">Laptop Asus Mới</a>
+                              <div class="danhmuc-3 d-flex flex-wrap">
+                                <div class="d-flex align-items item-3"><!--<i class="fa fa-angle-double-right" style="padding-right:3px;"></i>-->
+                                  <a href="/asus-tuf.html" title="Asus Tuf">Asus Tuf</a>
+                                </div>
+                                <div class="d-flex align-items item-3"><!--<i class="fa fa-angle-double-right" style="padding-right:3px;"></i>-->
+                                  <a href="/asus-vivobook.html" title="Asus VivoBook">Asus VivoBook</a>
+                                </div>
+                                <div class="d-flex align-items item-3"><!--<i class="fa fa-angle-double-right" style="padding-right:3px;"></i>-->
+                                  <a href="/asus-zenbook.html" title="Asus ZenBook">Asus ZenBook</a>
+                                </div>
+                                <div class="d-flex align-items item-3"><!--<i class="fa fa-angle-double-right" style="padding-right:3px;"></i>-->
+                                  <a href="/asus-rog.html" title="Asus Rog">Asus Rog</a>
+                                </div>
+                              </div>
+                          	</div>
+                            <div class="danhmuc-2">
+                              <a href="/laptop-msi-moi.html" title="Laptop MSI Mới" class="title-danhmuc-2">Laptop MSI Mới</a>
+                              <div class="danhmuc-3 d-flex flex-wrap">
+                                <div class="d-flex align-items item-3"><!--<i class="fa fa-angle-double-right" style="padding-right:3px;"></i>-->
+                                  <a href="/msi-g-seri.html" title="MSI G-Seri">MSI G-Seri</a>
+                                </div>
+                                <div class="d-flex align-items item-3"><!--<i class="fa fa-angle-double-right" style="padding-right:3px;"></i>-->
+                                  <a href="/msi-modern.html" title="MSI Modern">MSI Modern</a>
+                                </div>
+                                <div class="d-flex align-items item-3"><!--<i class="fa fa-angle-double-right" style="padding-right:3px;"></i>-->
+                                  <a href="/msi-bravo.html" title="MSI Bravo">MSI Bravo</a>
+                                </div>
+                              </div>
+                          	</div>
+                            <div class="danhmuc-2">
+                              <a href="/laptop-samsung-moi.html" title="Laptop Samsung mới" class="title-danhmuc-2">Laptop Samsung mới</a>
+                              <div class="danhmuc-3 d-flex flex-wrap">
+                              </div>
+                          	</div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="item js-hover-menu" data-id="148">
+                    
+                    <span class="icon_root transition"><img src="/media/category/cb_a082973a5a2d85d0c1e0b02d39dfa1ca.png" alt=""></span>
+                    
+                    <a href="/surface.html" class="root">SURFACE</a>
+                    <div class="sub_nav">
+                      <div class="sub_filter">
+                        <div class="list-unstyled sub_list-attr list_2col m-0 p-0 d-flex flex-wrap">
+                            <div class="danhmuc-2">
+                              <a href="/surface-laptop.html" title="Surface Laptop" class="title-danhmuc-2">Surface Laptop</a>
+                              <div class="danhmuc-3 d-flex flex-wrap">
+                                <div class="d-flex align-items item-3"><!--<i class="fa fa-angle-double-right" style="padding-right:3px;"></i>-->
+                                  <a href="/surface-laptop-3.html" title="Surface Laptop 3">Surface Laptop 3</a>
+
+                                </div>
+                                <div class="d-flex align-items item-3"><!--<i class="fa fa-angle-double-right" style="padding-right:3px;"></i>-->
+                                  <a href="/surface-laptop-4.html" title="Surface Laptop 4">Surface Laptop 4</a>
+
+                                </div>
+                                <div class="d-flex align-items item-3"><!--<i class="fa fa-angle-double-right" style="padding-right:3px;"></i>-->
+                                  <a href="/surface-laptop-go.html" title="Surface Laptop Go">Surface Laptop Go</a>
+
+                                </div>
+                                <div class="d-flex align-items item-3"><!--<i class="fa fa-angle-double-right" style="padding-right:3px;"></i>-->
+                                  <a href="/surface-laptop-studio.html" title="Surface Laptop Studio">Surface Laptop Studio</a>
+
+                                </div>
+                              </div>
+                          	</div>
+                            <div class="danhmuc-2">
+                              <a href="/surface-pro.html" title="Surface Pro" class="title-danhmuc-2">Surface Pro</a>
+                              <div class="danhmuc-3 d-flex flex-wrap">
+                                <div class="d-flex align-items item-3"><!--<i class="fa fa-angle-double-right" style="padding-right:3px;"></i>-->
+                                  <a href="/surface-pro-6.html" title="Surface Pro 6">Surface Pro 6</a>
+
+                                </div>
+                                <div class="d-flex align-items item-3"><!--<i class="fa fa-angle-double-right" style="padding-right:3px;"></i>-->
+                                  <a href="/surface-pro-7.html" title="Surface Pro 7">Surface Pro 7</a>
+
+                                </div>
+                                <div class="d-flex align-items item-3"><!--<i class="fa fa-angle-double-right" style="padding-right:3px;"></i>-->
+                                  <a href="/surface-pro-8.html" title="Surface Pro 8">Surface Pro 8</a>
+
+                                </div>
+                                <div class="d-flex align-items item-3"><!--<i class="fa fa-angle-double-right" style="padding-right:3px;"></i>-->
+                                  <a href="/surface-pro-x.html" title="Surface Pro X">Surface Pro X</a>
+
+                                </div>
+                              </div>
+                          	</div>
+                            <div class="danhmuc-2">
+                              <a href="/surface-go.html" title="Surface Go" class="title-danhmuc-2">Surface Go</a>
+                              <div class="danhmuc-3 d-flex flex-wrap">
+                               
+                                
+                                <div class="d-flex align-items item-3"><!--<i class="fa fa-angle-double-right" style="padding-right:3px;"></i>-->
+                                  <a href="/surface-go-2.html" title="Surface Go 2">Surface Go 2</a>
+
+                                </div>
+                                <div class="d-flex align-items item-3"><!--<i class="fa fa-angle-double-right" style="padding-right:3px;"></i>-->
+                                  <a href="/surface-go-3.html" title="Surface Go 3">Surface Go 3</a>
+
+                                </div>
+                              </div>
+                          	</div>
+                            <div class="danhmuc-2">
+                              <a href="/surface-book.html" title="Surface Book" class="title-danhmuc-2">Surface Book</a>
+                              <div class="danhmuc-3 d-flex flex-wrap">
+                                <div class="d-flex align-items item-3"><!--<i class="fa fa-angle-double-right" style="padding-right:3px;"></i>-->
+                                  <a href="/surface-book-2.html" title="Surface Book 2">Surface Book 2</a>
+
+                                </div>
+                                <div class="d-flex align-items item-3"><!--<i class="fa fa-angle-double-right" style="padding-right:3px;"></i>-->
+                                  <a href="/surface-book-3.html" title="Surface Book 3">Surface Book 3</a>
+
+                                </div>
+                              </div>
+                          	</div>
+                            <div class="danhmuc-2">
+                              <a href="/surface-duo.html" title="Surface Duo" class="title-danhmuc-2">Surface Duo</a>
+                              <div class="danhmuc-3 d-flex flex-wrap">
+                               
+                                
+                                <div class="d-flex align-items item-3"><!--<i class="fa fa-angle-double-right" style="padding-right:3px;"></i>-->
+                                  <a href="/surface-duo-2.html" title="Surface Duo 2">Surface Duo 2</a>
+
+                                </div>
+                              </div>
+                          	</div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="item js-hover-menu" data-id="1">
+                    <span class="icon_root transition"><img src="/media/category/cb_4d485476e07e02638e8e2133cdf8f56d.png" alt=""></span>
+                    <a href="/laptop-like-new.html" class="root">LAPTOP LIKE NEW</a>
+                    <div class="sub_nav">
+                      <div class="sub_filter">
+                        <div class="list-unstyled sub_list-attr list_2col m-0 p-0 d-flex flex-wrap">
+                            <div class="danhmuc-2">
+                              <a href="/laptop-dell-like-new.html" title="Laptop Dell Like new" class="title-danhmuc-2">Laptop Dell Like new</a>
+                              <div class="danhmuc-3 d-flex flex-wrap">
+                                <div class="d-flex align-items item-3"><!--<i class="fa fa-angle-double-right" style="padding-right:3px;"></i>-->
+                                  <a href="/dell-alienware-like-new.html" title="Dell Alienware Like new">Dell Alienware Like new</a>
+
+                                </div>
+                                <div class="d-flex align-items item-3"><!--<i class="fa fa-angle-double-right" style="padding-right:3px;"></i>-->
+                                  <a href="/dell-g-seri-like-new.html" title="Dell G-Seri Like new">Dell G-Seri Like new</a>
+
+                                </div>
+                                <div class="d-flex align-items item-3"><!--<i class="fa fa-angle-double-right" style="padding-right:3px;"></i>-->
+                                  <a href="/dell-inspiron-like-new.html" title="Dell Inspiron Like new">Dell Inspiron Like new</a>
+
+                                </div>
+                                <div class="d-flex align-items item-3"><!--<i class="fa fa-angle-double-right" style="padding-right:3px;"></i>-->
+                                  <a href="/dell-latitude-like-new.html" title="Dell Latitude Like new">Dell Latitude Like new</a>
+
+                                </div>
+                                <div class="d-flex align-items item-3"><!--<i class="fa fa-angle-double-right" style="padding-right:3px;"></i>-->
+                                  <a href="/dell-precision-like-new.html" title="Dell Precision Like new">Dell Precision Like new</a>
+
+                                </div>
+                                <div class="d-flex align-items item-3"><!--<i class="fa fa-angle-double-right" style="padding-right:3px;"></i>-->
+                                  <a href="/dell-xps-like-new.html" title="Dell XPS Like new">Dell XPS Like new</a>
+
+                                </div>
+                                <div class="d-flex align-items item-3"><!--<i class="fa fa-angle-double-right" style="padding-right:3px;"></i>-->
+                                  <a href="/dell-vostro-like-new.html" title="Dell Vostro Like new">Dell Vostro Like new</a>
+
+                                </div>
+                              </div>
+                          	</div>
+                            <div class="danhmuc-2">
+                              <a href="/laptop-hp-like-new.html" title="Laptop HP Like new" class="title-danhmuc-2">Laptop HP Like new</a>
+                              <div class="danhmuc-3 d-flex flex-wrap">
+                               
+                                
+                                <div class="d-flex align-items item-3"><!--<i class="fa fa-angle-double-right" style="padding-right:3px;"></i>-->
+                                  <a href="/hp-elitebook-like-new.html" title="HP Elitebook Like new">HP Elitebook Like new</a>
+
+                                </div>
+                                <div class="d-flex align-items item-3"><!--<i class="fa fa-angle-double-right" style="padding-right:3px;"></i>-->
+                                  <a href="/hp-envy-like-new.html" title="HP Envy Like new">HP Envy Like new</a>
+
+                                </div>
+                                <div class="d-flex align-items item-3"><!--<i class="fa fa-angle-double-right" style="padding-right:3px;"></i>-->
+                                  <a href="/hp-omen-like-new.html" title="HP Omen Like new">HP Omen Like new</a>
+
+                                </div>
+                                <div class="d-flex align-items item-3"><!--<i class="fa fa-angle-double-right" style="padding-right:3px;"></i>-->
+                                  <a href="/hp-spectre-like-new.html" title="HP Spectre Like new">HP Spectre Like new</a>
+
+                                </div>
+                                <div class="d-flex align-items item-3"><!--<i class="fa fa-angle-double-right" style="padding-right:3px;"></i>-->
+                                  <a href="/hp-zbook-like-new.html" title="HP Zbook Like new">HP Zbook Like new</a>
+
+                                </div>
+                                <div class="d-flex align-items item-3"><!--<i class="fa fa-angle-double-right" style="padding-right:3px;"></i>-->
+                                  <a href="/hp-pavilion-like-new.html" title="HP Pavilion Like new">HP Pavilion Like new</a>
+
+                                </div>
+                                <div class="d-flex align-items item-3"><!--<i class="fa fa-angle-double-right" style="padding-right:3px;"></i>-->
+                                  <a href="/hp-probook-like-new.html" title="HP Probook Like new">HP Probook Like new</a>
+
+                                </div>
+                                <div class="d-flex align-items item-3"><!--<i class="fa fa-angle-double-right" style="padding-right:3px;"></i>-->
+                                  <a href="/hp-notebook-like-new.html" title="HP Notebook Like new">HP Notebook Like new</a>
+
+                                </div>
+                              </div>
+                          	</div>
+                            <div class="danhmuc-2">
+                              <a href="/laptop-lenovo-like-new.html" title="Laptop Lenovo Like new" class="title-danhmuc-2">Laptop Lenovo Like new</a>
+                              <div class="danhmuc-3 d-flex flex-wrap">
+                               
+                                
+                                <div class="d-flex align-items item-3"><!--<i class="fa fa-angle-double-right" style="padding-right:3px;"></i>-->
+                                  <a href="/lenovo-ideapad-like-new.html" title="Lenovo Ideapad Like new">Lenovo Ideapad Like new</a>
+
+                                </div>
+                                <div class="d-flex align-items item-3"><!--<i class="fa fa-angle-double-right" style="padding-right:3px;"></i>-->
+                                  <a href="/lenovo-legion-like-new.html" title="Lenovo Legion Like new">Lenovo Legion Like new</a>
+
+                                </div>
+                                <div class="d-flex align-items item-3"><!--<i class="fa fa-angle-double-right" style="padding-right:3px;"></i>-->
+                                  <a href="/lenovo-thinkbook-like-new.html" title="Lenovo ThinkBook Like new">Lenovo ThinkBook Like new</a>
+
+                                </div>
+                                <div class="d-flex align-items item-3"><!--<i class="fa fa-angle-double-right" style="padding-right:3px;"></i>-->
+                                  <a href="/lenovo-thinkpad-like-new.html" title="Lenovo Thinkpad Like new">Lenovo Thinkpad Like new</a>
+
+                                </div>
+                                <div class="d-flex align-items item-3"><!--<i class="fa fa-angle-double-right" style="padding-right:3px;"></i>-->
+                                  <a href="/lenovo-yoga-like-new.html" title="Lenovo Yoga Like new">Lenovo Yoga Like new</a>
+
+                                </div>
+                              </div>
+                          	</div>
+                            <div class="danhmuc-2">
+                              <a href="/laptop-acer-like-new.html" title="Laptop Acer Like new" class="title-danhmuc-2">Laptop Acer Like new</a>
+                              <div class="danhmuc-3 d-flex flex-wrap">
+                                <div class="d-flex align-items item-3"><!--<i class="fa fa-angle-double-right" style="padding-right:3px;"></i>-->
+                                  <a href="/acer-aspire-like-new.html" title="Acer Aspire Like new">Acer Aspire Like new</a>
+
+                                </div>
+                                <div class="d-flex align-items item-3"><!--<i class="fa fa-angle-double-right" style="padding-right:3px;"></i>-->
+                                  <a href="/acer-nitro-like-new.html" title="Acer Nitro Like new">Acer Nitro Like new</a>
+
+                                </div>
+                                <div class="d-flex align-items item-3"><!--<i class="fa fa-angle-double-right" style="padding-right:3px;"></i>-->
+                                  <a href="/acer-predator-like-new.html" title="Acer Predator Like new">Acer Predator Like new</a>
+
+                                </div>
+                                <div class="d-flex align-items item-3"><!--<i class="fa fa-angle-double-right" style="padding-right:3px;"></i>-->
+                                  <a href="/acer-spin-like-new.html" title="Acer Spin Like new">Acer Spin Like new</a>
+
+                                </div>
+                                <div class="d-flex align-items item-3"><!--<i class="fa fa-angle-double-right" style="padding-right:3px;"></i>-->
+                                  <a href="/acer-swift-like-new.html" title="Acer Swift Like new">Acer Swift Like new</a>
+                                </div>
+                              </div>
+                          	</div>
+                            <div class="danhmuc-2">
+                              <a href="/laptop-asus-like-new.html" title="Laptop Asus Like new" class="title-danhmuc-2">Laptop Asus Like new</a>
+                              <div class="danhmuc-3 d-flex flex-wrap">
+                                <div class="d-flex align-items item-3"><!--<i class="fa fa-angle-double-right" style="padding-right:3px;"></i>-->
+                                  <a href="/asus-rog-like-new.html" title="Asus Rog Like new">Asus Rog Like new</a>
+                                </div>
+                                <div class="d-flex align-items item-3"><!--<i class="fa fa-angle-double-right" style="padding-right:3px;"></i>-->
+                                  <a href="/asus-zenbook-like-new.html" title="Asus ZenBook Like new">Asus ZenBook Like new</a>
+                                </div>
+                                <div class="d-flex align-items item-3"><!--<i class="fa fa-angle-double-right" style="padding-right:3px;"></i>-->
+                                  <a href="/asus-vivobook-like-new.html" title="Asus VivoBook Like new">Asus VivoBook Like new</a>
+                                </div>
+                                <div class="d-flex align-items item-3"><!--<i class="fa fa-angle-double-right" style="padding-right:3px;"></i>-->
+                                  <a href="/asus-tuf-like-new.html" title="Asus Tuf Like new">Asus Tuf Like new</a>
+                                </div>
+                              </div>
+                          	</div>
+                            <div class="danhmuc-2">
+                              <a href="/laptop-msi-like-new.html" title="Laptop MSI Like new" class="title-danhmuc-2">Laptop MSI Like new</a>
+                              <div class="danhmuc-3 d-flex flex-wrap">                            
+                                <div class="d-flex align-items item-3"><!--<i class="fa fa-angle-double-right" style="padding-right:3px;"></i>-->
+                                  <a href="/msi-bravo-like-new.html" title="MSI Bravo Like new">MSI Bravo Like new</a>
+                                </div>
+                                <div class="d-flex align-items item-3"><!--<i class="fa fa-angle-double-right" style="padding-right:3px;"></i>-->
+                                  <a href="/msi-g-seri-like-new.html" title="MSI G-Seri Like new">MSI G-Seri Like new</a>
+                                </div>
+                                <div class="d-flex align-items item-3"><!--<i class="fa fa-angle-double-right" style="padding-right:3px;"></i>-->
+                                  <a href="/msi-modern-like-new.html" title="MSI Modern Like new">MSI Modern Like new</a>
+                                </div>
+                              </div>
+                          	</div>
+                            <div class="danhmuc-2">
+                              <a href="/laptop-samsung-like-new.html" title="Laptop Samsung Like new" class="title-danhmuc-2">Laptop Samsung Like new</a>
+                              <div class="danhmuc-3 d-flex flex-wrap">
+                              </div>
+                          	</div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+              	<div class="item js-hover-menu">
+                    <span class="icon_root transition"><img src="https://laptopaz.vn/media/lib/hot-sale.png" alt=""></span>
+                    <a href="/tin-khuyen-mai.html" class="root">KHUYẾN MÃI</a>
+               </div>
+              <div class="item js-hover-menu">
+                    <span class="icon_root transition"><img src="https://laptopaz.vn/media/lib/tr-gp.png" alt=""></span>
+                    <a href="/huong-dan-tra-gop.html" class="root">TRẢ GÓP</a>
+               </div>
+            </div>
+        </div>
+    </div>
+</header>
+              <div class="content_mid">
+                <div class="content_text">
+                  <!-- <div>Trang chủ / LAPTOP MỚI / Laptop Dell Mới </div> -->
+
+                </div>
+                <div class="product-item">
+                  <div class="product_text">
+                    <div>[New 100%] Dell XPS 15 9520 (Core i7-12700H, 16GB, 512GB, RTX 3050Ti, 15.6" FHD+)</div>
+                  </div>
+                  <div class="product_new">
+                    <div class="product_detail">
+                      <div class="product_detail_img">
+                        <img src="/Project1/img/2487_laptopaz_dell_xps_9520_1.jpg" alt="">
+                      </div>
+                      <div class="product_small_img">
+                        <li><a href=""><img src="/Project1/img/2487_laptopaz_dell_xps_9520_1.jpg" alt=""></a></li>
+                        <li><a href=""><img src="/Project1/img/120_2487_laptopaz_dell_xps_9520_2.jpg" alt=""></a></li>
+                        <li><a href=""><img src="/Project1/img/120_2487_laptopaz_dell_xps_9520_3.jpg" alt=""></a></li>
+                        <li><a href=""><img src="/Project1/img/120_2487_laptopaz_dell_xps_9520_4.jpg" alt=""></a></li>
+                        <li><a href=""><img src="/Project1/img/2487_laptopaz_dell_xps_9520_5.jpg" alt=""></a></li>
+                        <li><a href=""><img src="/Project1/img/120_2487_laptopaz_dell_xps_9520_6.jpg" alt=""></a></li>
+                      </div>
+                    </div>
+                    <div class="product_colum">
+                        <div class="product_colum_text">
+                          <span>47.990.000</span>
+                          <p style="margin-bottom: 0.5rem;"><strong>Bảo hành:</strong> 12 tháng Xcomputer</p>
+                          <p style="margin-bottom: 3rem;"><strong>Tình trạng</strong> Còn hàng</p>
+                          <p><strong>Cấu hình:</strong></p>
+                        </div>    
+                        <div class="product_list_option">
+
+                            <ul>
+                              <li>
+                                <input type="radio" name="pro" class="checkbox-option" value="">
+                                  <span>Core i5-12500H, 16GB, 256GB, UHD Graphics, 15.6" FHD+</span>
+                                    <p>38.890.000đ</p>
+
+                                </input>
+                              </li>
+                            </ul>
+
+                            <ul>
+                              <li>
+                                <input type="radio" name="pro" class="checkbox-option" value="">
+                                <span>Core i7-12700H, 16GB, 512GB, RTX 3050Ti, 15.6" FHD+</span>
+                                  <p>47.990.000đ</p>
+                              </li>
+                            </ul>
+
+                            <ul>
+                              <li>
+                                <input type="radio" name="pro" class="checkbox-option" value="">
+                                  <span>Core i7-12700H, 16GB, 512GB, RTX 3050Ti, 15.6" FHD+</span>D+
+                                    <p>47.990.000đ</p>
+
+                                </input>
+                              </li>
+                            </ul>
+
+                            <ul>
+                              <li>
+                                <input type="radio" name="pro" class="checkbox-option" value="">
+                                  <span>Core i9-12900HK, 16GB, 1TB, RTX 3050Ti, 16.5" OLED 3.5K Touch</span>
+                                    <p>61.990.000đ</p>
+
+                                </input>
+                              </li>
+                            </ul>
+
+                            <ul>
+                              <li>
+                                <input type="radio" name="pro" class="checkbox-option" value="">
+                                  <span>Core i9-12900HK, 32GB, 1TB, RTX 3050Ti, 16.5" OLED 3.5K Touch</span>
+                                    <p>65.490.000đ</p>
+
+                                </input>
+                              </li>
+                            </ul>
+
+                            <ul>
+                              <li>
+                                <input type="radio" name="pro" class="checkbox-option" value="">
+                                  <span>Core i9-12900HK, 32GB, 1TB, RTX 3050Ti, 15.6" FHD</span>+
+                                    <p>61.490.000đ</p>
+
+                                </input>
+                              </li>
+                            </ul>
+                        </div>
+                        <div class="promotion">
+                          <p class="box_promotion">
+                            <i class="fa fa-gift" style="font-size: 18px; margin-right: 5px;"> </i> QUÀ TẶNG/KHUYẾN MÃI
+                          </p>
+                          <ul style="padding-top: 25px; margin-left: 0;padding-left: 25px;">
+                            <p>
+                                ✅ Tặng Windows 11 bản quyền theo máy
+                              <br>
+                                ✅ Miễn phí cân màu màn hình công nghệ cao
+                              <br>
+                                ✅ Balo thời trang
+                              <br>
+                                ✅ Chuột không dây + Bàn di cao cấp
+                              <br> 
+                                ✅ Tặng gói cài đặt, bảo dưỡng, vệ sinh máy trọn đời
+                              <br> 
+                                ✅ Tặng Voucher giảm giá cho lần mua tiếp theo
+                            </p>
+                          </ul>
+                        </div>
+                        <a href="" class="buy-now add-product">
+                          Mua ngay
+                          <span class="d-block text-13">
+                            Giao hàng tận nơi hoặc nhận ở cửa hàng
+                          </span>
+                        </a>
+                    </div>
+                    <div class="endow">
+                        <div class="support-incentives">
+                          <h4 class="title">
+                            YÊN TÂM MUA SẮM TẠI Xcomputer
+                          </h4>
+                          <ul class="list-unstyled">
+                            <li><i class="fa-solid fa-star" style="color: #fcd23b;"></i> <span>Chất lượng sản phẩm là hàng đầu</span></li>
+                            <li><i class="fa-solid fa-star" style="color: #fcd23b;"></i> <span>Dùng test máy 15 ngày đầu lỗi 1 đổi 1</span></li>
+                            <li><i class="fa-solid fa-star" style="color: #fcd23b;"></i> <span>Hỗ trợ và hậu mãi sau bán hàng tốt nhất</span></li>
+                            <li><i class="fa-solid fa-star" style="color: #fcd23b;"></i> <span>Trả góp lãi suất 0% qua thẻ visa</span></li>
+                            <li><i class="fa-solid fa-star" style="color: #fcd23b;"></i> <span>Giao hàng miễn phí toàn quốc nhanh nhất</span></li>
+                          </ul>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="main-details">
+                <div class="container1">
+                  <div class="row">
+                    <div class="col">
+                      <div class="big-white">
+                        <div class="title-tab">
+                          <h3>
+                            Đặc điểm nổi bật
+                          </h3>
+                        </div>
+                        <div class="main-content" style="font-size: 14px;">
+                            <p>
+                              <span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">
+                                <strong>
+                                  <span style="color: #0000ff;">
+                                    <a style="color: #0000ff;" href="https://laptopaz.vn/tim?q=xps" target="_blank">Laptop Dell XPS</a>
+                                  </span>&nbsp;15 9520 sẽ phù hợp với đối tượng nào?
+                                </strong>
+                              </span>
+                              <br>
+                              <span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">Dell XPS 15 9520 mẫu Laptop Multimedia mới nhất đến từ nhà&nbsp;
+                                <span style="color: #0000ff;">
+                                  <a style="color: #0000ff;" href="https://www.dell.com/en-vn" target="_blank">Dell</a>
+                                </span> được thừa hưởng những điều tốt nhất từ “đàn anh” của mình - 
+                                <span style="color: #0000ff;">
+                                  <a style="color: #0000ff;" href="https://laptopaz.vn/tim?q=9510" target="_blank">XPS 9510</a>
+                                </span>, nhưng năm nay với sự cải tiến đáng kể về mặt hiệu năng với sự ”góp” mặt của Intel CPU 12th Gen, Dell XPS 15 9520 chắc chắn sẽ đem lại cho bạn những trải nghiệm tuyệt vời hơn thế.
+                              </span>
+                              </p>
+                              
+                              <p>
+                                <span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">
+                                  <img style="display: block; margin-left: auto; margin-right: auto;" src="/media/product/2484_laptopaz_dell_xps_9520_1s.jpg" alt="" width="600">
+                                </span>
+                              </p>
+
+                              <p>
+                                <span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">
+                                  <strong>Thiết kế hiện đại, sang trọng</strong>
+                                </span>
+                              </p>
+
+                              <p>
+                                <span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">Ở&nbsp;
+                                  <span style="color: #0000ff;">
+                                    <a style="color: #0000ff;" href="https://laptopaz.vn/tim?q=dell" target="_blank">Dell</a>
+                                  </span> người dùng vẫn luôn thấy sự nhất quán trong lối thiết kế trong từng sản phẩm, nó không dễ bị nhầm lẫn giữa các dòng Laptop khác trên thị trường mà vẫn luôn có lối thiết kế của riêng mình, và Dell XPS 15 9520 cũng đã làm được điều đó. Vẫn làm bằng chất liệu Nhôm nguyên khối cùng với những đường cắt Diamond tinh xảo đem lại cho ngoại hình của chiếc laptop sự chắc chắn và sang trọng. Khung máy được gia cố bằng hợp kim Magnesium chắc chắn, với mặt trên được phủ một lớp carbon fiber đã quá quen thuộc với các dòng XPS trước đây. Ngoài ra máy có cân nặng khoảng 1.92Kg khá nhẹ cho người dùng có thể mang chiếc Laptop này đi muôn nơi.
+                                </span>
+                              </p>
+
+                              <p>
+                                <span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">
+                                  <img style="display: block; margin-left: auto; margin-right: auto;" src="/media/product/2484_laptopaz_dell_xps_9520_6.jpg" alt="" width="600">
+                                </span>
+                              </p>
+
+                              <p>
+                                <span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">
+                                  <strong>Màn hình hiển thị chất lượng tuyệt vời </strong>
+                                </span>
+                                <br>
+                                <span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">Ở DELL XPS 15 9520 người dùng có thể được trải nghiệm hơn những gì đã mong đợi từ trải nghiệm của bản XPS 9510: Chất lượng hiển thị khá tốt. Ở phiên bản màn hình 4K(tùy cấu hình) cho độ sáng 500 nits và bao phủ 100% Adobe RGB, 94% DCI-P3 cùng với công nghệ HDR với Dolby Vision giúp cho các điểm nổi bật sáng hơn tới 40 lần và màu đen tối hơn đến 10 lần. Nếu bạn là người dùng làm việc thiên về bên nghệ thuật hoặc cần sự chính xác màu gần như tuyệt đối thì phiên bản 4K chính là sự lựa chọn tuyệt vời.
+                                </span>
+                              </p>
+
+                              <p>
+                                <span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">Dell đã thiết kế một Webcam chỉ nhỏ chỉ 2,25mm trên một chiếc máy có 4 viền siêu mỏng, và chúng có ống kính tới 4 thành phần đã mang lại video sắc nét ở tất cả các khu vực của khung hình, đặc biệt là trong điều kiện ánh sáng mờ, giúp cải thiện độ nhiễu.
+                                </span>
+                              </p>
+
+                              <p>
+                                <span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">
+                                  <img style="display: block; margin-left: auto; margin-right: auto;" src="/media/product/2484_laptopaz_dell_xps_9520_2.jpg" alt="" width="600">
+                                </span>
+                              </p>
+
+                              <p>
+                                <span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">
+                                  <strong>Bàn phím và TouchPad</strong>
+                                </span>
+                                <br>
+                                <span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">TouchPad với công nghệ Window Precision và được Dell phủ kính cho người dùn có cảm giác rê chuột, đa nhiệm hay tracking mượt mà và chính xác không khác gì TrackPad trên MacBook Pro. Hành trình phím thiết kế ổn, lực phản hồi tốt đem lại cảm nhận tốt khi gõ phím và gõ trong thời gian dài đối với người dùng làm việc văn phòng.
+                                </span>
+                              </p>
+
+                              <p>
+                                <span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">
+                                  <img style="display: block; margin-left: auto; margin-right: auto;" src="/media/product/2484_laptopaz_dell_xps_9520_3.jpg" alt="" width="600">
+                                </span>
+                              </p>
+
+                              <p>
+                                <span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">Về hiệu suất đồ hoạ, Dell XPS 15 9520 đi kèm với tuỳ chọn cấu hình GPU bao gồm Card đồ hoạ rời NVIDIA® GeForce RTX ™ 3050 (cho phiên bản chip Intel Core i7). Đây là card đồ chuyên dụng thường được trang bị trên cho các dòng laptop gaming hay đồ hoạ. Và với sức mạnh vượt trội, GPU cho khả năng chạy mượt các phần mềm đồ họa 3D nặng hay các tựa game AAA mà không gặp bất cứ khó khăn gì.
+                                </span>
+                              </p>
+
+                              <p>
+                                <span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">
+                                  <img style="display: block; margin-left: auto; margin-right: auto;" src="/media/product/2484_laptopaz_dell_xps_9520_5.jpg" alt="" width="600">
+                                </span>
+                              </p>
+
+                              <p>
+                                <span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">
+                                  <strong>Cổng kết nối</strong>
+                                </span>
+                                <br>
+                                <span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">Dell đã trang bị cho XPS 15 9520 hệ thống cổng kết nối khá đầy đủ, điều này giúp cho người dùng có cảm giác thuận tiện khi kết nối với các thiết bị khác:
+                                </span>
+                              </p>
+
+                              <p>
+                                <span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">cổng Type-C hỗ trợ Thunderbolt 4,&nbsp;cổng USB 3.2 Gen 2 Type-C, jack 3,5 và khe thẻ SD vẫn được giữ lại. Việc giữ lại khe SD là một điểm cộng lớn khi Dell XPS 9520 vốn được sinh ra dành cho đối tượng sử dụng là người làm sáng tạo nội dung, hình ảnh.
+                                </span>
+                              </p>
+
+                              <p>
+                                <span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">
+                                  <img style="display: block; margin-left: auto; margin-right: auto;" src="/media/product/2484_laptopaz_dell_xps_9520_4.jpg" alt="" width="600">
+                                </span>
+                              </p>
+
+                              <p>
+                                <span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">
+                                  <strong>Tổng kết:&nbsp;</strong>
+                                </span>
+                                <span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">Dell XPS 15 9520 có thể coi là phiên bản nâng cấp hoàn toàn mới so với người tiền nhiệm. Không chỉ thay đổi trong thiết kế mà nó còn mang đến hiệu suất vượt trội nhờ con chip thế hệ thứ 12 mới nhất, đem lại trải nghiệm vô cùng tuyệt vời, xứng đáng với giá tiền mà bản thân nó sở hữu.
+                                </span>
+                              </p>
+
+                              <!-- <p>
+                                <span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">
+                                  <img style="display: block; margin-left: auto; margin-right: auto;" src="https://laptopaz.vn/media/lib/1078_nhDELLcheckincakhch.jpg" alt="" width="800">
+                                </span>
+                              </p> -->
+
+                              <p style="text-align: center;">
+                                <span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">
+                                  <strong>Địa chỉ mua bán Laptop uy tín tại Hà Nội và trên toàn quốc - LaptopAZ.vn
+                                    <br>
+                                    Cơ sở 1: Số 18 Ngõ 121 - Thái Hà - Đống Đa - Hà Nội
+                                  </strong>
+                                </span>
+
+                                <br>
+
+                                <span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">
+                                  <strong>
+                                    Cơ sở 2: Số 56 Trần Phú - Hà Đông - Hà Nội
+                                  </strong>
+                                </span>
+                                <br>
+                                <span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">
+                                  <strong>Liên hệ ngay: Hotline 0825.233.233&nbsp;</strong>
+                                </span>
+                              </p>
+
+                              <p style="text-align: center;">
+                                <span style="font-family: arial, helvetica, sans-serif; font-size: 12pt; color: #0000ff;">
+                                  <a style="color: #0000ff;" href="https://laptopaz.vn/mua-hang-tu-xa.html">Chuyển hàng đi toàn quốc nhận máy đúng như mô tả mới phải thanh toán xem chi tiết tại đây</a>
+                                </span>
+                              </p>
+
+                            <div style="width: 100%;display: flex;justify-content: center;">
+                              <a href="https://www.facebook.com/messages/t/110101228608585" target="_blank" style="width: 180px;text-align: center;padding: 10px;text-transform: uppercase;background: #2b80dd;color: #fff;font-family: 'Roboto';font-weight: 700;border-radius: 10px;">Liên hệ ngay với 
+                                <br>  
+                                nhân viên tư vấn
+                              </a>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="technique">
+                      <div class="bg-white parameter">
+                        <div class="title-tab">
+                            <h3>Thông số kỹ thuật</h3>
+                        </div>
+                        <div class="pro-parameter">
+                            <div class="prodetail-spec-full" style="font-size: 11px;font-family: Times New Roman;">
+                                
+                                <p>
+                                  <span style="color: #0000ff; font-family: arial, helvetica, sans-serif; font-size: 8pt;">
+                                    <strong>Thông số kỹ thuật Laptop Dell XPS&nbsp;9520</strong>
+                                  </span>
+                                </p>
+    <table class="table table-striped table-bordered" style="height: 196px; float: left; width: 270px;">
+    <tbody>
+    <tr>
+      <td scope="row">
+        <span style="font-family: arial, helvetica, sans-serif; font-size: 8pt;">
+          <strong>CPU</strong>
+        </span>
+      </td>
+
+      <td scope="row">
+        <span style="font-family: arial, helvetica, sans-serif; font-size: 8pt;">Intel® Core™ i7-12700H</span>
+      </td>
+    </tr>
+
+    <tr>
+        <td scope="row">
+          <span style="font-family: arial, helvetica, sans-serif; font-size: 8pt;">
+            <strong>RAM</strong>
+          </span>
+        </td>
+        <td scope="row">
+          <span style="font-family: arial, helvetica, sans-serif; font-size: 8pt;">16GB DDR5 Bus 4800 MHz</span>
+        </td>
+        </tr>
+
+        <tr>
+        <td scope="row">
+          <span style="font-family: arial, helvetica, sans-serif; font-size: 8pt;">
+            <strong>Ổ cứng</strong>
+          </span>
+        </td>
+        <td scope="row">
+          <span style="font-family: arial, helvetica, sans-serif; font-size: 8pt;">SSD 512GB NVMe</span>
+        </td>
+        </tr>
+
+        <tr>
+        <td scope="row">
+          <span style="font-family: arial, helvetica, sans-serif; font-size: 8pt;">
+            <strong>Card VGA</strong>
+          </span>
+        </td>
+        <td scope="row">
+          <span style="font-family: arial, helvetica, sans-serif; font-size: 8pt;">NVIDIA® GeForce RTX™ 3050Ti, 4 GB GDDR6</span>
+        </td>
+    </tr>
+
+    <tr>
+        <td scope="row">
+          <span style="font-family: arial, helvetica, sans-serif; font-size: 8pt;">
+            <strong>Màn hình</strong>
+          </span>
+        </td>
+        <td scope="row">
+          <span style="font-family: arial, helvetica, sans-serif; font-size: 8pt;">15,6 ", FHD + (1920x1200), 60Hz, Không cảm ứng, Chống lóa, 500 nit, InfinityEdge</span>
+        </td>
+    </tr>
+
+    <tr>
+        <td scope="row">
+          <span style="font-family: arial, helvetica, sans-serif; font-size: 8pt;">
+            <strong>Cổng giao tiếp</strong>
+          </span>
+        </td>
+        <td scope="row">
+          <span style="font-family: arial, helvetica, sans-serif; font-size: 8pt;">1 USB 3.2 Gen 2 Type-C™ (with DisplayPort and PowerDelivery) 2 Thunderbolt™ 4 (USB Type-C™) with DisplayPort and PowerDelivery 1 3.5mm headphone/microphone combo jack
+            <br>
+          </span>
+        </td>
+    </tr>
+
+    <tr>
+    <td scope="row">
+      <span style="font-family: arial, helvetica, sans-serif; font-size: 8pt;">
+        <strong>Trọng lượng</strong>
+      </span>
+    </td>
+    <td scope="row">
+      <span style="font-family: arial, helvetica, sans-serif; font-size: 8pt;">1.92 kg</span>
+    </td>
+    </tr>
+
+    <tr>
+    <td scope="row">
+      <span style="font-family: arial, helvetica, sans-serif; font-size: 8pt;">
+        <strong>Pin</strong>
+      </span>
+    </td>
+    <td scope="row">
+      <span style="font-family: arial, helvetica, sans-serif; font-size: 8pt;">86Whr</span>
+    </td>
+    </tr>
+
+    <tr>
+    <td scope="row">
+      <span style="font-family: arial, helvetica, sans-serif; font-size: 8pt;">
+        <strong>Hệ điều hành</strong>
+      </span>
+    </td>
+    <td scope="row">
+      <span style="font-family: arial, helvetica, sans-serif; font-size: 8pt;">Windows 11 bản quyền
+      </span>
+    </td>
+    </tr>
+
+    </tbody>
+    </table>
+    <p style="text-align: left;">
+      <span style="font-family: arial, helvetica, sans-serif; font-size: 8pt;">&nbsp;
+      </span>
+    </p>
+    <div id="eJOY__extension_root" class="eJOY__extension_root_class" style="all: unset;">
+      <span style="font-family: arial, helvetica, sans-serif; font-size: 8pt;">&nbsp;
+      </span>
+    </div>
+                                
+                                <a href="javascript:;" data-fancybox="" data-src="#box_product-spec" class="view-full mt-2">Xem cấu hình chi tiết</a>
+                            </div>
+                            <div id="box_product-spec" style="display: none">
+                                <div class="title-tab">
+                                    <h3>Thông số kỹ thuật</h3>
+                                </div>
+                                
+                                <p><span style="color: #0000ff; font-family: arial, helvetica, sans-serif; font-size: 8pt;">
+                                  <strong>Thông số kỹ thuật Laptop Dell XPS&nbsp;9520</strong>
+                                </span>
+                              </p>
+
+                              <table class="table table-striped table-bordered" style="height: 196px;float: left;" width="238">
+    <tbody>
+    <tr>
+    <td scope="row"><span style="font-family: arial, helvetica, sans-serif; font-size: 8pt;">
+      <strong>CPU</strong>
+    </span>
+  </td>
+    <td scope="row"><span style="font-family: arial, helvetica, sans-serif; font-size: 8pt;">Intel® Core™ i7-12700H</span></td>
+    </tr>
+    <tr>
+    <td scope="row"><span style="font-family: arial, helvetica, sans-serif; font-size: 8pt;"><strong>RAM</strong></span></td>
+    <td scope="row"><span style="font-family: arial, helvetica, sans-serif; font-size: 8pt;">16GB DDR5 Bus 4800 MHz</span></td>
+    </tr>
+    <tr>
+    <td scope="row"><span style="font-family: arial, helvetica, sans-serif; font-size: 8pt;"><strong>Ổ cứng</strong></span></td>
+    <td scope="row"><span style="font-family: arial, helvetica, sans-serif; font-size: 8pt;">SSD 512GB NVMe</span></td>
+    </tr>
+    <tr>
+    <td scope="row"><span style="font-family: arial, helvetica, sans-serif; font-size: 8pt;"><strong>Card VGA</strong></span></td>
+    <td scope="row"><span style="font-family: arial, helvetica, sans-serif; font-size: 8pt;">NVIDIA® GeForce RTX™ 3050Ti, 4 GB GDDR6</span></td>
+    </tr>
+    <tr>
+    <td scope="row"><span style="font-family: arial, helvetica, sans-serif; font-size: 8pt;"><strong>Màn hình</strong></span></td>
+    <td scope="row"><span style="font-family: arial, helvetica, sans-serif; font-size: 8pt;">15,6 ", FHD + (1920x1200), 60Hz, Không cảm ứng, Chống lóa, 500 nit, InfinityEdge</span></td>
+    </tr>
+    <tr>
+    <td scope="row"><span style="font-family: arial, helvetica, sans-serif; font-size: 8pt;"><strong>Cổng giao tiếp</strong></span></td>
+    <td scope="row"><span style="font-family: arial, helvetica, sans-serif; font-size: 8pt;">1 USB 3.2 Gen 2 Type-C™ (with DisplayPort and PowerDelivery) 2 Thunderbolt™ 4 (USB Type-C™) with DisplayPort and PowerDelivery 1 3.5mm headphone/microphone combo jack<br></span></td>
+    </tr>
+    <tr>
+    <td scope="row"><span style="font-family: arial, helvetica, sans-serif; font-size: 8pt;"><strong>Trọng lượng</strong></span></td>
+    <td scope="row"><span style="font-family: arial, helvetica, sans-serif; font-size: 8pt;">1.92 kg</span></td>
+    </tr>
+    <tr>
+    <td scope="row"><span style="font-family: arial, helvetica, sans-serif; font-size: 8pt;"><strong>Pin</strong></span></td>
+    <td scope="row"><span style="font-family: arial, helvetica, sans-serif; font-size: 8pt;">86Whr</span></td>
+    </tr>
+    <tr>
+    <td scope="row"><span style="font-family: arial, helvetica, sans-serif; font-size: 8pt;"><strong>Hệ điều hành</strong></span></td>
+    <td scope="row"><span style="font-family: arial, helvetica, sans-serif; font-size: 8pt;">Windows 11 bản quyền</span></td>
+    </tr>
+    </tbody>
+    </table>
+    <p style="text-align: left;"><span style="font-family: arial, helvetica, sans-serif; font-size: 8pt;">&nbsp;</span></p>
+    <div id="eJOY__extension_root" class="eJOY__extension_root_class" style="all: unset;"><span style="font-family: arial, helvetica, sans-serif; font-size: 8pt;">&nbsp;</span></div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <footer>
+                <div class="container">
+                    <div class="footer-content">
+                        <div class="footer-section about">
+                            <h3>CÔNG TY TNHH CÔNG NGHỆ VIỆT NAM</h3>
+                            <p>Địa chỉ : số 155 Quang Trung, Gò Vấp, Tp. HCM</p>
+                            <p>Hotline : 0909090909</p>
+                            <p>Email : Xcomputer@gmail.com</p>
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-facebook"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+        
+                        <div class="footer-section links">
+                            <h3>Thông tin công ty</h3>
+                            <ul>
+                                <li><a href="#">Giới thiệu công ty</a></li>
+                                <li><a href="#">Tuyển dụng</a></li>
+                                <li><a href="#">Gửi góp ý, khiếu nại</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-section links">
+                            <h3>Chính sách công ty</h3>
+                            <ul>
+                                <li><a href="#">Chính sách giới thiệu</a></li>
+                                <li><a href="#">Chính sách bảo hành</a></li>
+                                <li><a href="#">Chính sách đổi trả</a></li>
+                                <li><a href="#">Chính sách vận chuyển</a></li>
+                                <li><a href="#">Chính sách bảo mật thông tin</a></li>
+                                <li><a href="#">Hướng dẫn mua hàng - thanh toán</a></li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </div>
+        
+            </footer>
+</body>
+</html>
