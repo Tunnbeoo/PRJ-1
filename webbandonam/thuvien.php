@@ -24,7 +24,7 @@ function ketnoidb(){
     $servername = "localhost";
     $username = "root";
     $password = "";
-    $dbname = "vuthibacdk12cntt2";
+    $dbname = "tunnbeoo";
 
     try {
         $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
