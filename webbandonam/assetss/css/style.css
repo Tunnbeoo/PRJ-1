@@ -146,6 +146,11 @@ img {
     height: auto;
 }
 
+.navbar-brand >img{
+    width: 100px;
+    border-radius: 10%;
+}
+
  :focus {
     outline: 0;
 }
@@ -215,7 +220,8 @@ button {
 .header_section {
     width: 100%;
     float: left;
-    background-image: url(../images/banner.jpg);
+    /* background-image: url(../images/banner.jpg); */
+    background-color: #f6bca6;
     height: auto;
     background-size: 100%;
     background-repeat: no-repeat;

@@ -1,58 +1,74 @@
 <?php
 if (!defined('IN_MEDIA')) die("Hack");
-class mysql { 
-	var $link_id;
-	var $log_file = 'logs.txt';
-	var $log_error = 1;
-	function connect($db_host, $db_username, $db_password, $db_name) {
-		$this->link_id = @mysql_connect($db_host, $db_username, $db_password);
-		if ($this->link_id)
-		{
-			if (@mysql_select_db($db_name, $this->link_id)) return $this->link_id;
-			else $this->show_error('Unable to select database. MySQL reported: '.mysql_error());
-		}
-		else $this->show_error('Unable to connect to MySQL server. MySQL reported: '.mysql_error());
-	}
-	
-	function query($input){
-		$q = @mysql_query($input) or $this->show_error("<b>Lỗi MySQL Query</b> : ".mysql_error(),$input);
-		return $q;
-	}
-	
-	function fetch_array($query_id, $type=MYSQL_BOTH){
-		$fa = @mysql_fetch_array($query_id,$type);
-		return $fa;
-	}
-	
-	function num_rows($query_id) {
-		$nr = @mysql_num_rows($query_id);
-		return $nr;
-	}
-	
-	function result($query_id, $row=0, $field) {
-		$r = @mysql_result($query_id, $row, $field);
-		return $r;
-	}
-	
-	function insert_id() {
-		return @mysql_insert_id($this->link_id);
-	}
-	function fetch_assoc($query_id){
-$fa = @mysql_fetch_assoc($query_id);
-return $fa;
+@session_start();
+@header("Content-Type: text/html; charset=UTF-8");
+
+if (!ini_get('register_globals')) {
+    extract($_GET);
+    extract($_POST);
 }
-	function show_error($input,$q){
-		if ($this->log_error) {
-			$file_name = $this->log_file;
-			$fp = fopen($file_name,'a');
-			flock($fp,2);
-			fwrite($fp,"### ".date('H:s:i d-m-Y',NOW)." ###\n");
-			fwrite($fp,$input."\n");
-			fwrite($fp,"QUERY : ".$q."\n");
-			flock($fp,1);
-			fclose($fp);
-		}
-		die($input);
-	}
+
+define('NOW', time());
+define('IP', $_SERVER['REMOTE_ADDR']);
+define('USER_AGENT', $_SERVER['HTTP_USER_AGENT']);
+define('URL_NOW', $_SERVER["REQUEST_URI"]);
+
+include('_dbconnect.php'); // Kết nối đến cơ sở dữ liệu
+$mysql = new mysql;
+$mysql->connect($config['db_host'], $config['db_user'], $config['db_pass'], $config['db_name']);
+
+#######################################
+# GET DATABASE
+#######################################
+function get_data($f1, $table, $f2, $f2_value) {
+    global $mysql, $tb_prefix;
+    $q = $mysql->query("SELECT $f1 FROM " . $tb_prefix . $table . " WHERE $f2='" . $f2_value . "'");
+    $rs = $mysql->fetch_array($q);
+    $f1_value = $rs[$f1];
+    return $f1_value;
 }
+
+#######################################
+# GET CONFIG
+#######################################
+$q = $mysql->query("SELECT * FROM " . $tb_prefix . "config WHERE cf_id = 1");
+$cf = $mysql->fetch_array($q);
+
+$web_title = $cf['cf_web_name'];
+$web_link = $cf['cf_web_link'];
+$web_protect = $cf['cf_protect'];
+
+if ($web_link[strlen($web_link) - 1] == '/') {
+    $web_link = substr($web_link, 0, -1);
+}
+
+$web_keywords = $cf['cf_web_keywords'];
+$web_keyle = $cf['cf_web_keyle'];
+$web_desle = $cf['cf_web_desle'];
+$web_keybo = $cf['cf_web_keybo'];
+$web_desbo = $cf['cf_web_desbo'];
+$web_email = $cf['cf_web_email'];
+$per_page = $cf['cf_per_page'];
+$per_pagez = $cf['cf_sitemap_p'];
+$cachedir = 'cache/'; // Directory to cache files in (keep outside web root)
+$cacheext = 'cache'; // Extension to give cached files (usually cache, htm, txt)
+$link_href = "?movie=";
+
+if (isset($_GET['movie'])) {
+    $url_load = $_GET['movie'];
+    $url = strtolower($url_load);
+    $value = array();
+    if ($url) $value = explode('/', $url);
+}
+
+$img_ads_folder = "images/ads";
+// _dbconnect.php
+// Không định nghĩa lại hàm get_data() ở đây
+$config = array(
+    'db_host' => 'localhost',
+    'db_user' => 'username',
+    'db_pass' => 'password',
+    'db_name' => 'phimvc_phim'
+);
+
 ?>

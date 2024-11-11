@@ -70,10 +70,8 @@ input[type="submit"] {
     background-repeat: no-repeat;
 }
 .anh{
-   width: 1450px;
+   width: 1410px;
    height:600px;
-margin-left:15px;
-margin-right:30px;
 }
     </style>
      <img src="./assetss/images/banner.jpg"  class="anh">

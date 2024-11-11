@@ -42,13 +42,14 @@
     width: 100%;
     float: left;
     background-image: url(./assetss/images/banner-bg.png) !important;
+    background-color: #f6bca6;
     height: auto;
     background-size: 100%;
     background-repeat: no-repeat;
 }
 .bg-light{
  
-   background-image: url(./assetss/images/header1.jpg) !important;
+   /* background-image: url(./assetss/images/header1.jpg) !important; */
 }
     </style>
 <!DOCTYPE html>
@@ -86,7 +87,7 @@
       <div class="header_section">
          <div class="container-fluid">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
-               <a class="navbar-brand"href="index.php"><img src="./assetss/images/logo.jpg"></a>
+               <a class="navbar-brand"href="index.php"><img src="./assetss/images/logo-plant-shop.png"></a>
                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                <span class="navbar-toggler-icon"></span>
                </button>

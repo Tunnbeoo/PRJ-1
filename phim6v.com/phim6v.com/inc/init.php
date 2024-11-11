@@ -5,29 +5,33 @@ if (!defined('IN_MEDIA')) die("Hack");
 @session_start();
 @header("Content-Type: text/html; charset=UTF-8");
 //error_reporting(E_ALL ^ E_NOTICE);
+if (!defined('IN_MEDIA')) die("Hack");
+@session_start();
+@header("Content-Type: text/html; charset=UTF-8");
+
 if (!ini_get('register_globals')) {
-	//@$_GET = $HTTP_GET_VARS;
-	//@$_POST = $HTTP_POST_VARS;
-	//@$_COOKIE = $HTTP_COOKIE_VARS;
-	extract($_GET);
-	extract($_POST);
+    extract($_GET);
+    extract($_POST);
 }
-define('NOW',time());
-define('IP',$_SERVER['REMOTE_ADDR']);
-define('USER_AGENT',$_SERVER['HTTP_USER_AGENT']);
-define('URL_NOW',$_SERVER["REQUEST_URI"]);
-include('_dbconnect.php');
+
+define('NOW', time());
+define('IP', $_SERVER['REMOTE_ADDR']);
+define('USER_AGENT', $_SERVER['HTTP_USER_AGENT']);
+define('URL_NOW', $_SERVER["REQUEST_URI"]);
+
+// Sử dụng include_once để tránh định nghĩa lại hàm
+include_once('_dbconnect.php');
+
 $mysql = new mysql;
-$mysql->connect($config['db_host'],$config['db_user'],$config['db_pass'],$config['db_name']);
-#######################################
-# GET DATABASE
-#######################################
-function get_data($f1,$table,$f2,$f2_value){
-	global $mysql,$tb_prefix;
-	$q = $mysql->query("SELECT $f1 FROM ".$tb_prefix.$table." WHERE $f2='".$f2_value."'");
-	$rs = $mysql->fetch_array($q);
-	$f1_value = $rs[$f1];
-	return $f1_value;
+$mysql->connect($config['db_host'], $config['db_user'], $config['db_pass'], $config['db_name']);
+
+// Định nghĩa hàm get_data() ở đây
+function get_data($f1, $table, $f2, $f2_value) {
+    global $mysql, $tb_prefix;
+    $q = $mysql->query("SELECT $f1 FROM " . $tb_prefix . $table . " WHERE $f2='" . $f2_value . "'");
+    $rs = $mysql->fetch_array($q);
+    $f1_value = $rs[$f1];
+    return $f1_value;
 }
 #######################################
 # GET CONFIG
