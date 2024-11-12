@@ -259,7 +259,7 @@ if (isset($_GET['act']) && ($_GET['act'] != "")) {
                     <input type="text"  class="relog-form__gr-input" placeholder="Tên đăng nhập" name="tendangnhap">
                 </div>
                 <div class="relog-form__gr">
-                    <input type="text"  class="relog-form__gr-input" placeholder="Mật khẩu" name="matkhau">
+                    <input type="password"  class="relog-form__gr-input" placeholder="Mật khẩu" name="matkhau">
                 </div>
             </div>
             <div class="relog-form__btn">

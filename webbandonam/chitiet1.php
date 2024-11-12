@@ -19,6 +19,12 @@ $masp = isset($_GET['masp']) ? $_GET['masp'] : '';
 $sql = "SELECT * FROM `sanpham1`WHERE masp='$masp' ";
 $result = mysqli_query($conn, $sql);
 $row = mysqli_fetch_array($result);
+
+$sql = "SELECT * FROM sanpham1
+
+order by rand()
+limit 4";
+$result = mysqli_query($conn, $sql);
 ?>
  	
 
