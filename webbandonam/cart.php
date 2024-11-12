@@ -47,48 +47,7 @@ if (isset($_POST['dongydathang'])) {
     $_SESSION['order_success'] = true;
 }
 
-if (!isset($_SESSION['giohang'])) $_SESSION['giohang'] = [];
 
-// Xóa tất cả
-if (isset($_GET['delcart']) && ($_GET['delcart'] == 1)) unset($_SESSION['giohang']);
-
-// Xóa sản phẩm trong giỏ hàng (xóa đơn xóa từng cái một)
-if (isset($_GET['delid']) && ($_GET['delid'] >= 0)) {
-    array_splice($_SESSION['giohang'], $_GET['delid'], 1);
-}
-
-// Lấy dữ liệu từ form
-$errorMessages = [];
-if (isset($_POST['dongydathang'])) {
-    $name = trim($_POST['hoten']);
-    $phone = trim($_POST['dienthoai']);
-    $address = trim($_POST['diachi']);
-    $email = trim($_POST['email']);
-
-    // Kiểm tra các trường thông tin
-    if (empty($name)) {
-        $errorMessages[] = "Họ và tên không được để trống.";
-    }
-    if (empty($phone)) {
-        $errorMessages[] = "Số điện thoại không được để trống.";
-    }
-    if (empty($address)) {
-        $errorMessages[] = "Địa chỉ không được để trống.";
-    }
-    if (empty($email)) {
-        $errorMessages[] = "Email không được để trống.";
-    }
-
-    // Nếu không có lỗi, xử lý đơn hàng
-    if (empty($errorMessages)) {
-        // Lưu trữ giỏ hàng vào biến tạm thời
-        $cartBackup = $_SESSION['giohang'];
-        unset($_SESSION['giohang']);
-        $_SESSION['order_success'] = true;
-
-        // Thực hiện các hành động khác như gửi email, lưu vào cơ sở dữ liệu, v.v.
-    }
-}
 
 ?>
 <!DOCTYPE html>
@@ -271,39 +230,29 @@ if (isset($_POST['dongydathang'])) {
                         </div>
                         <div class="shoping__checkout">
                             <h5>Thông Tin Thanh Toán</h5>
-                            <form method="post">
-                                <ul>
-                                    <div class="checkout__input">
-                                        <p>Họ Và Tên<span>*</span>
-                                            <input type="text" name="hoten" id="hoten" value="<?php echo isset($name) ? htmlspecialchars($name) : ''; ?>">
-                                        </p>
-                                    </div>
-                                    <div class="checkout__input">
-                                        <p>Số Điện Thoại<span>*</span>
-                                            <input type="text" name="dienthoai" id="dienthoai" value="<?php echo isset($phone) ? htmlspecialchars($phone) : ''; ?>">
-                                        </p>
-                                    </div>
-                                    <div class="checkout__input">
-                                        <p>Địa Chỉ<span>*</span>
-                                            <input type="text" name="diachi" id="diachi" value="<?php echo isset($address) ? htmlspecialchars($address) : ''; ?>">
-                                        </p>
-                                    </div>
-                                    <div class="checkout__input">
-                                        <p>Email<span>*</span>
-                                            <input type="text" name="email" id="email" value="<?php echo isset($email) ? htmlspecialchars($email) : ''; ?>">
-                                        </p>
-                                    </div>
-                                </ul>
-                                <button class="primary-btn" type="submit" name="dongydathang">Đặt Hàng</button>
-                            </form>
-
-                            <?php if (!empty($errorMessages)): ?>
-                                <div class="error-messages">
-                                    <?php foreach ($errorMessages as $message): ?>
-                                        <p style="color: red;"><?php echo htmlspecialchars($message); ?></p>
-                                    <?php endforeach; ?>
+                            <form id="checkoutForm" method="post" action="bill.php">
+                                <div class="checkout__input">
+                                    <p>Họ Và Tên<span>*</span>
+                                        <input type="text" name="hoten" id="hoten">
+                                    </p>
                                 </div>
-                            <?php endif; ?>
+                                <div class="checkout__input">
+                                    <p>Số Điện Thoại<span>*</span>
+                                        <input type="text" name="dienthoai" id="dienthoai">
+                                    </p>
+                                </div>
+                                <div class="checkout__input">
+                                    <p>Địa Chỉ<span>*</span>
+                                        <input type="text" name="diachi" id="diachi">
+                                    </p>
+                                </div>
+                                <div class="checkout__input">
+                                    <p>Email<span>*</span>
+                                        <input type="text" name="email" id="email">
+                                    </p>
+                                </div>
+                                <button class="primary-btn" type="submit" name="dongydathang" onclick="validateForm(event)">Đặt Hàng</button>
+                            </form>
                         </div>
                     </form>
                 </div>
@@ -312,7 +261,38 @@ if (isset($_POST['dongydathang'])) {
     </div>
     <!-- Shoping Cart Section End -->
 
+    <script>
+        function validateForm(event) {
+            event.preventDefault(); // Ngăn chặn việc gửi biểu mẫu
 
+            // Lấy giá trị từ các trường thông tin
+            var name = document.getElementById('hoten').value.trim();
+            var phone = document.getElementById('dienthoai').value.trim();
+            var address = document.getElementById('diachi').value.trim();
+            var email = document.getElementById('email').value.trim();
+
+            // Kiểm tra các trường thông tin
+            if (name === "") {
+                alert("Họ và tên không được để trống.");
+                return false;
+            }
+            if (phone === "") {
+                alert("Số điện thoại không được để trống.");
+                return false;
+            }
+            if (address === "") {
+                alert("Địa chỉ không được để trống.");
+                return false;
+            }
+            if (email === "") {
+                alert("Email không được để trống.");
+                return false;
+            }
+
+            // Nếu tất cả các trường hợp đều hợp lệ, gửi biểu mẫu
+            document.getElementById("checkoutForm").submit();
+        }
+    </script>
 
     <!-- Js Plugins -->
     <!-- <script src="assets/js/cart/bootstrap.min.js"></script>
