@@ -50,6 +50,13 @@ if ($addToCartClicked && !isset($_SESSION['user'])) {
 
       /* background-image: url(./assetss/images/header1.jpg) !important; */
    }
+   .container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
 </style>
 <!DOCTYPE html>
 <html>
@@ -86,9 +93,9 @@ if ($addToCartClicked && !isset($_SESSION['user'])) {
 
 <body>
    <div class="header_section">
-      <div class="container-fluid">
+      <div class="container-fluid p-0">
          <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="index.php"><img src="./assetss/images/logo-plant-shop.png"></a>
+            <a class="navbar-brand" href="index.php"><img src="./assetss/images/logo.png"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                <span class="navbar-toggler-icon"></span>
             </button>
