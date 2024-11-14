@@ -103,16 +103,16 @@ CREATE TABLE `lienhe` (
   `hoten` varchar(200) NOT NULL,
   `sdt` int(10) NOT NULL,
   `email` varchar(100) NOT NULL,
-  `noidung` varchar(255) NOT NULL
+  `chuc_nang` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Đang đổ dữ liệu cho bảng `lienhe`
 --
 
-INSERT INTO `lienhe` (`hoten`, `sdt`, `email`, `noidung`) VALUES
-('Dương Minh Trung', 367456697, 'trung1@gmail.com', 'tôi muốn mua hoa với 1 số lượng lớn'),
-('Minh Trung', 367456697, 'admin@gmail.com', 'cafe phe ngon');
+INSERT INTO `lienhe` (`hoten`, `sdt`, `email`, `chuc_nang`) VALUES
+('Dương Minh Trung', 367456697, 'trung1@gmail.com', 'Admin'),
+('Minh Trung', 367456697, 'admin@gmail.com', 'Admin');
 
 -- --------------------------------------------------------
 

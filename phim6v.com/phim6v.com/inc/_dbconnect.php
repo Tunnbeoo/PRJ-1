@@ -66,8 +66,8 @@ $img_ads_folder = "images/ads";
 // Không định nghĩa lại hàm get_data() ở đây
 $config = array(
     'db_host' => 'localhost',
-    'db_user' => 'username',
-    'db_pass' => 'password',
+    'db_user' => 'root',
+    'db_pass' => '',
     'db_name' => 'phimvc_phim'
 );
 

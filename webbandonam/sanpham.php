@@ -76,19 +76,12 @@ padding: 0px 10px 0px 10px;
                             <th> Ảnh 1 </th>
                             <th> Ảnh 2</th>
                             <th>Ảnh 3</th>
-                            <th>Ảnh 4</th>
                             <th>Enable</th>
-                            <th>Ghi chú</th>
                             <th>Điểm Nổi Bật</th>
                             <th> Điều Kiện Chăm Sóc </th>
                             <th>Cách Chăm Sóc</th>
                             <th> Xuất Xứ</th>
-                            <th>Ngày Đăng</th>
                             <th>Kích Thước</th>
-                            <th>Người Đăng</th>
-                            <th>Giống Loài</th>
-                            
-                           
                         </tr>
                     </thead>
                     <tbody>
@@ -128,16 +121,9 @@ padding: 0px 10px 0px 10px;
                                 <td>
                                    <img src="./upload/<?php echo $row['img3']?>"alt="" width="50">
 
-                                </td>
-                                <td>
-                                   <img src="./upload/<?php echo $row['img4']?>"alt="" width="50">
-
-                                </td>
+                                </td>   
                                 <td>
                                     <?PHP echo ($row["enable"]) ?>
-                                </td>
-                                 <td>
-                                    <?PHP echo $row["ghichu"] ?>
                                 </td>
                                 <td>
                                     <?PHP echo $row["diemnoibat"] ?>
@@ -152,16 +138,7 @@ padding: 0px 10px 0px 10px;
                                     <?PHP echo $row["xuatxu"] ?>
                                 </td>
                                 <td>
-                                    <?PHP echo $row["ngaydang"] ?>
-                                </td>
-                                <td>
                                     <?PHP echo $row["kichthuoc"] ?>
-                                </td>
-                                <td>
-                                    <?PHP echo $row["nguoidang"] ?>
-                                </td>
-                                <td>
-                                    <?PHP echo $row["giongloai"] ?>
                                 </td>
                                
 

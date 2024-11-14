@@ -181,6 +181,9 @@ if (isset($_POST['dongydathang'])) {
             color: black;
             background-color: yellow
         }
+        .thanhtoan{
+            color: #fff;
+        }
     </style>
 </head>
 
@@ -251,7 +254,7 @@ if (isset($_POST['dongydathang'])) {
                                         <input type="text" name="email" id="email">
                                     </p>
                                 </div>
-                                <button class="primary-btn" type="submit" name="dongydathang" onclick="validateForm(event)">Đặt Hàng</button>
+                                <button class="primary-btn" type="submit" name="dongydathang" onclick="validateForm(event)" link ><a href="" class="thanhtoan">Đặt Hàng</a></button>
                             </form>
                         </div>
                     </form>

@@ -69,7 +69,7 @@ function showgiohang(){
                     <td>'.$_SESSION['giohang'][$i][1].'</td> 
                     <td>'.$_SESSION['giohang'][$i][2].'</td>
                     <td>'.$_SESSION['giohang'][$i][3].'</td>
-                    <td>'.$tt.'</td>
+                    <td>'.$tt.'VNĐ</td>
                     <td>
                         <a href="cart.php?delid='.$i.'">Xóa</a>
                     </td>
@@ -81,7 +81,7 @@ function showgiohang(){
                         Tổng đơn hàng 
                     </th>
                     <th colspan="2">
-                        '.$tong.'
+                        '.$tong.'VNĐ
                     </th>
                 </tr>';
         }
@@ -116,7 +116,7 @@ function showgiohang1(){
                         Tổng đơn hàng 
                     </th>
                     <th colspan="2">
-                        '.$tong.'
+                        '.$tong.'VNĐ
                     </th>
                 </tr>';
         }

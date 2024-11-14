@@ -143,7 +143,7 @@ $result = mysqli_query($conn, $sql);
 <div class="image-container">
    <img src="./assetss/images/banner.jpg" class="anh active">
    <img src="./assetss/images/banner2.jpg" class="anh">
-   <img src="./assetss/images/banner3.jpg" class="anh">
+   <img src="./assetss/images/banner2.jpg" class="anh">
    <button class="arrow left-arrow" onclick="changeImage(-1)">&#10094;</button>
    <button class="arrow right-arrow" onclick="changeImage(1)">&#10095;</button>
 </div>

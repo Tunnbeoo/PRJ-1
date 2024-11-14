@@ -102,12 +102,13 @@ th,td{
                                     <?PHP echo $row["email"] ?>
                                 </td>
                                 <td>
-                                    <?PHP echo $row["noidung"] ?>
+                                    <?PHP echo $row["chuc_nang"] ?>
                                 </td>
                                 <td>
+                                    
                                 <a href="xoalienhe.php?sdt=<?php echo $row["sdt"]; ?>" style="text-decoration: none">Xóa</a>
                             </td>
-
+                            <a href="themlienhe.php?sdt=<?php echo $row["sdt"]; ?>" style="text-decoration: none">thêm</a>
                             </tr>
                            
                         <?PHP } ?> 
