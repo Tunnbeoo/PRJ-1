@@ -24,7 +24,7 @@ class lienhe extends ketnoi{
     
     }
     function hienthisdt($sdt){
-        $sql = "SELECT * FROM `lienhe` WHERE sdt = '$sdt'" ;a
+        $sql = "SELECT * FROM `lienhe` WHERE sdt = '$sdt'" ;
         $result = mysqli_query($this->conn, $sql);
         return $result;
     }
