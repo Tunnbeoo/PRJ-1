@@ -1,30 +1,32 @@
 <?php 
 include "ketnoi.php";
-class lienhe extends ketnoi{
+
+class lienhe extends ketnoi {
     public $hoten;
     public $sdt;
     public $email;
     public $noidung;
-    function insert(){
+
+    function insert() {
         $sql = "INSERT INTO `lienhe`(`hoten`, `sdt`, `email`, `chuc_nang`)
         VALUES ('".$this->hoten."','".$this->sdt."','".$this->email."','".$this->noidung."')";
         $result = mysqli_query($this->conn, $sql);
-        if($result){
-           echo "<script>alert('Đã Gửi Thành Công')</script>";
-           echo "<script>window.location = 'lienhe.php'</script>";
-        }
-        else{
-           echo "<script>alert('Lỗi')</script>";
+        if ($result) {
+            echo "<script>alert('Đã Gửi Thành Công')</script>";
+            echo "<script>window.location = 'lienhe.php'</script>";
+        } else {
+            echo "<script>alert('Lỗi')</script>";
         }
     }
-    function hienthilienhe(){
+
+    function hienthilienhe() {
         $sql = "SELECT * FROM lienhe";
         $result = mysqli_query($this->conn, $sql);
         return $result;
-    
     }
-    function hienthisdt($sdt){
-        $sql = "SELECT * FROM `lienhe` WHERE sdt = '$sdt'" ;
+
+    function hienthisdt($sdt) {
+        $sql = "SELECT * FROM `lienhe` WHERE sdt = '$sdt'";
         $result = mysqli_query($this->conn, $sql);
         return $result;
     }
@@ -38,7 +40,7 @@ class lienhe extends ketnoi{
         $sql = "INSERT INTO `lienhe`(`hoten`, `sdt`, `email`, `chuc_nang`)
         VALUES ('".$this->hoten."','".$this->sdt."','".$this->email."','".$this->noidung."')";
         $result = mysqli_query($this->conn, $sql);
-        if($result) {
+        if ($result) {
             echo "<script>alert('Thêm thành công')</script>";
             echo "<script>window.location = 'lienhe.php'</script>";
         } else {
@@ -46,20 +48,15 @@ class lienhe extends ketnoi{
         }
     }
 
-    function delete($sdt){
-        $sql = "DELETE  FROM `lienhe` WHERE  sdt='$sdt'";
+    function delete($sdt) {
+        $sql = "DELETE FROM `lienhe` WHERE sdt='$sdt'";
         $result = mysqli_query($this->conn, $sql);
-        if($result){
-            echo "<script> alert('Xóa thành công') </script>";
-            echo "<script> window.location = 'lienhe1.php' </script>";
-        
+        if ($result) {
+            echo "<script>alert('Xóa thành công')</script>";
+            echo "<script>window.location = 'lienhe1.php'</script>";
+        } else {
+            echo "<script>alert('Lỗi')</script>";
         }
-        else{
-            echo "<script> alert('Lỗi') </script>";
-        
-        }
-    
-    
     }
 }
 ?>

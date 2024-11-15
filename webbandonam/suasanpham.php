@@ -22,22 +22,22 @@
         $sanpham->dongiacu = isset($_POST['dongiacu']) ? $_POST['dongiacu'] : '';
         $sanpham->dongiamoi = isset($_POST['dongiamoi']) ? $_POST['dongiamoi'] : '';
         $sanpham->enable = isset($_POST['enable']) ? $_POST['enable'] : 0;
-        $sanpham->ghichu = isset($_POST['ghichu']) ? $_POST['ghichu'] : '';
         $sanpham->diemnoibat = isset($_POST['diemnoibat']) ? $_POST['diemnoibat'] : '';
         $sanpham->dieukienchamsoc = isset($_POST['dieukienchamsoc']) ? $_POST['dieukienchamsoc'] : '';
         $sanpham->cachchamsoc = isset($_POST['cachchamsoc']) ? $_POST['cachchamsoc'] : '';
         $sanpham->xuatxu= isset($_POST['xuatxu']) ? $_POST['xuatxu'] : '';
-        $sanpham->ngaydang = isset($_POST['ngaydang']) ? $_POST['ngaydang'] : '';
         $sanpham->kichthuoc = isset($_POST['kichthuoc']) ? $_POST['kichthuoc'] : '';
-        $sanpham->nguoidang = isset($_POST['nguoidang']) ? $_POST['nguoidang'] : '';
-        $sanpham->giongloai = isset($_POST['giongloai']) ? $_POST['giongloai'] : '';
         // $sanpham->tenanhcu = $row['img'];
         $sanpham->updatesanpham();
     }
     ?>
 <!DOCTYPE html>
 <html lang="en">
-
+<style>
+    .img_admin{
+        margin-top: 5px;
+    }
+</style>
 
 <body>
 
@@ -79,29 +79,20 @@
                 <label for="dongia">Đơn giá Mới:</label>
                 <input type="number" value="<?php echo $row['dongiamoi'];?>"class="form-control" name="dongiamoi" >
             </div>
-            <div class="form-group">
+            <div class="form-group img_admin">
                 <label for="img">Ảnh 1:</label>
                 <input type="file" class="form-control" name="img1" value="<?php echo $row['img1'] ?> ">
                 <img src="./upload/<?php echo $row["img1"]?>"width="60px" height="80px">
             </div>
-            <div class="form-group">
+            <div class="form-group img_admin">
                 <label for="img">Ảnh 2:</label>
                 <input type="file" class="form-control" name="img2" value="<?php echo $row['img2'] ?> ">
                 <img src="./upload/<?php echo $row["img2"]?>"width="60px" height="80px">
             </div>
-            <div class="form-group">
+            <div class="form-group img_admin">
                 <label for="img">Ảnh 3:</label>
                 <input type="file" class="form-control" name="img3" value="<?php echo $row['img3'] ?> ">
                 <img src="./upload/<?php echo $row["img3"]?>"width="60px" height="80px">
-            </div>
-            <div class="form-group">
-                <label for="img">Ảnh 4:</label>
-                <input type="file" class="form-control" name="img4" value="<?php echo $row['img4'] ?> ">
-                <img src="./upload/<?php echo $row["img4"]?>"width="60px" height="80px">
-            </div>
-            <div class="form-group">
-                <label for="mota">Ghi Chú:</label>
-                <input type="text" value="<?php echo $row['ghichu'];?>"class="form-control" name="ghichu" >
             </div>
             <div class="form-group">
                 <label for="mota">Điểm Nổi Bật:</label>
@@ -120,20 +111,8 @@
                 <input type="text" class="form-control" name="xuatxu" value="<?php echo $row["xuatxu"] ?> ">
             </div>
             <div class="form-group">
-                <label for="tensp">Ngày Đăng:</label>
-                <input type="text" class="form-control" name="ngaydang" value="<?php echo $row["ngaydang"] ?> ">
-            </div>
-            <div class="form-group">
                 <label for="tensp">Kích Thước:</label>
                 <input type="text" class="form-control" name="kichthuoc" value="<?php echo $row["kichthuoc"] ?> ">
-            </div>
-            <div class="form-group">
-                <label for="tensp">Người Đăng:</label>
-                <input type="text" class="form-control" name="nguoidang" value="<?php echo $row["nguoidang"] ?> ">
-            </div>
-            <div class="form-group">
-                <label for="tensp">Giống Loài:</label>
-                <input type="text" class="form-control" name="giongloai" value="<?php echo $row["giongloai"] ?> ">
             </div>
             <div class="form-group form-check">s
                 
