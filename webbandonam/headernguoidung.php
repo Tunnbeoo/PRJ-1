@@ -50,13 +50,13 @@ if ($addToCartClicked && !isset($_SESSION['user'])) {
 
       /* background-image: url(./assetss/images/header1.jpg) !important; */
    }
-   .container-fluid {
-    padding-left: 0;
-    padding-right: 0;
-    margin-left: 0;
-    margin-right: 0;
-}
 
+   .container-fluid {
+      padding-left: 0;
+      padding-right: 0;
+      margin-left: 0;
+      margin-right: 0;
+   }
 </style>
 <!DOCTYPE html>
 <html>
@@ -107,6 +107,9 @@ if ($addToCartClicked && !isset($_SESSION['user'])) {
                      </li>
                      <li class="nav-item">
                         <a class="nav-link" href="fullsp.php">Sản Phẩm</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="cart.php">Giỏ Hàng</a>
                      </li>
                      <li class="nav-item">
                         <a class="nav-link" href="xemdonhang_dadat.php">Đơn Hàng</a>

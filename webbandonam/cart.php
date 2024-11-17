@@ -78,12 +78,12 @@ if (isset($_POST['dongydathang'])) {
     <link rel="stylesheet" href="assets/css/cart/style.css" type="text/css">
 
     <style>
-        .shoping__cart__item img {
-            width: 70px;
-            height: 60px;
-        }
+    .shoping__cart__item img {
+        width: 70px;
+        height: 60px;
+    }
 
-        /* .container{
+    /* .container{
                 padding-bottom: 100px;
             }
             .primary-btn {
@@ -91,99 +91,100 @@ if (isset($_POST['dongydathang'])) {
             color: #ffffff;
             
         } */
-        .header_section {
-            width: 100%;
-            float: left;
-            background-image: none !important;
-            height: auto;
-            background-size: 100%;
-            background-repeat: no-repeat;
-        }
+    .header_section {
+        width: 100%;
+        float: left;
+        background-image: none !important;
+        height: auto;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
 
-        table {
-            border: 1px solid #000;
-            border-collapse: collapse;
-            width: 100%;
-            font-size: 1.4rem;
-        }
+    table {
+        border: 1px solid #000;
+        border-collapse: collapse;
+        width: 100%;
+        font-size: 1.4rem;
+    }
 
-        thead th {
-            width: 15%;
-            border: 1px solid #000;
-        }
+    thead th {
+        width: 15%;
+        border: 1px solid #000;
+    }
 
-        tbody td {
-            text-align: center;
-            border: 1px solid #000;
-            height: 120px;
-        }
+    tbody td {
+        text-align: center;
+        border: 1px solid #000;
+        height: 120px;
+    }
 
-        tbody tr th {
-            height: 60px;
-            border: 1px solid #000 !important;
-        }
+    tbody tr th {
+        height: 60px;
+        border: 1px solid #000 !important;
+    }
 
-        .cart__table-img {
-            width: 60%;
-            height: 100%;
-        }
+    .cart__table-img {
+        width: 60%;
+        height: 100%;
+    }
 
-        .shoping__cart__table table thead .shoping__stt {
-            width: 6%;
-        }
+    .shoping__cart__table table thead .shoping__stt {
+        width: 6%;
+    }
 
-        .shoping__cart__table table thead .shoping__sl {
-            width: 8%;
-        }
+    .shoping__cart__table table thead .shoping__sl {
+        width: 8%;
+    }
 
-        .shoping__cart__table table thead .shoping__cn {
-            width: 8%;
-        }
+    .shoping__cart__table table thead .shoping__cn {
+        width: 8%;
+    }
 
-        .shoping__cart__table table thead th {
-            padding-bottom: 0;
-            color: green;
-            font-family: 'Roboto';
-        }
+    .shoping__cart__table table thead th {
+        padding-bottom: 0;
+        color: green;
+        font-family: 'Roboto';
+    }
 
-        .shoping__cart__table table tbody tr td {
-            padding-top: 10px;
-            padding-bottom: 10px;
-            border-bottom: 1px solid #0e0e0e;
-            height: 100px;
-        }
+    .shoping__cart__table table tbody tr td {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #0e0e0e;
+        height: 100px;
+    }
 
-        .shoping__cart__table table thead th.shoping__product {
-            text-align: center;
-        }
+    .shoping__cart__table table thead th.shoping__product {
+        text-align: center;
+    }
 
-        .primary-btn.cart-btn {
-            color: white;
-            padding: 14px 30px 12px;
-            background-color: #7fad39;
-            transition: background-color ease-in .2s, color ease-in .2s;
-            cursor: pointer;
-        }
+    .primary-btn.cart-btn {
+        color: white;
+        padding: 14px 30px 12px;
+        background-color: #7fad39;
+        transition: background-color ease-in .2s, color ease-in .2s;
+        cursor: pointer;
+    }
 
-        .primary-btn.cart-btn:hover {
-            color: black;
-            background-color: yellow;
-        }
+    .primary-btn.cart-btn:hover {
+        color: black;
+        background-color: yellow;
+    }
 
-        .shoping__checkout .primary-btn {
-            display: block;
-            text-align: center;
-            border: none;
-            transition: background-color ease-in .2s, color ease-in .2s;
-        }
+    .shoping__checkout .primary-btn {
+        display: block;
+        text-align: center;
+        border: none;
+        transition: background-color ease-in .2s, color ease-in .2s;
+    }
 
-        .shoping__checkout .primary-btn:hover {
-            color: black;
-            background-color: yellow
-        }
-        .thanhtoan{
-            color: #fff;
-        }
+    .shoping__checkout .primary-btn:hover {
+        color: black;
+        background-color: yellow
+    }
+
+    .thanhtoan {
+        color: #fff;
+    }
     </style>
 </head>
 
@@ -197,67 +198,53 @@ if (isset($_POST['dongydathang'])) {
         <div class="row">
             <div class="col-lg-12">
                 <div class="container__cart-dad">
-                    <h3 class="container-product__heading" style="color:green;font-weight:700;font-family: 'Roboto';">GIỎ HÀNG ĐÓ</h3>
+                    <h3 class="container-product__heading" style="color:green;font-weight:700;font-family: 'Roboto';">
+                        GIỎ HÀNG ĐÓ</h3>
                     <div class="container-product__heading-border"></div>
-                    <form action="bill.php" method="post">
-                        <div class="shoping__cart__table">
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th class="shoping__stt">STT</th>
-                                        <th class="shoping__product">Ảnh</th>
-                                        <!-- //img -->
-                                        <th>Tên Sản phẩm</th>
-                                        <!-- //tên sản phẩm -->
-                                        <th>Đơn giá</th>
-                                        <th class="shoping__sl">Số lượng</th>
-                                        <th>Thành tiền</th>
-                                        <th classs="shoping__cn">Chức Năng</th>
-
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <?php
-
-                                    echo showgiohang();
-
-                                    ?>
-
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="shoping__cart__btns">
-                            <a href="fullsp.php" class="primary-btn cart-btn">Tiếp Tục Mua Hàng</a>
-                            <a href="cart.php?delcart=1" class="primary-btn cart-btn cart-btn-right"><span class="fa fa-times" style="color:red"></span>
-                                Xóa Giỏ Hàng</a>
-                        </div>
-                        <div class="shoping__checkout">
-                            <h5>Thông Tin Thanh Toán</h5>
-                            <form id="checkoutForm" method="post" action="bill.php">
-                                <div class="checkout__input">
-                                    <p>Họ Và Tên<span>*</span>
-                                        <input type="text" name="hoten" id="hoten">
-                                    </p>
-                                </div>
-                                <div class="checkout__input">
-                                    <p>Số Điện Thoại<span>*</span>
-                                        <input type="text" name="dienthoai" id="dienthoai">
-                                    </p>
-                                </div>
-                                <div class="checkout__input">
-                                    <p>Địa Chỉ<span>*</span>
-                                        <input type="text" name="diachi" id="diachi">
-                                    </p>
-                                </div>
-                                <div class="checkout__input">
-                                    <p>Email<span>*</span>
-                                        <input type="text" name="email" id="email">
-                                    </p>
-                                </div>
-                                <button class="primary-btn" type="submit" name="dongydathang" onclick="validateForm(event)" link ><a href="" class="thanhtoan">Đặt Hàng</a></button>
-                            </form>
-                        </div>
-                    </form>
+                    <form action="thanhtoan.php" method="post">
+    <div class="shoping__cart__table">
+        <table>
+            <thead>
+                <tr>
+                    <th class="shoping__stt">STT</th>
+                    <th class="shoping__product">Ảnh</th>
+                    <th>Tên Sản phẩm</th>
+                    <th>Đơn giá</th>
+                    <th class="shoping__sl">Số lượng</th>
+                    <th>Thành tiền</th>
+                    <th classs="shoping__cn">Chức Năng</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php echo showgiohang(); ?>
+            </tbody>
+        </table>
+    </div>
+    <div class="shoping__checkout">
+        <h5>Thông Tin Thanh Toán</h5>
+        <div class="checkout__input">
+            <p>Họ Và Tên<span>*</span>
+                <input type="text" name="hoten" id="hoten" required>
+            </p>
+        </div>
+        <div class="checkout__input">
+            <p>Số Điện Thoại<span>*</span>
+                <input type="text" name="dienthoai" id="dienthoai" required>
+            </p>
+        </div>
+        <div class="checkout__input">
+            <p>Địa Chỉ<span>*</span>
+                <input type="text" name="diachi" id="diachi" required>
+            </p>
+        </div>
+        <div class="checkout__input">
+            <p>Email<span>*</span>
+                <input type="email" name="email" id="email" required>
+            </p>
+        </div>
+        <button class="primary-btn" type="submit" name="dongydathang">Đặt Hàng</button>
+    </div>
+</form>
                 </div>
             </div>
         </div>
@@ -265,36 +252,36 @@ if (isset($_POST['dongydathang'])) {
     <!-- Shoping Cart Section End -->
 
     <script>
-        function validateForm(event) {
-            event.preventDefault(); // Ngăn chặn việc gửi biểu mẫu
+    function validateForm(event) {
+        event.preventDefault(); // Ngăn chặn việc gửi biểu mẫu
 
-            // Lấy giá trị từ các trường thông tin
-            var name = document.getElementById('hoten').value.trim();
-            var phone = document.getElementById('dienthoai').value.trim();
-            var address = document.getElementById('diachi').value.trim();
-            var email = document.getElementById('email').value.trim();
+        // Lấy giá trị từ các trường thông tin
+        var name = document.getElementById('hoten').value.trim();
+        var phone = document.getElementById('dienthoai').value.trim();
+        var address = document.getElementById('diachi').value.trim();
+        var email = document.getElementById('email').value.trim();
 
-            // Kiểm tra các trường thông tin
-            if (name === "") {
-                alert("Họ và tên không được để trống.");
-                return false;
-            }
-            if (phone === "") {
-                alert("Số điện thoại không được để trống.");
-                return false;
-            }
-            if (address === "") {
-                alert("Địa chỉ không được để trống.");
-                return false;
-            }
-            if (email === "") {
-                alert("Email không được để trống.");
-                return false;
-            }
-
-            // Nếu tất cả các trường hợp đều hợp lệ, gửi biểu mẫu
-            document.getElementById("checkoutForm").submit();
+        // Kiểm tra các trường thông tin
+        if (name === "") {
+            alert("Họ và tên không được để trống.");
+            return false;
         }
+        if (phone === "") {
+            alert("Số điện thoại không được để trống.");
+            return false;
+        }
+        if (address === "") {
+            alert("Địa chỉ không được để trống.");
+            return false;
+        }
+        if (email === "") {
+            alert("Email không được để trống.");
+            return false;
+        }
+
+        // Nếu tất cả các trường hợp đều hợp lệ, gửi biểu mẫu
+        document.getElementById("checkoutForm").submit();
+    }
     </script>
 
     <!-- Js Plugins -->
