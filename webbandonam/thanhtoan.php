@@ -26,7 +26,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 ?>
 
 <?php
-require 'vendor/autoload.php'; // Đảm bảo bạn đã tải thư viện
+require './vendor/autoload.php'; // Đảm bảo bạn đã tải thư viện
 
 use Endroid\QrCode\QrCode;
 use Endroid\QrCode\Writer\PngWriter;
