@@ -38,9 +38,9 @@
             'dev_requirement' => false,
         ),
         'endroid/qr-code' => array(
-            'pretty_version' => '6.0.3',
-            'version' => '6.0.3.0',
-            'reference' => 'bdbb06e767efe9abe3c00461662b4059a6cd0b55',
+            'pretty_version' => '6.0.0',
+            'version' => '6.0.0.0',
+            'reference' => '61cc3ef6863936b58e0cbe63a44da79efe3c84cd',
             'type' => 'library',
             'install_path' => __DIR__ . '/../endroid/qr-code',
             'aliases' => array(),

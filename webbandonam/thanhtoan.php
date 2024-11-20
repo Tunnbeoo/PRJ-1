@@ -1,10 +1,18 @@
-<?php include "headernguoidung.php"; ?>
-
 <?php
+require 'vendor/autoload.php'; // Đảm bảo rằng dòng này có ở đầu file
+
+include "headernguoidung.php";
+
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Nhận thông tin từ giỏ hàng
     $products = $_SESSION['giohang'];
     $totalAmount = 0;
+
+    if (empty($products)) {
+        // Giỏ hàng trống, chuyển về trang giỏ hàng
+        header("Location: cart.php");
+        exit();
+    }
 
     foreach ($products as $product) {
         // Chuyển đổi giá trị thành số trước khi tính toán
@@ -23,58 +31,50 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     header("Location: cart.php");
     exit();
 }
+
+// Format the total amount to include .000 VNĐ
+$formattedTotalAmount = number_format($totalAmount, 0, ',', '.') . '.000 VNĐ';
+
+// Extract the numeric part for the QR code URL
+$qrAmount = number_format($totalAmount, 0, '', '');
 ?>
 
-<?php
-require './vendor/autoload.php'; // Đảm bảo bạn đã tải thư viện
 
-use Endroid\QrCode\QrCode;
-use Endroid\QrCode\Writer\PngWriter;
-
-// Tạo nội dung cho mã QR
-$accountNumber = '09190599922'; // Số tài khoản ngân hàng của bạn
-$bankName = 'Ngân hàng Tiên Phong'; // Tên ngân hàng
-$totalAmount = 100000; // Tổng số tiền (thay thế bằng giá trị thực tế)
-$qrText = 'Ngân hàng: ' . $bankName . ' - Số tài khoản: ' . $accountNumber . ' - Tổng số tiền: ' . $totalAmount . ' VNĐ';
-
-// Tạo mã QR
-$qrCode = new QrCode($qrText);
-$qrCode->setSize(300); // Kích thước mã QR
-$qrCode->setMargin(10); // Lề của mã QR
-
-// Tạo writer để xuất mã QR
-$writer = new PngWriter();
-
-// Lưu mã QR vào tệp
-$writer->write($qrCode)->saveToFile(__DIR__ . '/qrcode.png'); // Lưu mã QR vào tệp qrcode.png
-
-// Hoặc bạn có thể xuất mã QR trực tiếp ra trình duyệt
-header('Content-Type: image/png');
-echo $writer->write($qrCode)->getString();
+<?php include 'config.php'; // Bao gồm file cấu hình 
 ?>
-
-<?php include 'config.php'; // Bao gồm file cấu hình ?>
 
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
     <meta charset="UTF-8">
     <title>Thanh Toán</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f9f9f9;
-        }
-
-        h2,
-        h3 {
+            background-color: #f4f4f9;
             color: #333;
-            padding-bottom: 10px;
+            margin: 0;
+            padding: 0;
         }
 
-        p {
+        .order-info-container {
+            margin-left: 20px;
+            /* Indent to the right */
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        .order-info-title {
+            color: #4CAF50;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .order-info-item {
             font-size: 16px;
-            color: #555;
             margin: 5px 0;
         }
 
@@ -83,117 +83,183 @@ echo $writer->write($qrCode)->getString();
             border-collapse: collapse;
             margin-top: 20px;
             background-color: #fff;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
         th,
         td {
-            border: 1px solid #ccc;
             padding: 10px;
             text-align: left;
+            border-bottom: 1px solid #ddd;
         }
 
         th {
-            background-color: #007bff;
+            background-color: #4CAF50;
             color: white;
         }
 
-        tr:nth-child(even) {
-            background-color: #f2f2f2;
+        tr:hover {
+            background-color: #f1f1f1;
         }
 
-        .image-cell {
-            text-align: center;
-        }
-
-        .product-img {
-            width: 50px;
-            height: 50px;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-            padding: 5px;
-            background-color: #f9f9f9;
+        .image-cell img {
+            max-width: 100px;
+            height: auto;
             display: block;
             margin: 0 auto;
         }
 
         .total-amount {
-            margin-top: 15px;
-        }
-
-        .payment-form {
-            max-width: 900px;
-            margin: 20px 0;
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            background-color: #f9f9f9;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .payment-option {
-            display: inline-flex;
-            align-items: center;
-            padding: 10px;
-            border: 2px solid #007bff;
-            border-radius: 5px;
-            background-color: #f9f9f9;
-            color: #333;
-            cursor: pointer;
-            transition: background-color 0.3s, border-color 0.3s;
-            margin-bottom: 10px;
-        }
-
-        .payment-option input[type="radio"] {
-            display: none;
-        }
-
-        .payment-option:hover {
-            background-color: #e9ecef;
-        }
-
-        .payment-option input[type="radio"]:checked+span {
-            background-color: #007bff;
-            color: white;
-        }
-
-        .submit-button {
-            background-color: #007bff;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            padding: 10px 15px;
-            cursor: pointer;
-            font-size: 16px;
-            transition: background-color 0.3s;
-        }
-
-        .submit-button:hover {
-            background-color: #0056b3;
-        }
-
-        /* Flexbox container for payment method and QR code */
-        .payment-container {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: right;
             margin-top: 20px;
         }
 
-        #qrCodeContainer {
-            display: none;
-            /* Ẩn mã QR ban đầu */
-            margin-left: 20px;
-            /* Khoảng cách bên trái cho mã QR */
+        .payment-form-container {
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
-        </style>
+
+        .payment-method-container {
+            margin-bottom: 20px;
+        }
+
+        .payment-method-option {
+            display: block;
+            margin-bottom: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+        }
+
+        .payment-method-option:hover {
+            background-color: #e0e0e0;
+        }
+
+        .payment-method-option input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        .qr-code-container {
+            display: none;
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        .qr-code-image {
+            width: 200px;
+            height: 200px;
+            display: block;
+            margin: 10px auto;
+        }
+
+        .payment-submit-button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .payment-submit-button:hover {
+            background-color: #45a049;
+        }
+
+        h3 {
+            font-size: 1.5em;
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+        }
+
+        h3.total-amount {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+
+        h2 {
+            font-size: 2em;
+            color: #2c3e50;
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            border-top: 2px solid #ddd;
+            padding-top: 10px;
+        }
+
+        .modal {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.5);
+            /* Black with opacity */
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 500px;
+            text-align: center;
+            position: relative;
+        }
+
+        .close-button {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .close-button:hover,
+        .close-button:focus {
+            color: black;
+            text-decoration: none;
+        }
+
+        .checkmark-icon {
+            font-size: 50px;
+            color: #4CAF50; /* Green color for success */
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
+
 <body>
-    <h2>Thông Tin Đặt Hàng</h2>
-    <p>Họ Tên: <?php echo htmlspecialchars($hoten); ?></p>
-    <p>Số Điện Thoại: <?php echo htmlspecialchars($dienthoai); ?></p>
-    <p>Địa Chỉ: <?php echo htmlspecialchars($diachi); ?></p>
-    <p>Email: <?php echo htmlspecialchars($email); ?></p>
+    <div class="order-info-container">
+        <h2 class="order-info-title">Thông Tin Đặt Hàng</h2>
+        <p class="order-info-item">Họ Tên: <?php echo htmlspecialchars($hoten); ?></p>
+        <p class="order-info-item">Số Điện Thoại: <?php echo htmlspecialchars($dienthoai); ?></p>
+        <p class="order-info-item">Địa Chỉ: <?php echo htmlspecialchars($diachi); ?></p>
+        <p class="order-info-item">Email: <?php echo htmlspecialchars($email); ?></p>
+    </div>
 
     <h3>Chi Tiết Sản Phẩm</h3>
     <table>
@@ -216,41 +282,50 @@ echo $writer->write($qrCode)->getString();
                         ?>
                             <img src="<?php echo $imagePath; ?>" alt="<?php echo htmlspecialchars($product[1]); ?>" class="product-img">
                         <?php else: ?>
-                            <img src="path/to/default/image.png" alt="Hình ảnh không có sẵn" class="product-img">
+                            <!-- Placeholder or alternative content if image not found -->
                         <?php endif; ?>
                     </td>
                     <td><strong><?php echo htmlspecialchars($product[1]); ?></strong></td>
-                    <td><?php echo number_format(floatval($product[2]), 0, ',', '.'); ?> VNĐ</td>
+                    <td><?php echo number_format(floatval($product[2]), 0, ',', '.') . '.000 VNĐ'; ?></td>
                     <td><?php echo htmlspecialchars($product[3]); ?></td>
-                    <td><?php echo number_format(floatval(str_replace(',', '', $product[2])) * intval($product[3]), 0, ',', '.'); ?> VNĐ</td>
+                    <td><?php echo number_format(floatval(str_replace(',', '', $product[2])) * intval($product[3]), 0, ',', '.') . '.000 VNĐ'; ?></td>
                 </tr>
             <?php endforeach; ?>
         </tbody>
     </table>
-    <h3 class="total-amount">Tổng Số Tiền: <?php echo number_format($totalAmount, 0, ',', '.'); ?> VNĐ</h3>
+    <h3 class="total-amount">Tổng Số Tiền: <?php echo number_format($totalAmount, 0, ',', '.') . '.000 VNĐ'; ?></h3>
 
     <h2>Phương Thức Thanh Toán</h2>
-    <form action="process_payment.php" method="POST" class="payment-form">
-        <div class="payment-container">
+    <form id="paymentForm" class="payment-form-container">
+        <div class="payment-method-container">
             <div>
-                <label class="payment-option">
+                <label class="payment-method-option">
                     <input type="radio" name="payment_method" value="cash" checked>
                     Thanh toán bằng tiền mặt
                 </label><br>
-                <label class="payment-option">
+                <label class="payment-method-option">
                     <input type="radio" name="payment_method" value="qr">
                     Thanh toán bằng mã QR
                 </label><br>
             </div>
-            <div id="qrCodeContainer" style="display: none;">
-                <h3>Mã QR cho tổng số tiền: <span id="totalAmountDisplay"><?php echo $totalAmount . ' VNĐ'; ?></span></h3>
-                <img id="qrCode" src="qrcode.png" alt="Mã QR" /> <!-- Hiển thị mã QR -->
+            <div id="qrCodeContainer" class="qr-code-container">
+                <h3>Mã QR cho tổng số tiền: <span id="totalAmountDisplay"><?php echo $formattedTotalAmount; ?></span></h3>
+                <img src="https://img.vietqr.io/image/TPBank-09190599922-compact2.png?amount=<?php echo $qrAmount; ?>&addInfo=Thanh Toán qua VietQR&accountName=Dương%20Minh%20Trung" alt="" class="qr-code-image">
             </div>
         </div>
         <input type="hidden" name="totalAmount" value="<?php echo htmlspecialchars($totalAmount); ?>">
-        <input type="submit" value="Xác Nhận Thanh Toán" class="submit-button">
+        <input type="button" value="Xác Nhận Thanh Toán" class="payment-submit-button" onclick="confirmOrder()">
     </form>
-
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div class="checkmark-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h2>Đặt Hàng Thành Công!</h2>
+            <p>Cảm ơn bạn đã đặt hàng. Đơn hàng của bạn đã được xử lý thành công.</p>
+        </div>
+    </div>
     <script>
         // Khi người dùng thay đổi phương thức thanh toán
         document.querySelectorAll('input[name="payment_method"]').forEach(function(element) {
@@ -263,5 +338,38 @@ echo $writer->write($qrCode)->getString();
             });
         });
     </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.querySelector('.payment-form-container');
+            const modal = document.getElementById('successModal');
+            const closeButton = document.querySelector('.close-button');
+
+            form.addEventListener('submit', function(event) {
+                event.preventDefault(); // Prevent the form from submitting
+                modal.style.display = 'block'; // Show the modal
+            });
+
+            closeButton.addEventListener('click', function() {
+                modal.style.display = 'none'; // Hide the modal
+            });
+
+            // Close the modal when clicking outside of it
+            window.addEventListener('click', function(event) {
+                if (event.target === modal) {
+                    modal.style.display = 'none';
+                    window.location.href = 'index.php'; // Redirect to homepage
+                }
+            });
+        });
+    </script>
+    <script>
+        function confirmOrder() {
+            // Here you can add any logic needed before redirecting, like sending data to the server via AJAX
+
+            // Redirect to the homepage
+            window.location.href = 'index.php';
+        }
+    </script>
 </body>
+
 </html>

@@ -134,16 +134,23 @@ function showgiohang1()
     }
     return $ttgh;
 }
-
-function getOrdersByUser($user)
-{
+function getIdUserByUsername($username){
     $conn = ketnoidb();
-    $sql = "SELECT * FROM bill WHERE name = :user";
+    $sql = "SELECT id FROM taikhoan WHERE tendangnhap = :username";
     $stmt = $conn->prepare($sql);
-    $stmt->bindParam(':user', $user, PDO::PARAM_STR);
+    $stmt->bindParam(':username', $username, PDO::PARAM_STR);
+    $stmt->execute();
+    $result = $stmt->fetch(PDO::FETCH_ASSOC);
+    return $result['id'];
+}
+function getOrdersByUser($user) {
+    $id_user = getIdUserByUsername($user);
+    $conn = ketnoidb();
+    $sql = "SELECT * FROM bill WHERE `name` = :id_user";
+    $stmt = $conn->prepare($sql);
+    $stmt->bindParam(':id_user', $id_user, PDO::PARAM_STR);
     $stmt->execute();
     $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
-    $conn = null;
     return $result;
 }
 
