@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th10 20, 2024 lúc 06:52 AM
+-- Thời gian đã tạo: Th10 20, 2024 lúc 07:15 AM
 -- Phiên bản máy phục vụ: 10.4.32-MariaDB
 -- Phiên bản PHP: 8.2.12
 
@@ -59,7 +59,8 @@ CREATE TABLE `card_detail` (
   `product_id` int(11) NOT NULL,
   `quantity` int(11) NOT NULL DEFAULT 1,
   `price` decimal(10,2) NOT NULL,
-  `created_at` timestamp NOT NULL DEFAULT current_timestamp()
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
+  `order_id` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 -- --------------------------------------------------------
@@ -90,6 +91,19 @@ CREATE TABLE `catalog` (
   `name` varchar(128) NOT NULL,
   `parent_id` int(11) NOT NULL,
   `soft_oder` tinyint(4) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Cấu trúc bảng cho bảng `contact`
+--
+
+CREATE TABLE `contact` (
+  `name` varchar(200) NOT NULL,
+  `phone` int(20) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `chuc_nang` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
@@ -198,7 +212,8 @@ ALTER TABLE `bienthe_product`
 ALTER TABLE `card_detail`
   ADD PRIMARY KEY (`id`),
   ADD KEY `fk_card_cart` (`cart_id`),
-  ADD KEY `fk_card_product` (`product_id`);
+  ADD KEY `fk_card_product` (`product_id`),
+  ADD KEY `fk_card_order` (`order_id`);
 
 --
 -- Chỉ mục cho bảng `cart`
@@ -338,6 +353,7 @@ ALTER TABLE `bienthe_product`
 --
 ALTER TABLE `card_detail`
   ADD CONSTRAINT `fk_card_cart` FOREIGN KEY (`cart_id`) REFERENCES `cart` (`id`) ON DELETE CASCADE,
+  ADD CONSTRAINT `fk_card_order` FOREIGN KEY (`order_id`) REFERENCES `order_donhang` (`id`) ON DELETE CASCADE,
   ADD CONSTRAINT `fk_card_product` FOREIGN KEY (`product_id`) REFERENCES `product` (`id`) ON DELETE CASCADE;
 
 --
