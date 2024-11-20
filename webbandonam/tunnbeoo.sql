@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th10 17, 2024 lúc 05:05 PM
+-- Thời gian đã tạo: Th10 20, 2024 lúc 07:16 AM
 -- Phiên bản máy phục vụ: 10.4.32-MariaDB
 -- Phiên bản PHP: 8.2.12
 
@@ -44,9 +44,7 @@ CREATE TABLE `bill` (
 INSERT INTO `bill` (`id`, `name`, `address`, `tel`, `email`, `total`, `pttt`) VALUES
 (32, 'bac11', 'chí linh hải dương', '2313465', 'admin@gmail.com', 330, 0),
 (33, 'Đỗ Thái DUy', 'b6 nguyễn ảnh thủ quận 12', '0332314630', 'dothaiduy04@gmail.com', 54, 0),
-(34, 'Tunn', 'abc', '123456789', 'mnmn@gmail.com', 38, 0),
-(35, '', '', '', '', 444, 0),
-(36, '', '', '', '', 888, 0),
+(34, '2', 'abc', '123456789', 'mnmn@gmail.com', 38, 0),
 (37, 'Tunn', '', '', '', 222, 0),
 (38, '', '', '', '', 31, 0);
 
@@ -208,7 +206,8 @@ INSERT INTO `sanpham1` (`masp`, `nhom_id`, `tensp`, `mota`, `dongiacu`, `dongiam
 ('666', 32424, 'Áo Phông Nâu Đen', 'Mặc dù lịch sử của bánh cupcake đã có từ rất lâu nhưng Cupcake chỉ thật sử nổi lên như một trào lưu vào thế kỷ XXI. Cupcake thường được sử dụng như một món tráng miệng trong các buổi tiệc tùng hay gặp mặt. Với đặc điểm ngon và bắt mắt, Cupcake hiện đang được ưa chuộng bởi mọi lứa tuổi. Một chiếc bánh tuy nhìn sặc sỡ nhưng cách làm cũng không quá cầu kỳ, nếu có điều kiện bạn nên thử một lần làm chiếc bánh này tại nhà, không gì ngon bằng được thường thức những chiếc Chupcake nhỏ xinh do chính tay mình làm.                 ', 321000, 222000, 'r8.jpg', 'r3.jpg', 'r1.jpg', 1, 'Mặc dù lịch sử của bánh cupcake đã có từ rất lâu nhưng Cupcake chỉ thật sử nổi lên như một trào lưu vào thế kỷ XXI. Cupcake thường được sử dụng như một món tráng miệng trong các buổi tiệc tùng hay gặp mặt. Với đặc điểm ngon và bắt mắt, Cupcake hiện đang được ưa chuộng bởi mọi lứa tuổi. Một chiếc bánh tuy nhìn sặc sỡ nhưng cách làm cũng không quá cầu kỳ, nếu có điều kiện bạn nên thử một lần làm chiếc bánh này tại nhà, không gì ngon bằng được thường thức những chiếc Chupcake nhỏ xinh do chính tay mình làm.                 ', 'Mặc dù lịch sử của bánh cupcake đã có từ rất lâu nhưng Cupcake chỉ thật sử nổi lên như một trào lưu vào thế kỷ XXI. Cupcake thường được sử dụng như một món tráng miệng trong các buổi tiệc tùng hay gặp mặt. Với đặc điểm ngon và bắt mắt, Cupcake hiện đang được ưa chuộng bởi mọi lứa tuổi. Một chiếc bánh tuy nhìn sặc sỡ nhưng cách làm cũng không quá cầu kỳ, nếu có điều kiện bạn nên thử một lần làm chiếc bánh này tại nhà, không gì ngon bằng được thường thức những chiếc Chupcake nhỏ xinh do chính tay mình làm.                 ', 'Mặc dù lịch sử của bánh cupcake đã có từ rất lâu nhưng Cupcake chỉ thật sử nổi lên như một trào lưu vào thế kỷ XXI. Cupcake thường được sử dụng như một món tráng miệng trong các buổi tiệc tùng hay gặp mặt. Với đặc điểm ngon và bắt mắt, Cupcake hiện đang được ưa chuộng bởi mọi lứa tuổi. Một chiếc bánh tuy nhìn sặc sỡ nhưng cách làm cũng không quá cầu kỳ, nếu có điều kiện bạn nên thử một lần làm chiếc bánh này tại nhà, không gì ngon bằng được thường thức những chiếc Chupcake nhỏ xinh do chính tay mình làm.                 ', 'Đồng Thấp                 ', '30cm- 70cm                 '),
 ('1234', 3242, 'cây Hạnh Phúc ', '', 700000, 500000, 'Cây Hạnh Phúc – Lớn.jpg', 'cayhanh_phuc1.jpg', 'cayhanh_phuc2.jpg', 1, 'Cây hoa lài ta là loài cây có hoa có dạng thân bụi nhỏ hoặc dạng cây thân leo với các lá có màu xanh đậm bóng và hoa của chúng có mùi thơm màu trắng. Loài cây có thân dài, thân thể uốn xoắn và nó không hạn chế sự bành trướng, chúng có thể mọc đến bất cứ nơi nào mà chúng có thể lan rộng ra được. ', 'Ánh sáng và vị trí: Đặt hoa lài ở nơi có ánh nắng trực tiếp từ 6-8 tiếng mỗi ngày. ...\r\nTưới nước: Tưới nước khi đất bề mặt cảm thấy khô. ...\r\nPhân bón: Bón phân khoáng và hữu cơ định kỳ để cung cấp dinh dưỡng cho cây. ...\r\nChăm sóc đất: Đảm bảo đất có dòng thoát nước tốt. ', ' ', 'Đông Nam Á ', 'cây nhỏ, cây lớn ');
 
--- -------------------------------------------------------
+-- --------------------------------------------------------
+
 --
 -- Cấu trúc bảng cho bảng `sanpham_nhom`
 --
@@ -234,6 +233,7 @@ INSERT INTO `sanpham_nhom` (`id`, `tennhom`, `ghichu`) VALUES
 --
 
 CREATE TABLE `taikhoan` (
+  `id` int(11) NOT NULL,
   `tendangnhap` varchar(50) NOT NULL,
   `matkhau` varchar(50) NOT NULL,
   `hoten` varchar(100) DEFAULT NULL,
@@ -245,9 +245,9 @@ CREATE TABLE `taikhoan` (
 -- Đang đổ dữ liệu cho bảng `taikhoan`
 --
 
-INSERT INTO `taikhoan` (`tendangnhap`, `matkhau`, `hoten`, `email`, `enable`) VALUES
-('tunnbeoo', '111', 'Dương Min Trung', 'trung1@gmail.com', 1),
-('Tunn1', '111', 'Tunn', 'tunn123@gmail.com', 1);
+INSERT INTO `taikhoan` (`id`, `tendangnhap`, `matkhau`, `hoten`, `email`, `enable`) VALUES
+(1, 'tunnbeoo', '111', 'Dương Min Trung', 'trung1@gmail.com', 1),
+(2, 'Tunn1', '111', 'Tunn', 'tunn123@gmail.com', 1);
 
 --
 -- Chỉ mục cho các bảng đã đổ
@@ -260,9 +260,9 @@ ALTER TABLE `bill`
   ADD PRIMARY KEY (`id`);
 
 --
--- Chỉ mục cho bảng `cart`
+-- Chỉ mục cho bảng `taikhoan`
 --
-ALTER TABLE `cart`
+ALTER TABLE `taikhoan`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -276,10 +276,10 @@ ALTER TABLE `bill`
   MODIFY `id` int(12) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
 
 --
--- AUTO_INCREMENT cho bảng `cart`
+-- AUTO_INCREMENT cho bảng `taikhoan`
 --
-ALTER TABLE `cart`
-  MODIFY `id` int(12) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=67;
+ALTER TABLE `taikhoan`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
