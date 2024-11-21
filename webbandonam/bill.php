@@ -22,7 +22,7 @@
             $img = $_SESSION['giohang'][$i][0];
             $dongia = intval($_SESSION['giohang'][$i][2]); // intval dùng để biến thành kiểu số , bên dưới cũng vậy 
             $soluong = intval($_SESSION['giohang'][$i][3]);
-            $thanhtien = $dongia * $soluong*1000;
+            $thanhtien = $dongia * $soluong;
             taogiohang($tensp, $img, $dongia,$soluong,$thanhtien,$idbill);
         }
 

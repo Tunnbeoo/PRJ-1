@@ -214,7 +214,7 @@ $orders = getOrdersByUser($user);
                                     <?php endforeach; ?>
 
                                     <div class='info-product__table-footer'>
-                                        <p class='info-product__footer-top'>Thành Tiền : <span class='info-product__footer-top-money'><?= number_format($order['total'], 0, ',', '.') ?> 000 VNĐ</span></p>
+                                        <p class='info-product__footer-top'>Thành Tiền : <span class='info-product__footer-top-money'><?= number_format($order['total'], 0, ',', '.') ?> VNĐ</span></p>
                                         <div class='info-product__footer-bottom'>
                                             <div class='info-product__footer-left'>
                                                 <p class='info-product__footer-title'>Đơn hàng sẽ được chuẩn bị và chuyển đi</p>

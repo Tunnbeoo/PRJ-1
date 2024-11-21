@@ -32,8 +32,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     exit();
 }
 
-// Format the total amount to include .000 VNĐ
-$formattedTotalAmount = number_format($totalAmount, 0, ',', '.') . '.000 VNĐ';
+// Format the total amount to include VNĐ
+$formattedTotalAmount = number_format($totalAmount, 0, ',', '.') . ' VNĐ';
 
 // Extract the numeric part for the QR code URL
 $qrAmount = number_format($totalAmount, 0, '', '');
@@ -286,14 +286,14 @@ $qrAmount = number_format($totalAmount, 0, '', '');
                         <?php endif; ?>
                     </td>
                     <td><strong><?php echo htmlspecialchars($product[1]); ?></strong></td>
-                    <td><?php echo number_format(floatval($product[2]), 0, ',', '.') . '.000 VNĐ'; ?></td>
+                    <td><?php echo number_format(floatval($product[2]), 0, ',', '.') . ' VNĐ'; ?></td>
                     <td><?php echo htmlspecialchars($product[3]); ?></td>
-                    <td><?php echo number_format(floatval(str_replace(',', '', $product[2])) * intval($product[3]), 0, ',', '.') . '.000 VNĐ'; ?></td>
+                    <td><?php echo number_format(floatval(str_replace(',', '', $product[2])) * intval($product[3]), 0, ',', '.') . ' VNĐ'; ?></td>
                 </tr>
             <?php endforeach; ?>
         </tbody>
     </table>
-    <h3 class="total-amount">Tổng Số Tiền: <?php echo number_format($totalAmount, 0, ',', '.') . '.000 VNĐ'; ?></h3>
+    <h3 class="total-amount">Tổng Số Tiền: <?php echo number_format($totalAmount, 0, ',', '.') . ' VNĐ'; ?></h3>
 
     <h2>Phương Thức Thanh Toán</h2>
     <form id="paymentForm" class="payment-form-container">

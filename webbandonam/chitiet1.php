@@ -390,10 +390,10 @@ $result = mysqli_query($conn, $sql);
                         </div>
                         <div class="col l-7">
                             <div class="content-product__right">
-                                <span class="content-product__right-money"><?php echo $row["dongiamoi"] ?> 000 VNĐ</span>
+                                <span class="content-product__right-money"><?php echo $row["dongiamoi"] ?>  VNĐ</span>
                                 <div class="content-product__right-code">
                                     <span class="content-product__code-letter">Đơn giá cũ:</span>
-                                    <span class="content-product__code-num"><?php echo $row["dongiacu"] ?> 000 VNĐ</span>
+                                    <span class="content-product__code-num"><?php echo $row["dongiacu"] ?> VNĐ</span>
                                 </div>
                                 <p class="content-product__right-msg">Mô tả:
                                     <?php echo $row["mota"] ?> Bạn cho giá thể đã xử lý nấm bệnh vào chậu cao cách miệng 5cm. Trồng cây sao cho cây phân bố xung quanh chậu, không trồng cây quá sát thành chậu. Nên trồng cây vào buổi chiều, sau khi tưới nước đẫm cây. </p>
@@ -402,7 +402,7 @@ $result = mysqli_query($conn, $sql);
                                         <p class="detail-items__quantity-text">Số lượng:</p>
                                         <input class="detail-items__quantity-num" type="number" name="soluong" min="1" MAX="100" value="1">
                                         <input type="hidden" name="tensp" value="<?php echo $row["tensp"] ?>">
-                                        <input type="hidden" name="dongiamoi" value="<?php echo $row["dongiamoi"] ?> 000 VNĐ">
+                                        <input type="hidden" name="dongiamoi" value="<?php echo $row["dongiamoi"] ?>  VNĐ">
                                         <input type="hidden" name="img1" value="<?php echo $row["img1"] ?>">
 
                                     </div>

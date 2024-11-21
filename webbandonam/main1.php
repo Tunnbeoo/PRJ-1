@@ -80,7 +80,7 @@ $result = mysqli_query($conn, $sql);
       /* Căn giữa theo chiều ngang */
       align-items: center;
       /* Căn giữa theo chiều dọc */
-      height: 100vh;
+      height: 50vh;
       /* Chiều cao của container */
       overflow: hidden;
       /* Ẩn phần hình ảnh ra ngoài container */
@@ -225,7 +225,7 @@ $result = mysqli_query($conn, $sql);
                                  <li class="active"> </li>
                                  <input type="hidden" name="soluong" value="1">
                                  <input type="hidden" name="tensp" value="<?php echo $row["tensp"] ?>">
-                                 <input type="hidden" name="dongiamoi" value="<?php echo $row["dongiamoi"] ?> 000 VNĐ">
+                                 <input type="hidden" name="dongiamoi" value="<?php echo $row["dongiamoi"] ?>  VNĐ">
                                  <input type="hidden" name="img1" value="<?php echo $row["img1"] ?>">
                               </ul>
                            </form>

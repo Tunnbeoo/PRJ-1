@@ -114,13 +114,13 @@ th,td{
                                 <img src="upload/<?php echo $row['img']?>"alt="" width="50">
                                 </td>
                                 <td>
-                                    <?PHP echo $row["dongia"]*1000 ?>
+                                    <?PHP echo $row["dongia"] ?>
                                 </td>
                                 <td>
                                     <?PHP echo $row["soluong"] ?>
                                 </td>
                                 <td>
-                                    <?PHP echo $row["dongia"]*$row["soluong"]*1000 ?>
+                                    <?PHP echo $row["dongia"]*$row["soluong"] ?>
                                 </td>
                                 <td>
                                     <?PHP echo $row["idbill"] ?>

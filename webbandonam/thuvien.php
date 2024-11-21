@@ -64,7 +64,7 @@ function showgiohang()
             $tong = 0;
             for ($i = 0; $i < sizeof($_SESSION['giohang']); $i++) {
                 // Tính tổng tiền cho sản phẩm
-                $tt = intval($_SESSION['giohang'][$i][2]) * intval($_SESSION['giohang'][$i][3]) * 1000;
+                $tt = intval($_SESSION['giohang'][$i][2]) * intval($_SESSION['giohang'][$i][3]) ;
                 $tong += $tt;
 
                 // Tạo dòng cho sản phẩm trong giỏ hàng
@@ -108,7 +108,7 @@ function showgiohang1()
         if (sizeof($_SESSION['giohang']) > 0) {
             $tong = 0;
             for ($i = 0; $i < sizeof($_SESSION['giohang']); $i++) {
-                $tt = intval($_SESSION['giohang'][$i][2]) * intval($_SESSION['giohang'][$i][3]) * 1000;
+                $tt = intval($_SESSION['giohang'][$i][2]) * intval($_SESSION['giohang'][$i][3]) ;
                 $tong += $tt;
                 $ttgh .= '<tr>
                     <td>' . ($i + 1) . '</td>

@@ -98,7 +98,7 @@ $count = mysqli_num_rows($result);
                                     <td><?php echo htmlspecialchars($row["address"]); ?></td>
                                     <td><?php echo htmlspecialchars($row["tel"]); ?></td>
                                     <td><?php echo htmlspecialchars($row["email"]); ?></td>
-                                    <td><?php echo number_format($row["total"] * 1000, 0, ',', '.'); ?></td>
+                                    <td><?php echo number_format($row["total"] , 0, ',', '.'); ?></td>
                                     <td>
                                         <a href="xoabill.php?id=<?php echo urlencode($row["id"]); ?>" style="text-decoration: none">Hủy đơn</a>
                                     </td>

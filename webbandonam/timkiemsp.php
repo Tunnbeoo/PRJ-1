@@ -73,7 +73,7 @@
                            
                                             <input type="hidden" name="soluong" value="1">
                                             <input type="hidden" name="tensp" value="<?php echo $row["tensp"] ?>">
-                                            <input type="hidden" name="dongiamoi" value="<?php echo $row["dongiamoi"] ?> 000 VNĐ">
+                                            <input type="hidden" name="dongiamoi" value="<?php echo $row["dongiamoi"] ?>  VNĐ">
                                             <input type="hidden" name="img1" value="<?php echo $row["img1"] ?>">   
                                     </form>
                         <div class="food-info">
@@ -87,7 +87,7 @@
                                     <span class="current-ten"><?php echo $row["tensp"] ?></span>
                                 </div>
                                 <div class="product-price">
-                                    <span class="current-price"><?php echo $row["dongiamoi"] ?> 000 VNĐ</span>
+                                    <span class="current-price"><?php echo $row["dongiamoi"] ?>  VNĐ</span>
                                 </div>
                             <!-- <div class="product-buy">
                             
