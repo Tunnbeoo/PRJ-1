@@ -70,9 +70,10 @@ $result = mysqli_query($conn, $sql);
 
    .image-container {
       position: relative;
-      width: 1900px;
+      width: auto;
       /* Đặt chiều rộng của container là 1900px */
       margin: 0 auto;
+      margin-top: 10px;
       /* Căn giữa container */
       display: flex;
       justify-content: center;
@@ -138,22 +139,59 @@ $result = mysqli_query($conn, $sql);
       right: 10px;
       /* Đặt nút bên phải */
    }
+
+   .custom-container {
+      background-color: #398801;
+      border-top-right-radius: 50%;
+      padding-top: 15px;
+      margin-left: 0;
+      /* Đảm bảo nó nằm sát bên trái */
+      margin-right: auto;
+      /* Đẩy sang trái */
+      width: fit-content;
+      /* Đặt chiều rộng vừa đủ cho nội dung */
+      display: inline-block;
+      /* Đảm bảo kích thước vừa đủ cho nội dung */
+   }
+
+   .container .row {
+      display: flex;
+      align-items: center;
+   }
+
+   .coffee_taital,
+   .bulit_icon {
+      margin: 0 10px;
+      /* Khoảng cách giữa các phần tử */
+      color: #fff;
+      height: 30px;
+   }
+   .margin-left{
+      margin-left: 90px;
+   }
+   .about_taital {
+      color: #fff;
+   }
 </style>
 
 <div class="image-container">
    <img src="./assetss/images/banner.jpg" class="anh active">
-   <img src="./assetss/images/banner2.jpg" class="anh">
-   <img src="./assetss/images/banner2.jpg" class="anh">
+   <img src="./assetss/images/banner4.jpg" class="anh">
+   <img src="./assetss/images/banner3.jpg" class="anh">
    <button class="arrow left-arrow" onclick="changeImage(-1)">&#10094;</button>
    <button class="arrow right-arrow" onclick="changeImage(1)">&#10095;</button>
 </div>
 
 <!-- coffee section start -->
-<div class="coffee_section layout_padding">
-   <div class="container">
-      <div class="row">
-         <h1 class="coffee_taital">OUR Coffee OFFER</h1>
-         <div class="bulit_icon"><img src="./assetss/images/bulit-icon.png"></div>
+<div class="coffee_section layout_padding margin-left">
+   <div class="custom-container">
+      <div class="container">
+         <div class="row about_taital">
+            <h2 class="coffee_taital">cây văn phòng</h2>
+            <!-- <div class="bulit_icon"> -->
+               <!-- <img src="./assetss/images/bulit-icon.png"> -->
+            </div>
+         </div>
       </div>
    </div>
    <div class="coffee_section_2">
@@ -175,7 +213,7 @@ $result = mysqli_query($conn, $sql);
                                  <img src="upload/<?php echo $row["img1"] ?>" class="image_1"> </a>
                            </div>
                            <a href="chitiet.php?masp=<?php echo $row["masp"] ?>">
-                              <h3 class="looking_text_a"><?php echo $row["dongiamoi"] ?> 000 VNĐ</h3>
+                              <h3 class="looking_text_a"><?php echo $row["dongiamoi"] ?> VNĐ</h3>
                            </a>
                            <a href="chitiet.php?masp=<?php echo $row["masp"] ?>">
                               <p class="looking_text"><?php echo $row["tensp"] ?></p>
@@ -197,13 +235,13 @@ $result = mysqli_query($conn, $sql);
                      } ?>
                   </div>
                </div>
-
+<!-- 
                <a class="carousel-control-prev" href="#main_slider" role="button" data-slide="prev">
                   <i class="fa fa-arrow-left"></i>
                </a>
                <a class="carousel-control-next" href="#main_slider" role="button" data-slide="next">
                   <i class="fa fa-arrow-right"></i>
-               </a>
+               </a> -->
             </div>
          </div>
       </div>

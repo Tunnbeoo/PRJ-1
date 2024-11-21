@@ -80,6 +80,28 @@ if ($addToCartClicked && !isset($_SESSION['user'])) {
             margin-left: 0;
             margin-right: 0;
         }
+
+        .user-menu {
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            right: 0;
+            top: 120%;
+            z-index: 1000;
+            min-width: 150px;
+            opacity: 0;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            transform: translateY(-10px);
+        }
+
+        .user-menu.show {
+            display: block;
+            opacity: 1;
+            transform: translateY(0);
+        }
     </style>
 </head>
 

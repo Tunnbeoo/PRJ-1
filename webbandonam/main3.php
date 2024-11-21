@@ -71,7 +71,7 @@ input[type="submit"] {
          <div class="container">
             <div class="row">
                <h1 class="coffee_taital">ALL Products</h1>
-               <div class="bulit_icon"><img src="./assetss/images/bulit-icon.png"></div>
+               <!-- <div class="bulit_icon"><img src="./assetss/images/bulit-icon.png"></div> -->
             </div>
          </div>
          <div class="coffee_section_2">
@@ -118,12 +118,7 @@ input[type="submit"] {
             
                 
                
-               <a class="carousel-control-prev" href="#main_slider" role="button" data-slide="prev">
-               <i class="fa fa-arrow-left"></i>
-               </a>
-               <a class="carousel-control-next" href="#main_slider" role="button" data-slide="next">
-               <i class="fa fa-arrow-right"></i>
-               </a>
+
             </div>
          </div>
       </div>

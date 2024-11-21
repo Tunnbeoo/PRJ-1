@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th10 20, 2024 lúc 07:15 AM
+-- Thời gian đã tạo: Th10 21, 2024 lúc 12:05 PM
 -- Phiên bản máy phục vụ: 10.4.32-MariaDB
 -- Phiên bản PHP: 8.2.12
 
@@ -58,7 +58,7 @@ CREATE TABLE `card_detail` (
   `cart_id` int(11) NOT NULL,
   `product_id` int(11) NOT NULL,
   `quantity` int(11) NOT NULL DEFAULT 1,
-  `price` decimal(10,2) NOT NULL,
+  `price` int(255) NOT NULL,
   `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
   `order_id` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
@@ -73,7 +73,7 @@ CREATE TABLE `cart` (
   `id` int(11) NOT NULL,
   `name` int(11) NOT NULL,
   `id_product` int(11) NOT NULL,
-  `img` varchar(200) NOT NULL,
+  `img` varchar(255) NOT NULL,
   `ghichu` text NOT NULL,
   `motasanpham` text NOT NULL,
   `id_user` int(11) NOT NULL,
@@ -88,7 +88,7 @@ CREATE TABLE `cart` (
 
 CREATE TABLE `catalog` (
   `id` int(11) NOT NULL,
-  `name` varchar(128) NOT NULL,
+  `name` varchar(255) NOT NULL,
   `parent_id` int(11) NOT NULL,
   `soft_oder` tinyint(4) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
@@ -100,10 +100,10 @@ CREATE TABLE `catalog` (
 --
 
 CREATE TABLE `contact` (
-  `name` varchar(200) NOT NULL,
+  `name` varchar(255) NOT NULL,
   `phone` int(20) NOT NULL,
-  `email` varchar(100) NOT NULL,
-  `chuc_nang` varchar(100) NOT NULL
+  `email` varchar(255) NOT NULL,
+  `chuc_nang` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
@@ -114,7 +114,7 @@ CREATE TABLE `contact` (
 
 CREATE TABLE `order_donhang` (
   `transaction_id` int(255) NOT NULL,
-  `id` int(255) NOT NULL,
+  `id` int(11) NOT NULL,
   `id_user` int(11) NOT NULL,
   `trangthaidonhang` text NOT NULL,
   `trangthaithanhtoan` text NOT NULL
@@ -127,11 +127,11 @@ CREATE TABLE `order_donhang` (
 --
 
 CREATE TABLE `product` (
-  `id` int(255) NOT NULL,
+  `id` int(11) NOT NULL,
   `catalog_id` int(11) NOT NULL,
   `content` text NOT NULL,
   `discount` int(11) NOT NULL,
-  `img` varchar(50) NOT NULL,
+  `img` varchar(255) NOT NULL,
   `created` int(11) NOT NULL,
   `view` int(11) NOT NULL,
   `id_cart` int(11) NOT NULL
@@ -144,8 +144,8 @@ CREATE TABLE `product` (
 --
 
 CREATE TABLE `thanhtoan` (
-  `id` int(255) NOT NULL,
-  `name` varchar(250) NOT NULL,
+  `id` int(11) NOT NULL,
+  `name` varchar(255) NOT NULL,
   `id_transaction` int(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -156,13 +156,13 @@ CREATE TABLE `thanhtoan` (
 --
 
 CREATE TABLE `transaction` (
-  `id` int(255) NOT NULL,
+  `id` int(11) NOT NULL,
   `status` text NOT NULL,
-  `user_id` int(255) NOT NULL,
-  `id_cart` int(255) NOT NULL,
-  `user_name` int(255) NOT NULL,
-  `user_email` int(255) NOT NULL,
-  `user_phone` int(255) NOT NULL,
+  `user_id` int(11) NOT NULL,
+  `id_cart` int(11) NOT NULL,
+  `user_name` varchar(255) NOT NULL,
+  `user_email` varchar(255) NOT NULL,
+  `user_phone` int(11) NOT NULL,
   `amount` int(11) NOT NULL,
   `payment` varchar(50) NOT NULL,
   `payment_info` text NOT NULL,
@@ -306,25 +306,25 @@ ALTER TABLE `catalog`
 -- AUTO_INCREMENT cho bảng `order_donhang`
 --
 ALTER TABLE `order_donhang`
-  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT cho bảng `product`
 --
 ALTER TABLE `product`
-  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT cho bảng `thanhtoan`
 --
 ALTER TABLE `thanhtoan`
-  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT cho bảng `transaction`
 --
 ALTER TABLE `transaction`
-  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT cho bảng `user`

@@ -6,6 +6,10 @@
     <title>About Our Shop</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
+        .container {
+            margin-left: 60px;
+            margin-right: 40px;
+        }
         .about_img {
             width: 100%; /* Chiều rộng 100% để hình ảnh chiếm toàn bộ không gian */
             height: auto; /* Chiều cao tự động để duy trì tỷ lệ */
@@ -14,9 +18,32 @@
         .about_section {
             margin-top: 20px;
             padding: 20px;
-            background-color: #ffe05b !important;
+            background-color: #fff !important;
             border-radius: 10px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .custom-container {
+            background-color: #398801;
+            border-top-right-radius: 35%;
+            /* padding: 20px 20px 20px 20px; */
+            margin-left: 0;
+            margin-right: auto;
+            width: fit-content;
+            display: inline-block;
+            height: 80px;
+        }
+        .custom-container .col-md-12 {
+            padding-top: 10px;
+        }
+        .col-md-12.text-center {
+            text-align: left;
+        }
+        .mb-4 {
+            margin-bottom: 0rem !important;
+        }
+        .about_taital {
+           margin-bottom: 0px;
+           color: #fff;
         }
     </style>
 </head>
@@ -25,9 +52,11 @@
     <div class="about_section">
         <div class="container">
             <div class="row">
-                <div class="col-md-12 text-center">
-                    <h1 class="about_taital">About Our Shop</h1>
-                    <img src="./assetss/images/bulit-icon.png" alt="Bullet Icon" class="mb-4">
+                <div class="custom-container">
+                    <div class="col-md-12 text-center">
+                        <h1 class="about_taital">About Our Shop</h1>
+                        <!-- <img src="./assetss/images/bulit-icon.png" alt="Bullet Icon" class="mb-4"> -->
+                    </div>
                 </div>
             </div>
             <div class="row">
