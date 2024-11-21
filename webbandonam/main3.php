@@ -94,7 +94,7 @@ input[type="submit"] {
                               <img  src="upload/<?php echo $row["img1"] ?>" class="image_1"> </a> 
                            </div>
                            <a href="chitiet.php?masp=<?php echo $row["masp"] ?>">  
-                               <h3 class="looking_text_a"><?php echo $row["dongiamoi"] ?> 000 VNĐ</h3></a>
+                               <h3 class="looking_text_a"><?php echo $row["dongiamoi"] ?> VNĐ</h3></a>
                               <a href="chitiet.php?masp=<?php echo $row["masp"] ?>">
                                    <p class="looking_text"><?php echo $row["tensp"] ?></p></a>
                               <form action="cart.php" method="post">

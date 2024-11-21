@@ -185,7 +185,7 @@ CREATE TABLE `user` (
   `address` varchar(128) NOT NULL,
   `password` varchar(40) NOT NULL,
   `created` int(11) NOT NULL,
-  `gole` text NOT NULL
+  `role` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
