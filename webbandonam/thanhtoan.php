@@ -117,7 +117,7 @@ $qrAmount = number_format($totalAmount, 0, '', '');
         }
 
         .payment-form-container {
-            max-width: 400px;
+            max-width: 450px;
             margin: 20px auto;
             padding: 20px;
             background-color: #f9f9f9;
@@ -159,8 +159,8 @@ $qrAmount = number_format($totalAmount, 0, '', '');
         }
 
         .qr-code-image {
-            width: 200px;
-            height: 200px;
+            width: 500px;
+            /* height: 500px; */
             display: block;
             margin: 10px auto;
         }

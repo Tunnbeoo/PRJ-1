@@ -185,7 +185,6 @@ $orders = getOrdersByUser($user);
             <div class="grid wide">
                 <div class="col l-12">
                     <h3 class='product__heading'>Đơn hàng của bạn</h3>
-
                     <?php if (!empty($orders)): ?>
                         <?php foreach ($orders as $order): ?>
                             <div class='info-product__table'>
