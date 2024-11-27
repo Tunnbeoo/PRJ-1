@@ -1,22 +1,20 @@
 <style>
-.nav-item a {
-    font-size: 16px;
-    font-weight: 500;
-}
+    .nav-item a {
+        font-size: 16px;
+        font-weight: 500;
+    }
 
-.dangnhap .bg-dangnhapp {
-    background-color: #fd7e00;
-    border: none;
-    color: white;
-}
+    .dangnhap .bg-dangnhapp {
+        background-color: #fd7e00;
+        border: none;
+        color: white;
+    }
 </style>
 <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-white rounded-0 border-bottom">
         <div class="container">
             <a class="navbar-brand" href="../../index.php">
-                <?php
-include "../view/components/logo.php";
-?>
+                <img src="/PRO1014_DA1/main-project/uploads/logo.png" alt="" style="width: 100px; height: 83px;">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"

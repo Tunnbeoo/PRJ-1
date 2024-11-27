@@ -48,23 +48,23 @@
                                 <select onchange="filterProducts(this)">
                                     <option value="">Lọc sản phẩm ở đây</option>
                                     <option <?php if (isset($_GET['filter']) && $_GET['filter'] == 'newest') {
-    echo 'selected';
-}
-?> value="newest">Sản
+                                                echo 'selected';
+                                            }
+                                            ?> value="newest">Sản
                                         phẩm mới nhất
                                     </option>
                                     <option <?php if (isset($_GET['filter']) && $_GET['filter'] == 'pricedesc') {
-    echo 'selected';
-}
-?> value="pricedesc">Giá từ cao đến thấp</option>
+                                                echo 'selected';
+                                            }
+                                            ?> value="pricedesc">Giá từ cao đến thấp</option>
                                     <option <?php if (isset($_GET['filter']) && $_GET['filter'] == 'priceinsc') {
-    echo 'selected';
-}
-?> value="priceinsc">Giá từ thấp đến cao</option>
+                                                echo 'selected';
+                                            }
+                                            ?> value="priceinsc">Giá từ thấp đến cao</option>
                                     <option <?php if (isset($_GET['filter']) && $_GET['filter'] == 'mostview') {
-    echo 'selected';
-}
-?> value="mostview">
+                                                echo 'selected';
+                                            }
+                                            ?> value="mostview">
                                         Sản phẩm xem nhiều nhất</option>
                                 </select>
                             </div>
@@ -82,145 +82,144 @@
                             <div id="grid-view" class="tab-pane active show shop-grid-content" role="tabpanel">
                                 <div class="row">
                                     <?php
-// PHẦN XỬ LÝ PHP
-// B1: KET NOI CSDL
-$conn = connectdb();
+                                    // PHẦN XỬ LÝ PHP
+                                    // B1: KET NOI CSDL
+                                    $conn = connectdb();
 
-$sql = "SELECT * FROM tbl_sanpham"; // Total Product
+                                    $sql = "SELECT * FROM tbl_sanpham"; // Total Product
 
-if (isset($_GET['subcateid'])) {
-    $subcate_id = $_GET['subcateid'];
-    $sql = "SELECT * FROM tbl_sanpham where id_dmphu = '$subcate_id'";
-    // echo "$sql";
-}
+                                    if (isset($_GET['subcateid'])) {
+                                        $subcate_id = $_GET['subcateid'];
+                                        $sql = "SELECT * FROM tbl_sanpham where id_dmphu = '$subcate_id'";
+                                        // echo "$sql";
+                                    }
 
-if (isset($_GET['cateid'])) {
-    $cate_id = $_GET['cateid'];
-    $sql = "SELECT * FROM tbl_sanpham where ma_danhmuc = '$cate_id'";
-}
+                                    if (isset($_GET['cateid'])) {
+                                        $cate_id = $_GET['cateid'];
+                                        $sql = "SELECT * FROM tbl_sanpham where ma_danhmuc = '$cate_id'";
+                                    }
 
-if (isset($_GET['query'])) {
-    $query = $_GET['query'];
-    $sql = "SELECT * FROM tbl_sanpham where tensp like '%$query%'";
-    // echo $sql;
-}
+                                    if (isset($_GET['query'])) {
+                                        $query = $_GET['query'];
+                                        $sql = "SELECT * FROM tbl_sanpham where tensp like '%$query%'";
+                                        // echo $sql;
+                                    }
 
-// Filter products
-if (isset($_GET['filter']) && $_GET['filter'] == 'pricedesc') {
-    $sql .= " order by don_gia desc";
+                                    // Filter products
+                                    if (isset($_GET['filter']) && $_GET['filter'] == 'pricedesc') {
+                                        $sql .= " order by don_gia desc";
 
-    // echo $sql;
+                                        // echo $sql;
 
-} else if (isset($_GET['filter']) && $_GET['filter'] == 'priceinsc') {
-    $sql .= " order by don_gia asc";
+                                    } else if (isset($_GET['filter']) && $_GET['filter'] == 'priceinsc') {
+                                        $sql .= " order by don_gia asc";
 
-    // echo $sql;
+                                        // echo $sql;
 
-} else if (isset($_GET['filter']) && $_GET['filter'] == 'newest') {
-    $sql .= " order by ngay_nhap desc";
-    // echo $sql;
+                                    } else if (isset($_GET['filter']) && $_GET['filter'] == 'newest') {
+                                        $sql .= " order by ngay_nhap desc";
+                                        // echo $sql;
 
-} else if (isset($_GET['filter']) && $_GET['filter'] == 'mostview') {
-    $sql .= " order by so_luot_xem desc";
-    // echo $sql;
+                                    } else if (isset($_GET['filter']) && $_GET['filter'] == 'mostview') {
+                                        $sql .= " order by so_luot_xem desc";
+                                        // echo $sql;
 
-}
+                                    }
 
-if (isset($_GET['minprice']) && $_GET['minprice'] != 0 && isset($_GET['maxprice']) && $_GET['maxprice'] != 0) {
-    $min_price = $_GET['minprice'];
-    $max_price = $_GET['maxprice'];
+                                    if (isset($_GET['minprice']) && $_GET['minprice'] != 0 && isset($_GET['maxprice']) && $_GET['maxprice'] != 0) {
+                                        $min_price = $_GET['minprice'];
+                                        $max_price = $_GET['maxprice'];
 
-    $sql = "SELECT * FROM tbl_sanpham where don_gia between '$min_price' and '$max_price'";
-    // echo $sql;
-}
+                                        $sql = "SELECT * FROM tbl_sanpham where don_gia between '$min_price' and '$max_price'";
+                                        // echo $sql;
+                                    }
 
-$_limit = 12;
+                                    $_limit = 12;
 
-// BƯỚC 2: TÌM TỔNG SỐ RECORDS
+                                    // BƯỚC 2: TÌM TỔNG SỐ RECORDS
 
-$stmt = $conn->prepare($sql);
+                                    $stmt = $conn->prepare($sql);
 
-// echo $sql;
+                                    // echo $sql;
 
-$stmt->execute();
+                                    $stmt->execute();
 
-// set the resulting array to associative
-$result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
-$finalresult = $stmt->fetchAll();
-$total_records = count($finalresult);
+                                    // set the resulting array to associative
+                                    $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
+                                    $finalresult = $stmt->fetchAll();
+                                    $total_records = count($finalresult);
 
-// BƯỚC 3: TÌM LIMIT VÀ CURRENT_PAGE
-$current_page = isset($_GET['page']) ? $_GET['page'] : 1;
-if (isset($_POST['currentPage'])) {
-    $current_page = $_POST['currentPage'];
+                                    // BƯỚC 3: TÌM LIMIT VÀ CURRENT_PAGE
+                                    $current_page = isset($_GET['page']) ? $_GET['page'] : 1;
+                                    if (isset($_POST['currentPage'])) {
+                                        $current_page = $_POST['currentPage'];
 
-    echo 'current_page' . $current_page;
-    // exit;
-}
+                                        echo 'current_page' . $current_page;
+                                        // exit;
+                                    }
 
-$limit = $_limit;
+                                    $limit = $_limit;
 
-// BƯỚC 4: TÍNH TOÁN TOTAL_PAGE VÀ START
-// tổng số trang
-$total_page = ceil($total_records / $limit);
+                                    // BƯỚC 4: TÍNH TOÁN TOTAL_PAGE VÀ START
+                                    // tổng số trang
+                                    $total_page = ceil($total_records / $limit);
 
-// Giới hạn current_page trong khoảng 1 đến total_page
-if ($current_page > $total_page) {
-    $current_page = $total_page;
-} else if ($current_page < 1) {
-    $current_page = 1;
-}
+                                    // Giới hạn current_page trong khoảng 1 đến total_page
+                                    if ($current_page > $total_page) {
+                                        $current_page = $total_page;
+                                    } else if ($current_page < 1) {
+                                        $current_page = 1;
+                                    }
 
-// Tìm Start
-$start = ($current_page - 1) * $limit;
+                                    // Tìm Start
+                                    $start = ($current_page - 1) * $limit;
 
-if ($start < 0) {
-    $start = 0;
-}
+                                    if ($start < 0) {
+                                        $start = 0;
+                                    }
 
-// BƯỚC 5: TRUY VẤN LẤY DANH SÁCH SẢN PHẨM
-// Có limit và start rồi thì truy vấn CSDL lấy danh sách SẢN PHẨM
+                                    // BƯỚC 5: TRUY VẤN LẤY DANH SÁCH SẢN PHẨM
+                                    // Có limit và start rồi thì truy vấn CSDL lấy danh sách SẢN PHẨM
 
-$stmt = $conn->prepare("$sql LIMIT $start, $limit");
-$stmt->execute();
-$datalist = $stmt->fetchAll();
+                                    $stmt = $conn->prepare("$sql LIMIT $start, $limit");
+                                    $stmt->execute();
+                                    $datalist = $stmt->fetchAll();
 
-$product_list = $datalist;
-// echo count($product_list);
-// $product_list = product_select_all();
-// var_dump($product_list);
-foreach ($product_list as $item) {
+                                    $product_list = $datalist;
+                                    // echo count($product_list);
+                                    // $product_list = product_select_all();
+                                    // var_dump($product_list);
+                                    foreach ($product_list as $item) {
 
-    #Thumbnail Image
-    $image_list = explode(',', $item['images']);
-    $cate_name = catename_select_by_id($item['ma_danhmuc'])['ten_danhmuc'];
-    $price_format = number_format($item['don_gia']);
+                                        #Thumbnail Image
+                                        $image_list = explode(',', $item['images']);
+                                        $cate_name = catename_select_by_id($item['ma_danhmuc'])['ten_danhmuc'];
+                                        $price_format = number_format($item['don_gia']);
 
-    $addcartfunc = "handleAddCart('addtocart', 'addcart')";
-    $addwishlistfunc = "handleAddCart('addtowishlist', 'addwishlist')";
-    // $avg_stars = avg_star_reviews_of_product($item['masanpham']);
-    // $result_stars = renderStarRatings(round($avg_stars, 0));
-    $avg_stars = avg_star_reviews_of_product($item['masanpham']);
-    $avg_stars = $avg_stars !== null ? $avg_stars : 0; // Default to 0 if null
-    $result_stars = renderStarRatings(round($avg_stars, 0));
-    foreach ($image_list as $image_item) {
+                                        $addcartfunc = "handleAddCart('addtocart', 'addcart')";
+                                        $addwishlistfunc = "handleAddCart('addtowishlist', 'addwishlist')";
+                                        // $avg_stars = avg_star_reviews_of_product($item['masanpham']);
+                                        // $result_stars = renderStarRatings(round($avg_stars, 0));
+                                        $avg_stars = avg_star_reviews_of_product($item['masanpham']);
+                                        $avg_stars = $avg_stars !== null ? $avg_stars : 0; // Default to 0 if null
+                                        $result_stars = renderStarRatings(round($avg_stars, 0));
+                                        foreach ($image_list as $image_item) {
 
-        if (substr($image_item, 0, 6) == "thumb-") {
-            // echo $image_item;
-            $thumbnail = "../uploads/" . $image_item;
-            break;
-        }
+                                            if (substr($image_item, 0, 6) == "thumb-") {
+                                                // echo $image_item;
+                                                $thumbnail = "../uploads/" . $image_item;
+                                                break;
+                                            }
+                                        }
 
-    }
-
-    # code...
-    echo '
+                                        # code...
+                                        echo '
                                <div class="col-lg-4 col-md-6">
                                    ' . cardItem($item, $thumbnail, $addcartfunc, $addwishlistfunc, $cate_name, $price_format, $result_stars) . '
                                </div>
                                 ';
-}
-?>
+                                    }
+                                    ?>
 
                                 </div>
                             </div>
@@ -228,29 +227,28 @@ foreach ($product_list as $item) {
                             <div id="list-view" class="tab-pane" role="tabpanel">
                                 <div class="row">
                                     <?php
-foreach ($product_list as $item) {
+                                    foreach ($product_list as $item) {
 
-    #Thumbnail Image
-    $image_list = explode(',', $item['images']);
-    $cate_name = catename_select_by_id($item['ma_danhmuc'])['ten_danhmuc'];
-    $price_format = number_format($item['don_gia']);
-    $addcartfunc = "handleAddCart('addtocart', 'addcart')";
-    $addwishlistfunc = "handleAddCart('addtowishlist', 'addwishlist')";
+                                        #Thumbnail Image
+                                        $image_list = explode(',', $item['images']);
+                                        $cate_name = catename_select_by_id($item['ma_danhmuc'])['ten_danhmuc'];
+                                        $price_format = number_format($item['don_gia']);
+                                        $addcartfunc = "handleAddCart('addtocart', 'addcart')";
+                                        $addwishlistfunc = "handleAddCart('addtowishlist', 'addwishlist')";
 
-    $avg_stars = avg_star_reviews_of_product($item['masanpham']);
-    $result_stars = renderStarRatings(round($avg_stars, 0));
-    foreach ($image_list as $image_item) {
+                                        $avg_stars = avg_star_reviews_of_product($item['masanpham']);
+                                        $result_stars = renderStarRatings(round($avg_stars, 0));
+                                        foreach ($image_list as $image_item) {
 
-        if (substr($image_item, 0, 6) == "thumb-") {
-            // echo $image_item;
-            $thumbnail = "../uploads/" . $image_item;
-            break;
-        }
+                                            if (substr($image_item, 0, 6) == "thumb-") {
+                                                // echo $image_item;
+                                                $thumbnail = "../uploads/" . $image_item;
+                                                break;
+                                            }
+                                        }
 
-    }
-
-    # code...
-    echo '
+                                        # code...
+                                        echo '
                                <div class="col-lg-12">
                                     <div class="shop-list product-item position-relative">
                                     <span class="ms-2 badge bg-secondary">' . $item['giam_gia'] . '%</span>
@@ -292,8 +290,8 @@ foreach ($product_list as $item) {
                                 </div>
                                </div>
                                 ';
-}
-?>
+                                    }
+                                    ?>
                                 </div>
                             </div>
                         </div>
@@ -302,29 +300,29 @@ foreach ($product_list as $item) {
                         <ul id="shop-pagination" class="shop-pagination box-shadow text-center ptblr-10-30">
 
                             <?php
-// HIỂN THỊ PHÂN TRANG
-// nếu current_page > 1 và total_page > 1 mới hiển thị nút prev
-if ($current_page > 1 && $total_page > 1) {
-    echo '<a class="page-item btn btn-secondary" href="index.php?act=shop&page=' . ($current_page - 1) . '">Trước</a> | ';
-}
+                            // HIỂN THỊ PHÂN TRANG
+                            // nếu current_page > 1 và total_page > 1 mới hiển thị nút prev
+                            if ($current_page > 1 && $total_page > 1) {
+                                echo '<a class="page-item btn btn-secondary" href="index.php?act=shop&page=' . ($current_page - 1) . '">Trước</a> | ';
+                            }
 
-// Lặp khoảng giữa
-for ($i = 1; $i <= $total_page; $i++) {
-    // Nếu là trang hiện tại thì hiển thị thẻ span
-    // ngược lại hiển thị thẻ a
-    if ($i == $current_page) {
-        echo '<span class="page-item btn btn-primary main-bg-color main-border-color">' . $i . '</span> | ';
-    } else {
-        echo '<a class="page-item btn btn-light" href="index.php?act=shop&page=' . $i . '">' . $i . '</a> | ';
-    }
-}
+                            // Lặp khoảng giữa
+                            for ($i = 1; $i <= $total_page; $i++) {
+                                // Nếu là trang hiện tại thì hiển thị thẻ span
+                                // ngược lại hiển thị thẻ a
+                                if ($i == $current_page) {
+                                    echo '<span class="page-item btn btn-primary main-bg-color main-border-color">' . $i . '</span> | ';
+                                } else {
+                                    echo '<a class="page-item btn btn-light" href="index.php?act=shop&page=' . $i . '">' . $i . '</a> | ';
+                                }
+                            }
 
-// nếu current_page < $total_page và total_page > 1 mới hiển thị nút Next
-if ($current_page < $total_page && $total_page > 1) {
-    echo '<a class="page-item btn btn-secondary" href="index.php?act=shop&page=' . ($current_page + 1) . '">Sau</a> | ';
-}
+                            // nếu current_page < $total_page và total_page > 1 mới hiển thị nút Next
+                            if ($current_page < $total_page && $total_page > 1) {
+                                echo '<a class="page-item btn btn-secondary" href="index.php?act=shop&page=' . ($current_page + 1) . '">Sau</a> | ';
+                            }
 
-?>
+                            ?>
                         </ul>
                         <!-- shop-pagination end -->
                     </div>
@@ -338,30 +336,30 @@ if ($current_page < $total_page && $total_page > 1) {
                         </form>
                     </aside>
                     <?php if (isset($_SESSION['iduser'])): ?>
-                    <aside class="widget widget-product box-shadow">
-                        <h6 class="widget-title border-left mb-20 bg-warning p-3 bg-opacity-75">Gợi ý mua hàng</h6>
-                        <!-- product-item start -->
-                        <!-- Chưa đúng làm lại -->
-                        <?php $recommend_products = select_all_recommend_products_by_iduser($_SESSION['iduser'], 3);?>
-                        <?php foreach ($recommend_products as $product): ?>
-                        <div class="product-item product-best-sell">
-                            <div class="product-img">
-                                <a href="index.php?act=detailproduct&id=<?php echo $product['idsanpham'] ?>">
-                                    <img src="../uploads/<?php echo $product['hinhanh'] ?>" alt="">
-                                </a>
-                            </div>
-                            <div class="product-info">
-                                <h6 class="product-title">
-                                    <a
-                                        href="index.php?act=detailproduct&id=<?php echo $product['idsanpham'] ?>"><?php echo $product['tensp'] ?></a>
-                                </h6>
-                                <h3 class="pro-price"><?php echo $product['dongia'] ?> VND</h3>
-                            </div>
-                        </div>
-                        <?php endforeach;?>
-                        <!-- product-item product-best-sell end -->
-                    </aside>
-                    <?php endif?>
+                        <aside class="widget widget-product box-shadow">
+                            <h6 class="widget-title border-left mb-20 bg-warning p-3 bg-opacity-75">Gợi ý mua hàng</h6>
+                            <!-- product-item start -->
+                            <!-- Chưa đúng làm lại -->
+                            <?php $recommend_products = select_all_recommend_products_by_iduser($_SESSION['iduser'], 3); ?>
+                            <?php foreach ($recommend_products as $product): ?>
+                                <div class="product-item product-best-sell">
+                                    <div class="product-img">
+                                        <a href="index.php?act=detailproduct&id=<?php echo $product['idsanpham'] ?>">
+                                            <img src="../uploads/<?php echo $product['hinhanh'] ?>" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="product-info">
+                                        <h6 class="product-title">
+                                            <a
+                                                href="index.php?act=detailproduct&id=<?php echo $product['idsanpham'] ?>"><?php echo $product['tensp'] ?></a>
+                                        </h6>
+                                        <h3 class="pro-price"><?php echo $product['dongia'] ?> VND</h3>
+                                    </div>
+                                </div>
+                            <?php endforeach; ?>
+                            <!-- product-item product-best-sell end -->
+                        </aside>
+                    <?php endif ?>
 
                     <!-- widget-categories -->
                     <aside class="widget widget-categories box-shadow mb-30">
@@ -370,33 +368,33 @@ if ($current_page < $total_page && $total_page > 1) {
                             <ul>
                                 <!-- Load cate here!!! -->
                                 <?php
-$cate_list = cate_select_all();
-foreach ($cate_list as $cate_item) {
+                                $cate_list = cate_select_all();
+                                foreach ($cate_list as $cate_item) {
 
-    ?>
-                                <li class="open"><a
-                                        href="./index.php?act=shop&cateid=<?php echo $cate_item['ma_danhmuc'] ?>"><?php echo $cate_item['ten_danhmuc'] ?></a>
-                                    <?php
-$subcate_list = subcate_select_all_by_id($cate_item['ma_danhmuc']);
-    foreach ($subcate_list as $subcate_item) {
-        # code...]
-        // echo $subcate_item['id'];
-        ?>
-                                    <ul>
+                                ?>
+                                    <li class="open"><a
+                                            href="./index.php?act=shop&cateid=<?php echo $cate_item['ma_danhmuc'] ?>"><?php echo $cate_item['ten_danhmuc'] ?></a>
+                                        <?php
+                                        $subcate_list = subcate_select_all_by_id($cate_item['ma_danhmuc']);
+                                        foreach ($subcate_list as $subcate_item) {
+                                            # code...]
+                                            // echo $subcate_item['id'];
+                                        ?>
+                                            <ul>
 
 
-                                        <li><a
-                                                href="./index.php?act=shop&subcateid=<?php echo $subcate_item['id']; ?>"><?php echo $subcate_item['ten_danhmucphu'] ?></a>
-                                        </li>
-                                    </ul>
-                                    <?php
+                                                <li><a
+                                                        href="./index.php?act=shop&subcateid=<?php echo $subcate_item['id']; ?>"><?php echo $subcate_item['ten_danhmucphu'] ?></a>
+                                                </li>
+                                            </ul>
+                                        <?php
 
-    }
-    ?>
-                                </li>
+                                        }
+                                        ?>
+                                    </li>
                                 <?php
-}
-?>
+                                }
+                                ?>
 
                             </ul>
                         </div>
@@ -430,10 +428,10 @@ $subcate_list = subcate_select_all_by_id($cate_item['ma_danhmuc']);
     <!-- End page content -->
 
     <script>
-    document.addEventListener("DOMContentLoaded", function(e) {
-        const searchResult = $("input[name='total_result']").val();
-        $("#show-search-result").text(searchResult);
+        document.addEventListener("DOMContentLoaded", function(e) {
+            const searchResult = $("input[name='total_result']").val();
+            $("#show-search-result").text(searchResult);
 
-        // console.log('Hello search result');
-    })
+            // console.log('Hello search result');
+        })
     </script>

@@ -1,4 +1,4 @@
-<!-- <svg width="100" height="83" viewBox="0 0 100 83" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="100" height="83" viewBox="0 0 100 83" fill="none" xmlns="http://www.w3.org/2000/svg">
     <g clip-path="url(#clip0_178_6487)">
         <path
             d="M38.5897 34.7705L38.8413 33.1112C38.125 32.6674 37.4678 32.1431 36.8728 31.5443L36.5916 33.2215C37.3879 33.567 38.0539 34.0854 38.5927 34.7705H38.5897Z"
@@ -241,4 +241,4 @@
             <rect width="100" height="83" fill="white" />
         </clipPath>
     </defs>
-</svg> -->
+</svg>

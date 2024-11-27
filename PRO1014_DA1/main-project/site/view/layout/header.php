@@ -12,7 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/icon/favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="/PRO1014_DA1/main-project/uploads/favicon.png">
     <!-- font Roboto -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -151,9 +151,7 @@
                             <div class="col-lg-2 col-md-4">
                                 <div class="logo">
                                     <a href="index.php">
-                                        <?php
-                                        include "./view/components/logo.php";
-                                        ?>
+                                        <img src="/PRO1014_DA1/main-project/uploads/logo.png" alt="" style="width: 100px; height: 83px;">
                                     </a>
                                 </div>
                             </div>

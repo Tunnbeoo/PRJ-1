@@ -40,48 +40,48 @@ if (!isset($_SESSION['toastAlert'])) {
     <link href="../../admin/assets/css/pace.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="style.css">
     <style>
-    .btn-primary-login {
-        background-color: #ff7f00;
-        color: white;
-        border: none;
-    }
+        .btn-primary-login {
+            background-color: #ff7f00;
+            color: white;
+            border: none;
+        }
 
-    .btn-primary-login:hover {
-        background-color: #ff7f00;
-        border: none;
-    }
+        .btn-primary-login:hover {
+            background-color: #ff7f00;
+            border: none;
+        }
 
-    .color-regis {
-        color: #ff7f00;
-    }
+        .color-regis {
+            color: #ff7f00;
+        }
 
-    .mb-0 a {
-        color: #ff7f00;
-    }
+        .mb-0 a {
+            color: #ff7f00;
+        }
 
-    .form-check-input-change:checked {
-        border: #ff7f00;
-        background-color: #ff7f00;
-    }
+        .form-check-input-change:checked {
+            border: #ff7f00;
+            background-color: #ff7f00;
+        }
 
-    .text-end a {
-        color: #ff7f00;
-    }
+        .text-end a {
+            color: #ff7f00;
+        }
 
-    .images img {
-        width: 50%;
-    }
+        .images img {
+            width: 50%;
+        }
 
-    .error-message {
-        color: red;
-    }
+        .error-message {
+            color: red;
+        }
 
 
-    label[id*="-error"] {
-        color: red;
-        position: relative;
-        padding: 0;
-    }
+        label[id*="-error"] {
+            color: red;
+            position: relative;
+            padding: 0;
+        }
     </style>
     <title>Xgarden Group Authentication</title>
     <style>
@@ -94,65 +94,64 @@ if (!isset($_SESSION['toastAlert'])) {
     <!--start wrapper-->
     <div class="wrapper">
         <?php
-include "./auth-header.php";
-?>
+        include "./auth-header.php";
+        ?>
 
         <?php
-// session_start();
+        // session_start();
 
-if (isset($_POST['loginbtn']) && $_POST['loginbtn']) {
-    $error = array();
+        if (isset($_POST['loginbtn']) && $_POST['loginbtn']) {
+            $error = array();
 
-    $email = $_POST['email'];
-    $password = $_POST['password'];
+            $email = $_POST['email'];
+            $password = $_POST['password'];
 
-    // echo $email, $password;
-    // Đối chiếu password
+            // echo $email, $password;
+            // Đối chiếu password
 
-    // Mã hóa password
+            // Mã hóa password
 
-    if (empty($email)) {
-        $error['email'] = "Không để trống email";
-    } else if (!is_email($email)) {
-        $error['email'] = "Định dạng email không chính xác!";
-    } else if (!email_exist($email)) {
-        $error['email'] = "Email chưa chưa đăng ký tại website!";
-    }
+            if (empty($email)) {
+                $error['email'] = "Không để trống email";
+            } else if (!is_email($email)) {
+                $error['email'] = "Định dạng email không chính xác!";
+            } else if (!email_exist($email)) {
+                $error['email'] = "Email chưa chưa đăng ký tại website!";
+            }
 
-    if (empty($password)) {
-        $error['password'] = "Không để trống password";
-    }
+            if (empty($password)) {
+                $error['password'] = "Không để trống password";
+            }
 
-    if (!$error) {
-        $password = md5($password);
-        // echo $password;
+            if (!$error) {
+                $password = md5($password);
+                // echo $password;
 
-        $islogined = checkuser($email, $password);
-        if ($islogined === -1) {
-            // $text_error = "username hoặc password không chính xác";
+                $islogined = checkuser($email, $password);
+                if ($islogined === -1) {
+                    // $text_error = "username hoặc password không chính xác";
 
-            echo '<div class="alert-warning alert text-center" style="">Email hoặc password không chính xác</div>';
-            $_SESSION['toastAlert'] = "Email hoặc password không chính xác";
-            // include "./view/login-page.php";
-        } else {
-            $kq = getuserinfo($email, $password);
-            // var_dump($kq);
-            $role = $kq['vai_tro'];
-            // echo $role;
-            // if ($role == 3) {
-            $_SESSION['role'] = $role;
-            $_SESSION['email'] = $kq['email'];
-            $_SESSION['iduser'] = $kq['id'];
-            $_SESSION['ho_ten'] = $kq['ho_ten'];
-            header('location: ../../index.php');
-            // } else {
-            // }
+                    echo '<div class="alert-warning alert text-center" style="">Email hoặc password không chính xác</div>';
+                    $_SESSION['toastAlert'] = "Email hoặc password không chính xác";
+                    // include "./view/login-page.php";
+                } else {
+                    $kq = getuserinfo($email, $password);
+                    // var_dump($kq);
+                    $role = $kq['vai_tro'];
+                    // echo $role;
+                    // if ($role == 3) {
+                    $_SESSION['role'] = $role;
+                    $_SESSION['email'] = $kq['email'];
+                    $_SESSION['iduser'] = $kq['id'];
+                    $_SESSION['ho_ten'] = $kq['ho_ten'];
+                    header('location: ../../index.php');
+                    // } else {
+                    // }
 
+                }
+            }
         }
-    }
-
-}
-?>
+        ?>
 
         <!--start content-->
         <main class="authentication-content">
@@ -182,10 +181,10 @@ if (isset($_POST['loginbtn']) && $_POST['loginbtn']) {
                                                         id="inputEmailAddress" placeholder="Email">
                                                     <p class="error-message">
                                                         <?php
-if (isset($error['email'])) {
-    echo $error['email'];
-}
-?>
+                                                        if (isset($error['email'])) {
+                                                            echo $error['email'];
+                                                        }
+                                                        ?>
                                                     </p>
                                                 </div>
                                             </div>
@@ -202,10 +201,10 @@ if (isset($error['email'])) {
                                                         placeholder="Mật khẩu">
                                                     <p class="error-message">
                                                         <?php
-if (isset($error['password'])) {
-    echo $error['password'];
-}
-?>
+                                                        if (isset($error['password'])) {
+                                                            echo $error['password'];
+                                                        }
+                                                        ?>
                                                     </p>
                                                 </div>
                                             </div>
@@ -258,8 +257,8 @@ if (isset($error['password'])) {
 
         <!--end page main-->
         <?php
-include "./auth-footer.php";
-?>
+        include "./auth-footer.php";
+        ?>
 
     </div>
     <!--end wrapper-->
@@ -307,15 +306,15 @@ include "./auth-footer.php";
 </div>
 <button type="button" class="btn btn-primary d-none" id="liveToastBtn">Show live toast</button>
 <script>
-// const toastTrigger = document.getElementById('liveToastBtn')
-// const toastLiveExample = document.getElementById('liveToast')
+    // const toastTrigger = document.getElementById('liveToastBtn')
+    // const toastLiveExample = document.getElementById('liveToast')
 
-// if (toastTrigger) {
-//     toastTrigger.addEventListener('click', () => {
-//         const toast = new bootstrap.Toast(toastLiveExample)
-//         toast.show()
-//     })
-// }
+    // if (toastTrigger) {
+    //     toastTrigger.addEventListener('click', () => {
+    //         const toast = new bootstrap.Toast(toastLiveExample)
+    //         toast.show()
+    //     })
+    // }
 </script>
 
 <?php
