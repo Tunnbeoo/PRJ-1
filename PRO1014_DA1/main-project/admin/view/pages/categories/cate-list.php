@@ -18,7 +18,7 @@
                             </div>
                             <div class="col-12">
                                 <label class="form-label">Hình ảnh</label>
-                                <input type="file" class="form-control" name="cateimage" accept="image/png, image/jpeg"
+                                <input type="file" class="form-control" name="cateimage" accept="image/png, image/jpeg, image/jpg"
                                     placeholder="Hình ảnh">
                                 <p class="error-message">
                                     <?php if (isset($error['image'])) {echo $error['image'];}?></p>

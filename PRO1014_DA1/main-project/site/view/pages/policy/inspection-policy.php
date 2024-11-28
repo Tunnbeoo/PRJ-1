@@ -80,13 +80,13 @@
                                             </p>
                                         <!--  -->
                                         <h3 class="change-h3" >3. Các bước xử lý khi hàng hoá nhận được không như đơn đặt hàng</h3>
-                                            <p class="change-p">Khi quý khách đồng kiểm, sản phẩm nhận được không như sản phẩm quý khách đã đặt trên đơn hàng. Xin hãy liên hệ với hotline: 0866732171 hoặc email: lienhe@thephonerstore.vn để được gặp bộ phận chăm sóc khách hàng xác nhận lại đơn hàng.</p>
+                                            <p class="change-p">Khi quý khách đồng kiểm, sản phẩm nhận được không như sản phẩm quý khách đã đặt trên đơn hàng. Xin hãy liên hệ với hotline: 0866732171 hoặc email: lienhe@Xgarden.vn để được gặp bộ phận chăm sóc khách hàng xác nhận lại đơn hàng.</p>
                                             <p class="change-p">Trường hợp The Phoner Store đóng sai đơn hàng theo yêu cầu của khách, khách có thể không nhận hàng, không thanh toán. Trong trường hợp đơn hàng đã thanh toán, khách hàng có thể yêu cầu gửi lại đơn mới hoặc không, The Phoner Store sẽ hoàn lại tiền cho quý khách trong thời gian sớm nhất.</p>
                                             <p class="change-p">Trường hợp The Phoner Store đóng hàng đúng theo đơn hàng, nhưng khách hàng thay đổi nhu cầu, khách hàng có thể yêu cầu đổi trả và áp dụng chính sách đổi trả hàng hóa. Trường hợp này khách hàng sẽ thanh toán chi phí giao hàng (nếu có).</p>
                                         <!--  -->
                                         <h3 class="change-h3" >4. Các kênh thông tin tiếp nhận khiếu nại của khách hàng.</h3>
                                             <p class="change-p">
-                                                Quý khách hàng có thể gửi email khiếu nại đến địa chỉ lienhe@thephonerstore.vn hoặc gọi điện tới hotline: 0866732171 để gặp bộ phận chăm sóc khách hàng.
+                                                Quý khách hàng có thể gửi email khiếu nại đến địa chỉ lienhe@Xgarden.vn hoặc gọi điện tới hotline: 0866732171 để gặp bộ phận chăm sóc khách hàng.
                                             </p>
                                   </div>
                               </div>

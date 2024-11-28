@@ -219,13 +219,13 @@
                                         <li><a href="index.php?act=blog">Bài viết</a>
                                             <ul class="dropdwn">
                                                 <li>
-                                                    <a href="index.php?act=blog">Thủ thuật</a>
+                                                    <a href="index.php?act=blog">Chăm Sóc</a>
                                                 </li>
                                                 <li>
-                                                    <a href="index.php?act=blog">Tin tức điện thoại</a>
+                                                    <a href="index.php?act=blog">Chăm Sóc Cây Thủy Sinh</a>
                                                 </li>
                                                 <li>
-                                                    <a href="index.php?act=blog">Hướng dẫn</a>
+                                                    <a href="index.php?act=blog">Chăm Sóc Cây văn Phòng</a>
                                                 </li>
                                             </ul>
                                         </li>

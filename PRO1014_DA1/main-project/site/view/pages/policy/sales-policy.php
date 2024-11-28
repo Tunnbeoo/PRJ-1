@@ -106,7 +106,7 @@
                                                 Cách 1: Gọi điện thoại đến tổng đài 0866732171 (miễn phí) từ 8h30-21h30 (cả CN & ngày lễ) để đặt hàng, nhân viên The Phoner Store luôn sẵn sàng phục vụ, tư vấn và hỗ trợ quý khách mua được sản phẩm ưng ý.
                                                 </p>
                                                 <p class="change-p">
-                                                Cách 2: Đặt mua hàng online trên website Thephonerstore.vn
+                                                Cách 2: Đặt mua hàng online trên website Xgarden.vn
                                                 </p>
                                                 <p class="change-p">
                                                 Đối với đơn hàng nội thành, The Phoner Store giao hàng trong ngày. Đối với đơn hàng ngoại thành, thời gian giao hàng từ 2 - 3 ngày.
@@ -114,42 +114,42 @@
                                         <!--  -->
                                             <h4 class="change-h4">6. Chương trình khuyến mãi</h4>
                                                 <p class="change-p">
-                                                Với mong muốn mang lại nhiều lợi ích cho khách hàng, Thephonerstore.vn thường xuyên có các chương trình giảm giá đặc biệt. Tuy nhiên, 
-                                                để đảm bảo tính công bằng cho khách hàng là người tiêu dùng cuối cùng của Thephonerstore.vn, 
+                                                Với mong muốn mang lại nhiều lợi ích cho khách hàng, Xgarden.vn thường xuyên có các chương trình giảm giá đặc biệt. Tuy nhiên, 
+                                                để đảm bảo tính công bằng cho khách hàng là người tiêu dùng cuối cùng của Xgarden.vn, 
                                                 chúng tôi có quyền từ chối các đơn hàng không nhằm mục đích sử dụng cho cá nhân, mua hàng số lượng nhiều 
                                                 hoặc với mục đích mua đi bán lại khi quý khách tham gia các chương trình khuyến mãi.
                                                 </p>
                                         <!--  -->
                                             <h4 class="change-h4">7. Mã giảm giá</h4>
-                                                <p class="change-p">Mã giảm giá là hình thức chiết khấu mà Thephonerstore.vn dành cho khách hàng có thể có giá trị giảm một phần hoặc toàn phần giá trị của đơn hàng.</p>
+                                                <p class="change-p">Mã giảm giá là hình thức chiết khấu mà Xgarden.vn dành cho khách hàng có thể có giá trị giảm một phần hoặc toàn phần giá trị của đơn hàng.</p>
                                                 <p class="change-p">
                                                 Mỗi đơn hàng chỉ có thể áp dụng 1 mã giảm giá, quý khách sẽ nhận được thông tin chi tiết về điều khoản và điều kiện sử dụng mã giảm giá kèm theo. 
-                                                Để đảm bảo tính công bằng cho khách hàng là người tiêu dùng cuối cùng của Thephonerstore.vn, 
+                                                Để đảm bảo tính công bằng cho khách hàng là người tiêu dùng cuối cùng của Xgarden.vn, 
                                                 chúng tôi có quyền từ chối các đơn hàng không nhằm mục đích sử dụng cho cá nhân, mua hàng số 
                                                 lượng nhiều hoặc với mục đích mua đi bán lại.
                                                 </p>
                                         <!--  -->
                                             <h4 class="change-h4">8. Thông tin sản phẩm</h4>
                                                 <p class="change-p">
-                                                Thephonerstore.vn cung cấp thông tin chi tiết đối với từng sản phẩm mà chúng tôi đăng tải, 
+                                                Xgarden.vn cung cấp thông tin chi tiết đối với từng sản phẩm mà chúng tôi đăng tải, 
                                                 tuy nhiên chúng tôi không thể cam kết cung cấp thông tin đầy đủ một cách chính xác, 
                                                 toàn vẹn, cập nhật, và không sai sót đối với từng sản phẩm.
                                                 </p>
                                         <!--  -->
                                             <h4 class="change-h4">9. Giải quyết hậu quả do lỗi nhập sai thông tin thương mại</h4>
                                                 <p class="change-p">
-                                                Khách hàng có trách nhiệm cung cấp thông tin đầy đủ và chính xác khi tham gia giao dịch tại Thephonerstore.vn. 
-                                                Trong trường hợp khách hàng nhập sai thông tin gửi vào trang thông tin điện tử bán hàng Thephonerstore.vn, 
-                                                Thephonerstore.vn có quyền từ chối thực hiện giao dịch. Ngoài ra, trong mọi trường hợp, khách hàng đều có 
+                                                Khách hàng có trách nhiệm cung cấp thông tin đầy đủ và chính xác khi tham gia giao dịch tại Xgarden.vn. 
+                                                Trong trường hợp khách hàng nhập sai thông tin gửi vào trang thông tin điện tử bán hàng Xgarden.vn, 
+                                                Xgarden.vn có quyền từ chối thực hiện giao dịch. Ngoài ra, trong mọi trường hợp, khách hàng đều có 
                                                 quyền đơn phương chấm dứt giao dịch nếu đã thực hiện các biện pháp sau đây:
                                                 </p>
                                         <!--  -->
                                             <h4 class="change-h4">10. Thanh toán an toàn và tiện lợi </h4>
                                                 <p class="change-p">
-                                                Mọi khách hàng tham giao giao dịch tại Thephonerstore.vn qua thẻ tín dụng quốc tế đều được bảo mật thông tin bằng mã hóa (xem chi tiết tại điều khoản “Quy định về bảo mật” được nêu ở trên). Qua đó, khi thực hiện thanh toán qua mạng quý khách lưu ý các chi tiết sau:
+                                                Mọi khách hàng tham giao giao dịch tại Xgarden.vn qua thẻ tín dụng quốc tế đều được bảo mật thông tin bằng mã hóa (xem chi tiết tại điều khoản “Quy định về bảo mật” được nêu ở trên). Qua đó, khi thực hiện thanh toán qua mạng quý khách lưu ý các chi tiết sau:
                                                 </p>
                                                 <p class="change-p">
-                                                Tuyệt đối không cho người khác mượn thẻ tín dụng hoặc tài khoản của mình để thực hiện thanh toán tại Thephonerstore.vn; trong trường hợp phát sinh giao dịch ngoài ý muốn, quý khách vui lòng thông báo cho Thephonerstore.vn biết để có thể hỗ trợ kịp thời.
+                                                Tuyệt đối không cho người khác mượn thẻ tín dụng hoặc tài khoản của mình để thực hiện thanh toán tại Xgarden.vn; trong trường hợp phát sinh giao dịch ngoài ý muốn, quý khách vui lòng thông báo cho Xgarden.vn biết để có thể hỗ trợ kịp thời.
                                                 </p>
                                   </div>
                               </div>

@@ -62,12 +62,12 @@
                                         <p class="change-p">
                                         Xin vui lòng đọc chính sách bảo mật một cách cẩn thận để có được một sự hiểu biết
                                          rõ ràng về cách thức thông tin thông tin cá nhân của bạn được thu thập, sử dụng, bảo vệ 
-                                         hoặc xử lý tại Thephonerstore.vn
+                                         hoặc xử lý tại Xgarden.vn
                                         </p>
 
                                         <h3 class="change-h3">1. Mục đích thu thập thông tin cá nhân</h3>
                                             <p class="change-p">
-                                                Thephonerstore.vn có thể sử dụng các thông tin thu thập từ bạn để thực hiện các cuộc khảo sát truyền thông hoặc marketing, hoặc phục vụ cho các mục đích sau:
+                                                Xgarden.vn có thể sử dụng các thông tin thu thập từ bạn để thực hiện các cuộc khảo sát truyền thông hoặc marketing, hoặc phục vụ cho các mục đích sau:
                                             </p>
                                             <ul class="change-ul-privacy-policy">
                                                 <li>Nâng cao chất lượng bài viết của Website.</li>
@@ -76,7 +76,7 @@
 
                                         <h3 class="change-h3">2. Phạm vi sử dụng thông tin</h3>
                                             <p class="change-p">
-                                                Thông tin cá nhân thu thập được sẽ chỉ được Thephonerstore.vn sử dụng trong nội bộ công ty và cho một hoặc tất cả các mục đích sau đây:
+                                                Thông tin cá nhân thu thập được sẽ chỉ được Xgarden.vn sử dụng trong nội bộ công ty và cho một hoặc tất cả các mục đích sau đây:
                                             </p>
                                             <ul class="change-ul-privacy-policy">
                                                 <li>Hỗ trợ khách hàng</li>
@@ -87,7 +87,7 @@
 
                                         <h3 class="change-h3">3. Phương thức và công cụ để người tiêu dùng tiếp cận và chỉnh sửa dữ liệu cá nhân của mình</h3>
                                             <p class="change-p">
-                                                Người dùng có quyền tự kiểm tra, cập nhật, điều chỉnh hoặc hủy bỏ thông tin cá nhân của mình bằng cách đăng nhập vào Website Thephonerstore.vn và chỉnh sửa thông tin cá nhân hoặc yêu cầu Ban quản trị thực hiện việc này.
+                                                Người dùng có quyền tự kiểm tra, cập nhật, điều chỉnh hoặc hủy bỏ thông tin cá nhân của mình bằng cách đăng nhập vào Website Xgarden.vn và chỉnh sửa thông tin cá nhân hoặc yêu cầu Ban quản trị thực hiện việc này.
                                             </p>
                                             <p class="change-p">
                                                 Người dùng có quyền gửi khiếu nại về việc lộ thông tin cá nhân của mình cho bên thứ 3 đến Ban quản trị. Khi tiếp nhận những phản hồi này, The Phoner Store sẽ xác nhận lại thông tin, phải có trách nhiệm trả lời lý do và hướng dẫn Người dùng khôi phục và bảo mật lại thông tin.
@@ -95,25 +95,25 @@
 
                                         <h3 class="change-h3">4. Những thông tin cá nhân nào được thu thập?</h3>
                                             <p class="change-p">
-                                                Khi bạn đăng ký nhận bản tin, bạn có thể được yêu cầu cung cấp tên, địa chỉ email hoặc các thông tin khác của bạn để giúp Thephonerstore.vn cải thiện việc cung cấp dịch vụ, thông tin.
+                                                Khi bạn đăng ký nhận bản tin, bạn có thể được yêu cầu cung cấp tên, địa chỉ email hoặc các thông tin khác của bạn để giúp Xgarden.vn cải thiện việc cung cấp dịch vụ, thông tin.
                                             </p>
                                         <h3 class="change-h3">5. Khi nào thông tin được thu thập?</h3>
                                             <p class="change-p">
-                                                Thephonerstore.vn thu thập thông tin khi bạn đăng ký thành viên, hoặc đăng ký nhận bản tin định kỳ.
+                                                Xgarden.vn thu thập thông tin khi bạn đăng ký thành viên, hoặc đăng ký nhận bản tin định kỳ.
                                             </p>
                                         <h3 class="change-h3">6. Bảo vệ thông tin khách truy cập</h3>
                                             <p class="change-p">
-                                                Thephonerstore.vn sử dụng chứng chỉ SSL trong kết nối để bảo mật thông tin khách hàng khi truy cập website.
+                                                Xgarden.vn sử dụng chứng chỉ SSL trong kết nối để bảo mật thông tin khách hàng khi truy cập website.
                                             </p>
                                         <h3 class="change-h3">7. Các bên thứ ba</h3>
                                             <p class="change-p">
-                                                Thephonerstore.vn không bán, trao đổi, hoặc chuyển giao các thông tin đăng ký của bạn cho bất kỳ bên thứ ba nào.
+                                                Xgarden.vn không bán, trao đổi, hoặc chuyển giao các thông tin đăng ký của bạn cho bất kỳ bên thứ ba nào.
                                             </p>
                                         <p class="change-p">
                                             <strong>Thông tin liên hệ</strong>
                                         </p>
                                         <p class="change-p">
-                                        Bất kỳ khi nào khách hàng cần hỗ trợ, xin vui lòng liên hệ với The Phoner Store qua Tổng đài: 0866743171(miễn ph)
+                                        Bất kỳ khi nào khách hàng cần hỗ trợ, xin vui lòng liên hệ với Xgarden qua Tổng đài: 0866743171(miễn ph)
                                         </p>
                                   </div>
                               </div>

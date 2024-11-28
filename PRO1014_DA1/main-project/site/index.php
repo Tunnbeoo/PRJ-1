@@ -309,7 +309,7 @@ if (isset($_GET['act'])) {
 
                 if (!$error) {
 // Array[0,1,2,3] (hiện tại đang mặc định)
-                    $madonhang = "THEPHONERSTORE" . random_int(2000, 9999999);
+                    $madonhang = "Xgarden" . random_int(2000, 9999999);
 
                     date_default_timezone_set('Asia/Ho_Chi_Minh');
                     $time_order = date('Y-m-d H:i:s', time());
@@ -434,7 +434,7 @@ if (isset($_GET['act'])) {
                 }
                 $pttt = "Thanh toán khi nhận hàng"; // Array[0,1,2,3] (hiện tại đang mặc định)
                 // Sinh ra mã đơn hàng
-                $madonhang = "THEPHONERSTORE" . random_int(2000, 9999999);
+                $madonhang = "Xgarden" . random_int(2000, 9999999);
                 $vat_fee = $_POST['vat_fee'];
                 $coupon_code = $_POST['coupon_code'];
                 date_default_timezone_set('Asia/Ho_Chi_Minh');

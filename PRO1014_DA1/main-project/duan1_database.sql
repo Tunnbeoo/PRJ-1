@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th10 28, 2024 lúc 08:03 PM
+-- Thời gian đã tạo: Th10 28, 2024 lúc 09:42 PM
 -- Phiên bản máy phục vụ: 10.4.32-MariaDB
 -- Phiên bản PHP: 8.2.12
 
@@ -93,12 +93,12 @@ CREATE TABLE `tbl_blog` (
 --
 
 INSERT INTO `tbl_blog` (`blog_id`, `blog_title`, `noi_dung`, `images`, `create_time`, `blogcate_id`, `tags`, `duyet`) VALUES
-(1, 'Thông báo Messenger không có âm thanh trên Android, phải xử lý thế nào?', 'Tại sao Messenger không có âm thanh thông báo?\r\n<p>Bị nhỡ thông báo ứng dụng, không nhận được thông báo cuộc gọi, tin nhắn từ Messenger là sự cố mà bất kỳ Messenger-er nào cũng mắc phải. Nguyên nhân gây nên tình huống phiền phức này là bởi:</p>\r\n<ul>\r\n    <li>Đường truyền mạng không ổn định, mạng Wifi yếu, dữ liệu 3G/4G hết. </li>\r\n    <li>Đường truyền mạng không ổn định, mạng Wifi yếu, dữ liệu 3G/4G hết. </li>\r\n    <li>Chế độ thông báo tin nhắn, cuộc gọi trên ứng dụng Messenger bị tắt. </li>\r\n    <li>Điện thoại đang bật chế độ im lặng, chế độ không làm phiền.</li>\r\n    <li>Phiên bản hiện tại của Messenger đã cũ, không còn tương thích với điện thoại.</li>\r\n</ul>\r\n<h1>Cách sửa lỗi thông báo Messenger không có âm thanh trên điện thoại Android</h1>\r\n<h2>Kiểm tra kết nối mạng</h2>\r\n<p>Nếu bạn không nghe thấy chuông báo hoặc thậm chí không nhận được thông báo từ ứng dụng thì vấn đề có thể đến từ kết nối Internet của dế yêu. Bạn nên kiểm tra lại kết nối Wifi hoặc dữ liệu 3G/4G xem đã “cạn kiệt” chưa nhé. Lựa chọn một địa chỉ Wifi khác ít người truy cập hơn, nạp thêm dung lượng 3G/4G sẽ giúp quá trình sử dụng Messenger của bạn trơn tru, mượt mà hơn đấy!</p>\r\n<h2>Bật thông báo ứng dụng Messenger</h2>\r\n<p>Có thể vì một lý do nào đó, bạn đã vô tình tắt thông báo ứng dụng Messenger. Để kiểm tra và bật lại cài đặt thông báo, bạn chỉ cần thực hiện theo 2 bước sau:\r\nBước 1: Truy cập vào ứng dụng Messenger trên điện thoại > Nhấn vào biểu tượng avatar phía trên, bên trái màn hình. \r\nBước 2: Chọn Thông báo & âm thanh > Gạt thanh ngang sang phải để bật thông báo cho ứng dụng. </p>', 'ketnoimang.jpg,thumb-mess.jpg', '2023-03-15 14:13:38', 1, 'Điện Thoại', 1),
-(2, 'OPPO Reno8 T 5G có trọng lượng khoảng bao nhiêu?', 'OPPO Reno8 T 5G\r\n<p>Reno8 T 5G trang bị màn hình cong 3D 120Hz đầu tiên trong phân khúc tầm giá của OPPO, cùng mặt lưng cong 3D, mang lại trải nghiệm từ thiết kế, đến khả năng hiển thị khá tốt.</p>\r\n<p>Cải thiện chạm nhầm cảm ứng thường gặp trên màn cong, màn hình Reno8 T 5G có độ cong 56 độ và chiều cao vòng là 1,9mm, cong nhẹ nhàng, cho cảm giác cầm trên tay thoải mái. Màn hình AMOLED 6,7 inch, tỷ lệ hiển thị 93% và viền dưới 2,32 mm mang lại trải nghiệm sống động và đắm chìm.</p>\r\n<p>Với tần số quét màn hình 120Hz và tốc độ lấy mẫu cảm ứng 1000Hz, người dùng có được một màn hình mượt mà. Khả năng hiển thị 1.07 tỷ màu, FHD+. Độ bền cũng được đảm bảo khi màn hình được trang bị kính DT-Star2 chịu lực gấp đôi, trải qua 23 bài kiểm tra độ bền ở tác động khác nhau, cùng 320 bài kiểm tra toàn diện và hơn 110 bài kiểm tra độ bền trong điều kiện khắc nghiệt.</p>\r\n<p>Dải viền camera trên Reno8 T 5G bao gồm mô-đun máy ảnh xếp theo chiều dọc thời thượng. OPPO cung cấp hai tuỳ chọn màu: Vàng và Đen Ánh Sao cả hai đều sử dụng thiết kế OPPO Glow tạo hiệu ứng ánh sáng và tăng khả năng chống vân tay. Kích thước máy mỏng trọng lượng khoảng 171 g và độ dày 7,7 mm.</p>\r\n<p>Reno8 T 5G được trang bị 8GB RAM với hai phiên bản ROM 128GB hoặc 256GB, đồng thời hỗ trợ thẻ nhớ lên đến 1TB. Người dùng có thể bổ sung 8GB RAM mở rộng, đảm bảo trải nghiệm và dung lượng lưu trữ thoải mái. Được hỗ trợ bởi Qualcomm Snapdragon 695 5G, Reno8 T 5G cung cấp khả năng xử lý tốt các nhu cầu sử dụng hàng ngày. Máy được trang bị Loa kép và Chế độ siêu âm lượng mang đến hiệu ứng âm thanh vòm được nâng cao.</p>\r\n<h2>OPPO Reno8 T 4G</h2>\r\n<p>Không kém cạnh, OPPO Reno8 T 4G cũng được trang bị camera chân dung 100 MP, đi kèm với Camera selfie 32MP và Camera macro 2MP với độ phóng đại 40x, cho trải nghiệm chụp ảnh chất lượng. Máy cũng được tích hợp loạt tính AI siêu nét, Chân dung Bokeh Flare, Selfie HDR, Làm đẹp AI và chụp nhanh…\r\nVẫn giữ phong cách thiết kế dòng Reno Series, OPPO giới thiệu hai phiên bản màu trên Reno8 T: Cam với thiết kế da sợi thuỷ tinh, và Đen sử dụng quy trình hoàn thiện Glow cho bề mặt lấp lánh.</p>\r\n<p>Viền đèn trên cụm camera sau cung cấp 5 thiết lập thông báo cá nhân hóa bằng màu sắc. Sở hữu kích thước mỏng nhẹ, phiên bản Đen Ánh Sao mỏng chỉ 7.80mm và nặng 180g, trong khi phiên bản Cam mỏng 7.85mm và nặng 183g. Trải nghiệm sử dụng tổng thể của Reno8 T, được trang bị viên pin 5000mAh đi kèm sạc nhanh SUPERVOOCTM 33W, cho khả năng sạc đầy trong trong 67 phút. Dung lượng với 8GB RAM và 256GB ROM, cùng dung lượng RAM mở rộng 8GB. OPPO đã tích hợp thêm thuật toán tối ưu hiệu năng.</p>\r\n<p>Mang đến trải nghiệm trên Reno8 T là màn hình AMOLED 6,4 inch với 90Hz, kèm loa kép và Chế độ siêu âm lượng giúp tăng âm lượng thêm 40%. Được cài ColorOS 13 mới, Reno8 T Series mang đến trải nghiệm Android mượt mà. Giờ đây, người dùng có thể điều khiển Spotify thông qua màn hình chờ không cần mở khóa điện thoại.</p>\r\n<p>Để năng cao bảo mật chế độ kiểm soát truy cập 5 lớp giúp người dùng kiểm soát chặt chẽ các quyền riêng tư trên Reno8 T 5G. Một trong số các tính năng mới là Pixel hoá tự động, có thể nhận diện tên và ảnh trong ảnh chụp tin nhắn, điện thoại đã được chứng nhận về độ bảo mật bởi các tổ chức ISO, TRUSTe và ePrivacy.</p>\r\n<p>Hy vọng các bạn đã có câu trả lời cho câu hỏi OPPO Reno8 T 5G có trọng lượng khoảng bao nhiêu? Ngoài ra bài viết cũng đã khái quát cho bạn thông tin khá chi tiết của dòng sản phẩm vừa mới được hãng OPPO công bố chính thức này. Hy vọng các bạn sẽ hài lòng với thông tin cung cấp của bài viết.</p>\r\n', 'thumb-blog2.jpg', '2023-03-15 19:47:28', 2, 'Tin Tức, Điện Thoại', 1),
-(3, 'Cách chèn chữ vào ảnh trên iPhone cực nhanh, đơn giản, chi tiết', 'Bạn đang tìm kiếm cách viết chữ lên ảnh trên điện thoại iPhone nhưng chưa biết cách thực hiện. Bài viết dưới đây sẽ hướng dẫn cho các bạn cách chèn chữ vào ảnh trên iPhone cực nhanh, đơn giản, chi tiết.\r\n<h1>Cách chèn chữ vào ảnh trên iPhone</h1>\r\n<ul>\r\n<b>Hướng dẫn nhanh</b>\r\n<li>Mở ứng dụng Ảnh trên iPhone.</li>\r\n<li>Chọn ảnh mà bạn muốn viết chữ lên ảnh > Chọn Sửa.</li>\r\n<li>Nhấn vào biểu tượng 3 dấu chấm > Chọn Đánh dấu.</li>\r\n<li>Nhấn vào biểu tượng dấu cộng > Chọn Văn bản.</li>\r\n<li>Nhấn vào chữ Văn bản > Chọn Sửa.</li>\r\n<li>Tiến hành nhập nội dung mà bạn muốn viết chữ lên ảnh.</li>\r\n<li>Chọn Xong ở góc trên bên phải.</li>\r\n</ul>\r\n<p><b>Lưu ý: </b>Những thay đổi mà bạn thực hiện trên ảnh sẽ áp dụng với ảnh gốc mà không tạo ra file ảnh mới.</p>', 'thumb-chenchutreniphone.jpg', '2023-03-16 16:09:15', 3, 'Hướng Dẫn\r\nĐiện Thoại', 1),
-(5, 'Sự lạc lõng của iPhone 14 Plus', 'Nhìn vào bản danh sách điện thoại thông minh bán chạy nhất năm 2022 vừa qua, trong khi iPhone 12 ra đời từ năm 2020 còn được xướng tên thì iPhone 14 Plus mới nhất đã không lọt nổi vào top 10.\r\n<h2>Sự lạc lõng của iPhone 14 Plus</h2>\r\n<p>Trên thực tế, bất kỳ điện thoại thông minh nào khác trong tầm giá 900 USD đều có nhiều công nghệ hơn iPhone 14 Plus. Kích thước không phải là vấn đề. Giá cả phải đi đôi với tính năng đáng giá. Và về cơ bản, Apple đang bán một chiếc điện thoại thông minh tầm trung với giá của một chiếc cao cấp.</p>\r\n<p>iPhone 14 Plus là một thiết bị hoàn toàn khác so với iPhone 14 Pro. Nó không có chip A16, không có camera chính 48 megapixel mới hay thậm chí là ống kính macro và không có Dynamic Island, không có màn hình 120Hz hoặc ống kính tele để chụp ảnh hay quay video bằng zoom quang học.</p>\r\n<p>Cuối cùng nhưng không kém phần quan trọng, vẻ ngoài của Plus cũng nhàm chán. Bên cạnh những thay đổi về phần cứng, Apple đã có quyết định đáng chú ý khi thay đổi phần tai thỏ trên iPhone 14 Pro theo dưới hình thái Dynamic Island. Ngược lại, cả iPhone 14 và 14 Plus vẫn chẳng khác gì dòng iPhone 13.</p>\r\n<p>Nếu ai đó muốn mua một chiếc iPhone mới và muốn tiết kiệm một số tiền, người đó có thể sẽ mua iPhone 14 thông thường hoặc thậm chí là iPhone 13. Và những người sẵn sàng trả tiền cho một chiếc điện thoại thông minh cao cấp có thể sẽ chi thêm 100 USD để mua iPhone 14 Pro chứ không lựa chọn iPhone 14 Plus.</p>\r\n<p>Cho dù bạn ghét hay yêu thích các sản phẩm của Apple, thì một sự thật không thể thay đổi là iPhone bán rất chạy. Tuy nhiên, khi buộc phải thanh toán hóa đơn hàng tháng hoặc bỏ ra số tiền tương tự để mua iPhone, bất kỳ ai trên thế giới cũng muốn sở hữu chiếc iPhone mới nhất và tuyệt vời nhất, nhưng với cái giá cũng hợp lý nhất.</p>\r\n<p>Thay thế chiếc mini bằng chiếc Plus và hy vọng chiếc sau sẽ bán chạy hơn, là một tính toán sai lầm của Apple. Lý do rất đơn giản: Chúng rất khác nhau.</p>\r\n<p>Mini nằm ở một thị trường ngách khác biệt so với Plus. Đó là một chiếc điện thoại nhỏ nhắn với hiệu năng cao.</p>\r\n<p>Kích thước của chiếc mini khiến nó trở nên độc nhất vô nhị không chỉ so với những chiếc iPhone khác mà còn trong toàn bộ thị trường điện thoại thông minh nói chung.</p>\r\n<p>Đơn giản là không có điện thoại thông minh nào có thông số kỹ thuật của iPhone 13 mini gói gọn trong hình hài nhỏ bé như vậy.</p>\r\n<p>Điều này khó xảy ra với iPhone 14 Plus. Hầu hết các điện thoại thông minh Android có kích thước bằng hoặc lớn hơn Plus đều có cấu hình vượt trội hơn nhiều. Chưa kể rằng Plus phải đối mặt với sự cạnh tranh từ chính Pro Max.</p>\r\n<p>Tóm lại, bản thân iPhone 14 Plus không phải là một chiếc điện thoại thông minh tồi, nhưng nó thất bại vì giá bán cao, nhu cầu thấp và lạc lõng trước những đối thủ có cái bóng quá lớn.</p>\r\n', 'thumb-blogip14plus.jpg', '2023-03-16 22:21:18', 2, 'Tin Tức \r\nĐiện Thoại', 1),
-(6, 'Mẹo tìm iPhone bị mất qua số điện thoại nhanh chóng', 'iPhone đã và đang là dòng điện thoại được người tiêu dùng yêu thích nhất trên thị trường. Nhưng nhiều người mua iPhone đều lo lắng về việc điện thoại quá xịn nên dễ mất. Đừng lo lắng nữa vì nhà Táo đã trang bị rất nhiều cách để giúp bạn tìm lại iPhone. Cùng Blog Chăm Chỉ khám phá mẹo tìm iPhone bị mất qua số điện thoại trong bài viết dưới đây.\r\n<h2>iPhone bị mất làm sao tìm lại?</h2>\r\n<p>Apple đã trang bị rất nhiều phương pháp tìm lại iPhone cho các iFan trong trường hợp này. Nên bạn đừng quá lo lắng nếu chẳng may làm mất iPhone nhé. Sau đây Blog Chăm Chỉ sẽ bật mí một vài mẹo giúp bạn tìm lại dế cưng của mình.</p>\r\n<p>Một trong những tính năng tuyệt vời của nhà Táo đó là Find My iPhone. Đây được coi là một thám tử giúp bạn truy lùng tung tích của iPhone khi bị mất. Tính năng này cho phép bạn tìm địa điểm của iPhone và có thể xóa dữ liệu từ xa.</p>\r\n<h2>Tìm điện thoại iPhone bị mất qua định vị</h2>\r\n<p>Nếu tính năng Find My iPhone không hoạt động, bạn hãy sử dụng tính năng định vị trên iPhone để tìm thiết bị.</p>\r\n<p>Nếu bạn sử dụng tính năng tìm điện thoại iPhone bị mất qua định vị, có 2 cách như sau:</p>\r\n<h2>Định vị bằng iCloud trên điện thoại</h2>\r\n<p>Bước 1: Truy cập vào ứng dụng Tìm > Nhấn chọn Thiết bị đang cần tìm.</p>\r\n<p>Bước 2: Chọn 1 trong các Hình thức tìm kiếm.</p>\r\n<p>Hiện có các hình thức tìm kiếm sau:</p>\r\n<p><b>Phát âm thanh: </b>Tiếng chuông sẽ vang và rung lên trên thiết bị khoảng 1 đến 2 phút. Âm thanh tiếng chuông sẽ lớn dần đều.</p>\r\n<p><b>Chỉ đường: </b>Màn hình sẽ chuyển hướng đến Bản đồ và chỉ cho bạn đến vị trí của iPhone đã mất.</p>\r\n<p><b>Thông báo: </b>Nếu thiết bị bị mất kết nối mạng hoặc tắt nguồn, bạn có thể sử dụng hình thức này. Khi iPhone bị mất xác định được vị trí thì thông báo sẽ được gửi tới cho bạn.</p>\r\n<h2>Định vị bằng iCloud trên máy tính</h2>\r\n<p>Bước 1: Truy cập vào đường dẫn iCloud.com > Đăng nhập iCloud</p>\r\n<p>Bước 2: Nhấn chọn Tìm iPhone.</p>\r\n<p> Bước 3: Tiếp tục chọn Tất Cả Các Thiết bị > Nhấn chọn vào Thiết bị cần tìm.</p>\r\n<p>Sau đó màn hình sẽ xuất hiện vị trí của thiết bị đã mất và các hình thức tìm kiếm sau:</p>\r\n<p><b>Phát Âm: </b>Lúc này điện thoại sẽ có tiếng chuông vang lên (kể cả bạn đang bật chế độ rung).  </p>\r\n<p><b>Chế Độ Mất: </b>Với hình thức này, bạn cần nhập số điện thoại và để lại tin nhắn. Nếu có ai nhặt được iPhone của bạn sẽ thấy được thông tin liên lạc ở trên máy.  Nó sẽ cài đặt khóa màn hình cho bạn nếu thiết bị của bạn chưa được cài.</p>\r\n<p><b>Xóa iPhone: </b>Hình thức này sẽ xóa dữ liệu từ xa khi thiết bị bị mất có kết nối mạng. Nếu muốn bảo mật thông tin quan trọng thì bạn nên chọn hình thức này.</p>\r\n<h2>Tìm điện thoại iPhone bị mất qua số điện thoại</h2>\r\n<p>Nếu bạn không thể tìm lại chiếc iPhone của mình bằng 2 cách trên thì hãy sử dụng cách tìm điện thoại iPhone bị mất qua số điện thoại. Lúc này, bạn cần liên hệ với nhà mạng của mình để tìm lại điện thoại.</p>\r\n<h2>Những lưu ý cần biết khi tìm iPhone bị mất</h2>\r\n<p>Nếu sử dụng tính năng Find My iPhone thì hãy chắc chắn rằng tính năng này đã được kích hoạt ở iPhone bị mất.</p>\r\n<p>Nếu sử dụng tính năng định vị trên iPhone, hãy chắc chắn rằng tính năng này đã được kích hoạt và iCloud đã được cấp quyền truy cập vị trí.</p>\r\n<p>Nếu sử dụng cách tìm iPhone bị mất qua số điện thoại, hãy soạn sẵn những thông tin cần thiết như số điện thoại và IMEI của điện thoại bạn để đọc cho nhà mạng.</p>\r\n<p>Trên đây là tất tần tật những thông tin về mẹo tìm iPhone bị mất qua số điện thoại nhanh chóng. Blog Chăm Chỉ đã cung cấp cho bạn cách tìm điện thoại iphone bị mất qua định vị và tìm điện thoại iphone bị mất qua số điện thoại. Vậy nên nếu ai hỏi bạn iphone bị mất làm sao tìm lại thì hãy chia sẻ bài viết này cho họ ngay nhé. Chúc bạn tìm lại Táo cưng của mình thành công!</p>', 'thumb-blogmeoiphone.jpg', '2023-03-16 22:31:24', 3, 'Hướng Dẫn\r\nĐiện Thoại\r\nIphone', 1),
-(8, 'Đánh giá Iphone 14 Pro Max – Gần 1.600 USD có gì?', 'Ra mắt từ hồi đầu tháng 9, cho đến nay, Iphone 14 vẫn chưa ngừng “nóng sốt”. Đặc biệt được mệnh danh là một trong những điện thoại xa xỉ nhất hiện nay, với mức giá cao nhất lên tới gần 1.600 USD thì “ông lớn” Apple đã trang bị cho Iphone 14 Pro Max những gì? Hãy cùng điểm lại những nổi bật của chiếc Iphone 14 Pro Max để xem liệu chúng có xứng đáng với giá tiền này không nhé!\r\n<h2>Đánh giá thiết kế của Iphone 14 Pro Max</h2>\r\n<p>Không hổ danh là chiếc flagship mới nhất, Iphone 14 Pro Max được nhà sản xuất dành cho một thiết kế vô cùng sang trọng và đẳng cấp.</p>\r\n<p>Viền ngoài của máy sử dụng chất liệu thép không gỉ cao cấp, góc cạnh vuông vức nhưng thanh mảnh và mặt lưng bằng kính bảo vệ Ceramic Shield sang trọng. Iphone 14 Pro Max mang lại sự thoải mái khi sử dụng nhờ khả năng chống bụi/nước IP68, ít bị trầy xước và bám vân tay.</p>\r\n<p>Ngoài 3 phiên bản màu cơ bản: trắng bạc, đen, vàng gold thì màu tím Deep Purple thực sự đã tạo nên mới cơn sốt rần rần trong lòng các iFans.</p>\r\n<p>Mách bạn một mẹo nhỏ là thay vì dùng ốp thì chúng ta có thể dán ppf iPhone 14 pro max trong suốt để có thể trải nghiệm chân thân thật nhất của thiết kế trị giá bốn chục củ khoai này. Đặc biệt là đối với chủ nhân của Iphone 14 Pro Max phiên bản màu tím Deep Purple thì đây là 1 cách phù hợp để vừa bảo vệ và vừa “khoe” máy. Lưu ý lựa chọn dán tại các cơ sở uy tín như Cellphones, Azskin,…</p>\r\n<h2>Đánh giá màn hình Iphone 14 Pro Max</h2>\r\n<p>Có thể nói màn hình 6.7 inch của Iphone 14 Pro Max là dòng đứng đầu trên thị trường smartphone hiện nay. </p>\r\n<p>Màn hình có tấm nền độ phân giải OLED Super Retina XDR sắc nét, độ sáng 2.000 nits, tần số quét lên tới 120Hz cho chuyển động mượt mà. Người dùng hoàn toàn có thể bị đắm chìm với các ứng dụng giải trí, xem phim hay gaming chân thực nhất. </p>\r\n<h2>Đánh giá camera Iphone 14 Pro Max</h2>\r\n<p>Người tiêu dùng chính thức bị đổ gục trước mẫu điện thoại mới nhất này của nhà “táo khuyết” trước sự nâng cấp độ phân giải camera từ 12 MP lên 48 MP, mang lại những hình ảnh và thước phim chân thực, sống động hơn gấp 4 lần so với phiên bản trước.</p>\r\n<p>Dù chụp đêm, chụp zoom hay chụp toàn cảnh,… thì hình ảnh cũng không hề bị giảm chất lượng đi chút nào. Tính năng tự động lấy nét của camera trước mang đến những bức ảnh selfie xuất thần.</p>\r\n<h2>Đánh giá hiệu năng của Iphone 14 Pro Max</h2>\r\n<p>Vi xử lý A16 Bionic với con chip LPDDR5X cực mạnh chính là điểm sáng mang lại hiệu năng sử dụng mạnh mẽ cho Iphone 14 Pro Max.</p>\r\n<p>Chip mới có gần 16 tỷ bóng bán dẫn, 6 lõi CPU, 5 lõi GPU, ISP nâng cao mang đến hiệu suất mạnh hơn 40%. Ngoài ra thiết bị còn có khả năng tiết kiệm pin hiệu quả, xử lý hoạt động máy siêu nhanh và phản hồi ngay lập tức mọi tác vụ so với vi xử lý A15 Bionic với con chip LPDDR4X (5nm) trang bị trên iPhone 13 Pro Max.</p>\r\n<p>Do đó nên dù vẫn còn giữ nguyên mức RAM 6 GB ở iphone dòng cũ thì hiệu năng của Iphone 14 Pro Max vẫn được đánh giá cực đỉnh và vượt xa các đối thủ trong ngành.</p>\r\n<h2>Đánh giá dung lượng pin Iphone 14 Pro Max</h2>\r\n<p>Phải nói rằng Iphone 14 Pro Max đã được nâng cấp trang bị bộ pin cực “trâu” với dung lượng 4.323mAh.</p>\r\n<p>Cụ thể, với một bộ pin đầy, bạn có thể cày phim liên tục 29 giờ mà không hề bị gián đoạn phải dừng lại để đi sạc pin. Bên cạnh đó, máy được tích hợp sạc nhanh 20W giúp giảm thời gian sạc đi khá nhiều.</p>\r\n<h2>Dynamic Island – Sự thay đổi bất ngờ và ấn tượng</h2>\r\n<p>Sự xuất hiện của Dynamic Island sau buổi ra mắt thực sự đã khiến người tiêu dùng và đặc biệt là các iFans đang trông ngóng phải mắt chữ O miệng chữ A sau khi đã lỡ tin rằng tai thỏ sẽ trở thành viên thuốc.</p>\r\n<p>Đóng vai trò như một chiếc remote, Dynamic Island mang lại sự tiện dụng khi sử dụng, cung cấp quyền truy cập vào thông tin/ứng dụng bất kể mọi lúc.</p>\r\n<p>Không chỉ thế, người dùng có thể khám phá thêm rất nhiều tính năng thú vị từ “hòn đảo năng động” này nữa đó, tại sao không tự mình trải nghiệm nhỉ?</p>\r\n<p>Với những đánh giá khái quát trên, có thể thấy ông lớn Apple quả thực chưa bao giờ làm các iFan phải thất vọng. IPhone 14 Series công nhận rất đáng để người đầu tư và trải nghiệm.</p>', 'thumb-tintuciphone14.jpg', '2023-03-16 22:43:49', 2, 'Tin Tức\r\nĐiện Thoại \r\nIphone', 1);
+(1, 'Nên tưới cây bằng nước máy hay nước đun sôi để nguội?\r\n', 'Vì sao lại lựa chọn hai loại nước này? Vì nếu bạn ở thành phố và văn phòng thì thường chỉ có hai lựa chọn này là tiện nhất. Cả nước máy và nước đun sôi đều có những ưu và nhược điểm riêng khi dùng để tưới cây. Dưới đây là một số so sánh để bạn có thể đưa ra lựa chọn phù hợp nhất:\r\n\r\nnên tưới nước máy hay nước đun sôi để nguội\r\nNên tưới nước đun sôi để nguội hoặc nước máy để 1-2 ngày\r\n\r\n\r\nNước máy hay nước đun sôi tốt hơn cho cây\r\nTrong 2 loại nước thì nước đun sôi để nguội được xem là lựa chọn tốt hơn cho cây. Vì đã loại bỏ được phần lớn clo. Tuy nhiên nếu bạn muốn tiết kiệm thời gian, có thể dùng nước máy lắng khoảng 1-2 ngày rồi tưới cho cây.\r\n\r\nNước máy\r\nƯu điểm:\r\nTiện lợi, dễ dàng sử dụng.\r\nCó sẵn trong mọi nhà.\r\nNhược điểm:\r\nChứa clo: Clo được thêm vào nước máy để diệt khuẩn, nhưng lại có thể gây hại cho rễ cây, làm chậm quá trình phát triển của cây.\r\nCác chất hóa học khác: Ngoài clo, nước máy còn có thể chứa các chất hóa học khác như flo, kim loại nặng,… ảnh hưởng đến chất lượng đất và cây trồng.\r\nNước đun sôi để nguội\r\nƯu điểm:\r\nLoại bỏ clo: Quá trình đun sôi giúp loại bỏ phần lớn clo có trong nước, giảm thiểu tác hại đến cây.\r\nAn toàn: Nước đun sôi để nguội thường được xem là an toàn hơn cho cây trồng.\r\nNhược điểm:\r\nMất thời gian: Quá trình đun sôi và để nguội nước khá tốn thời gian.\r\nMất các khoáng chất: Đun sôi có thể làm mất đi một số khoáng chất có lợi cho cây.\r\nNhững loại nước tưới cây tốt nhất\r\nKhi chăm sóc cây cảnh, việc chọn đúng loại nước để tưới cây là rất quan trọng để đảm bảo cây phát triển khỏe mạnh. Dưới đây là một số loại nước tưới cây tốt nhất:\r\n\r\n1. Nước mưa\r\nĐây là nguồn nước tự nhiên và tốt nhất cho cây trồng vì nó không chứa chất hóa học như clo hay fluoride, thường có trong nước máy. Nước mưa còn có độ pH trung tính, rất lý tưởng cho cây cảnh. Tuy nhiên ở một số khu vực ô nhiễm, nước mưa có thể chứa chất độc hại cần lưu ý.\r\n\r\n2. Nước gạo\r\nNước vo gạo chứa nhiều dưỡng chất như vitamin B và khoáng chất, rất tốt cho cây cảnh. Bạn có thể dùng nước vo gạo để tưới cây khoảng 1-2 lần/tuần.\r\n\r\n3. Nước giếng\r\nNước giếng là nguồn nước ngầm tự nhiên, thường không chứa hóa chất và rất phù hợp để tưới cây. Tuy nhiên, bạn cần kiểm tra độ pH và hàm lượng khoáng chất trong nước giếng để đảm bảo nó phù hợp với cây trồng của bạn.\r\n\r\n4. Nước trà loãng\r\nTrà loãng chứa nhiều chất chống oxy hóa và một lượng nhỏ caffeine, có thể kích thích sự phát triển của cây. Tuy nhiên, chỉ nên dùng trà không đường và không sữa để tránh làm hỏng đất và rễ cây.\r\n\r\n5. Nước từ vỏ trứng\r\nNước ngâm vỏ trứng là nguồn canxi tự nhiên giúp cây cứng cáp và phát triển rễ khỏe mạnh. Bạn chỉ cần ngâm vỏ trứng trong nước vài ngày rồi dùng nước này để tưới cây.\r\n\r\n6. Nước từ bể cá\r\nNước trong bể cá chứa nhiều chất dinh dưỡng từ phân cá và thức ăn dư thừa, là nguồn nước tự nhiên rất tốt cho cây trồng. Tuy nhiên, bạn cần đảm bảo nước không quá bẩn hoặc chứa nhiều chất hóa học để tránh làm hại cây.\r\n\r\n7. Nước lên men từ trái cây\r\nBạn có thể sử dụng nước lên men từ trái cây như chuối, cam, hoặc táo để tưới cây. Nước lên men này chứa nhiều enzyme và dưỡng chất, giúp cây hấp thụ dinh dưỡng dễ dàng hơn.\r\n\r\n8. Nước từ các loại rau củ\r\nKhi luộc rau củ, bạn có thể giữ lại nước luộc để nguội và dùng tưới cây. Nước này chứa nhiều vitamin và khoáng chất có lợi, giúp cây phát triển tốt hơn.\r\n\r\nMột số lưu ý khi tưới cây\r\nThời điểm tưới: Nên tưới cây vào sáng sớm hoặc chiều mát để tránh nước bốc hơi nhanh và giảm thiểu sự tác động của ánh nắng mặt trời lên cây.\r\nLượng nước: Tưới đủ ẩm cho đất, không nên tưới quá nhiều hoặc quá ít.\r\nCách tưới: Tưới trực tiếp vào gốc cây, để tránh làm ướt lá và tạo điều kiện cho nấm bệnh phát triển.\r\nKết luận:\r\n\r\nViệc lựa chọn loại nước tưới cây phụ thuộc vào nhiều yếu tố như loại cây, điều kiện thời tiết, và sự tiện lợi của người trồng. Tuy nhiên, nếu có điều kiện, bạn nên ưu tiên sử dụng nước đun sôi để nguội hoặc nước mưa để đảm bảo sức khỏe cho cây trồng.', 'thumb-chamsoc.jpg', '2024-11-29 02:48:35', 1, 'tưới cây', 1),
+(2, '8 yếu tố giúp cây trồng trong nhà luôn xanh tốt\r\n', 'Trong thời đại hiện nay, cây trồng trong nhà không chỉ để trang trí mà còn mang lại nhiều lợi ích cho sức khỏe và tinh thần của con người. Tuy nhiên, để cây trồng trong nhà luôn xanh tốt và phát triển khỏe mạnh, chúng ta cần chú ý đến nhiều yếu tố khác nhau. Bài viết này sẽ giúp bạn hiểu rõ hơn về các yếu tố quan trọng và cách chăm sóc cây trồng trong nhà một cách hiệu quả.\r\n\r\ncác yếu tố giúp cây trồng trong nhà xanh tốt\r\n\r\n8 yếu tố giúp cây trồng trong nhà luôn xanh tốt\r\nNếu bạn có thể đảm bảo được 8 yếu tố này thì cây của bạn sẽ luôn xanh tốt và phát triển mạnh mẽ.\r\n\r\n1. Ánh sáng\r\nÁnh sáng là yếu tố quan trọng hàng đầu đối với sự phát triển của cây trồng. Mỗi loại cây có nhu cầu ánh sáng khác nhau, từ ánh sáng trực tiếp đến ánh sáng gián tiếp hay ánh sáng yếu. Việc hiểu rõ nhu cầu ánh sáng của từng loại cây giúp bạn đặt chúng ở vị trí phù hợp trong nhà.\r\n\r\nVí dụ, các loại cây như cây lưỡi hổ, cây kim tiền, và cây dương xỉ thường ưa thích ánh sáng gián tiếp và có thể sống tốt trong điều kiện ánh sáng yếu. Ngược lại, những cây như cây xương rồng, cây bàng Singapore, và cây lô hội cần ánh sáng trực tiếp để phát triển tốt.\r\n\r\nMột số mẹo để cung cấp đủ ánh sáng cho cây trồng trong nhà bao gồm:\r\n\r\nĐặt cây gần cửa sổ hoặc nơi có ánh sáng tự nhiên.\r\nSử dụng rèm cửa để điều chỉnh mức độ ánh sáng trực tiếp.\r\nSử dụng đèn LED chuyên dụng cho cây trồng nếu nhà bạn không có đủ ánh sáng tự nhiên.\r\n2. Nước\r\nCung cấp nước đúng cách là yếu tố then chốt giúp cây trồng phát triển khỏe mạnh. Mỗi loại cây có nhu cầu nước khác nhau, và việc tưới nước không đúng cách có thể gây hại cho cây. Để xác định khi nào cần tưới nước, bạn có thể kiểm tra độ ẩm của đất bằng cách chọc ngón tay vào đất khoảng 2-3 cm. Nếu đất còn ẩm, bạn không cần tưới thêm nước. Ngược lại, nếu đất khô, đó là lúc bạn cần tưới nước cho cây.\r\n\r\nMột số lưu ý khi tưới nước cho cây trồng trong nhà:\r\n\r\nSử dụng nước ở nhiệt độ phòng để tránh sốc nhiệt cho cây.\r\nĐảm bảo chậu cây có lỗ thoát nước để tránh ngập úng.\r\nTưới nước đều khắp bề mặt đất để đảm bảo rễ cây hấp thụ đủ nước.\r\n3. Độ ẩm\r\nĐộ ẩm không khí cũng ảnh hưởng lớn đến sự phát triển của cây trồng trong nhà. Đa số cây trồng trong nhà ưa thích môi trường ẩm. Để duy trì độ ẩm cần thiết, bạn có thể sử dụng máy tạo độ ẩm hoặc phun sương nhẹ lên lá cây hàng ngày. Đặc biệt, vào mùa đông khi không khí trong nhà thường khô hơn, việc duy trì độ ẩm trở nên quan trọng hơn bao giờ hết.\r\n\r\n4. Nhiệt độ\r\nNhiệt độ lý tưởng cho cây trồng trong nhà thường dao động từ 18-24 độ C. Tuy nhiên, mỗi loại cây có thể chịu được nhiệt độ khác nhau. Ví dụ, các loại cây nhiệt đới như cây trầu bà, cây dương xỉ, và cây lan ý thường ưa thích nhiệt độ trung bình, trong khi các loại cây xương rồng và cây sen đá có thể chịu được nhiệt độ thấp hơn. Tránh đặt cây gần các thiết bị tỏa nhiệt như máy điều hòa, lò sưởi, hoặc cửa sổ có ánh nắng mặt trời trực tiếp chiếu vào, vì nhiệt độ thay đổi đột ngột có thể gây sốc cho cây.\r\n\r\n5. Dinh dưỡng\r\nCây trồng trong nhà cần dinh dưỡng để phát triển khỏe mạnh. Việc bón phân đều đặn giúp cây có đủ dưỡng chất cần thiết. Bạn nên chọn loại phân bón phù hợp với từng loại cây và tuân theo hướng dẫn sử dụng để tránh bón quá nhiều gây hại cho cây. Thường xuyên kiểm tra lá cây để phát hiện sớm các dấu hiệu thiếu dinh dưỡng như lá vàng, lá khô, hoặc cây còi cọc.\r\n\r\nMột số loại phân bón phổ biến cho cây trồng trong nhà:\r\n\r\nPhân bón hữu cơ: Cung cấp dinh dưỡng tự nhiên và an toàn cho cây.\r\nPhân bón hóa học: Dễ sử dụng và hiệu quả nhanh chóng, nhưng cần tuân theo hướng dẫn sử dụng cẩn thận.\r\nPhân bón lỏng: Dễ dàng hấp thụ qua rễ và lá cây.\r\n6. Đất\r\nĐất là môi trường sống và cung cấp dinh dưỡng cho cây trồng. Sử dụng loại đất phù hợp với từng loại cây để đảm bảo cây có môi trường sinh trưởng tốt nhất. Đất cần có khả năng thoát nước tốt và giàu dinh dưỡng. Bạn có thể mua các loại đất chuyên dụng cho cây trồng trong nhà từ các cửa hàng cây cảnh hoặc tự pha trộn đất bằng các thành phần như đất thịt, phân trùn quế, và cát.\r\n\r\n7. Cắt tỉa và chăm sóc\r\nCắt tỉa và chăm sóc định kỳ giúp cây luôn tươi tốt và tránh được các vấn đề về bệnh tật hay sâu bệnh. Hãy thường xuyên kiểm tra cây để phát hiện sớm các dấu hiệu bệnh tật như lá vàng, lá khô, hay cây còi cọc. Loại bỏ các lá và cành bị hư hại để cây tập trung dinh dưỡng vào các phần khỏe mạnh. Ngoài ra, bạn cũng nên lau lá cây định kỳ để loại bỏ bụi bẩn, giúp cây hấp thụ ánh sáng tốt hơn.\r\n\r\n8. Chọn cây phù hợp\r\nMỗi loại cây cảnh đều có yêu cầu chăm sóc khác nhau. Việc chọn cây phù hợp với điều kiện ánh sáng, nhiệt độ, và độ ẩm trong nhà của bạn là yếu tố quan trọng giúp cây phát triển tốt nhất. Dưới đây là một số loại cây phổ biến và dễ chăm sóc cho người mới bắt đầu:\r\n\r\nCây lưỡi hổ (Sansevieria): Cây này chịu được ánh sáng yếu và không cần tưới nước thường xuyên.\r\nCây kim tiền (Zamioculcas zamiifolia): Cây này cũng ưa ánh sáng gián tiếp và dễ chăm sóc.\r\nCây dương xỉ (Nephrolepis exaltata): Cây này thích môi trường ẩm và ánh sáng gián tiếp.\r\nCây xương rồng (Cactaceae): Cây này cần ánh sáng trực tiếp và ít nước.\r\nCây bàng Singapore (Ficus lyrata): Cây này ưa ánh sáng trực tiếp và nhiệt độ trung bình.\r\nKết luận\r\nChăm sóc cây trồng trong nhà là một quá trình đòi hỏi sự kiên nhẫn và hiểu biết về nhu cầu của từng loại cây. Bằng cách chú ý đến các yếu tố như ánh sáng, nước, độ ẩm, nhiệt độ, dinh dưỡng, đất, và chăm sóc định kỳ, bạn sẽ giúp cây trồng trong nhà luôn xanh tốt và phát triển khỏe mạnh. Không chỉ làm đẹp không gian sống, cây trồng còn mang lại nhiều lợi ích cho sức khỏe và tinh thần, giúp bạn cảm thấy thoải mái và thư giãn hơn trong cuộc sống hàng ngày.', 'thumb-tuoicay.jpg', '2024-11-29 02:48:35', 1, 'chăm sóc', 1),
+(3, 'Chăm sóc cây thủy sinh\r\n', 'Chăm sóc cây thủy sinh\r\nCây thủy sinh có 2 loại một là loại sống dưới nước ở mặt đáy thường là một số loại rêu, tảo…Loại 2 là loại chỉ có phần rễ được tiếp xúc với nước thường được áp dụng để trồng thủy canh, các loại cây cảnh văn phòng, trong nhà. Thì trong bài viết này Web Cây Cảnh xin chia sẻ về cách chăm sóc các loại cây cảnh văn phòng, trong nhà thủy sinh.\r\n\r\nCách chăm sóc cây thủy sinh\r\nƯu điểm của cây thủy sinh là sạch sẽ và không mất công chăm sóc nhiều. Chúng ta chỉ cần chú ý vào thời điểm ban đầu, thời điểm mà cây thay đổi môi trường sống.\r\n\r\nNơi đặt cây thủy sinh\r\nNên đặt cây ở nơi thoáng gió, dưới ánh điện hoặc có ánh nắng nhẹ buổi sáng sớm và chiều muộn. Tránh để cây dưới nắng gắt, nơi có hơi nóng tỏa ra như ở cục nóng điều hòa, sau cpu máy tính…Vị trí đặt cây khá quan trọng trong việc chăm sóc cây thủy sinh mà bạn cần lưu ý\r\n\r\nNước\r\nBạn cần để ý nước của cây thủy sinh, nhất là thời gian ban đầu nếu nước có mùi thì bạn cần thay nước luôn và loại bỏ rễ thối. Nếu bạn không có thời gian để ý thì thời điểm ban đầu cứ 1 tuần bạn thay nước một lần.\r\n\r\nKhi thay nước nên đổ nước đi, đổ nước lại nhiều lần để tạo không khí trong nước, cây sẽ phát triển rễ tốt hơn\r\n\r\nDưỡng chất\r\nBạn cần thêm dung dịch thủy canh vào hàng tuần để giúp cây có đủ chất dinh dưỡng, sao cho PPM( nồng độ dung dịch dinh dưỡng ) trong nước trong khoảng từ 600 -1000 ppm là được. PH dao động từ 5,5 – 6,5.\r\n\r\nLưu ý:\r\n\r\n– Không để cây thủy sinh cửa sổ nắng vì cây thường trong bình thủy sinh, nắng gắt cộng với chiếu qua kính và bình thủy tinh làm môi trường nước nóng lên dễ làm chết cây.\r\n\r\n– Không để nước trong bình đục và có mùi lạ, cần thay nước ngay khi thấy hiện tượng\r\n\r\n– Nên đổ nước ngập rễ không đổ ngập thân cây, vì chỉ có rễ mới hút nước, phần thân cây không hút được nước', 'thumb-chamsoc.jpg', '2024-11-29 02:48:35', 3, 'thủy sinh', 1),
+(5, 'Chăm sóc cây thủy sinh\r\n', 'Chăm sóc cây thủy sinh\r\nCây thủy sinh có 2 loại một là loại sống dưới nước ở mặt đáy thường là một số loại rêu, tảo…Loại 2 là loại chỉ có phần rễ được tiếp xúc với nước thường được áp dụng để trồng thủy canh, các loại cây cảnh văn phòng, trong nhà. Thì trong bài viết này Web Cây Cảnh xin chia sẻ về cách chăm sóc các loại cây cảnh văn phòng, trong nhà thủy sinh.\r\n\r\nCách chăm sóc cây thủy sinh\r\nƯu điểm của cây thủy sinh là sạch sẽ và không mất công chăm sóc nhiều. Chúng ta chỉ cần chú ý vào thời điểm ban đầu, thời điểm mà cây thay đổi môi trường sống.\r\n\r\nNơi đặt cây thủy sinh\r\nNên đặt cây ở nơi thoáng gió, dưới ánh điện hoặc có ánh nắng nhẹ buổi sáng sớm và chiều muộn. Tránh để cây dưới nắng gắt, nơi có hơi nóng tỏa ra như ở cục nóng điều hòa, sau cpu máy tính…Vị trí đặt cây khá quan trọng trong việc chăm sóc cây thủy sinh mà bạn cần lưu ý\r\n\r\nNước\r\nBạn cần để ý nước của cây thủy sinh, nhất là thời gian ban đầu nếu nước có mùi thì bạn cần thay nước luôn và loại bỏ rễ thối. Nếu bạn không có thời gian để ý thì thời điểm ban đầu cứ 1 tuần bạn thay nước một lần.\r\n\r\nKhi thay nước nên đổ nước đi, đổ nước lại nhiều lần để tạo không khí trong nước, cây sẽ phát triển rễ tốt hơn\r\n\r\nDưỡng chất\r\nBạn cần thêm dung dịch thủy canh vào hàng tuần để giúp cây có đủ chất dinh dưỡng, sao cho PPM( nồng độ dung dịch dinh dưỡng ) trong nước trong khoảng từ 600 -1000 ppm là được. PH dao động từ 5,5 – 6,5.\r\n\r\nLưu ý:\r\n\r\n– Không để cây thủy sinh cửa sổ nắng vì cây thường trong bình thủy sinh, nắng gắt cộng với chiếu qua kính và bình thủy tinh làm môi trường nước nóng lên dễ làm chết cây.\r\n\r\n– Không để nước trong bình đục và có mùi lạ, cần thay nước ngay khi thấy hiện tượng\r\n\r\n– Nên đổ nước ngập rễ không đổ ngập thân cây, vì chỉ có rễ mới hút nước, phần thân cây không hút được nước', 'thumb-chamsoc.jpg', '2024-11-29 02:48:35', 2, 'thủy sinh', 1),
+(6, '10 loại cây trừ tà trong tháng cô hồn\r\n', 'Tháng cô hồn, hay tháng 7 âm lịch, là thời điểm mà nhiều người quan niệm là cửa địa ngục mở, các vong linh trở về dương thế. Để bảo vệ gia đình và xua đuổi tà khí, nhiều người tìm đến các  10 loại cây được cho là có khả năng trừ tà.\r\nNhững điều biết về tháng cô hồn\r\nTháng cô hồn năm 2024 rơi vào tháng 7 âm lịch, kéo dài từ ngày 4/8/2024 đến ngày 2/9/2024\r\nNguồn Gốc và Ý Nghĩa\r\nNguồn gốc: Tín ngưỡng này có nguồn gốc từ Đạo giáo Trung Quốc, sau đó được truyền bá rộng rãi sang các nước láng giềng.\r\nÝ nghĩa: Tháng cô hồn là dịp để con người thể hiện lòng thành kính đối với tổ tiên, cầu siêu cho những linh hồn không nơi nương tựa. Đồng thời, đây cũng là thời gian để mọi người nhắc nhở nhau sống tốt, làm việc thiện để tránh những điều xui xẻo.\r\nNhững Điều Kiêng Kỵ\r\nTrong tháng cô hồn, người ta thường kiêng kỵ một số việc như:\r\n\r\nĐi chơi đêm: Người ta tin rằng, vào ban đêm, các vong hồn sẽ hoạt động mạnh hơn, vì vậy nên hạn chế ra ngoài vào thời điểm này.\r\nĐi qua nghĩa địa: Nghĩa địa được xem là nơi cư ngụ của các vong hồn, nên việc đi qua vào ban đêm là điều không nên.\r\nGiặt giũ vào ban đêm: Tiếng nước chảy vào ban đêm có thể thu hút các vong hồn.\r\nĐi bơi lội: Nước được xem là nơi trú ngụ của các sinh vật siêu nhiên.\r\nMang đồ lót màu đỏ: Màu đỏ được cho là màu sắc thu hút ma quỷ.\r\nNhững Việc Nên Làm\r\nCúng bái: Cúng bái tổ tiên và các vong hồn là việc làm cần thiết trong tháng cô hồn.\r\nLàm việc thiện: Thực hiện các hành động tốt như bố thí, làm từ thiện để tích đức.\r\nSống tốt: Sống lương thiện, tránh làm điều ác để không bị các vong hồn quấy nhiễu.\r\nVì sao người ta tin vào cây trừ tà?\r\nTín ngưỡng dân gian: Quan niệm về cây trừ tà xuất phát từ tín ngưỡng dân gian, dựa trên những quan sát về hình dáng, đặc tính của cây và sự liên tưởng đến các yếu tố tâm linh.\r\nPhong thủy: Trong phong thủy, cây xanh đóng vai trò quan trọng trong việc cân bằng âm dương, thu hút năng lượng tích cực và xua đuổi tà khí.\r\nYếu tố tâm lý: Việc trồng cây mang lại cảm giác an tâm, yên bình và giúp con người cảm thấy được bảo vệ.\r\nTổng hợp 10 loại cây trừ tà trong tháng cô hồn\r\nTín ngưỡng về cây trừ tà là một phần không thể thiếu trong văn hóa dân gian Việt Nam, đặc biệt là trong những dịp như tháng cô hồn. Người ta tin rằng, một số loại cây có khả năng xua đuổi tà khí, mang lại may mắn và bình an cho gia đình. Dưới đây là thông tin chi tiết về một số loại cây phổ biến:\r\n\r\n1. Cây Lưỡi Hổ\r\nCây lưỡi hổ phong thủy\r\nCây lưỡi hổ được đánh giá trừ tà rất tốt\r\n\r\nĐặc điểm: Lá dài, cứng, vươn thẳng lên trên, có khả năng thanh lọc không khí rất tốt.\r\nÝ nghĩa phong thủy: Biểu tượng cho sự mạnh mẽ, kiên cường, giúp xua đuổi tà khí, bảo vệ ngôi nhà.\r\nVị trí đặt: Thích hợp đặt ở những nơi có nhiều góc cạnh, giúp cân bằng năng lượng âm dương.\r\n2. Cây Trúc\r\ncây trúc quân tử\r\nCây trúc trồng hàng rào, ban công để trừ tà\r\n\r\nĐặc điểm: Thân thẳng, mọc thành bụi, tượng trưng cho sự thanh cao, ngay thẳng.\r\nÝ nghĩa phong thủy: Mang lại may mắn, tài lộc, giúp xua đuổi tà khí, tạo cảm giác bình yên.\r\nVị trí đặt: Trồng trước nhà hoặc trong vườn, tạo thành hàng rào bảo vệ.\r\n3. Cây Xương Rồng\r\nchậu trồng cây mini\r\nXương rồng gai góc được làm vật trừ tà từ xưa\r\n\r\nĐặc điểm: Thân có gai nhọn, khả năng chịu hạn tốt.\r\nÝ nghĩa phong thủy: Biểu tượng cho sự kiên cường, mạnh mẽ, giúp xua đuổi tà ma, bảo vệ ngôi nhà.\r\nVị trí đặt: Thường đặt ở cửa sổ, ban công để ngăn chặn tà khí từ bên ngoài xâm nhập.\r\n4. Cây Ngải Cứu\r\nĐặc điểm: Có mùi thơm đặc trưng, thường được dùng làm thuốc.\r\nÝ nghĩa phong thủy: Được xem là loại cây có khả năng trừ tà, xua đuổi tà khí rất mạnh.\r\nCách sử dụng: Có thể trồng cây hoặc treo bó ngải cứu khô trước cửa nhà.\r\n5. Cây Cau\r\nCây cau nga mi đẹp\r\nCây cau trồng trước cửa để trừ tà\r\n\r\nĐặc điểm: Thân thẳng, lá dài, thường được trồng trước nhà.\r\nÝ nghĩa phong thủy: Tượng trưng cho sự thanh cao, ngay thẳng, mang lại may mắn và tài lộc.\r\nVị trí đặt: Trồng trước cửa nhà hoặc trong sân vườn.\r\n6. Cây Hoa Hòe\r\nĐặc điểm: Hoa có màu trắng hoặc vàng nhạt, thơm dịu.\r\nÝ nghĩa phong thủy: Biểu tượng cho sự thuần khiết, trong sáng, giúp xua đuổi tà khí và mang lại bình yên.\r\nVị trí đặt: Trồng trong vườn hoặc ban công.\r\n7. Cây Thiết Mộc Lan\r\ncây thiết mộc lan\r\nCây thiết mộc lan vừa trừ tà vừa mang lại may mắn\r\n\r\nĐặc điểm: Lá xanh bóng, thân cây cứng cáp.\r\nÝ nghĩa phong thủy: Hút tài lộc, may mắn, giúp xua đuổi tà khí, mang lại sự thịnh vượng.\r\nVị trí đặt: Thường được đặt ở phòng khách hoặc phòng làm việc.\r\n8. Cây Kim Tiền\r\ncây kim tiền giao cho nhà riêng\r\nNgoài ý nghĩa mang lại may mắn kim tiền trừ tà cũng rất tốt\r\n\r\nĐặc điểm: Lá tròn, xếp chồng lên nhau như những đồng tiền.\r\nÝ nghĩa phong thủy: Mang lại tài lộc, may mắn, giúp gia chủ làm ăn phát đạt.\r\nVị trí đặt: Đặt ở bàn làm việc, quầy thu ngân hoặc cửa hàng.\r\n9. Cây Vạn Niên Thanh\r\ncây vạn niên thanh cho người tuổi thìn\r\nCây vạn niên thanh giúp mang lại bình an, xua đuổi tà khí\r\n\r\nĐặc điểm: Lá xanh bóng, hình bầu dục.\r\nÝ nghĩa phong thủy: Mang lại sự may mắn, bình an, giúp thanh lọc không khí.\r\nVị trí đặt: Đặt ở phòng khách, phòng ngủ hoặc bàn làm việc.\r\n10. Cây Sung\r\nĐặc điểm: Quả sung tròn trịa, tượng trưng cho sự sung túc, đầy đủ.\r\nÝ nghĩa phong thủy: Mang lại may mắn, tài lộc, giúp gia chủ làm ăn phát đạt.\r\nVị trí đặt: Trồng trước nhà hoặc trong sân vườn.\r\nLưu ý:\r\n\r\nVị trí đặt cây: Mỗi loại cây có những yêu cầu khác nhau về ánh sáng, nhiệt độ và độ ẩm.\r\nKích thước: Chọn cây phù hợp với không gian sống.\r\nÝ nghĩa phong thủy: Kết hợp cây với các yếu tố phong thủy khác để tạo ra một không gian hài hòa.\r\nChăm sóc: Cây cần được chăm sóc đúng cách để phát triển tốt và mang lại hiệu quả.\r\nNgoài 10 loại cây trên, còn rất nhiều loại khác được cho là cây có khả năng trừ tà. Việc lựa chọn loại cây nào phụ thuộc vào sở thích và quan niệm của mỗi người.', 'thumb-truta.jpg', '2024-11-29 02:48:35', 1, 'trừ tà', 1),
+(8, 'Vì sao cây cảnh trong nhà bị vàng và nâu đầu lá\r\n', 'Cây cảnh trong nhà không chỉ làm đẹp không gian sống mà còn giúp thanh lọc không khí và tạo cảm giác thư thái. Tuy nhiên, một vấn đề thường gặp phải khi chăm sóc cây cảnh là tình trạng lá bị vàng và đầu lá màu nâu. Hiểu rõ nguyên nhân và cách khắc phục sẽ giúp cây cảnh luôn xanh tốt và phát triển mạnh mẽ.\r\n\r\nCây cảnh trong nhà bị vàng và nâu đầu lá\r\n\r\n\r\nNguyên nhân cây cảnh trong nhà bị vàng lá\r\nLà một trong những nguyên nhân thường gặp của cây cảnh trong nhà. Thường nếu cây đang bị gặp vấn đề thì sẽ không chỉ vàng lá, mà còn kèm theo các biểu hiện khác đi cùng. Nếu cây vàng lá mà vẫn xanh tốt, chỉ vàng những lá già thì đó là hiện tượng sinh trưởng bình thường.\r\n\r\nThiếu nước\r\nTriệu chứng của việc thiếu nước là lá cây trở nên mềm và vàng úa, đôi khi cả cây có thể héo rũ. Để khắc phục, hãy kiểm tra độ ẩm của đất và đảm bảo cây được tưới nước đều đặn, nhưng tránh để đất bị ngập úng.\r\n\r\nbiểu hiện của cây thiếu nước và dư nước\r\nBiểu hiện của cây thiếu nước và dư nước\r\n\r\nThừa nước\r\nNgược lại, nếu cây bị thừa nước, lá sẽ chuyển màu vàng nhưng vẫn giữ được độ cứng và có thể xuất hiện các đốm nâu. Biện pháp phòng ngừa là kiểm tra độ thoát nước của chậu và điều chỉnh lượng nước tưới phù hợp.\r\n\r\nThiếu dinh dưỡng\r\nCây cần nhiều loại dưỡng chất để phát triển, như nitơ, phốt pho, và kali. Khi thiếu các chất này, lá cây sẽ chuyển màu vàng từ dưới lên. Giải pháp là bổ sung phân bón hợp lý và định kỳ kiểm tra chất lượng đất.\r\nThường khi thiếu dưỡng chất thì cây còi, cây yếu nhưng vẫn sống. Nếu cây bạn có hiện tượng như vậy thì nên nhờ người có kinh nghiệm để kiểm tra cụ thể thiếu chất gì?\r\n\r\nNguyên nhân cây cảnh trong nhà bị nâu đầu lá\r\nLà hiện tượng khá phổ biến đối với cây để trong nhà. Nếu không tìm hiểu và khắc phục sớm thì cây dễ bị xấu, lụi dần và phải bỏ đi.\r\n\r\nMôi trường không phù hợp\r\nĐây là một trong những nguyên nhân thường gặp dẫn đến cây bị cháy và nâu đầu lá. Môi trường nóng, độ ẩm thấp khiến cây bị khô. Để xác định vấn đề này cần có máy đo độ ẩm và cảm quan khi ở môi trường này da của chúng ta thường khô.\r\nKhắc phục: Điều chỉnh độ ẩm bằng cách dùng máy phun sương hoặc chuyển cây ra nơi có độ ẩm cao hơn.\r\n\r\nÁnh sáng quá mạnh\r\nÁnh sáng mặt trời trực tiếp có thể làm cháy đầu lá, khiến lá trở nên khô và nâu ở phần đầu. Để khắc phục, hãy đặt cây ở nơi có ánh sáng gián tiếp hoặc sử dụng rèm che bớt ánh sáng.\r\n\r\nSử dụng phân bón không đúng cách\r\nSử dụng quá nhiều phân bón hoặc phân bón không phù hợp có thể gây cháy đầu lá. Hãy tuân theo hướng dẫn sử dụng phân bón và tránh bón quá nhiều.\r\n\r\nCách chăm sóc cây cảnh trong nhà đúng cách\r\nĐể cây luôn xanh tốt ta cần chú ý đến những vấn đề chính sau:\r\n\r\nTưới nước đúng cách\r\nTưới nước đúng cách là yếu tố quan trọng nhất. Lượng nước cần thiết phụ thuộc vào loại cây và điều kiện môi trường. Thông thường, hãy tưới khi đất khô bề mặt và tránh để nước đọng lại trong chậu.\r\n\r\nCung cấp ánh sáng hợp lý\r\nĐặt cây ở vị trí có ánh sáng gián tiếp hoặc sử dụng đèn LED chiếu sáng nếu không có đủ ánh sáng tự nhiên. Mỗi loại cây cần một mức độ ánh sáng khác nhau, hãy tìm hiểu để biết vị trí đặt cây phù hợp.\r\n\r\nDinh dưỡng và phân bón\r\nSử dụng phân bón hợp lý giúp cây phát triển mạnh mẽ. Lựa chọn loại phân bón phù hợp với loại cây và tuân thủ lịch trình bón phân đều đặn để đảm bảo cây nhận đủ dưỡng chất cần thiết.\r\n\r\nĐộ ẩm\r\nĐộ ẩm thích hợp với đa số cây cảnh thường từ 50 – 70%, tùy một số dòng lá có thể ưa độ ẩm cao hơn 1 chút khoảng 10%.\r\n\r\nCác loại cây cảnh trong dễ chăm sóc\r\nViệc lựa chọn cây cảnh phù hợp với điều kiện môi trường cũng là vấn đề cốt lõi giúp cây sống và phát triển tốt. Dưới đây là một số gợi ý.\r\n\r\nCây kim ngân\r\nLà một trong những cây phong thủy hàng đầu với cây dạng thân gỗ, cây có thể chịu hạn tốt, yêu cầu ánh sáng không cao. Đặt cây nơi có ánh sáng gián tiếp hoặc dưới ánh đèn, chú ý chỉ tưới nước khi đất khô hẳn.\r\n\r\nCây lưỡi hổ\r\nCây có đặc điểm lá cứng và chịu hạn tốt, là lựa chọn tuyệt vời cho những người mới bắt đầu chăm sóc cây cảnh. Đặt cây ở nơi có ánh sáng gián tiếp và tưới nước khi đất khô.\r\n\r\nCây kim tiền\r\nCây không chỉ mang lại may mắn phong thủy mà còn rất dễ chăm sóc. Cây ưa sáng nhưng không chịu được ánh sáng trực tiếp, hãy tưới nước khi đất khô và tránh để cây bị ngập nước.\r\n\r\nCây phú quý\r\nCây có ý nghĩa phong thủy mang lại tài lộc và thịnh vượng. Đặt cây ở nơi có ánh sáng gián tiếp, tưới nước đều đặn và bón phân hợp lý để cây luôn xanh tốt.\r\n\r\nMột số cây hỏi thường gặp khi chăm cây cảnh trong nhà\r\nNgoài ra là một số cây hỏi thường gặp khi chăm sóc cây trong nhà.\r\n\r\nTại sao cây cảnh trong nhà lại quan trọng?\r\n\r\nCây cảnh giúp thanh lọc không khí, làm đẹp không gian sống và tạo cảm giác thư thái. Hơn nữa cây cũng gần như là một chiếc máy, giúp báo hiệu cho chúng ta không gian sống có tốt hay không?\r\n\r\nLàm thế nào để biết cây cảnh cần nước?\r\n\r\nKiểm tra độ ẩm của đất, nếu đất khô bề mặt thì cần tưới nước. Thường cây thiếu nước sẽ có biểu hiện lá mềm và rũ.\r\n\r\nBao lâu nên bón phân cho cây cảnh?\r\n\r\nTùy thuộc vào loại cây và loại phân bón, thông thường nên bón phân mỗi 4-6 tuần.\r\n\r\nLàm thế nào để biết cây cảnh bị thiếu dinh dưỡng?\r\n\r\nLá cây chuyển màu vàng và cây phát triển chậm là dấu hiệu thiếu dinh dưỡng.\r\n\r\nCó nên cắt tỉa lá bị vàng hay cháy không?\r\n\r\nCó, cắt tỉa lá bị vàng hoặc cháy sẽ giúp cây tập trung năng lượng để phát triển các phần khỏe mạnh khác.\r\n\r\nKết luận\r\n\r\nHiểu rõ nguyên nhân và cách khắc phục tình trạng cây cảnh trong nhà bị vàng và nâu đầu lá giúp bạn chăm sóc cây cảnh tốt hơn. Từ việc điều chỉnh lượng nước, ánh sáng đến việc bổ sung dinh dưỡng, tất cả đều đóng vai trò quan trọng. Hãy chăm sóc cây đúng cách để không gian sống của bạn luôn xanh tươi và tràn đầy năng lượng.', 'thumb-lavang.jpg', '2024-11-29 02:48:35', 1, 'lá vàng\r\nnâu đầu lá', 1);
 
 -- --------------------------------------------------------
 
@@ -117,9 +117,9 @@ CREATE TABLE `tbl_blog_cate` (
 --
 
 INSERT INTO `tbl_blog_cate` (`id`, `blog_catename`, `hinh_anh`) VALUES
-(1, 'Thủ thuật', 'thuthuat.jpg'),
-(2, 'Tin tức điện thoại', 'tintucdienthoai.jpg'),
-(3, 'Hướng dẫn', 'huong-dan.jpeg');
+(1, 'chăm sóc', 'tuoicay.jpg'),
+(2, 'cách chăm sóc cây cảnh văn phòng', 'chamsoc.jpg'),
+(3, 'cách chăm sóc cây cảnh thủy sinh', 'chamsoc1.jpg');
 
 -- --------------------------------------------------------
 
@@ -187,7 +187,7 @@ INSERT INTO `tbl_coupon` (`id_coupon`, `coupon_code`, `discount_percent`, `min_v
 CREATE TABLE `tbl_danhgiasp` (
   `id_review` int(9) NOT NULL,
   `iduser` int(10) NOT NULL,
-  `idsanpham` int(11) NOT NULL,
+  `idsanpham` int(4) NOT NULL,
   `images_review` text NOT NULL,
   `noidung` text NOT NULL,
   `rating_star` float(2,1) NOT NULL,
@@ -201,24 +201,16 @@ CREATE TABLE `tbl_danhgiasp` (
 --
 
 INSERT INTO `tbl_danhgiasp` (`id_review`, `iduser`, `idsanpham`, `images_review`, `noidung`, `rating_star`, `date_create`, `iddonhang`, `trangthai_review`) VALUES
-(1, 11, 3, '', 'Sản phẩm đẹp chất lượng tốt', 4.0, '2023-03-28 15:42:50', 63, 1),
-(2, 11, 3, '', 'Điện thoại nhìn rất ngầu không uổng công đã đặt hàng và chờ đợi, cảm ơn shop, love you nhiều nhiều ạ.', 5.0, '2023-03-28 15:49:06', 62, 1),
-(3, 11, 54, '', 'Chất lượng sản phẩm cao lắm', 5.0, '2023-03-29 10:42:32', 62, 1),
-(4, 11, 52, '', 'Chất lượng đến từ nhà Iphone là không thể bàn cãi', 5.0, '2023-03-29 10:47:39', 61, 1),
-(5, 11, 54, '', 'Đẹp không thể tưởng tượng được, Mình đã mua lần 2 cho bạn bè sài thử và không thể tin là nó rất ổn nhé. \nMua ủng hộ sho nhé mọi người <3', 5.0, '2023-03-29 11:04:50', 61, 1),
-(6, 11, 2, '', 'Oppo Chính hàng quá đã', 5.0, '2023-03-29 11:15:10', 59, 1),
-(7, 11, 12, '', 'Oppo Find X3 đúng là tuyệt', 4.0, '2023-03-29 13:04:48', 59, 1),
-(8, 11, 73, '', 'Samsung Galaxy A73 (5G) thật là đẹp và đặc trưng cho user', 4.0, '2023-03-29 14:04:52', 59, 1),
-(9, 11, 52, '', 'I Phone Đẹp không thể tưởng tượng', 5.0, '2023-03-29 14:09:02', 44, 1),
-(10, 11, 53, '', 'I phone 12 pro sài quá phê ^^^', 4.0, '2023-03-29 14:15:05', 44, 1),
-(11, 11, 2, '', 'Woww Điện thoại này phải mua nhé mọi người', 4.0, '2023-03-29 14:36:33', 38, 1),
-(12, 11, 2, '', 'A16k Oppo này không thể chê một lời nào luôn !!!!\nSố một', 4.0, '2023-03-29 19:22:34', 39, 1),
-(13, 11, 5, '', 'A16k Oppo này không thể chê một lời nào luôn !!!!\nSố một', 4.0, '2023-03-29 19:22:34', 38, 1),
-(14, 11, 2, 'huong-dan.jpeg,tintucdienthoai.jpg,thuthuat.jpg', 'Điện thoại đẹp giá tốt', 5.0, '2023-04-01 16:02:53', 75, 1),
-(15, 11, 3, '', 'Quá đẹp không thể tưởng tượng được luôn', 4.0, '2023-04-01 16:22:27', 73, 1),
-(16, 11, 1, '', 'Ok Tốt', 5.0, '2023-04-13 16:09:48', 37, 1),
-(17, 11, 17, '', 'Good', 5.0, '2023-04-13 16:32:43', 48, 1),
-(18, 51, 53, '', 'Chuẩn không tì vết', 5.0, '2023-04-13 19:59:35', 103, 1);
+(1, 11, 3, '', 'Sản phẩm đẹp chất lượng tốt', 4.0, '2024-11-29 01:48:35', 63, 1),
+(2, 11, 3, '', 'Cây nhìn rất ngầu không uổng công đã đặt hàng và chờ đợi, cảm ơn shop, love you nhiều nhiều ạ.', 5.0, '2024-11-29 01:48:35', 62, 1),
+(3, 11, 54, '', 'Chất lượng sản phẩm cao lắm', 5.0, '2024-11-29 01:48:35', 62, 1),
+(4, 11, 52, '', 'Chất lượng đến từ nhà Xgarden là không thể bàn cãi', 5.0, '2024-11-29 01:48:35', 61, 1),
+(5, 11, 54, '', 'Đẹp không thể tưởng tượng được, Mình đã mua lần 2 cho bạn bè sài thử và không thể tin là nó rất ổn nhé. \nMua ủng hộ sho nhé mọi người <3', 5.0, '2024-11-29 01:48:35', 61, 1),
+(6, 11, 2, '', 'Điện thoại đẹp giá tốt', 5.0, '2024-11-29 01:48:35', 75, 1),
+(7, 11, 3, '', 'Quá đẹp không thể tưởng tượng được luôn', 4.0, '2024-11-29 01:48:35', 73, 1),
+(8, 11, 1, '', 'Ok Tốt', 5.0, '2024-11-29 01:48:35', 37, 1),
+(9, 11, 17, '', 'Good', 5.0, '2024-11-29 01:48:35', 48, 1),
+(10, 51, 53, '', 'Chuẩn không tì vết', 5.0, '2024-11-29 01:48:35', 103, 1);
 
 -- --------------------------------------------------------
 
@@ -291,8 +283,7 @@ CREATE TABLE `tbl_feedback` (
 --
 
 INSERT INTO `tbl_feedback` (`id`, `name`, `email`, `phone`, `title`, `content`, `date_create`) VALUES
-(1, 'Trần Nhật Sang', 'nhatsang0101@gmail.com', '0937988510', 'KHOng', 'KHông có gì', '2023-04-13 20:40:00'),
-(2, 'Lê Văn Luyện', 'sangtnps20227@fpt.edu.vn', '0909129236', 'Gớm máu', 'Có tiền không ?', '2023-04-13 21:16:27');
+(2, 'Lê Văn Luyện', 'trungdmps30165@fpt.edu.vn', '0919059992', 'hơi bị đẹp', 'tiền đầy túi?', '2023-04-13 21:16:27');
 
 -- --------------------------------------------------------
 
@@ -322,22 +313,19 @@ CREATE TABLE `tbl_nguoidung` (
 
 INSERT INTO `tbl_nguoidung` (`id`, `mat_khau`, `ho_ten`, `diachi`, `shipping_id`, `sodienthoai`, `kich_hoat`, `hinh_anh`, `email`, `vai_tro`, `congty`, `default_payment`, `about_me`) VALUES
 (11, 'a66abb5684c45962d887564f08346e8d', 'Quản trị viên', '19/7c kp Đông Tác', 1, '0937988510', 1, 'avatar_it.png', 'admin@gmail.com', 1, 'FPT polytechnic', 'vnpaypayment', 'Nothing IMpossible'),
-(18, '5c4de0f09520cb4ed088a35ff5746320', 'Nguyen Khoa Dev', '19/7c', 2, '0937988510', 1, 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80', 'nhatsang0103@gmail.com', 1, NULL, 'codpayment', NULL),
-(31, '1f32aa4c9a1d2ea010adcf2348166a04', 'Minh Đan', 'Quan 3, TPHCM', 7, '0988542654', 1, 'minhdan-img.png', 'dan11102003net@gmail.com', 3, NULL, 'codpayment', NULL),
-(34, '1f32aa4c9a1d2ea010adcf2348166a04', 'hoang trung', 'Quan 2, TPHCM', 10, '0256877241', 1, 'hoang-trung-avatar.jpg', 'hoangtrung@gmail.com', 3, NULL, 'codpayment', NULL),
-(35, '1f32aa4c9a1d2ea010adcf2348166a04', 'Lam Phoi', 'Quan 1, TPHCM', 11, '0989756244', 1, 'lam-phoi-avatar.jpg', 'lamphoi02@gmail.com', 3, NULL, 'codpayment', NULL),
-(36, 'e655834059c57c038e12961e16fca2b3', 'Duyên', 'fsdfsdfsdfsd', 12, '0932432432', 1, 'christopher-campbell-rDEOVtE7vOs-unsplash.jpg', 'phoi1@gmail.com', 2, NULL, 'codpayment', NULL),
-(37, '2e99bf4e42962410038bc6fa4ce40d97', 'Nguyễn Thị Nam', 'PMQT', 13, '0385766431', 1, 'nguyen-thi-nam-avatar.jpg', 'nguyennam@gmail.com', 3, NULL, 'codpayment', NULL),
-(38, 'f4cc399f0effd13c888e310ea2cf5399', 'Sang Tran Dev', 'Yen Bai', 0, '0937988512', 1, 'paul-schaferh.jpg', 'nhatsang0103@gmail.com', 3, 'FPT polytechnic', 'codpayment', 'No thing special'),
-(44, 'aec4c5d18273e7508640d9154f53e962', 'Nguyễn Minh Đan', 'fdsfksdjflkds', 0, '0937988510', 1, 'minhdan-img.png', 'dannnmps25450@fpt.edu.vn', 2, NULL, 'codpayment', NULL),
-(45, 'edbbd29c9296c096c2c0a72e44bb2035', 'Nguyễn Văn Tèo', 'Bình Định', 0, '0909123456', 0, 'angelika-agibalova-HmFUXQaScPY-unsplash.jpg', 'intelsport22@gmail.com', 3, NULL, 'codpayment', NULL),
-(46, 'edbbd29c9296c096c2c0a72e44bb2035', 'SangDev4', 'dfsdfds', 0, '0937988510', 1, 'Anh Bong Da SVD.jpg', 'sangtnps20227@fpt.edu.vn', 3, 'FPT POLY', 'codpayment', NULL),
-(47, 'a59faf11f443d5cbee1c1119c463e543', 'David Tran', 'Quan 5, TPHCM', 0, '0754224111', 1, 'david-vo.jpg', 'admin@trannhatsang.com', 3, NULL, 'codpayment', NULL),
-(48, 'edbbd29c9296c096c2c0a72e44bb2035', 'Hà Thị Loan', NULL, 0, '', 1, 'avatar-user-default.jpg', 'rosisport910@gmail.com', 3, NULL, 'codpayment', NULL),
+(35, '1f32aa4c9a1d2ea010adcf2348166a04', 'Tunnn', 'Quan 1, TPHCM', 11, '0123456789', 1, 'z5586597629842_9987ee517a3e8d34736846edfca5dcd5 (1).jpg', 'tunn02@gmail.com', 3, NULL, 'codpayment', NULL),
+(36, 'e655834059c57c038e12961e16fca2b3', 'Duyên', 'fsdfsdfsdfsd', 12, '0932432432', 1, 'christopher-campbell-rDEOVtE7vOs-unsplash.jpg', 'test@gmail.com', 2, NULL, 'codpayment', NULL),
+(37, '2e99bf4e42962410038bc6fa4ce40d97', 'Tunn', 'abc', 13, '0385766431', 1, 'z5586597629842_9987ee517a3e8d34736846edfca5dcd5 (1).jpg', 'tunnn@gmail.com', 3, NULL, 'codpayment', NULL),
+(38, 'f4cc399f0effd13c888e310ea2cf5399', 'tunn1', 'hcm', 0, '0937988512', 1, 'paul-schaferh.jpg', 'tun01@gmail.com', 3, 'FPT polytechnic', 'codpayment', 'No thing special'),
+(44, 'aec4c5d18273e7508640d9154f53e962', 'tuntest', 'fdsfksdjflkds', 0, '0937988510', 1, 'z5586597629842_9987ee517a3e8d34736846edfca5dcd5 (1).jpg', 'trungdmps30165@fpt.edu.vn', 2, NULL, 'codpayment', NULL),
+(45, 'edbbd29c9296c096c2c0a72e44bb2035', 'Nguyễn Văn Tèo', 'Bình Định', 0, '0909123456', 0, 'z5586597629842_9987ee517a3e8d34736846edfca5dcd5 (1).jpg', 'nogmail@gmail.com', 3, NULL, 'codpayment', NULL),
+(46, 'edbbd29c9296c096c2c0a72e44bb2035', 'devtest', 'dfsdfds', 0, '0937988510', 1, 'z5586597629842_9987ee517a3e8d34736846edfca5dcd5 (1).jpg', 'trungdf555@gmail.com', 3, 'FPT POLY', 'codpayment', NULL),
+(47, 'a59faf11f443d5cbee1c1119c463e543', 'David Tran', 'Quan 5, TPHCM', 0, '0754224111', 1, 'david-vo.jpg', 'admin@test.com', 3, NULL, 'codpayment', NULL),
+(48, 'edbbd29c9296c096c2c0a72e44bb2035', 'test', NULL, 0, '', 1, 'no-img.jpg', 'nomail@gmail.com', 3, NULL, 'codpayment', NULL),
 (49, '5c4de0f09520cb4ed088a35ff5746320', 'Lê văn tám', 'HCM', 0, '0909129344', 1, 'angelika-agibalova-HmFUXQaScPY-unsplash.jpg', 'vantam@gmail.com', 2, NULL, 'codpayment', NULL),
-(50, '32eeb4caa88b14fe821d790cb9556842', 'trungnguyen212900@gmail.com', NULL, 0, '', 1, 'avatar-user-default.jpg', 'trungnguyen212900@gmail.com', 3, NULL, 'codpayment', NULL),
-(51, 'edbbd29c9296c096c2c0a72e44bb2035', 'lienhe@trannhatsang.com', NULL, 0, '', 1, 'avatar-user-default.jpg', 'khachhang@gmail.com', 3, NULL, 'codpayment', NULL),
-(52, 'a66abb5684c45962d887564f08346e8d', 'Nguyen A ', 'Hà Nội', 0, '0909999999', 0, '1', 'customer@gmail.com', 3, 'avatar_it.png', 'momopayment', NULL);
+(50, '32eeb4caa88b14fe821d790cb9556842', 'test01@gmail.com', NULL, 0, '', 1, 'avatar-user-default.jpg', 'trungnguyen212900@gmail.com', 3, NULL, 'codpayment', NULL),
+(51, 'edbbd29c9296c096c2c0a72e44bb2035', 'lienhe@admin.com', NULL, 0, '', 1, 'avatar-user-default.jpg', '', 3, NULL, 'codpayment', NULL),
+(52, 'a66abb5684c45962d887564f08346e8d', 'Tunnn', 'TP.HCM', 0, '0909999999', 0, '1', 'customer@gmail.com', 3, 'avatar_it.png', 'momopayment', NULL);
 
 -- --------------------------------------------------------
 
@@ -365,68 +353,6 @@ CREATE TABLE `tbl_order` (
   `reason_destroy` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
---
--- Đang đổ dữ liệu cho bảng `tbl_order`
---
-
-INSERT INTO `tbl_order` (`id`, `madonhang`, `tongdonhang`, `shipping_fee`, `vat_fee`, `pttt`, `iduser`, `name`, `dienThoai`, `email`, `address`, `ghichu`, `timeorder`, `trangthai`, `thanhtoan`, `coupon_code`, `reason_destroy`) VALUES
-(34, 'THEPHONERSTORE4016544', 109747000, 0.00, 0.00, 'Thanh toán khi nhận hàng', 11, 'Trần Nhật Sang', '0937988510', 'nhatsang0101@gmail.com', 'nhatsang', '', '2023-03-01 10:49:06', 6, 0, '', NULL),
-(35, 'THEPHONERSTORE4178322', 76750000, 0.00, 0.00, 'Thanh toán khi nhận hàng', 11, 'Trần Nhật Sang', '0937988510', 'nhatsang0101@gmail.com', 'nhatsang', 'Hihi', '2023-02-17 10:48:58', 4, 1, '', NULL),
-(37, 'THEPHONERSTORE5665740', 73143350, 0.00, 0.00, 'Thanh toán khi nhận hàng', 11, 'Trần Nhật Sang', '0937988510', 'nhatsang0101@gmail.com', '19/7c', 'Khong co gi', '2023-02-10 00:00:00', 4, 0, '', NULL),
-(38, 'THEPHONERSTORE635432', 63469270, 0.00, 0.00, 'Thanh toán khi nhận hàng', 11, 'Sang', '+1 (426) 2', 'qaso@mailinator.com', 'In reiciendis placea', 'Quis anim ut ipsum q', '2023-02-02 10:46:53', 4, 1, '', NULL),
-(39, 'THEPHONERSTORE8042153', 28888100, 0.00, 0.00, 'Thanh toán khi nhận hàng', 11, 'Nhật Sang', '+1 (958) 7', 'mugyfinisy@mailinator.com', 'Debitis pariatur Vo', 'In distinctio Tempo', '2023-03-18 00:00:00', 4, 1, '', NULL),
-(40, 'THEPHONERSTORE3410929', 21582000, 0.00, 0.00, 'Thanh toán khi nhận hàng', 35, 'lamphoi', '0565001856', 'lamphoi02@gmail.com', '1a196 đường Trần Phú Nối Dài Xuân Thanh Long Khánh Đồng Nai', 'ship nhanh cho mình nha shop', '2023-03-09 10:45:39', 4, 1, '', NULL),
-(41, 'THEPHONERSTORE552813', 20898100, 0.00, 0.00, 'Thanh toán khi nhận hàng', 11, 'Trần Nhật Sang', '0937988510', 'nhatsang0101@gmail.com', 'nhatsang', 'goi can than', '2023-01-12 00:00:00', 3, 1, '', NULL),
-(42, 'THEPHONERSTORE4708439', 26590500, 0.00, 0.00, 'Thanh toán khi nhận hàng', 37, 'Nguyễn Thị Nam', '0866732171', 'nguyennam@gmail.com', 'Công viên phàn mềm quang trung', '', '2023-01-17 00:00:01', 4, 1, '', NULL),
-(43, 'THEPHONERSTORE4344696', 50321500, 0.00, 0.00, 'Thanh toán khi nhận hàng', 11, 'Sang Trần', '+1 (433) 7', 'lide@mailinator.com', 'Mollit nulla amet l', 'Exercitation enim cu', '2023-03-13 00:00:00', 4, 1, '', NULL),
-(44, 'THEPHONERSTORE7595310', 32281000, 0.00, 0.00, 'Thanh toán khi nhận hàng', 11, 'NSang', '+1 (675) 9', 'welepix@mailinator.com', 'Ratione corporis non', 'Quibusdam vel eos s', '2023-03-14 10:44:07', 4, 1, '', NULL),
-(45, 'THEPHONERSTORE4629778', 18439050, 0.00, 0.00, '', 11, 'TNSang', '', 'vikuxil@mailinator.com', 'In culpa qui labori', 'Facere repellendus ', '2023-02-01 00:00:00', 1, 1, '', NULL),
-(46, 'THEPHONERSTORE9329905', 44212000, 0.00, 0.00, 'Thanh toán VNpay', 11, 'SangTN', '+1 (249) 3', 'cupojumyf@mailinator.com', 'Tenetur mollitia err', 'Asperiores inventore', '2023-01-09 20:58:12', 3, 1, '', NULL),
-(47, 'THEPHONERSTORE628078', 12753000, 0.00, 0.00, 'Thanh toán VNpay', 11, 'SangFPT', '+1 (842) 6', 'muqikuceh@mailinator.com', 'Nulla ut eius non ve', 'Okie VNpay', '2023-01-23 00:00:00', 6, 1, '', NULL),
-(48, 'THEPHONERSTORE7562348', 12753000, 0.00, 0.00, 'Thanh toán VNpay', 11, 'SangSang', '+1 (671) 7', 'fiha@mailinator.com', 'Provident cupiditat', 'Vel est aut itaque d', '2023-02-11 00:00:00', 4, 1, '', NULL),
-(50, 'THEPHONERSTORE4728114', 18342000, 0.00, 0.00, 'Thanh toán VNpay', 11, 'SangDev', '+1 (846) 7', 'buna@mailinator.com', 'Laborum Nostrud min', 'Ex consequatur Temp', '2023-02-13 21:03:17', 3, 1, '', NULL),
-(51, 'THEPHONERSTORE2523927', 32031050, 0.00, 0.00, 'Thanh toán VNpay', 11, 'Sang123', '+1 (828) 6', 'wonikata@mailinator.com', 'Porro reiciendis bea', 'Deserunt voluptate q', '2023-02-01 00:00:00', 2, 1, '', NULL),
-(52, 'THEPHONERSTORE738238', 18781000, 0.00, 0.00, 'Thanh toán VNpay', 11, 'BC Sang', '+1 (774) 7', 'mycuvuj@mailinator.com', 'Aut voluptate et et ', 'Mollitia placeat in', '2023-01-02 00:00:00', 1, 1, '', NULL),
-(54, 'THEPHONERSTORE7735804', 8811000, 0.00, 0.00, 'Thanh toán VNpay', 11, 'Tran nhat sang', '+1 (211) 6', 'xolyzyqed@mailinator.com', 'Molestiae minus volu', 'Sunt dolor quam qua', '2023-01-05 00:00:00', 1, 1, '', NULL),
-(55, 'THEPHONERSTORE7413038', 10440500, 0.00, 0.00, 'Thanh toán VNpay', 11, 'Sang', '+1 (385) 6', 'lusocerak@mailinator.com', 'Ut reprehenderit re', 'Ipsum quisquam mole', '2023-01-06 00:00:00', 2, 1, '', NULL),
-(56, 'THEPHONERSTORE4161485', 5510800, 0.00, 0.00, 'Thanh toán VNpay', 11, 'Sang block', '+1 (948) 7', 'docylek@mailinator.com', 'Ullamco provident a', 'Fugiat nisi culpa ', '2023-01-07 00:00:00', 6, 1, '', NULL),
-(58, 'THEPHONERSTORE5742023', 9810500, 0.00, 0.00, 'Thanh toán VNpay', 11, 'SangChain', '+1 (299) 9', 'hutefucex@mailinator.com', 'Fuga In praesentium', 'Est doloribus lauda', '2023-03-25 08:03:14', 1, 1, '', NULL),
-(59, 'THEPHONERSTORE7862485', 44452000, 0.00, 0.00, 'Thanh toán VNpay', 11, 'Trần Nhật Sang', '0937988510', 'nhatsang0101@gmail.com', 'Di An, Binh Duong 23', 'Thanh toán tối ưu', '2023-03-25 08:23:37', 4, 1, '', NULL),
-(60, 'THEPHONERSTORE658476', 71175550, 0.00, 0.00, 'Thanh toán VNpay', 11, 'Trần Nhật Sang', '0937988510', 'nhatsang0101@gmail.com', 'Di An, Binh Duong 23', 'Cẩn thận nhé', '2023-03-26 11:37:42', 6, 1, '', NULL),
-(61, 'THEPHONERSTORE8568716', 28481000, 0.00, 0.00, 'Thanh toán VNpay', 11, 'Trần Nhật Sang', '0937988510', 'nhatsang0101@gmail.com', 'Di An, Binh Duong 23', 'Đặt hàng oke', '2023-03-26 01:54:22', 4, 1, '', NULL),
-(62, 'THEPHONERSTORE9805268', 27151000, 0.00, 0.00, 'Thanh toán khi nhận hàng', 11, 'Trần Nhật Sang', '0937988510', 'nhatsang0101@gmail.com', 'Di An, Binh Duong 23', 'Cam on', '2023-03-27 01:10:21', 4, 1, '', NULL),
-(63, 'THEPHONERSTORE2626293', 33421000, 0.00, 0.00, 'Thanh toán VNpay', 11, 'Trần Nhật Sang', '0937988510', 'nhatsang0101@gmail.com', 'Di An, Binh Duong 23', '123', '2023-03-27 02:04:39', 4, 1, '', NULL),
-(64, 'THEPHONERSTORE9484947', 18552145, 0.00, 0.00, 'Thanh toán khi nhận hàng', 11, 'Trần Nhật Sang', '0937988510', 'nhatsang0101@gmail.com', '19/7c, Phường Tân Đông Hiệp, Thành phố Dĩ An, Bình Dương', 'Cẩn thận nhé', '2023-03-28 13:54:02', 1, 0, '', NULL),
-(66, 'THEPHONERSTORE5043682', 28688305, 0.00, 0.00, 'Thanh toán khi nhận hàng', 11, 'Trần Nhật Sang', '0937988510', 'nhatsang0101@gmail.com', '19/7c, Phường Tân Đông Hiệp, Thành phố Dĩ An, Bình Dương', '', '2023-03-28 14:35:14', 2, 0, '', NULL),
-(67, 'THEPHONERSTORE4639571', 50425058, 0.00, 0.00, 'Thanh toán khi nhận hàng', 11, 'Trần Nhật Sang', '0937988510', 'nhatsang0101@gmail.com', '19/7c, Phường Tân Đông Hiệp, Thành phố Dĩ An, Bình Dương', '', '2023-03-28 14:49:38', 1, 0, '', NULL),
-(68, 'THEPHONERSTORE6646341', 6342350, 52350.00, 0.00, 'Thanh toán VNpay', 11, 'Trần Nhật Sang', '0937988510', 'nhatsang0101@gmail.com', '19/7c, Phường Tân Đông Hiệp, Thành phố Dĩ An, Bình Dương', 'Hihi', '2023-03-28 15:00:48', 2, 1, '', NULL),
-(70, 'THEPHONERSTORE3967719', 26181553, 151053.00, 0.00, 'Thanh toán khi nhận hàng', 11, 'Trần Nhật Sang', '0937988510', 'nhatsang0101@gmail.com', '19/7c, Phường Tân Đông Hiệp, Thành phố Dĩ An, Bình Dương', '', '2023-03-28 15:02:41', 4, 1, '', NULL),
-(71, 'THEPHONERSTORE106605', 56809430, 303430.00, 0.00, 'Thanh toán VNpay', 11, 'Trần Nhật Sang', '0937988510', 'nhatsang0101@gmail.com', '19/7c Đông Tác, Phường Tân Đông Hiệp, Thành phố Dĩ An, Bình Dương', 'Hàng dễ vỡ giao hàng cẩn thận', '2023-03-28 15:17:00', 6, 1, '', 'KHong thichs'),
-(74, 'THEPHONERSTORE9511207', 8599901, 59692.00, 781809.20, 'Thanh toán khi nhận hàng', 11, 'Trần Nhật Sang', '0937988510', 'nhatsang0101@gmail.com', '19/7c Đông Tác, Phường Tân Đông Hiệp, Thành phố Dĩ An, Bình Dương', 'Check out!!!!', '2023-03-28 15:42:24', 4, 1, '', NULL),
-(76, 'THEPHONERSTORE6865290', 22389293, 144403.00, 2484490.30, 'Thanh toán khi nhận hàng', 11, 'Trần Nhật Sang', '0937988510', 'nhatsang0101@gmail.com', '19/7c kp Đông Tác, Phường Tân Đông Hiệp, Thành phố Dĩ An, Bình Dương', '', '2023-03-30 16:12:35', 5, 0, 'THEPHONER304_15', NULL),
-(77, 'THEPHONERSTORE7086402', 8711515, 64105.00, 870510.50, 'Thanh toán VNpay', 11, 'Trần Nhật Sang', '0937988510', 'nhatsang0101@gmail.com', '19/7c kp Đông Tác, Phường Tân Đông Hiệp, Thành phố Dĩ An, Bình Dương', 'hàng dễ vỡ giao hàng cẩn thận', '2023-03-30 16:36:18', 4, 1, 'SALEOF_10', NULL),
-(81, 'THEPHONERSTORE178214', 53169748, 287835.00, 5367483.50, 'Thanh toán VNpay', 11, 'Trần Nhật Sang', '0937988510', 'nhatsang0101@gmail.com', '19/7c kp Đông Tác, Phường Tân Đông Hiệp, Thành phố Dĩ An, Bình Dương', 'Good', '2023-04-01 15:19:07', 5, 1, 'SALEOFF_25', NULL),
-(86, 'THEPHONERSTORE9433925', 24435591, 197965.00, 2681096.50, 'Thanh toán VNpay', 46, 'Trần Nhật Sang\nPS20227', '0937988510', 'sangtnps20227@fpt.edu.vn', 'dfsdfsd, , Quận Huyện, Tỉnh - Thành', 'dsfsdfdsfds', '2023-04-06 13:57:10', 6, 1, 'THEPHONER304_15', NULL),
-(89, 'THEPHONERSTORE3026054', 32962226, 213660.00, 2996566.00, 'Thanh toán khi nhận hàng', 46, 'SangDev4', '0937988510', 'sangtnps20227@fpt.edu.vn', 'Đông Tân, Xã Hòa Minh, Huyện Tuy Phong, Bình Thuận', 'adfsdfsdf', '2023-04-09 10:23:02', 5, 0, '', NULL),
-(90, 'THEPHONERSTORE4082235', 23155335, 169305.00, 2105030.50, 'Thanh toán VNpay', 46, 'SangDev4', '0937988510', 'sangtnps20227@fpt.edu.vn', 'fsdfsd, Xã Muội Nọi, Huyện Thuận Châu, Sơn La', 'fdsfsdfsd', '2023-04-09 10:23:55', 5, 1, '', NULL),
-(91, 'THEPHONERSTORE1392870', 14133019, 128499.00, 1284819.90, 'Thanh toán khi nhận hàng', 45, 'Nguyễn Văn Tèo', '0909123456', 'intelsport22@gmail.com', 'dfsdfdsf, Xã Chiềng Sại, Huyện Bắc Yên, Sơn La', 'dsfasdfdsfds', '2023-04-09 10:27:49', 4, 0, '', NULL),
-(92, 'THEPHONERSTORE638549', 13188701, 124228.00, 1198972.80, 'Thanh toán khi nhận hàng', 45, 'Nguyễn Văn Tèo', '0909123456', 'intelsport22@gmail.com', 'dsfsdfs, Xã Chiềng Đông, Huyện Tuần Giáo, Điện Biên', 'dfsdfds', '2023-04-09 10:28:47', 4, 1, '', NULL),
-(93, 'THEPHONERSTORE242113', 671116765, 3056150.00, 61010615.00, 'Thanh toán khi nhận hàng', 11, 'Trần Nhật Sang', '0937988510', 'nhatsang0101@gmail.com', '19/7c Đông Tác, Phường Tân Đông Hiệp, Thành phố Dĩ An, Bình Dương', 'dsadsadas', '2023-04-09 14:31:43', 1, 0, '', NULL),
-(94, 'THEPHONERSTORE7811798', 122205282, 573511.00, 11109571.10, 'Thanh toán khi nhận hàng', 11, 'Trần Nhật Sang', '0937988510', 'nhatsang0101@gmail.com', '19/7c Đông Tác, Phường Tân Đông Hiệp, Thành phố Dĩ An, Bình Dương', 'fdsfdsfdsfds', '2023-04-09 15:02:03', 6, 0, '', NULL),
-(95, 'THEPHONERSTORE1283327', 12339365, 76605.00, 1121760.50, 'Thanh toán khi nhận hàng', 11, 'Nguyễn Văn A', '0937988510', 'nhatsang0101@gmail.com', '19/7c Đông Tác, Phường Tân Đông Hiệp, Thành phố Dĩ An, Bình Dương', 'fdsfsdf', '2023-04-09 15:18:03', 5, 0, '', NULL),
-(96, 'THEPHONERSTORE8491890', 11564963, 73103.00, 1051360.30, 'Thanh toán VNpay', 11, 'Nguyễn Văn A', '0937988510', 'nhatsang0101@gmail.com', '19/7c Đông Tác, Phường Tân Đông Hiệp, Thành phố Dĩ An, Bình Dương', 'fdsfsdfsdf', '2023-04-10 14:45:56', 3, 1, '', NULL),
-(97, 'THEPHONERSTORE110726', 33832496, 173815.00, 3075681.50, 'Thanh toán VNpay', 11, 'Nguyễn Văn A', '0937988510', 'nhatsang0101@gmail.com', '19/7c Đông Tác, Phường Tân Đông Hiệp, Thành phố Dĩ An, Bình Dương', 'HIhi', '2023-04-11 08:23:24', 5, 1, '', NULL),
-(98, 'THEPHONERSTORE3149585', 52967044, 260358.00, 4815185.80, 'Thanh toán khi nhận hàng', 11, 'Nguyễn Văn A', '0937988510', 'nhatsang0101@gmail.com', '19/7c Đông Tác, Phường Tân Đông Hiệp, Thành phố Dĩ An, Bình Dương', 'Cẩn thận nhé', '2023-04-11 08:28:48', 6, 0, '', NULL),
-(99, 'THEPHONERSTORE5326908', 150804899, 702863.00, 13709536.30, 'Thanh toán VNpay', 11, 'Nguyễn Văn A', '0909999999', 'ABC@gmail.com', '19/7c Đông Tác, Phường Tân Đông Hiệp, Thành phố Dĩ An, Bình Dương', 'HIhi', '2023-04-12 09:20:07', 6, 1, '', 'Thêm sản phẩm'),
-(100, 'THEPHONERSTORE5197336', 18542758, 126553.00, 1685705.30, 'Thanh toán khi nhận hàng', 11, 'Nguyễn Văn A', '0937988510', 'nhatsang0101@gmail.com', '19/7c Đông Tác, Xã Vinh Quang, Huyện Tiên Lãng, Hải Phòng', 'fsdfsdf', '2023-04-12 11:31:44', 6, 0, '', 'Chưa đủ tiền'),
-(101, 'THEPHONERSTORE621193', 31532935, 185305.00, 2866630.50, 'Thanh toán khi nhận hàng', 11, 'Nguyễn Văn A', '0937988510', 'nhatsang0101@gmail.com', '19/7c Đông Tác, Xã Vinh Quang, Huyện Tiên Lãng, Hải Phòng', 'fsdfdsfds', '2023-04-12 11:32:26', 6, 0, '', 'Đổi sản phẩm'),
-(102, 'THEPHONERSTORE4111999', 24888135, 188305.00, 2486930.50, 'Thanh toán khi nhận hàng', 51, 'Trần Khoa', '0909129034', 'lienhe@trannhatsang.com', 'Phường Tân Hiệp, Xã Sơn Hải, Huyện Bảo Thắng, Lào Cai', 'HIHI', '2023-04-13 19:49:58', 6, 0, 'SALEOF_10 ', 'KHông thích thế thôi'),
-(103, 'THEPHONERSTORE1027136', 27356235, 188305.00, 2486930.50, 'Thanh toán khi nhận hàng', 51, 'Trần Khoa', '0909123452', 'lienhe@trannhatsang.com', 'Phường Tân Hiệp, Xã Sơn Hải, Huyện Bảo Thắng, Lào Cai', 'Bán hàng giá rẻ thôi', '2023-04-13 19:51:32', 4, 1, '', NULL),
-(104, 'THEPHONERSTORE6939651', 20690984, 178758.00, 2295025.80, 'Thanh toán VNpay', 51, 'Trần Khoa', '0123456789', 'lienhe@trannhatsang.com', 'Phường Tân Hiệp, Xã Sơn Hải, Huyện Bảo Thắng, Lào Cai', 'ahihi', '2023-04-13 19:55:12', 6, 1, 'SALEOFF_20 ', 'Mắc quá'),
-(105, 'THEPHONERSTORE3306427', 7990000, 0.00, 0.00, 'Thanh toán khi nhận hàng', 52, 'Trần Khoa', '0123456789', 'customer@gmail.comv', 'xx, Thị trấn Trần Văn Thời, Huyện Trần Văn Thời, Cà Mau', 'xxx', '2024-10-22 20:03:38', 2, 0, '', NULL),
-(106, 'THEPHONERSTORE6802051', 7811280, 0.00, 0.00, 'Thanh toán khi nhận hàng', 52, 'Khoa Nguyen', '0909999999', 'customer@gmail.com', 'Hẻm 51 0909999999, Phường Hưng Phú, Quận Cái Răng, Cần Thơ', 'Liên hệ giao hàng 0909999999', '2024-10-22 22:23:19', 2, 0, 'sale2024', NULL),
-(107, 'THEPHONERSTORE1095033', 10449050, 0.00, 0.00, 'Thanh toán khi nhận hàng', 52, 'Nguyen A ', '0909999999', 'customer@gmail.com', 'Hẻm 51, Phường Hưng Lợi, Quận Ninh Kiều, Cần Thơ', 'đóng gói', '2024-11-28 23:17:05', 1, 0, '', NULL);
-
 -- --------------------------------------------------------
 
 --
@@ -442,135 +368,6 @@ CREATE TABLE `tbl_order_detail` (
   `tensp` varchar(100) DEFAULT NULL,
   `hinhanh` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
-
---
--- Đang đổ dữ liệu cho bảng `tbl_order_detail`
---
-
-INSERT INTO `tbl_order_detail` (`id`, `idsanpham`, `iddonhang`, `soluong`, `dongia`, `tensp`, `hinhanh`) VALUES
-(4, 1, 31, 3, 10999000, 'Điện thoại OPPO Reno8 T 5G 256GB', 'thumb-oppo-reno8t-vang1-thumb-600x600.jpg'),
-(5, 2, 31, 3, 17590000, 'Điện thoại OPPO Reno8 Z 5G', 'thumb-photo_2022-08-05_09-40-15.jpg'),
-(6, 4, 31, 2, 11990000, 'Điện thoại OPPO Reno7 Pro 5G', 'thumb-oppo reno 7 t_i_xu_ng_42__3.png'),
-(7, 1, 32, 3, 10999000, 'Điện thoại OPPO Reno8 T 5G 256GB', 'thumb-oppo-reno8t-vang1-thumb-600x600.jpg'),
-(8, 2, 32, 3, 17590000, 'Điện thoại OPPO Reno8 Z 5G', 'thumb-photo_2022-08-05_09-40-15.jpg'),
-(9, 4, 32, 2, 11990000, 'Điện thoại OPPO Reno7 Pro 5G', 'thumb-oppo reno 7 t_i_xu_ng_42__3.png'),
-(13, 1, 34, 3, 10999000, 'Điện thoại OPPO Reno8 T 5G 256GB', 'thumb-oppo-reno8t-vang1-thumb-600x600.jpg'),
-(14, 2, 34, 3, 17590000, 'Điện thoại OPPO Reno8 Z 5G', 'thumb-photo_2022-08-05_09-40-15.jpg'),
-(15, 4, 34, 2, 11990000, 'Điện thoại OPPO Reno7 Pro 5G', 'thumb-oppo reno 7 t_i_xu_ng_42__3.png'),
-(16, 2, 35, 3, 17590000, 'Điện thoại OPPO Reno8 Z 5G', 'thumb-photo_2022-08-05_09-40-15.jpg'),
-(17, 4, 35, 2, 11990000, 'Điện thoại OPPO Reno7 Pro 5G', 'thumb-oppo reno 7 t_i_xu_ng_42__3.png'),
-(18, 1, 36, 3, 10999000, 'Điện thoại OPPO Reno8 T 5G 256GB', 'thumb-oppo-reno8t-vang1-thumb-600x600.jpg'),
-(19, 2, 36, 3, 17590000, 'Điện thoại OPPO Reno8 Z 5G', 'thumb-photo_2022-08-05_09-40-15.jpg'),
-(20, 4, 36, 2, 11990000, 'Điện thoại OPPO Reno7 Pro 5G', 'thumb-oppo reno 7 t_i_xu_ng_42__3.png'),
-(21, 2, 36, 1, 7990000, 'Điện thoại OPPO Reno8 Z 5G', '../uploads/thumb-photo_2022-08-05_09-40-15.jpg'),
-(22, 1, 37, 7, 10449050, 'Điện thoại OPPO Reno8 T 5G 256GB', '../uploads/thumb-oppo-reno8t-vang1-thumb-600x600.jpg'),
-(23, 1, 38, 1, 10449050, 'Điện thoại OPPO Reno8 T 5G 256GB', '../uploads/thumb-oppo-reno8t-vang1-thumb-600x600.jpg'),
-(24, 2, 38, 5, 7990000, 'Điện thoại OPPO Reno8 Z 5G', '../uploads/thumb-photo_2022-08-05_09-40-15.jpg'),
-(25, 4, 38, 1, 10791000, 'Điện thoại OPPO Reno7 Pro 5G', '../uploads/thumb-oppo reno 7 t_i_xu_ng_42__3.png'),
-(26, 97, 38, 1, 20, 'Samsung Galaxy Z Fold3 5G 256GB ', '../uploads/thumb-anhchinh16.jpg'),
-(27, 5, 38, 1, 2279200, 'Điện thoại OPPO A16K', '../uploads/thumb-oppo a 16k.jpg'),
-(29, 2, 39, 1, 7990000, 'Điện thoại OPPO Reno8 Z 5G', '../uploads/thumb-photo_2022-08-05_09-40-15.jpg'),
-(30, 4, 40, 2, 10791000, 'Điện thoại OPPO Reno7 Pro 5G', '../uploads/thumb-oppo reno 7 t_i_xu_ng_42__3.png'),
-(31, 1, 41, 2, 10449050, 'Điện thoại OPPO Reno8 T 5G 256GB', '../uploads/thumb-oppo-reno8t-vang1-thumb-600x600.jpg'),
-(32, 44, 42, 1, 26590500, 'iPhone 14 Pro Max ', '../uploads/thumb-iphone14prm-1.jpg'),
-(33, 53, 43, 1, 14240500, 'iPhone 12 Pro ', '../uploads/thumb-iphone12pro-1.jpg'),
-(34, 52, 43, 2, 18040500, 'iPhone 12 Pro Max', '../uploads/thumb-iphone12prm-2.jpg'),
-(35, 52, 44, 1, 18040500, 'iPhone 12 Pro Max', '../uploads/thumb-iphone12prm-2.jpg'),
-(36, 53, 44, 1, 14240500, 'iPhone 12 Pro ', '../uploads/thumb-iphone12pro-1.jpg'),
-(37, 2, 45, 1, 7990000, 'Điện thoại OPPO Reno8 Z 5G', '../uploads/thumb-photo_2022-08-05_09-40-15.jpg'),
-(38, 1, 45, 1, 10449050, 'Điện thoại OPPO Reno8 T 5G 256GB', '../uploads/thumb-oppo-reno8t-vang1-thumb-600x600.jpg'),
-(39, 4, 46, 1, 10791000, 'Điện thoại OPPO Reno7 Pro 5G', '../uploads/thumb-oppo reno 7 t_i_xu_ng_42__3.png'),
-(40, 3, 46, 2, 16710500, 'Điện thoại OPPO Reno8 Pro 5G', '../uploads/thumb-oppo_reno8_pro_1_.jpg'),
-(41, 17, 47, 1, 3231000, 'Xiaomi Redmi 10C', '../uploads/thumb-xiaomi-redmi-10c.jpeg'),
-(42, 18, 47, 1, 3951000, 'Xiaomi Redmi Note 11', '../uploads/thumb-xiaomi-redmi-note-11.jpeg'),
-(43, 19, 47, 1, 5571000, 'Xiaomi Redmi Note 11 Pro', '../uploads/thumb-xiaomi-redmi-note-11-pro.jpeg'),
-(44, 17, 48, 1, 3231000, 'Xiaomi Redmi 10C', '../uploads/thumb-xiaomi-redmi-10c.jpeg'),
-(45, 18, 48, 1, 3951000, 'Xiaomi Redmi Note 11', '../uploads/thumb-xiaomi-redmi-note-11.jpeg'),
-(46, 19, 48, 1, 5571000, 'Xiaomi Redmi Note 11 Pro', '../uploads/thumb-xiaomi-redmi-note-11-pro.jpeg'),
-(47, 23, 50, 1, 8091000, 'Xiaomi 11T 5G', '../uploads/thumb-xiaomi-11t-xanh-duong.jpeg'),
-(48, 22, 50, 1, 10251000, 'Xiaomi 12T 5G', '../uploads/thumb-xiaomi-12t-glr-den.jpeg'),
-(49, 1, 51, 1, 10449050, 'Điện thoại OPPO Reno8 T 5G 256GB', '../uploads/thumb-oppo-reno8t-vang1-thumb-600x600.jpg'),
-(50, 4, 51, 2, 10791000, 'Điện thoại OPPO Reno7 Pro 5G', '../uploads/thumb-oppo reno 7 t_i_xu_ng_42__3.png'),
-(51, 2, 52, 1, 7990000, 'Điện thoại OPPO Reno8 Z 5G', '../uploads/thumb-photo_2022-08-05_09-40-15.jpg'),
-(52, 4, 52, 1, 10791000, 'Điện thoại OPPO Reno7 Pro 5G', '../uploads/thumb-oppo reno 7 t_i_xu_ng_42__3.png'),
-(53, 20, 54, 1, 5121000, 'Xiaomi Redmi Note 11S', '../uploads/thumb-xiaomi-redmi-note-11s.jpeg'),
-(54, 21, 54, 1, 3690000, 'Xiaomi Redmi 10', '../uploads/thumb-xiaomi-redmi-10-2022-xanh.jpeg'),
-(55, 54, 55, 1, 10440500, 'iPhone 12 Mini', '../uploads/thumb-iphone12mini1.jpg'),
-(56, 6, 56, 1, 5510800, 'Điện thoại OPPO A96 ', '../uploads/thumb-a96-navigation-pink-v1.png'),
-(57, 11, 58, 2, 3200000, 'Điện thoại OPPO A17K', '../uploads/thumb-oppo a17k dien thoai thong minh.png'),
-(58, 67, 58, 1, 3410500, 'Samsung Galaxy A04s', '../uploads/thumb-anhchinh1.jpg'),
-(59, 2, 59, 1, 7990000, 'Điện thoại OPPO Reno8 Z 5G', '../uploads/thumb-photo_2022-08-05_09-40-15.jpg'),
-(60, 73, 59, 2, 9775500, 'Samsung Galaxy A73 (5G)', '../uploads/thumb-anhchinh7.jpg'),
-(61, 12, 59, 1, 16911000, 'OPPO Find X3 Pro 5G', '../uploads/thumb-oppo-find-x3-pro-5g-3_2.jpg'),
-(62, 1, 60, 1, 10449050, 'Điện thoại OPPO Reno8 T 5G 256GB', '../uploads/thumb-oppo-reno8t-vang1-thumb-600x600.jpg'),
-(63, 2, 60, 5, 7990000, 'Điện thoại OPPO Reno8 Z 5G', '../uploads/thumb-photo_2022-08-05_09-40-15.jpg'),
-(64, 70, 60, 3, 6925500, 'Samsung Galaxy A23 (4GB 128GB)', '../uploads/thumb-anhchinh4.jpg'),
-(65, 52, 61, 1, 18040500, 'iPhone 12 Pro Max', '../uploads/thumb-iphone12prm-2.jpg'),
-(66, 54, 61, 1, 10440500, 'iPhone 12 Mini', '../uploads/thumb-iphone12mini1.jpg'),
-(67, 3, 62, 1, 16710500, 'Điện thoại OPPO Reno8 Pro 5G', '../uploads/thumb-oppo_reno8_pro_1_.jpg'),
-(68, 54, 62, 1, 10440500, 'iPhone 12 Mini', '../uploads/thumb-iphone12mini1.jpg'),
-(69, 3, 63, 2, 16710500, 'Điện thoại OPPO Reno8 Pro 5G', '../uploads/thumb-oppo_reno8_pro_1_.jpg'),
-(70, 2, 64, 1, 7990000, 'Điện thoại OPPO Reno8 Z 5G', '../uploads/thumb-photo_2022-08-05_09-40-15.jpg'),
-(71, 1, 64, 1, 10449050, 'Điện thoại OPPO Reno8 T 5G 256GB', '../uploads/thumb-oppo-reno8t-vang1-thumb-600x600.jpg'),
-(72, 54, 66, 1, 10440500, 'iPhone 12 Mini', '../uploads/thumb-iphone12mini1.jpg'),
-(73, 52, 66, 1, 18040500, 'iPhone 12 Pro Max', '../uploads/thumb-iphone12prm-2.jpg'),
-(74, 3, 67, 3, 16710500, 'Điện thoại OPPO Reno8 Pro 5G', '../uploads/thumb-oppo_reno8_pro_1_.jpg'),
-(76, 7, 68, 1, 6290000, 'Điện thoại OPPO A77s', '../uploads/thumb-combo_a77s-_en_2.jpg'),
-(77, 2, 70, 1, 7990000, 'Điện thoại OPPO Reno8 Z 5G', '../uploads/thumb-photo_2022-08-05_09-40-15.jpg'),
-(78, 52, 70, 1, 18040500, 'iPhone 12 Pro Max', '../uploads/thumb-iphone12prm-2.jpg'),
-(79, 80, 71, 1, 36090500, 'Samsung Galaxy Z Fold 4', '../uploads/thumb-anhchinh15.jpg'),
-(80, 81, 71, 1, 20415500, 'Samsung Galaxy Z Fold3 5G 256GB ', '../uploads/thumb-anhchinh16.jpg'),
-(81, 3, 73, 1, 16710500, 'Điện thoại OPPO Reno8 Pro 5G', '../uploads/thumb-oppo_reno8_pro_1_.jpg'),
-(82, 4, 73, 1, 10791000, 'Điện thoại OPPO Reno7 Pro 5G', '../uploads/thumb-oppo reno 7 t_i_xu_ng_42__3.png'),
-(83, 11, 74, 1, 3200000, 'Điện thoại OPPO A17K', '../uploads/thumb-oppo a17k dien thoai thong minh.png'),
-(84, 5, 74, 2, 2279200, 'Điện thoại OPPO A16K', '../uploads/thumb-oppo a 16k.jpg'),
-(85, 2, 75, 1, 7990000, 'Điện thoại OPPO Reno8 Z 5G', '../uploads/thumb-photo_2022-08-05_09-40-15.jpg'),
-(86, 3, 75, 1, 16710500, 'Điện thoại OPPO Reno8 Pro 5G', '../uploads/thumb-oppo_reno8_pro_1_.jpg'),
-(87, 3, 76, 1, 16710500, 'Điện thoại OPPO Reno8 Pro 5G', '../uploads/thumb-oppo_reno8_pro_1_.jpg'),
-(88, 2, 76, 1, 7990000, 'Điện thoại OPPO Reno8 Z 5G', '../uploads/thumb-photo_2022-08-05_09-40-15.jpg'),
-(89, 8, 77, 1, 4851000, 'Điện thoại OPPO A76', '../uploads/thumb-combo_a76_-_black.jpg'),
-(90, 10, 77, 1, 3790000, 'Điện thoại OPPO A17', '../uploads/thumb-oppo-a-17b1ppr0nazrpqahyt.jpg'),
-(97, 11, 81, 2, 3200000, 'Điện thoại OPPO A17K', '../uploads/thumb-oppo a17k dien thoai thong minh.png'),
-(98, 68, 81, 1, 3315500, 'Samsung Galaxy A13 (4G 128GB) ', '../uploads/thumb-anhchinh2.jpg'),
-(99, 69, 81, 1, 4740500, 'Samsung Galaxy A14 ', '../uploads/thumb-anhchinh3.png'),
-(100, 75, 81, 1, 31340500, 'Samsung Galaxy Note 20 Ultra 5G', '../uploads/thumb-anhchinh9.jpg'),
-(101, 59, 81, 1, 7590500, 'iPhone XS Max', '../uploads/thumb-iphonexsm.jpg'),
-(102, 2, 89, 1, 7990000, 'Điện thoại OPPO Reno8 Z 5G', '../uploads/thumb-photo_2022-08-05_09-40-15.jpg'),
-(103, 8, 89, 1, 4851000, 'Điện thoại OPPO A76', '../uploads/thumb-combo_a76_-_black.jpg'),
-(104, 12, 89, 1, 16911000, 'OPPO Find X3 Pro 5G', '../uploads/thumb-oppo-find-x3-pro-5g-3_2.jpg'),
-(105, 57, 90, 1, 9490500, 'iPhone 11 Pro ', '../uploads/thumb-iphone11pro1.png'),
-(106, 56, 90, 1, 11390500, 'iPhone 11 Pro Max', '../uploads/thumb-iphone11prm1.png'),
-(107, 5, 91, 1, 2279200, 'Điện thoại OPPO A16K', '../uploads/thumb-oppo a 16k.jpg'),
-(108, 54, 91, 1, 10440500, 'iPhone 12 Mini', '../uploads/thumb-iphone12mini1.jpg'),
-(109, 76, 92, 1, 11865500, 'Samsung Galaxy S21 FE 8GB 128GB ', '../uploads/thumb-anhchinh10.png'),
-(110, 6, 93, 95, 5510800, 'Điện thoại OPPO A96 ', '../uploads/thumb-a96-navigation-pink-v1.png'),
-(111, 54, 93, 8, 10440500, 'iPhone 12 Mini', '../uploads/thumb-iphone12mini1.jpg'),
-(112, 52, 94, 6, 18040500, 'iPhone 12 Pro Max', '../uploads/thumb-iphone12prm-2.jpg'),
-(113, 5, 94, 1, 2279200, 'Điện thoại OPPO A16K', '../uploads/thumb-oppo a 16k.jpg'),
-(114, 7, 95, 1, 6290000, 'Điện thoại OPPO A77s', '../uploads/thumb-combo_a77s-_en_2.jpg'),
-(115, 8, 95, 1, 4851000, 'Điện thoại OPPO A76', '../uploads/thumb-combo_a76_-_black.jpg'),
-(116, 54, 96, 1, 10440500, 'iPhone 12 Mini', '../uploads/thumb-iphone12mini1.jpg'),
-(117, 54, 97, 2, 10440500, 'iPhone 12 Mini', '../uploads/thumb-iphone12mini1.jpg'),
-(118, 8, 97, 2, 4851000, 'Điện thoại OPPO A76', '../uploads/thumb-combo_a76_-_black.jpg'),
-(119, 7, 98, 1, 6290000, 'Điện thoại OPPO A77s', '../uploads/thumb-combo_a77s-_en_2.jpg'),
-(120, 45, 98, 1, 24690500, 'iPhone 14 Pro ', '../uploads/thumb-iphone14pr-1.jpg'),
-(121, 12, 98, 1, 16911000, 'OPPO Find X3 Pro 5G', '../uploads/thumb-oppo-find-x3-pro-5g-3_2.jpg'),
-(122, 45, 99, 4, 24690500, 'iPhone 14 Pro ', '../uploads/thumb-iphone14pr-1.jpg'),
-(123, 7, 99, 1, 6290000, 'Điện thoại OPPO A77s', '../uploads/thumb-combo_a77s-_en_2.jpg'),
-(124, 75, 99, 1, 31340500, 'Samsung Galaxy Note 20 Ultra 5G', '../uploads/thumb-anhchinh9.jpg'),
-(125, 7, 100, 1, 6290000, 'Điện thoại OPPO A77s', '../uploads/thumb-combo_a77s-_en_2.jpg'),
-(126, 54, 100, 1, 10440500, 'iPhone 12 Mini', '../uploads/thumb-iphone12mini1.jpg'),
-(127, 54, 101, 1, 10440500, 'iPhone 12 Mini', '../uploads/thumb-iphone12mini1.jpg'),
-(128, 52, 101, 1, 18040500, 'iPhone 12 Pro Max', '../uploads/thumb-iphone12prm-2.jpg'),
-(129, 53, 102, 1, 14240500, 'iPhone 12 Pro ', '../uploads/thumb-iphone12pro-1.jpg'),
-(130, 54, 102, 1, 10440500, 'iPhone 12 Mini', '../uploads/thumb-iphone12mini1.jpg'),
-(131, 53, 103, 1, 14240500, 'iPhone 12 Pro ', '../uploads/thumb-iphone12pro-1.jpg'),
-(132, 54, 103, 1, 10440500, 'iPhone 12 Mini', '../uploads/thumb-iphone12mini1.jpg'),
-(133, 59, 104, 3, 7590500, 'iPhone XS Max', '../uploads/thumb-iphonexsm.jpg'),
-(134, 2, 105, 1, 7990000, 'Điện thoại OPPO Reno8 Z 5G', '../uploads/thumb-photo_2022-08-05_09-40-15.jpg'),
-(135, 11, 106, 2, 3200000, 'Điện thoại OPPO A17K', '../uploads/thumb-oppo a17k dien thoai thong minh.png'),
-(136, 5, 106, 1, 2279200, 'Điện thoại OPPO A16K', '../uploads/thumb-oppo a 16k.jpg'),
-(137, 1, 107, 1, 10449050, 'Cây hoa tường vi', '../uploads/thumb-tuongvi1.jpg');
 
 -- --------------------------------------------------------
 
@@ -655,7 +452,7 @@ CREATE TABLE `tbl_sanpham` (
 --
 
 INSERT INTO `tbl_sanpham` (`masanpham`, `tensp`, `don_gia`, `ton_kho`, `images`, `giam_gia`, `dac_biet`, `so_luot_xem`, `ngay_nhap`, `date_modified`, `mo_ta`, `ma_danhmuc`, `id_dmphu`, `information`, `promote`, `danhgia`) VALUES
-(1, 'Cây hoa tường vi', 10999000.00, 9, 'thumb-tuongvi1.jpg,\r\ntuongvi2.jpg,\r\ntuongvi3.jpg,\r\ntuongvi4.jpg,\r\ntuongvi5.jpg', 5.00, 1, 21, '2024-11-29 20:50:54', '2024-11-29 01:48:35', 'Cây hoa tường vi có kích thước chưa lên chậu khoảng 80cm - 100cm. Tuy nhiên cây có rất nhiều loại kích thước cũng như màu hoa. Nếu quý khách hàng muốn mua loại kích thước nào có thể nhắn tin trực tiếp để được tư vấn, cũng như gửi hình cây thực tế\r\n', 1, 1, 'Cây hoa tường vi còn được gọi là bằng lăng hoa tường vi, là một loài cây hoa đẹp với vẻ ngoài mộc mạc nhưng không kém phần duyên dáng. Với những chùm hoa nhỏ xinh, nở rộ vào mùa hè. Tường vi mang đến một vẻ đẹp dịu dàng, thanh thoát, gắn liền với sự tinh khiết và tình yêu bền chặt. Cùng tìm hiểu về đặc điểm, cách trồng, chăm sóc và ý nghĩa của loài hoa này.\r\n\r\nĐặc điểm của cây hoa tường vi\r\nTên khoa học: Lagerstroemia indica.\r\nHọ: Bằng lăng (Lythraceae).\r\nNguồn gốc: Cây hoa tường vi có nguồn gốc từ các vùng nhiệt đới và cận nhiệt đới của châu Á, đặc biệt là Trung Quốc và Nhật Bản.', 3, 0.0),
+(1, 'Cây hoa tường vi', 10999000.00, 9, 'thumb-tuongvi1.jpg,\r\ntuongvi2.jpg,\r\ntuongvi3.jpg,\r\ntuongvi4.jpg,\r\ntuongvi5.jpg', 5.00, 1, 22, '2024-11-29 20:50:54', '2024-11-29 01:48:35', 'Cây hoa tường vi có kích thước chưa lên chậu khoảng 80cm - 100cm. Tuy nhiên cây có rất nhiều loại kích thước cũng như màu hoa. Nếu quý khách hàng muốn mua loại kích thước nào có thể nhắn tin trực tiếp để được tư vấn, cũng như gửi hình cây thực tế\r\n', 1, 1, 'Cây hoa tường vi còn được gọi là bằng lăng hoa tường vi, là một loài cây hoa đẹp với vẻ ngoài mộc mạc nhưng không kém phần duyên dáng. Với những chùm hoa nhỏ xinh, nở rộ vào mùa hè. Tường vi mang đến một vẻ đẹp dịu dàng, thanh thoát, gắn liền với sự tinh khiết và tình yêu bền chặt. Cùng tìm hiểu về đặc điểm, cách trồng, chăm sóc và ý nghĩa của loài hoa này.\r\n\r\nĐặc điểm của cây hoa tường vi\r\nTên khoa học: Lagerstroemia indica.\r\nHọ: Bằng lăng (Lythraceae).\r\nNguồn gốc: Cây hoa tường vi có nguồn gốc từ các vùng nhiệt đới và cận nhiệt đới của châu Á, đặc biệt là Trung Quốc và Nhật Bản.', 3, 0.0),
 (2, 'Cây Hoa Giấy', 7990000.00, 59, 'thumb-hoagiay1.jpg,hoagiay2.jpg,hoagiay3.jpg,\r\nhoagiay4.jpg,hoagiay5.jpg', 0.00, 0, 19, '2024-11-29 20:50:54', '2024-11-29 01:48:35', 'Cây có chiều cao khoảng 60-80cm khi chưa lên chậu. Ngoài ra còn rất nhiều loại khác nhau kể cả về kích thước , lẫn màu hoa. Nên quý khách có thể liên hệ để chọn loại ưa thích và phù hợp.\r\n', 1, 1, 'Hoa giấy hay còn gọi là cây bông giấy, là một trong những loài cây cảnh phổ biến nhất tại Việt Nam và trên thế giới. Với vẻ đẹp giản dị, hoa giấy không chỉ mang lại một không gian sống tươi mới mà còn thể hiện ý nghĩa phong thủy sâu sắc. Loài cây này dễ trồng, dễ chăm sóc và có khả năng chịu hạn tốt, rất thích hợp với điều kiện khí hậu nhiệt đới.\r\n\r\n', 0, 0.0),
 (3, 'Cây Huyết Dụ', 17590000.00, 88, 'thumb-huyetdu1.jpg,\r\nhuyetdu2.jpg,\r\nhuyetdu3.jpg,\r\nhuyetdu4.jpg,\r\nhuyetdu5.jpg,', 5.00, 0, 14, '2024-11-29 20:50:54', '2024-11-29 01:48:35', '<p>Từ xa xưa, người ta đã tin rằng cây Huyết Dụ có khả năng xua đuổi tà ma và mang lại may mắn. Câu chuyện về một vị tướng bị thương nặng đã được cứu sống nhờ lá cây Huyết Dụ vẫn còn được lưu truyền đến ngày nay. Với những chiếc lá đỏ tía rực rỡ như ngọn lửa, cây Huyết Dụ không chỉ là một loài cây cảnh đẹp mắt mà còn là một vị thuốc quý trong y học cổ truyền. Hãy cùng khám phá những điều thú vị về loài cây thần kỳ này.</p>\r\n<quillbot-extension-portal></quillbot-extension-portal>', 1, 1, '<p>Đặc điểm hình thái và nguồn gốc cây huyết dụ\r\nCây Huyết Dụ, với tên khoa học Cordyline fruticosa, thuộc họ Măng Tây (Asparagaceae). Loài cây này có nguồn gốc từ vùng Đông Nam Á, đặc biệt là các quốc gia như Việt Nam, Thái Lan, Indonesia. Tại Việt Nam, cây mọc hoang và được trồng phổ biến ở nhiều vùng miền.\r\nThân: Thân cây thường mọc thành bụi, cao khoảng 1-2m, có nhiều đốt.\r\nLá: Lá đơn, mọc so le, hình mác hoặc hình mũi giáo, dài 20-50cm, rộng 5-10cm. Đặc điểm nổi bật là lá có màu đỏ tía hoặc đỏ tươi, đôi khi có mặt trên màu xanh lục. Màu sắc rực rỡ này đến từ các sắc tố anthocyanin, có tác dụng chống oxy hóa mạnh.\r\nHoa: Cụm hoa mọc ở đầu cành, hoa nhỏ, màu trắng hoặc hồng nhạt, mang đến vẻ đẹp dịu dàng cho cây.\r\nQuả cây huyết dụ\r\nQuả cây huyết dụ\r\nQuả: Quả mọng, hình cầu, khi chín có màu đỏ, chứa nhiều hạt nhỏ.</p>\r\n<quillbot-extension-portal></quillbot-extension-portal>', 1, 0.0),
 (4, 'Cây Cau Nga Mi', 11990000.00, 78, 'thumb-caungami1.jpg,\r\ncaungami2.jpg,\r\ncaungami3.jpg,\r\ncaungami4.jpg,\r\ncaungami5.jpg,', 10.00, 0, 7, '2024-11-29 20:50:54', '2024-11-29 01:48:35', 'Cây có chiều cao lộ thân từ 50cm - 3m. Giá cây sẽ phụ thuộc vào độ cao. Giá được tính theo mét thoát thân. Cây phù hợp để nơi nhiều ánh sáng như ban công, sảnh, sân vườn.\r\n', 1, 1, 'Cây cau nga mi hay còn gọi chà là cảnh, với tên khoa học Phoenix roebelenii. Là một trong những loài cây cảnh được yêu thích hiện nay. Xuất xứ từ các khu rừng nhiệt đới ẩm ướt ở Đông Nam Á, cây đã chinh phục trái tim của những người yêu cây cảnh bởi vẻ đẹp thanh lịch, sang trọng và khả năng thanh lọc không khí tuyệt vời. Với chiều cao khiêm tốn và dáng vẻ uyển chuyển, cây trở thành điểm nhấn độc đáo cho mọi không gian sống.', 0, 0.0),
@@ -837,13 +634,16 @@ INSERT INTO `tbl_vnpay` (`id_vnpay`, `order_id`, `amount`, `bankcode`, `banktran
 -- Chỉ mục cho bảng `tbl_banner`
 --
 ALTER TABLE `tbl_banner`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `fk_banner_sanpham` (`idsp`);
 
 --
 -- Chỉ mục cho bảng `tbl_binhluan`
 --
 ALTER TABLE `tbl_binhluan`
-  ADD PRIMARY KEY (`ma_binhluan`);
+  ADD PRIMARY KEY (`ma_binhluan`),
+  ADD KEY `FK_binhLuan_maSp` (`ma_sanpham`),
+  ADD KEY `FK_binhluan_nguoiDung` (`ma_nguoidung`);
 
 --
 -- Chỉ mục cho bảng `tbl_blog`
@@ -862,7 +662,9 @@ ALTER TABLE `tbl_blog_cate`
 -- Chỉ mục cho bảng `tbl_blog_comment`
 --
 ALTER TABLE `tbl_blog_comment`
-  ADD PRIMARY KEY (`id_bl`);
+  ADD PRIMARY KEY (`id_bl`),
+  ADD KEY `fk_blogComment_blog` (`id_blog`),
+  ADD KEY `fk_blogComment_user` (`ma_kh`);
 
 --
 -- Chỉ mục cho bảng `tbl_coupon`
@@ -874,7 +676,9 @@ ALTER TABLE `tbl_coupon`
 -- Chỉ mục cho bảng `tbl_danhgiasp`
 --
 ALTER TABLE `tbl_danhgiasp`
-  ADD PRIMARY KEY (`id_review`);
+  ADD PRIMARY KEY (`id_review`),
+  ADD KEY `fk_danhgiasp_sp` (`idsanpham`),
+  ADD KEY `fk_danhgiasp_nguoidung` (`iduser`);
 
 --
 -- Chỉ mục cho bảng `tbl_danhmuc`
@@ -912,7 +716,8 @@ ALTER TABLE `tbl_order`
 -- Chỉ mục cho bảng `tbl_order_detail`
 --
 ALTER TABLE `tbl_order_detail`
-  ADD PRIMARY KEY (`id`);
+  ADD KEY `fk_order_detail_sanpham` (`idsanpham`),
+  ADD KEY `fk_order_detail_order` (`iddonhang`);
 
 --
 -- Chỉ mục cho bảng `tbl_reply_blog_comments`
@@ -936,7 +741,9 @@ ALTER TABLE `tbl_reply_reviews`
 -- Chỉ mục cho bảng `tbl_sanpham`
 --
 ALTER TABLE `tbl_sanpham`
-  ADD PRIMARY KEY (`masanpham`);
+  ADD PRIMARY KEY (`masanpham`),
+  ADD KEY `fk_sanpham_danhmuc` (`ma_danhmuc`),
+  ADD KEY `fk_sanpham_dmphu` (`id_dmphu`);
 
 --
 -- Chỉ mục cho bảng `tbl_shipping`
@@ -1035,12 +842,6 @@ ALTER TABLE `tbl_order`
   MODIFY `id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=108;
 
 --
--- AUTO_INCREMENT cho bảng `tbl_order_detail`
---
-ALTER TABLE `tbl_order_detail`
-  MODIFY `id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=138;
-
---
 -- AUTO_INCREMENT cho bảng `tbl_reply_blog_comments`
 --
 ALTER TABLE `tbl_reply_blog_comments`
@@ -1081,10 +882,37 @@ ALTER TABLE `tbl_vnpay`
 --
 
 --
+-- Các ràng buộc cho bảng `tbl_banner`
+--
+ALTER TABLE `tbl_banner`
+  ADD CONSTRAINT `fk_banner_sanpham` FOREIGN KEY (`idsp`) REFERENCES `tbl_sanpham` (`masanpham`);
+
+--
+-- Các ràng buộc cho bảng `tbl_binhluan`
+--
+ALTER TABLE `tbl_binhluan`
+  ADD CONSTRAINT `FK_binhLuan_maSp` FOREIGN KEY (`ma_sanpham`) REFERENCES `tbl_sanpham` (`masanpham`),
+  ADD CONSTRAINT `FK_binhluan_nguoiDung` FOREIGN KEY (`ma_nguoidung`) REFERENCES `tbl_nguoidung` (`id`);
+
+--
 -- Các ràng buộc cho bảng `tbl_blog`
 --
 ALTER TABLE `tbl_blog`
   ADD CONSTRAINT `fk_blogcate_blog` FOREIGN KEY (`blogcate_id`) REFERENCES `tbl_blog_cate` (`id`);
+
+--
+-- Các ràng buộc cho bảng `tbl_blog_comment`
+--
+ALTER TABLE `tbl_blog_comment`
+  ADD CONSTRAINT `fk_blogComment_blog` FOREIGN KEY (`id_blog`) REFERENCES `tbl_blog` (`blog_id`),
+  ADD CONSTRAINT `fk_blogComment_user` FOREIGN KEY (`ma_kh`) REFERENCES `tbl_nguoidung` (`id`);
+
+--
+-- Các ràng buộc cho bảng `tbl_danhgiasp`
+--
+ALTER TABLE `tbl_danhgiasp`
+  ADD CONSTRAINT `fk_danhgiasp_nguoidung` FOREIGN KEY (`iduser`) REFERENCES `tbl_nguoidung` (`id`),
+  ADD CONSTRAINT `fk_danhgiasp_sp` FOREIGN KEY (`idsanpham`) REFERENCES `tbl_sanpham` (`masanpham`);
 
 --
 -- Các ràng buộc cho bảng `tbl_danhmucphu`
@@ -1099,16 +927,24 @@ ALTER TABLE `tbl_order`
   ADD CONSTRAINT `fk_order_nguoidung` FOREIGN KEY (`iduser`) REFERENCES `tbl_nguoidung` (`id`);
 
 --
+-- Các ràng buộc cho bảng `tbl_order_detail`
+--
+ALTER TABLE `tbl_order_detail`
+  ADD CONSTRAINT `fk_order_detail_order` FOREIGN KEY (`iddonhang`) REFERENCES `tbl_order` (`id`),
+  ADD CONSTRAINT `fk_order_detail_sanpham` FOREIGN KEY (`idsanpham`) REFERENCES `tbl_sanpham` (`masanpham`);
+
+--
+-- Các ràng buộc cho bảng `tbl_sanpham`
+--
+ALTER TABLE `tbl_sanpham`
+  ADD CONSTRAINT `fk_sanpham_danhmuc` FOREIGN KEY (`ma_danhmuc`) REFERENCES `tbl_danhmuc` (`ma_danhmuc`),
+  ADD CONSTRAINT `fk_sanpham_dmphu` FOREIGN KEY (`id_dmphu`) REFERENCES `tbl_danhmucphu` (`id`);
+
+--
 -- Các ràng buộc cho bảng `tbl_shipping`
 --
 ALTER TABLE `tbl_shipping`
   ADD CONSTRAINT `fk_shipping_nguoidung` FOREIGN KEY (`id_user`) REFERENCES `tbl_nguoidung` (`id`);
-
---
--- Các ràng buộc cho bảng `tbl_vnpay`
---
-ALTER TABLE `tbl_vnpay`
-  ADD CONSTRAINT `fk_vnpay_order` FOREIGN KEY (`order_id`) REFERENCES `tbl_order` (`id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

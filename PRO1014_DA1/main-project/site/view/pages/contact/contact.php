@@ -11,7 +11,7 @@
                 <div class="col-lg-12">
                     <div class="about-photo">
                         <img class="col-12 col-xl-8 d-flex align-items-center justify-content-center"
-                            src="assets/images/banner/contact-us-banner.png" alt="Error">
+                            src="assets/images/banner/contactUs.jpg" alt="Error">
                     </div>
                 </div>
             </div>
