@@ -417,9 +417,7 @@
                                 <div class="price_slider_amount">
                                     <input type="submit" class="w-100" value="Thang giá:" />
                                     <br>
-                                    <input onchange="filterByPrice()" type="text" class="w-100" id="amount" name="price"
-                                        placeholder="Add Your Price" />
-
+                                    <input type="text" class="w-100" id="amount" name="price" placeholder="Add Your Price" oninput="formatPrice(this)" />
                                 </div>
                                 <div id="slider-range"></div>
                                 <input class="mt-3 btn btn-light" type="submit" value="Tìm">
@@ -450,5 +448,16 @@
             const url = new URL(window.location.href);
             url.searchParams.set('cateid', categoryId);
             window.location.href = url.toString();
+        }
+
+        function formatPrice(input) {
+            // Remove any non-digit characters
+            let value = input.value.replace(/\D/g, '');
+
+            // Add dots every three digits
+            value = value.replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+
+            // Update the input value
+            input.value = value;
         }
     </script>

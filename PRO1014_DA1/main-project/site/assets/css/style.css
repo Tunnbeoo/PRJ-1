@@ -823,7 +823,6 @@ transform: scale(1);
   text-transform: uppercase;
 }
 .breadcrumb-list > li::before {
-  content: "_";
   left: 0;
   color: #666666; 
   transition: all 0.3s ease 0s;

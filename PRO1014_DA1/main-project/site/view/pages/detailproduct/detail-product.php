@@ -467,9 +467,9 @@ if (empty($thumbnail) && !empty($image_list)) {
                                         $addcartfunc = "handleAddCart('addtocart', 'addcart')";
                                         $addwishlistfunc = "handleAddCart('addtowishlist', 'addwishlist')";
                                         $avg_stars = avg_star_reviews_of_product($product_item['masanpham']);
-                                        // $result_stars = renderStarRatings(round($avg_stars, 0));
+
                                         # code...
-                                        echo cardItem($product_item, $thumbnail, $addcartfunc, $addwishlistfunc, $cate_name, $price_format, $result_stars);
+                                        echo cardItem($product_item, $thumbnail, $addcartfunc, $addwishlistfunc, $cate_name, $price_format, $avg_stars);
                                     }
                                     ?>
                                 </div>

@@ -182,9 +182,6 @@ function cardItem($item, $thumbnail, $addcartfunc, $addwishlistfunc, $cate_name,
                                                     <h6 class="product-title">
                                                         <a href="index.php?act=detailproduct&id=' . $item['masanpham'] . '">' . $item['tensp'] . '</a>
                                                     </h6>
-                                                    <div class="pro-rating">
-                                                       ' . $result_stars . '
-                                                    </div>
                                                     <h3 class="pro-price"> ' . $price_format . ' VND</h3>
 
                                                         <ul class="action-button">
