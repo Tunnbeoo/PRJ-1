@@ -7,7 +7,7 @@
                     <div class="breadcrumbs-inner">
                         <h1 class="breadcrumbs-title">Cửa hàng</h1>
                         <ul class="breadcrumb-list">
-                            <li><a href="index.html">Home </a></li>
+                            <li><a href="index.php">Home </a></li>
                             <li>Cửa hàng</li>
                         </ul>
                     </div>
@@ -193,7 +193,12 @@
 
                                         #Thumbnail Image
                                         $image_list = explode(',', $item['images']);
-                                        $cate_name = catename_select_by_id($item['ma_danhmuc'])['ten_danhmuc'];
+                                        $category = catename_select_by_id($item['ma_danhmuc']);
+                                        if ($category !== false && isset($category['ten_danhmuc'])) {
+                                            $cate_name = $category['ten_danhmuc'];
+                                        } else {
+                                            $cate_name = 'Unknown Category'; // Giá trị mặc định hoặc xử lý lỗi
+                                        }
                                         $price_format = number_format($item['don_gia']);
 
                                         $addcartfunc = "handleAddCart('addtocart', 'addcart')";
@@ -231,7 +236,12 @@
 
                                         #Thumbnail Image
                                         $image_list = explode(',', $item['images']);
-                                        $cate_name = catename_select_by_id($item['ma_danhmuc'])['ten_danhmuc'];
+                                        $category = catename_select_by_id($item['ma_danhmuc']);
+                                        if ($category !== false && isset($category['ten_danhmuc'])) {
+                                            $cate_name = $category['ten_danhmuc'];
+                                        } else {
+                                            $cate_name = 'Unknown Category'; // Giá trị mặc định hoặc xử lý lỗi
+                                        }
                                         $price_format = number_format($item['don_gia']);
                                         $addcartfunc = "handleAddCart('addtocart', 'addcart')";
                                         $addwishlistfunc = "handleAddCart('addtowishlist', 'addwishlist')";
@@ -434,4 +444,11 @@
 
             // console.log('Hello search result');
         })
+
+        function filterByCategory(selectElement) {
+            const categoryId = selectElement.value;
+            const url = new URL(window.location.href);
+            url.searchParams.set('cateid', categoryId);
+            window.location.href = url.toString();
+        }
     </script>

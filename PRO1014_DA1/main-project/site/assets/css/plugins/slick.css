@@ -115,3 +115,9 @@
 .slick-arrow.slick-hidden {
     display: none;
 }
+
+.p-c.slick-slide.slick-current.slick-active,
+.p-c.slick-slide.slick-active {
+    width: 120px;
+    height: 101px;
+}

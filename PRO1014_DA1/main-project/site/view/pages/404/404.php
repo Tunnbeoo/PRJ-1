@@ -8,7 +8,7 @@
                         <h1 class="breadcrumbs-title">404</h1>
                         <ul class="breadcrumb-list">
                             <li>
-                                <a href="index.html">Home</a>
+                                <a href="index.php">Home</a>
                             </li>
                             <li>404</li>
                         </ul>
@@ -31,7 +31,7 @@
                     <div class="error-404 box-shadow">
                         <img src="img/others/error.jpg" alt="">
                         <div class="go-to-btn btn-hover-2">
-                            <a href="index.html">go to home page</a>
+                            <a href="index.php">go to home page</a>
                         </div>
                     </div>
                 </div>

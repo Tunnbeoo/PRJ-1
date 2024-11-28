@@ -41,53 +41,6 @@
 <!-- Start page content -->
 <section id="page-content" class="page-wrapper section">
 
-    <!-- BY BRAND SECTION START-->
-    <div class="by-brand-section mb-80">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="section-title text-start mb-40">
-                        <h2 class="uppercase">Các thương hiệu</h2>
-                        <h6>Các thương hiệu nổi bật tại cửa hàng</h6>
-                    </div>
-                    <div class="by-brand-product">
-                        <div class="active-by-brand slick-arrow-2">
-                            <!-- Loop Brand Item here -->
-                            <?php
-                            $cate_list = cate_select_all();
-                            // var_dump($cate_list);
-
-                            $cate_list = array_filter($cate_list, function ($cate_item) {
-                                return $cate_item['ma_danhmuc'] != 0;
-                            });
-
-                            foreach ($cate_list as $cate_item) {
-                                # code...
-                                echo '
-        <!-- single-brand-product start -->
-            <div class="brand-item shadow border border-top-1">
-                <div class="single-brand-product">
-                    <a href="index.php?act=shop&cateid=' . $cate_item['ma_danhmuc'] . '"><img src="../uploads/' . $cate_item['hinh_anh'] . '"
-                            alt=""></a>
-                    <h3 class="brand-title text-grey fw-bold fs-1">
-                        <a href="index.php?act=shop&cateid=' . $cate_item['ma_danhmuc'] . '">' . $cate_item['ten_danhmuc'] . '</a>
-                    </h3>
-                </div>
-            </div>
-        <!-- single-brand-product end -->
-        ';
-                            }
-
-                            ?>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- BY BRAND SECTION END -->
-
     <!-- FEATURED PRODUCT SECTION START -->
     <div class="featured-product-section mb-50">
         <div class="container">
@@ -108,7 +61,12 @@
                                 #Thumbnail Image
                                 $image_list = explode(',', $item['images']);
                                 // var_dump(catename_select_by_id($item['ma_danhmuc']));
-                                $cate_name = catename_select_by_id($item['ma_danhmuc'])['ten_danhmuc'];
+                                $category = catename_select_by_id($item['ma_danhmuc']);
+                                if ($category !== false && isset($category['ten_danhmuc'])) {
+                                    $cate_name = $category['ten_danhmuc'];
+                                } else {
+                                    $cate_name = 'Unknown Category'; // Giá trị mặc định hoặc xử lý lỗi
+                                }
                                 $price_format = number_format($item['don_gia'] * (1 - $item['giam_gia'] / 100));
                                 $addcartfunc = "handleAddCart('addtocart', 'addcart')";
                                 $addwishlistfunc = "handleAddCart('addtowishlist', 'addwishlist')";
@@ -188,62 +146,6 @@
     </div>
     <!-- FEATURED PRODUCT SECTION END -->
 
-    <!-- UP COMMING PRODUCT SECTION START -->
-    <div class="up-comming-product-section mb-80">
-        <div class="container">
-            <div class="row">
-                <!-- up-comming-pro -->
-                <?php
-                $get_new_banner_home = get_new_banner_home();
-                foreach ($get_new_banner_home as $banner) {
-                    extract($banner);
-                    // var_dump($banner);
-                    $image_list = explode(',', $banner['images']);
-                    foreach ($image_list as $image_item) {
-
-                        if (substr($image_item, 0, 6) == "thumb-") {
-                            // echo $image_item;
-                            $thumbnail = "../uploads/" . $image_item;
-                            $alt = $image_item;
-                            break;
-                        }
-                    }
-                }
-                ?>
-                <div class="col-lg-8">
-                    <div class="up-comming-pro gray-bg clearfix banner-element" banner-id="<?= $banner['id'] ?>">
-                        <div class="up-comming-pro-img f-left">
-                            <a href="index.php?act=detailproduct&id=<?= $banner['idsp'] ?>">
-                                <img src="<?= $thumbnail ?>" alt="<?= $alt ?>">
-                            </a>
-                        </div>
-                        <div class="up-comming-pro-info f-left">
-                            <h3><a href="index.php?act=detailproduct&id=<?= $banner['idsp'] ?>"><?= $banner['name'] ?></a>
-                            </h3>
-                            <p><?= $banner['noi_dung'] ?> </p>
-                            <div class="up-comming-time">
-                                <div data-countdown="2023/05/05"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 d-block d-md-none d-lg-block">
-                    <div class="banner-item banner-1">
-                        <div class="banner-img">
-                            <a href="#"><img src="../uploads/<?= $image_list[0] ?>" alt="I phone Promotion 2.png"></a>
-                        </div>
-                        <div class="banner-info">
-                            <h3><a href="index.php?act=detailproduct&id=<?= $banner['idsp'] ?>" style="color: #ff0000;">Cây Lộc Vừng</a>
-                            </h3>
-                            <span><?= $banner['info'] ?></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- UP COMMING PRODUCT SECTION END -->
-
     <!-- PRODUCT TAB SECTION START -->
     <div class="product-tab-section mb-50">
         <div class="container">
@@ -251,8 +153,6 @@
                 <div class="col-lg-6">
                     <div class="section-title text-start mb-40">
                         <h2 class="uppercase">Các sản phẩm tại cửa hàng</h2>
-                        <h6>Rất nhiều điện thoại khác nhau đến từ các thương hiệu nổi tiếng (Oppo, Iphone, Samsung,
-                            Xiaomi )</h6>
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -301,7 +201,12 @@
                                     $price_format = number_format($item['don_gia'] * (1 - $item['giam_gia'] / 100));
                                     $addcartfunc = "handleAddCart('addtocart', 'addcart')";
                                     $addwishlistfunc = "handleAddCart('addtowishlist', 'addwishlist')";
-                                    $cate_name = catename_select_by_id($item['ma_danhmuc'])['ten_danhmuc'];
+                                    $category = catename_select_by_id($item['ma_danhmuc']);
+                                    if ($category !== false && isset($category['ten_danhmuc'])) {
+                                        $cate_name = $category['ten_danhmuc'];
+                                    } else {
+                                        $cate_name = 'Unknown Category'; // Giá trị mặc định hoặc xử lý lỗi
+                                    }
 
                                     // $avg_stars = avg_star_reviews_of_product($item['masanpham']);
                                     // $result_stars = renderStarRatings(round($avg_stars, 0));
@@ -436,7 +341,12 @@
 
                                     #Thumbnail Image
                                     $image_list = explode(',', $item['images']);
-                                    $cate_name = catename_select_by_id($item['ma_danhmuc'])['ten_danhmuc'];
+                                    $category = catename_select_by_id($item['ma_danhmuc']);
+                                    if ($category !== false && isset($category['ten_danhmuc'])) {
+                                        $cate_name = $category['ten_danhmuc'];
+                                    } else {
+                                        $cate_name = 'Unknown Category'; // Giá trị mặc định hoặc xử lý lỗi
+                                    }
                                     $price_format = number_format($item['don_gia'] * (1 - $item['giam_gia'] / 100));
                                     $addcartfunc = "handleAddCart('addtocart', 'addcart')";
                                     $addwishlistfunc = "handleAddCart('addtowishlist', 'addwishlist')";
@@ -572,7 +482,12 @@
                                     $price_format = number_format($item['don_gia'] * (1 - $item['giam_gia'] / 100));
                                     $addcartfunc = "handleAddCart('addtocart', 'addcart')";
                                     $addwishlistfunc = "handleAddCart('addtowishlist', 'addwishlist')";
-                                    $cate_name = catename_select_by_id($item['ma_danhmuc'])['ten_danhmuc'];
+                                    $category = catename_select_by_id($item['ma_danhmuc']);
+                                    if ($category !== false && isset($category['ten_danhmuc'])) {
+                                        $cate_name = $category['ten_danhmuc'];
+                                    } else {
+                                        $cate_name = 'Unknown Category'; // Giá trị mặc định hoặc xử lý lỗi
+                                    }
                                     $avg_stars = avg_star_reviews_of_product($item['masanpham']);
                                     $result_stars = renderStarRatings(round($avg_stars, 0));
                                     // foreach ($image_list as $image_item) {
@@ -706,7 +621,12 @@
 
                                     #Thumbnail Image
                                     $image_list = explode(',', $item['images']);
-                                    $cate_name = catename_select_by_id($item['ma_danhmuc'])['ten_danhmuc'];
+                                    $category = catename_select_by_id($item['ma_danhmuc']);
+                                    if ($category !== false && isset($category['ten_danhmuc'])) {
+                                        $cate_name = $category['ten_danhmuc'];
+                                    } else {
+                                        $cate_name = 'Unknown Category'; // Giá trị mặc định hoặc xử lý lỗi
+                                    }
                                     $price_format = number_format($item['don_gia'] * (1 - $item['giam_gia'] / 100));
                                     $addcartfunc = "handleAddCart('addtocart', 'addcart')";
                                     $addwishlistfunc = "handleAddCart('addtowishlist', 'addwishlist')";

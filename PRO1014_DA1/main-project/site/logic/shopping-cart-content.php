@@ -62,7 +62,6 @@ foreach ($cart_list as $cart_item) {
                                                                         <h6 class="product-title-2">
                                                                             <a href="./index.php?act=detailproduct&id=' . $cart_item['id'] . '">' . $cart_item['tensp'] . '</a>
                                                                         </h6>
-                                                                        <p>Thương hiệu: ' . $cart_item['danhmuc'] . '</p>
                                                                     </div>
                                                                 </td>
                                                                 <td class="product-price">' . $price_item . ' VND</td>

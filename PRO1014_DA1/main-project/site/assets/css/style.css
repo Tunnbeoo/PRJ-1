@@ -1740,6 +1740,7 @@ table {width: 100%}
   margin-right: -15px;
 }
 .active-team-member .team-member-item{
+  width: 20%;
   margin-left: 15px;
   margin-right: 15px;
 }
@@ -1895,6 +1896,45 @@ table {width: 100%}
   z-index: -1;
 }
 /*================================================*/
+
+.photo-container img {
+    width: 100%; /* Adjust the width as needed */
+    max-width: 400px; /* Set a maximum width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.team-carousel .team-member-item {
+    width: 20%;
+    float: left;
+    box-sizing: border-box;
+    height: 250px;
+    overflow: hidden;
+}
+
+.team-member {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-photo {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.team-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
 
 
 

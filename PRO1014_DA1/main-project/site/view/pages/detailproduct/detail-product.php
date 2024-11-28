@@ -13,8 +13,7 @@ if (isset($_GET['id']) && $_GET['id'] > 0) {
 
     $product = product_select_by_id($product_id);
 
-    // var_dump($product);
-    $cate_name = catename_select_by_id($product['ma_danhmuc'])['ten_danhmuc'];
+    // $cate_name = catename_select_by_id($product['ma_danhmuc'])['ten_danhmuc'];
     $subcate_name = subcatename_select_by_id($product['id_dmphu'])['ten_danhmucphu'];
     #Thumbnail Image
     $image_list = explode(',', $product['images']);
@@ -27,11 +26,34 @@ if (isset($_GET['id']) && $_GET['id'] > 0) {
 
         if (substr($image_item, 0, 6) == "thumb-") {
             // echo $image_item;
-            $thumbnail = "../uploads/" . $image_item;
+            $thumbnail = "uploads/" . $image_item;
             break;
         }
     }
 
+#Thumbnail Image
+$image_list = explode(',', $product['images']);
+$price_format = number_format($product['don_gia']);
+
+$old_price = number_format($product['don_gia']);
+$new_price = number_format($product['don_gia'] * (1 - $product['giam_gia'] / 100));
+
+// Initialize thumbnail with a default value
+$thumbnail = "";
+
+// Find thumbnail image
+foreach ($image_list as $image_item) {
+    $image_item = trim($image_item);
+    if (substr($image_item, 0, 6) == "thumb-") {
+        $thumbnail = "uploads/" . $image_item;
+        break;
+    }
+}
+
+// Set default thumbnail if none found
+if (empty($thumbnail) && !empty($image_list)) {
+    $thumbnail = "uploads/" . trim($image_list[0]);
+}
 ?>
 
     <!-- Start page content -->
@@ -48,20 +70,21 @@ if (isset($_GET['id']) && $_GET['id'] > 0) {
                                 <!-- imgs-zoom-area start -->
                                 <div class="col-lg-5">
                                     <div class="imgs-zoom-area">
-                                        <img id="zoom_03" src="../uploads/<?php echo $thumbnail ?>"
-                                            data-zoom-image="../uploads/<?php echo $thumbnail ?>" alt="">
+                                        <img id="zoom_03" 
+                                            src="../<?php echo $thumbnail ?>"
+                                            data-zoom-image="../<?php echo $thumbnail ?>" 
+                                            alt="">
                                         <div class="row">
                                             <div class="col-lg-12">
                                                 <div id="gallery_01" class="carousel-btn slick-arrow-3 mt-30">
                                                     <?php
-                                                    // var_dump($image_list);
                                                     foreach ($image_list as $image_item) {
-                                                        $image_item = trim($image_item, " ");
-                                                        # code...
+                                                        $image_item = trim($image_item);
                                                         echo '
                                                         <div class="p-c">
-                                                            <a href="#" data-image="../uploads/' . $image_item . '"
-                                                                data-zoom-image="../uploads/' . $image_item . '">
+                                                            <a href="#" 
+                                                               data-image="../uploads/' . $image_item . '"
+                                                               data-zoom-image="../uploads/' . $image_item . '">
                                                                 <img class="zoom_03" src="../uploads/' . $image_item . '" alt="">
                                                             </a>
                                                         </div>
@@ -83,8 +106,7 @@ if (isset($_GET['id']) && $_GET['id'] > 0) {
                                                     class="fs-4 fw-light">
                                                     (<?php echo count_sold_product_by_id($_GET['id']) ?>
                                                     đã bán )</span>
-                                            </h3>
-                                            <h6 class="my-4">Thương hiệu: <?php echo $cate_name ?> </h6>
+                                            </h3>   
                                             <h6 class="my-4">Dòng sản phẩm: <?php echo $subcate_name ?></h6>
                                             <h6 class="single-product__views">
                                                 <span class="">(<?php echo $product['so_luot_xem'] ?> lượt
@@ -150,7 +172,6 @@ if (isset($_GET['id']) && $_GET['id'] > 0) {
                                                                 value="<?php echo $thumbnail ?>" />
                                                             <input type="hidden" name="don_gia"
                                                                 value="<?php echo $product['don_gia'] ?>" />
-
                                                             <input type="hidden" name="danhmuc"
                                                                 value="<?php echo $cate_name ?>" />
                                                             <input type="hidden" name="iddm"
@@ -494,5 +515,10 @@ if (isset($_GET['id']) && $_GET['id'] > 0) {
     .reply {
         display: flex;
         margin-bottom: 10px;
+    }
+    #zoom_03 {
+        width: 420px;
+        height: 420px;
+        object-fit: cover; /* Đảm bảo hình ảnh không bị méo */
     }
 </style>

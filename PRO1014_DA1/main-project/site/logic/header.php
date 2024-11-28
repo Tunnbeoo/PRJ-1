@@ -39,11 +39,11 @@ function connectdb()
     return $conn;
 }
 
-function cate_select_all()
-{
-    $sql = "SELECT * FROM tbl_danhmuc";
-    return pdo_query($sql);
-}
+// function cate_select_all()
+// {
+//     $sql = "SELECT * FROM tbl_danhmuc";
+//     return pdo_query($sql);
+// }
 
 function cate_select_join_all()
 {

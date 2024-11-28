@@ -15,7 +15,7 @@ if (isset($_SESSION['iduser'])) {
                     <div class="breadcrumbs-inner">
                         <h1 class="breadcrumbs-title">Tài khoản của tôi</h1>
                         <ul class="breadcrumb-list">
-                            <li><a href="index.html">Trang chủ</a></li>
+                            <li><a href="index.php">Trang chủ</a></li>
                             <li>Tài khoản của tôi</li>
                         </ul>
                     </div>

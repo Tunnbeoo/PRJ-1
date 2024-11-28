@@ -365,7 +365,7 @@
                                 <ul class="footer-social">
                                     <li>
                                         <a class="facebook"
-                                            href="https://www.facebook.com/profile.php?id=100091145059135"
+                                            href="https://www.facebook.com/tunniscomingg"
                                             title="Facebook"><i class="zmdi zmdi-facebook"></i></a>
                                     </li>
                                     <li>
@@ -380,11 +380,11 @@
                                         <a class="rss" href="#" title="RSS"><i class="zmdi zmdi-rss"></i></a>
                                     </li>
                                 </ul>
-                                <iframe class="fanpage-facebook mt-5"
+                                <!-- <iframe class="fanpage-facebook mt-5"
                                     src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D100091145059135&tabs&width=300px&height=200px&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=true&appId=603944711072413"
                                     width="300px" height="200px" style="border:none;overflow:hidden" scrolling="no"
                                     frameborder="0" allowfullscreen="true"
-                                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe> -->
                             </div>
                         </div>
                         <div class="col-xl-2 d-block d-xl-block d-lg-none d-md-none">
@@ -499,10 +499,10 @@
                     <div class="row">
                         <div class="col-md-6">
                             <div class="copyright-text">
-                                <p class="copy-text"> © 2022 <strong>ThePhoner Store</strong> Tạo bởi <i
+                                <p class="copy-text"> © 2024 <strong>Xgarden </strong> Tạo bởi <i
                                         class="zmdi zmdi-favorite" style="color: red;" aria-hidden="true"></i>
                                     By <a class="company-name" href="#">
-                                        <strong> Golden Bee Group</strong></a>.</p>
+                                        <strong> Xgarden Group</strong></a>.</p>
 
                             </div>
                         </div>

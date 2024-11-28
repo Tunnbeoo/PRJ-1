@@ -14,7 +14,7 @@
                     <div class="breadcrumbs-inner">
                         <h1 class="breadcrumbs-title">Giỏ hàng</h1>
                         <ul class="breadcrumb-list">
-                            <li><a href="index.html">Trang chủ</a></li>
+                            <li><a href="index.php">Trang chủ</a></li>
                             <li>Giỏ hàng</li>
                         </ul>
                     </div>
@@ -66,51 +66,51 @@
                         <!-- shopping-cart start -->
                         <div class="tab-pane active" id="shopping-cart">
                             <?php
-$cart_list = $_SESSION['giohang'];
-if (count($cart_list) > 0) {
-    ?>
-                            <div class="shopping-cart-content">
-                                <form id="shopping-cart-form" action="#">
+                            $cart_list = $_SESSION['giohang'];
+                            if (count($cart_list) > 0) {
+                            ?>
+                                <div class="shopping-cart-content">
+                                    <form id="shopping-cart-form" action="#">
 
-                                    <div id="table-content-wrapper" class="table-content table-responsive mb-50">
+                                        <div id="table-content-wrapper" class="table-content table-responsive mb-50">
 
-                                        <table class="text-center">
-                                            <thead>
-                                                <tr>
-                                                    <th class="product-thumbnail">Sản phẩm</th>
-                                                    <th class="product-price">Đơn giá</th>
-                                                    <th class="product-quantity">Số lượng</th>
-                                                    <th class="product-subtotal">Thành tiền</th>
-                                                    <th class="product-remove">Xóa</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <?php
+                                            <table class="text-center">
+                                                <thead>
+                                                    <tr>
+                                                        <th class="product-thumbnail">Sản phẩm</th>
+                                                        <th class="product-price">Đơn giá</th>
+                                                        <th class="product-quantity">Số lượng</th>
+                                                        <th class="product-subtotal">Thành tiền</th>
+                                                        <th class="product-remove">Xóa</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <?php
 
-    $i = 0;
-    $subtotal = 0;
-    $error = array();
-    foreach ($cart_list as $cart_item) {
-        # code...
-        $price_item = number_format($cart_item['don_gia']);
-        $total_item = number_format($cart_item['sl'] * $cart_item['don_gia']);
-        // echo $cart_item['sl'] * $cart_item['don_gia'];
+                                                    $i = 0;
+                                                    $subtotal = 0;
+                                                    $error = array();
+                                                    foreach ($cart_list as $cart_item) {
+                                                        # code...
+                                                        $price_item = number_format($cart_item['don_gia']);
+                                                        $total_item = number_format($cart_item['sl'] * $cart_item['don_gia']);
+                                                        // echo $cart_item['sl'] * $cart_item['don_gia'];
 
-        $id = $cart_item['id'];
+                                                        $id = $cart_item['id'];
 
-        $delcartfunc = "handleDeleteCart($id)";
-        $current_product = product_select_by_id($id);
-        // if ($cart_item['sl'] > $current_product['ton_kho']) {
-        //     $error['inventory'] = "Vượt quá sl tồn kho";
-        //     $reload_btn = '<button class="btn btn-outline-danger">Reload</button>';
-        // } else {
-        //     $error['inventory'] = "";
-        //     $reload_btn = "";
-        // }
+                                                        $delcartfunc = "handleDeleteCart($id)";
+                                                        $current_product = product_select_by_id($id);
+                                                        // if ($cart_item['sl'] > $current_product['ton_kho']) {
+                                                        //     $error['inventory'] = "Vượt quá sl tồn kho";
+                                                        //     $reload_btn = '<button class="btn btn-outline-danger">Reload</button>';
+                                                        // } else {
+                                                        //     $error['inventory'] = "";
+                                                        //     $reload_btn = "";
+                                                        // }
 
-        $subtotal += $cart_item['sl'] * $cart_item['don_gia'];
-        $update_cart_func_keyup = "updateCart('onkeyup')";
-        echo '
+                                                        $subtotal += $cart_item['sl'] * $cart_item['don_gia'];
+                                                        $update_cart_func_keyup = "updateCart('onkeyup')";
+                                                        echo '
                                                         <!-- tr -->
                                                         <tr class="product-item__row" data-id="' . $cart_item['id'] . '">
                                                                 <td class="product-thumbnail">
@@ -121,7 +121,6 @@ if (count($cart_list) > 0) {
                                                                         <h6 class="product-title-2">
                                                                             <a href="./index.php?act=detailproduct&id=' . $cart_item['id'] . '">' . $cart_item['tensp'] . '</a>
                                                                         </h6>
-                                                                        <p>Thương hiệu: ' . $cart_item['danhmuc'] . '</p>
                                                                     </div>
                                                                 </td>
                                                                 <td class="product-price">' . $price_item . ' VND</td>
@@ -137,39 +136,39 @@ if (count($cart_list) > 0) {
                                                                 </td>
                                                             </tr>
                                                         ';
-        $i++;
-    }
-    ?>
-                                                <a class="btn btn-outline-warning mb-3" href="./index.php?act=shop">Tiếp
-                                                    tục mua hàng</a>
-                                            </tbody>
+                                                        $i++;
+                                                    }
+                                                    ?>
+                                                    <a class="btn btn-outline-warning mb-3" href="./index.php?act=shop">Tiếp
+                                                        tục mua hàng</a>
+                                                </tbody>
 
-                                        </table>
-                                        <div id="notify-update-cart" class="alert alert-warning d-none">Xóa sản phẩm
-                                            thành công
+                                            </table>
+                                            <div id="notify-update-cart" class="alert alert-warning d-none">Xóa sản phẩm
+                                                thành công
+                                            </div>
                                         </div>
-                                    </div>
 
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="coupon-discount box-shadow p-30 mb-50">
-                                                <!-- <h6 class="widget-title border-left mb-20">Mã giảm giá</h6>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="coupon-discount box-shadow p-30 mb-50">
+                                                    <!-- <h6 class="widget-title border-left mb-20">Mã giảm giá</h6>
                                                 <p>Nhập mã/ phiếu giảm giá của bạn nếu bạn có!</p>
                                                 <input type="text" name="name" placeholder="Nhập mã của bạn ở đây...">
                                                 <button class="submit-btn-1 black-bg btn-hover-2" type="submit">Nhập mã
                                                     giảm giá</button> -->
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div id="paymentDetails" class="payment-details box-shadow p-30 mb-50">
-                                                <h6 class="widget-title border-left mb-20">Thanh toán chi tiết</h6>
-                                                <table>
-                                                    <tr>
-                                                        <td class="td-title-1">Tổng phụ đơn hàng</td>
-                                                        <td class="td-title-2"><?php echo number_format($subtotal) ?>
-                                                            VND</td>
-                                                    </tr>
-                                                    <!-- <tr>
+                                            <div class="col-md-6">
+                                                <div id="paymentDetails" class="payment-details box-shadow p-30 mb-50">
+                                                    <h6 class="widget-title border-left mb-20">Thanh toán chi tiết</h6>
+                                                    <table>
+                                                        <tr>
+                                                            <td class="td-title-1">Tổng phụ đơn hàng</td>
+                                                            <td class="td-title-2"><?php echo number_format($subtotal) ?>
+                                                                VND</td>
+                                                        </tr>
+                                                        <!-- <tr>
                                                         <td class="td-title-1">Chi phí vận chuyển</td>
                                                         <td class="td-title-2">00.00 VND</td>
                                                     </tr>
@@ -177,21 +176,20 @@ if (count($cart_list) > 0) {
                                                         <td class="td-title-1">Vat</td>
                                                         <td class="td-title-2">00.00 VND</td>
                                                     </tr> -->
-                                                    <tr>
-                                                        <td class="order-total">Tổng đơn hàng</td>
-                                                        <td class="order-total-price">
-                                                            <?php echo number_format($subtotal) ?> VND</td>
-                                                    </tr>
-                                                </table>
+                                                        <tr>
+                                                            <td class="order-total">Tổng đơn hàng</td>
+                                                            <td class="order-total-price">
+                                                                <?php echo number_format($subtotal) ?> VND</td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
 
-                                    <a onclick="handleCheckInventory()" href="./index.php?act=checkout"
-                                        class="btn btn-dark mb-5 ml-auto d-block">Thanh
-                                        toán</a>
-                                    <!-- Module extra --- Làm thêm -->
-                                    <!-- <div class="row">
+                                        <a onclick="handleCheckInventory()" href="./index.php?act=checkout"
+                                            class="btn btn-dark mb-5 ml-auto d-block">Thanh toán</a>
+                                        <!-- Module extra --- Làm thêm -->
+                                        <!-- <div class="row">
                                         <div class="col-md-12">
                                             <div class="culculate-shipping box-shadow p-30">
                                                 <h6 class="widget-title border-left mb-20">culculate shipping</h6>
@@ -214,14 +212,14 @@ if (count($cart_list) > 0) {
                                             </div>
                                         </div>
                                     </div> -->
-                                </form>
-                            </div>
+                                    </form>
+                                </div>
                             <?php
 
-} else {
-    echo '<div class="alert alert-danger text-center">Giỏ hàng rỗng, <a class="btn btn-outline-danger" href="./index.php?act=shop">Mua hàng ngay</a></div>';
-}
-?>
+                            } else {
+                                echo '<div class="alert alert-danger text-center">Giỏ hàng rỗng, <a class="btn btn-outline-danger" href="./index.php?act=shop">Mua hàng ngay</a></div>';
+                            }
+                            ?>
                         </div>
 
                         <!-- shopping-cart end -->
