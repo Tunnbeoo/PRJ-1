@@ -750,7 +750,7 @@
                 <div class="col-lg-12">
                     <div class="section-title text-start mb-40">
                         <h2 class="uppercase">Các bài viết mới nhất</h2>
-                        <h6>Các bài viết về các sản phẩm mới nhất, thủ thuật, hướng dẫn sử dụng điện thoại hay</h6>
+                        <!-- <h6>Các bài viết về các sản phẩm mới nhất, thủ thuật, hướng dẫn sử dụng điện thoại hay</h6> -->
                     </div>
                     <div class="blog">
                         <div class="active-blog slick-arrow-1">
