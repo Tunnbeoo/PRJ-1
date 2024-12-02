@@ -95,8 +95,9 @@ if (isset($_POST['signupbtn']) && $_POST['signupbtn']) {
         $_SESSION['verifyOTP'] = $messageCode;
         $_SESSION['fullname'] = $fullname;
         sendmail($email, $title, $messageCode);
-        header("location: ./");
+        header("location: ./otp-code.php");
     }
+
 }
 ?>
 
@@ -119,40 +120,40 @@ if (isset($_POST['signupbtn']) && $_POST['signupbtn']) {
     <!-- loader-->
     <link href="../../admin/assets/css/pace.min.css" rel="stylesheet" />
     <style>
-        .bg-dangky {
-            background-color: #ff7f00;
-            border: none;
-        }
+    .bg-dangky {
+        background-color: #ff7f00;
+        border: none;
+    }
 
-        .bg-dangky:hover {
-            background-color: #ff7f00;
-        }
+    .bg-dangky:hover {
+        background-color: #ff7f00;
+    }
 
-        .text-center a {
-            color: #ff7f00;
-        }
+    .text-center a {
+        color: #ff7f00;
+    }
 
-        .images img {
-            width: 50%;
-        }
+    .images img {
+        width: 50%;
+    }
 
-        .error-message {
-            color: red;
-        }
+    .error-message {
+        color: red;
+    }
 
-        .navigate-login-btn {
-            background-color: #ff7f00;
-            border-color: #ff7f00;
-        }
+    .navigate-login-btn {
+        background-color: #ff7f00;
+        border-color: #ff7f00;
+    }
 
-        .navigate-login-btn:hover {
-            background-color: #ff7f00;
-            border-color: #ff7f00;
-        }
+    .navigate-login-btn:hover {
+        background-color: #ff7f00;
+        border-color: #ff7f00;
+    }
 
-        label.error {
-            color: red;
-        }
+    label.error {
+        color: red;
+    }
     </style>
 
     <title>Xgarden Group Authentication</title>
@@ -163,8 +164,8 @@ if (isset($_POST['signupbtn']) && $_POST['signupbtn']) {
     <!--start wrapper-->
     <div class="wrapper">
         <?php
-        include "./auth-header.php";
-        ?>
+include "./auth-header.php";
+?>
 
         <!--start content-->
         <main class="authentication-content">
@@ -196,10 +197,10 @@ if (isset($_POST['signupbtn']) && $_POST['signupbtn']) {
                                                         placeholder="Nhập họ tên của bạn">
                                                     <p class="error-message">
                                                         <?php
-                                                        if (isset($error['hoten'])) {
-                                                            echo $error['hoten'];
-                                                        }
-                                                        ?>
+if (isset($error['hoten'])) {
+    echo $error['hoten'];
+}
+?>
                                                 </div>
                                             </div>
                                             <div class="col-12">
@@ -213,10 +214,10 @@ if (isset($_POST['signupbtn']) && $_POST['signupbtn']) {
                                                         id="inputEmailAddress" placeholder="Email" name="email">
                                                     <p class="error-message">
                                                         <?php
-                                                        if (isset($error['email'])) {
-                                                            echo $error['email'];
-                                                        }
-                                                        ?>
+if (isset($error['email'])) {
+    echo $error['email'];
+}
+?>
                                                 </div>
                                             </div>
 
@@ -251,8 +252,8 @@ if (isset($_POST['signupbtn']) && $_POST['signupbtn']) {
         <!--end page main-->
 
         <?php
-        // include "./auth-footer.php";
-        ?>
+// include "./auth-footer.php";
+?>
     </div>
     <!--end wrapper-->
 
@@ -293,9 +294,7 @@ if (isset($_POST['signupbtn']) && $_POST['signupbtn']) {
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <?php if (isset($_SESSION['alert']) && $_SESSION['alert'] != "") {
-                        echo $_SESSION['alert'];
-                    } ?>
+                    <?php if (isset($_SESSION['alert']) && $_SESSION['alert'] != "") {echo $_SESSION['alert'];}?>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
@@ -307,22 +306,22 @@ if (isset($_POST['signupbtn']) && $_POST['signupbtn']) {
 
 
     <script>
-        // var myModal = new bootstrap.Modal(document.getElementById('alertModal'));
-        // myModal.show();
+    // var myModal = new bootstrap.Modal(document.getElementById('alertModal'));
+    // myModal.show();
     </script>
 
     <?php
-    if (isset($_SESSION['alert']) && $_SESSION['alert'] != "") {
-        echo '
+if (isset($_SESSION['alert']) && $_SESSION['alert'] != "") {
+    echo '
            <script>
             var myModal = new bootstrap.Modal(document.getElementById("alertModal"));
             myModal.show();
            </script>
             ';
-    }
+}
 
-    $_SESSION['alert'] = "";
-    ?>
+$_SESSION['alert'] = "";
+?>
 
 
 </body>

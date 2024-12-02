@@ -18,7 +18,6 @@
 }
 .slider-img > img {
   width: 100%;
-  height: 518px;
 }
 .slider-info {
   height: calc(100% - 100px);

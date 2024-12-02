@@ -98,6 +98,61 @@ foreach ($banner_list as $banner) {
                             ';
 }
 ?>
+
+                      <!-- Modal -->
+                      <!-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Bạn Muốn Xóa Bài Viết</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      Nhấn xóa để xóa bài viết
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+        <button type="button" class="btn btn-primary">Xóa</button>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+
+                      <!-- <tr>
+                              <td>
+                                  <div class="form-check">
+                                      <input class="form-check-input" type="checkbox">
+                                  </div>
+                              </td>
+                              <td class="productlist">
+                                  <a class="d-flex align-items-center gap-2" href="#">
+                                      <div class="product-box">
+                                          <img src="assets/images/products/10.png" alt="">
+                                      </div>
+                                      <div>
+                                          <h6 class="mb-0 product-title">Orange Micro Headphone </h6>
+                                      </div>
+                                  </a>
+                              </td>
+                              <td><span>$18.00</span></td>
+                              <td><span class="badge rounded-pill bg-success">Active</span></td>
+                              <td><span>5-31-2020</span></td>
+                              <td>
+                                  <div class="d-flex align-items-center gap-3 fs-6">
+                                      <a href="javascript:;" class="text-primary" data-bs-toggle="tooltip"
+                                          data-bs-placement="bottom" title="" data-bs-original-title="View detail"
+                                          aria-label="Views"><i class="bi bi-eye-fill"></i></a>
+                                      <a href="javascript:;" class="text-warning" data-bs-toggle="tooltip"
+                                          data-bs-placement="bottom" title="" data-bs-original-title="Edit info"
+                                          aria-label="Edit"><i class="bi bi-pencil-fill"></i></a>
+                                      <a href="javascript:;" class="text-danger" data-bs-toggle="tooltip"
+                                          data-bs-placement="bottom" title="" data-bs-original-title="Delete"
+                                          aria-label="Delete"><i class="bi bi-trash-fill"></i></a>
+                                  </div>
+                              </td>
+                          </tr> -->
+                  </tbody>
               </table>
           </div>
 

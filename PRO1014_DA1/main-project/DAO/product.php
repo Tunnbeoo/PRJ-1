@@ -117,6 +117,52 @@ function select_all_reviews_product()
     return pdo_query($sql);
 }
 
+function is_replied_review($id_review)
+{
+    $sql = "SELECT count(*) from tbl_reply_reviews where id_review = ?";
+    return pdo_query_value($sql, $id_review);
+}
+
+function select_id_replied_review($id_review)
+{
+    $sql = "select id_reply from tbl_reply_reviews where id_review = ?";
+    return pdo_query_one($sql, $id_review);
+}
+
+function insert_reply_review($id_user, $id_review, $content, $date_modified)
+{
+    $sql = "INSERT INTO tbl_reply_reviews (id_user, id_review, content, date_modified) values(?,?,?,?)";
+    pdo_execute($sql, $id_user, $id_review, $content, $date_modified);
+    return true;
+}
+
+function select_reply_review_by_id($id_reply)
+{
+
+    $sql = "SELECT * from tbl_reply_reviews where id_reply = ?";
+    return pdo_query_one($sql, $id_reply);
+}
+
+function update_reply_review($id_reply, $id_user, $id_review, $content, $date_modified)
+{
+    $sql = "UPDATE tbl_reply_reviews SET id_user = ?, id_review = ?, content = ?, date_modified = ? where id_reply = ?";
+    pdo_execute($sql, $id_user, $id_review, $content, $date_modified, $id_reply);
+    return true;
+}
+
+function reply_review_select_by_idreview($id_review)
+{
+    $sql = "SELECT * from tbl_reply_reviews rep inner join tbl_nguoidung ng where rep.id_user = ng.id and id_review = ?";
+    return pdo_query_one($sql, $id_review);
+}
+
+// function product_select_by_date($date_value)
+// {
+//     $sql = "SELECT *, CAST(ngay_nhap AS DATE) from tbl_sanpham where CAST(ngay_nhap AS DATE) = '?'";
+//     echo $sql;
+//     return pdo_query($sql, $date_value);
+// }
+
 function product_exist($masanpham)
 {
     $sql = "SELECT count(*) FROM tbl_sanpham WHERE masanpham=?";
@@ -165,6 +211,33 @@ function product_select_keyword($keyword)
         . " JOIN loai lo ON lo.ma_loai=hh.ma_loai "
         . " WHERE ten_hh LIKE ? OR ten_loai LIKE ?";
     return pdo_query($sql, '%' . $keyword . '%', '%' . $keyword . '%');
+
+}
+
+function product_select_page()
+{
+    // if (!isset($_SESSION['page_no'])) {
+    //     $_SESSION['page_no'] = 0;
+    // }
+    // if (!isset($_SESSION['page_count'])) {
+    //     $row_count = pdo_query_value("SELECT count(*) FROM hang_hoa");
+    //     $_SESSION['page_count'] = ceil($row_count / 10.0);
+    // }
+    // if (exist_param("page_no")) {
+    //     $_SESSION['page_no'] = $_REQUEST['page_no'];
+    // }
+
+    // if ($_SESSION['page_no'] < 0) {
+    //     $_SESSION['page_no'] = $_SESSION['page_count'] - 1;
+    // }
+
+    // if ($_SESSION['page_no'] >= $_SESSION['page_count']) {
+    //     $_SESSION['page_no'] = 0;
+    // }
+
+    // $sql = "SELECT * FROM hang_hoa ORDER BY ma_hh LIMIT " . $_SESSION['page_no'] . ", 10";
+
+    // return pdo_query($sql);
 
 }
 
