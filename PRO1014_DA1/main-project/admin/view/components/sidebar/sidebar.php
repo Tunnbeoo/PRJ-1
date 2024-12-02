@@ -3,8 +3,9 @@
     <div class="sidebar-header">
         <div>
             <?php
-// include "../site/view/components/logo.php";
-// ?>
+            // include "../site/view/components/logo.php";
+            // 
+            ?>
         </div>
         <div>
             <h4 class="logo-text">Xgarden</h4>
@@ -70,43 +71,28 @@
 
     </li>
     <?php
-if (isset($_SESSION['idadmin']) && $_SESSION['role'] == 1) {
-    echo '
-            <li>
-            <a href="javascript:;" class="has-arrow">
-                <div class="parent-icon"><i class="lni lni-users"></i>
-                </div>
-                <div class="menu-title">Người dùng</div>
-            </a>
+    if (isset($_SESSION['idadmin']) && isset($_SESSION['role']) && $_SESSION['role'] == 1) {
+        echo '
+                <li>
+                <a href="javascript:;" class="has-arrow">
+                    <div class="parent-icon"><i class="lni lni-users"></i>
+                    </div>
+                    <div class="menu-title">Người dùng</div>
+                </a>
 
-            <ul class="">
-                <li class=""> <a href="index.php?act=userlist"><i class="bi bi-circle"></i>Danh sách khách hàng</a>
-                </li>
-                <li> <a href="index.php?act=adminlist"><i class="bi bi-circle"></i>Danh sách quản trị viên</a>
-                </li>
-                <li> <a href="index.php?act=adduser"><i class="bi bi-circle"></i>Thêm người dùng</a>
-                </li>
-            </ul>
-        </li>
+                <ul class="">
+                    <li class=""> <a href="index.php?act=userlist"><i class="bi bi-circle"></i>Danh sách khách hàng</a>
+                    </li>
+                    <li> <a href="index.php?act=adminlist"><i class="bi bi-circle"></i>Danh sách quản trị viên</a>
+                    </li>
+                    <li> <a href="index.php?act=adduser"><i class="bi bi-circle"></i>Thêm người dùng</a>
+                    </li>
+                </ul>
+            </li>
             ';
-}
-?>
-    <!-- <li>
-        <a href="javascript:;" class="has-arrow">
-            <div class="parent-icon"><i class="lni lni-users"></i>
-            </div>
-            <div class="menu-title">Người dùng</div>
-        </a>
+    }
+    ?>
 
-        <ul class="">
-            <li class=""> <a href="index.php?act=userlist"><i class="bi bi-circle"></i>Danh sách khách hàng</a>
-            </li>
-            <li> <a href="index.php?act=adminlist"><i class="bi bi-circle"></i>Danh sách quản trị viên</a>
-            </li>
-            <li> <a href="index.php?act=adduser"><i class="bi bi-circle"></i>Thêm người dùng</a>
-            </li>
-        </ul>
-    </li> -->
     <li>
         <a href="javascript:;" class="has-arrow">
             <div class="parent-icon"><i class="fadeIn animated bx bx-slideshow"></i>
