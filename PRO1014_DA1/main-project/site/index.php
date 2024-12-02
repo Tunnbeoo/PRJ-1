@@ -13,24 +13,10 @@ if (!isset($_SESSION['alert'])) {
 
 if (!isset($_SESSION['giohang'])) {
     $_SESSION['giohang'] = [
-        // array("id" => 1, "tensp" => "Điện thoại OPPO Reno8 T 5G 256GB", "danhmuc" => "Oppo", "hinh_anh" => "thumb-oppo-reno8t-vang1-thumb-600x600.jpg", "sl" => 3, "don_gia" => 10999000),
-        // array("id" => 2, "tensp" => "Điện thoại OPPO Reno8 Z 5G", "danhmuc" => "Oppo", "hinh_anh" => "thumb-oppo_reno8_pro_1_.jpg", "sl" => 3, "don_gia" => 17590000),
-        // array("id" => 4, "tensp" => "Điện thoại OPPO Reno7 Pro 5G", "danhmuc" => "Oppo", "hinh_anh" => "thumb-oppo reno 7 t_i_xu_ng_42__3.png", "sl" => 2, "don_gia" => 11990000),
+      
     ];
 }
 
-if (!isset($_SESSION['wishlist'])) {
-    // $_SESSION['giohang'] = [
-    //     [1, 1, "Điện thoại OPPO Reno8 T 5G 256GB", "thumb-oppo-reno8t-vang1-thumb-600x600.jpg", 3, 10999000],
-    //     [2, 2, "Điện thoại OPPO Reno8 Pro 5G", "thumb-oppo_reno8_pro_1_.jpg", 3, 17590000],
-    //     [3, 4, "Điện thoại OPPO Reno7 Pro 5G", "thumb-oppo reno 7 t_i_xu_ng_42__3.png", 2, 11990000],
-    // ];
-    $_SESSION['wishlist'] = [
-        // array("stt" => 1, "id" => 1, "tensp" => "Điện thoại OPPO Reno8 T 5G 256GB", "danhmuc" => "Oppo", "hinh_anh" => "thumb-oppo-reno8t-vang1-thumb-600x600.jpg", "sl" => 3, "don_gia" => 10999000),
-        // array("stt" => 2, "id" => 2, "tensp" => "Điện thoại OPPO Reno8 Pro 5G", "danhmuc" => "Oppo", "hinh_anh" => "thumb-oppo_reno8_pro_1_.jpg", "sl" => 3, "don_gia" => 17590000),
-        // array("stt" => 3, "id" => 4, "tensp" => "Điện thoại OPPO Reno7 Pro 5G", "danhmuc" => "Oppo", "hinh_anh" => "thumb-oppo reno 7 t_i_xu_ng_42__3.png", "sl" => 2, "don_gia" => 11990000),
-    ];
-}
 
 include "../global.php";
 include "../DAO/category.php";
@@ -74,10 +60,6 @@ if (isset($_GET['act'])) {
         case 'shopcartpage':
 
             include "./view/shopcart-page.php";
-            break;
-
-        case 'wishlist':
-            include "./view/pages/cart/wishlist.php";
             break;
 
         case 'updatecart':
@@ -585,90 +567,6 @@ if (isset($_GET['act'])) {
         case 'reorder':
 
             break;
-
-        case 'addtowishlist':
-            // if (isset($_SESSION['iduser'])) {
-
-            if (isset($_POST['addtowishlistbtn']) && $_POST['addtowishlistbtn']) {
-
-                // echo "HELLO WORLD";
-
-                $id = $_POST['id'];
-                // $productitem = get_one_product($id)[0];
-                $iddm = $_POST['iddm'];
-                $tendanhmuc = $_POST['danhmuc'];
-                $tensp = $_POST['tensp'];
-                $hinh_anh = $_POST['hinh_anh'];
-                $don_gia = $_POST['don_gia'];
-                $giam_gia = $_POST['giam_gia'];
-                $gia_moi = $don_gia * (1 - $giam_gia / 100);
-                $sl = $_POST['sl'];
-
-                // if (isset($_POST['cart_quantity']) && ($_POST['cart_quantity'] > 0)) {
-                //     $sl = $_POST['cart_quantity'];
-
-                //     $product = product_select_by_id($id);
-                //     if ($sl > $product['ton_kho']) {
-                //         $sl = $product['ton_kho'];
-                //         $GLOBALS['changed_cart'] = true;
-                //     }
-
-                // } else {
-                //     $sl = 1;
-                // }
-
-                $flag = 0;
-
-                // Kiểm tra sản phẩm có tồn tại trong giỏ hàng hay không ?
-                // Nếu có chỉ cập nhất lại số lượng
-
-                // Ngược lại add mới sp vào giỏ hàng
-
-                // Khởi tạo một mảng con trước khi đưa vào giỏ
-
-                $i = 0;
-
-                foreach ($_SESSION['wishlist'] as $itemsp) {
-                    # code...
-                    // var_dump($itemsp);
-
-                    if ($itemsp['id'] === $id) {
-                        $slnew = $sl + $itemsp['sl'];
-
-                        // echo "So LUONG MOI: " . $slnew;
-
-                        $_SESSION['wishlist'][$i]['sl'] = $slnew;
-                        $flag = 1;
-
-                        break;
-                    }
-
-                    $i++;
-                }
-
-                if ($flag == 0) {
-                    $itemsp = array("id" => $id, "tensp" => $tensp, "danhmuc" => $tendanhmuc, "hinh_anh" => $hinh_anh, "sl" => $sl, "don_gia" => $gia_moi);
-                    // $itemsp = array($id, $tensp, $img, $gia, $sl, $tendanhmuc);
-                    // array_push($_SESSION['giohang'], $itemsp);
-                    // $_SESSION['giohang'][] = $itemsp;
-
-                    $_SESSION['wishlist'][] = $itemsp;
-
-                }
-
-                // header('location: index.php?act=viewcart'); // Tại sao lại có dòng này ?
-
-            } else {
-                // echo "NOTTHING ELSE HERE";
-            }
-
-            // }
-            // else {
-            //     header('location: ./auth/login.php');
-            // }
-            include "./view/pages/cart/wishlist.php";
-            break;
-
         case 'viewcart':
             include "./view/pages/cart/shopping-cart.php";
             break;
@@ -683,33 +581,6 @@ if (isset($_GET['act'])) {
         case 'detailproduct':
             include "./view/pages/detailproduct/detail-product.php";
             break;
-        // case 'detailproductpage':
-
-        //     if (isset($_POST['sendcommentbtn']) && $_POST['sendcommentbtn']) {
-        //         if (isset($_SESSION['iduser'])) {
-        //             $iduser = $_SESSION['iduser'];
-        //             $masanpham = $_POST['masanpham'];
-        //             $commentMessage = $_POST['comment'];
-        //             date_default_timezone_set('Asia/Ho_Chi_Minh');
-        //             $ngay_binhluan = date("Y-m-d H:i:s");
-        //             comment_insert($iduser, $masanpham, $commentMessage, $ngay_binhluan);
-        //             include "./view/detailproduct-page.php";
-        //             echo '<script>
-        //             alert("Bình luận thành công");
-        //             </script>';
-        //         } else {
-        //             echo '<script>
-        //             alert("Bạn chưa đăng nhập để bình luân, xin mời đăng nhập");
-        //             </script>';
-
-        //             include "./view/account/signin-page.php";
-        //         }
-
-        //     } else {
-        //         include "./view/detailproduct-page.php";
-        //     }
-
-        //     break;
 
         case 'signup':
 
@@ -1034,35 +905,6 @@ if (isset($_GET['act'])) {
             break;
         case 'cskiemhang':
             include "./view/pages/policy/inspection-policy.php";
-            break;
-        case 'commentblog':
-            if (isset($_POST['sencomment']) && ($_POST['sencomment'])) {
-                $error = array();
-                $idblog = $_GET['id'];
-                $content = $_POST['content'];
-                date_default_timezone_set('Asia/Ho_Chi_Minh');
-                $date = date('Y-m-d H:m:s');
-                // exit;
-                $makh = $_SESSION['iduser'];
-                if (isset($_SESSION['iduser'])) {
-                    if (strlen($content) == 0) {
-                        $error['content'] = "Bạn Chưa Nhập Bình Luận";
-                    }
-                    if (!$error) {
-                        $is_inserted = comment_blog($makh, $content, $idblog, $date);
-                        if ($is_inserted) {
-                            $thongbao = "Thêm Bài Viết Thành Công";
-                        }
-                    } else {
-                        $thongbao = "Thêm Bài Viết Thất Bại";
-                    }
-
-                    // header('location: index.php?act=blogdetail&id='.$idblog.'');
-                } else {
-                    // $thongbao = "Đăng Nhập Để Bình Luận";
-                    header('location: ./auth/login.php');}
-            }
-            include "./view/pages/blog/blog-detail.php";
             break;
         case 'deletecmt':
             $id = $_GET['idblog'] ? $_GET['idblog'] : '';

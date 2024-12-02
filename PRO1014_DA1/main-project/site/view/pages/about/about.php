@@ -102,12 +102,12 @@
                         <div class="team-member-item">
                             <div class="team-member box-shadow">
                                 <div class="team-photo">
-                                    <img src="assets/img/team/" alt="">
+                                    <img src="assets/img/team/tunn.jpeg" alt="">
                                 </div>
                                 <div class="team-info pt-20">
-                                    <h5 class="member-name"><a href="#!">Hữu Tài</a></h5>
+                                    <h5 class="member-name"><a href="#!">Minh Trung</a></h5>
                                     <p class="member-role">Leader</p>
-                                    <p class="mb-20">Là người phụ trách quản lý công việc và phân chia các thành viên</p>
+                                    <p class="mb-20">Là người phụ trách quản lý công việc và phân chia các thành viên, là người chịu trách nhiệm chính về back-end, thiết kế database</p>
                                 </div>
                             </div>
                         </div>
@@ -121,7 +121,7 @@
                                 <div class="team-info pt-20">
                                     <h5 class="member-name"><a href="#!">Thành Mỹ</a></h5>
                                     <p class="member-role">Member</p>
-                                    <p class="mb-20">Phụ trách công việc thiết kế trang giao diện của Xgarden Store</p>
+                                    <p class="mb-20">là người lên ý tưởng, thiết kế UX/UI của Xgarden Store</p>
                                 </div>
                             </div>
                         </div>
@@ -135,7 +135,7 @@
                                 <div class="team-info pt-20">
                                     <h5 class="member-name"><a href="#!">Thanh Thiên</a></h5>
                                     <p class="member-role">Member</p>
-                                    <p class="mb-20">Là người phụ trách công việc thiết kế trang giao diện front-end</p>
+                                    <p class="mb-20">Là người chịu trách nhiệm về thiết kế trang giao diện front-end, thiết kế UX/UI của Xgarden Store</p>
                                 </div>
                             </div>
                         </div>
@@ -147,9 +147,9 @@
                                     <img src="assets/img/team/" alt="">
                                 </div>
                                 <div class="team-info pt-20">
-                                    <h5 class="member-name"><a href="#">Minh Trung</a></h5>
+                                    <h5 class="member-name"><a href="#">Hữu Tài</a></h5>
                                     <p class="member-role">Member</p>
-                                    <p class="mb-20">Là người chịu trách nhiệm về back-end, thiết kế database</p>
+                                    <p class="mb-20">Là người phụ trách về back-end, thiết kế database</p>
                                 </div>
                             </div>
                         </div>
@@ -163,7 +163,7 @@
                                 <div class="team-info pt-20">
                                     <h5 class="member-name"><a href="#">Vũ Hùng</a></h5>
                                     <p class="member-role">Member</p>
-                                    <p class="mb-20">Là người phụ trách công việc thiết kế trang giao diện front-end</p>
+                                    <p class="mb-20">Là người phụ trách công việc thiết kế trang giao diện front-end, thiết kế UX/UI của Xgarden Store</p>
                                 </div>
                             </div>
                         </div>

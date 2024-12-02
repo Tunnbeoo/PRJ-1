@@ -57,21 +57,21 @@
                               <div class="blog-details-photo bg-img-1 p-20 mb-30">
                                   <div class="f-start">
 
-                                        <h2 class="change-h2">CHÍNH SÁCH BẢO HÀNH THE PHONER STORE</h2>
+                                        <h2 class="change-h2">CHÍNH SÁCH BẢO HÀNH XGARDEN STORE</h2>
                                         <!--  -->
                                         <p class="change-p">
                                             Di Đông Việt rất lấy làm tiếc và thành thật xin lỗi quý khách hàng trong trường hợp điện thoại, 
-                                            máy tính bảng của quý khách bị hỏng và phải mang đi bảo hành. Hệ thống The Phoner Store mang 
+                                            máy tính bảng của quý khách bị hỏng và phải mang đi bảo hành. Hệ thống Xgarden Store mang 
                                             đến 02 chính sách bảo hành: bảo hành tiêu chuẩn và bảo hành mở rộng.
                                         </p>
                                         <p class="change-p">
                                             Bảo hành tiêu chuẩn nổi bật với chế độ dùng thử 07 ngày. Bảo hành mở rộng nổi bật với chính sách ưu 
-                                            đãi dành cho Khách hàng tại DDV với các gói Bảo hành mở rộng đang kinh doanh là 1 đổi 1, rơi vỡ - rớt 
-                                            nước và Plus 12 - 24 tháng. Cả 2 chính sách đều được The Phoner Store hỗ trợ tiếp nhận niềm nở, xử lý nhanh 
+                                            đãi dành cho Khách hàng tại Xgarden Store với các gói Bảo hành mở rộng đang kinh doanh là 1 đổi 1, rơi vỡ - rớt 
+                                            nước và Plus 12 - 24 tháng. Cả 2 chính sách đều được Xgarden Store hỗ trợ tiếp nhận niềm nở, xử lý nhanh 
                                             chóng, đem đến sự hài lòng cho khách hàng.
                                         </p>
                                         <p class="change-p">
-                                            Chi tiết chính sách bảo hành tại hệ thống The Phoner Store:
+                                            Chi tiết chính sách bảo hành tại hệ thống Xgarden Store:
                                         </p>
                                         <ul class="change-1">
                                             <li>I. DÙNG THỬ 7 NGÀY MIỄN PHÍ</li>
@@ -95,7 +95,7 @@
                                         <!--  -->
                                         <h3 class="change-h3">II. CHÍNH SÁCH BẢO HÀNH TIÊU CHUẨN</h3>
                                             <p class="change-p">
-                                                Các sản phẩm chính hãng, Quý khách hàng có thể tới trực tiếp các TTBH chính hãng, Trung tâm Bảo hành ủy quyền Viện Di Động hoặc có thể đến trực tiếp các cửa hàng của The Phoner Store để được tiếp nhận gửi máy bảo hành chính hãng.
+                                                Các sản phẩm chính hãng, Quý khách hàng có thể tới trực tiếp các TTBH chính hãng, Trung tâm Bảo hành ủy quyền Viện Di Động hoặc có thể đến trực tiếp các cửa hàng của Xgarden Store để được tiếp nhận gửi máy bảo hành chính hãng.
                                             </p>
                                             <p class="change-p">
                                                 Điều kiện đổi trả:
@@ -112,24 +112,24 @@
                                             </p>
                                                 <ul class="change-ul-warranty-policy">
                                                     <li>Việc đổi máy có thể không đúng với màu sắc như sản phẩm ban đầu </li>
-                                                    <li>The Phoner Store từ chối bảo hành các lỗi không thể khắc phục được: Mất dữ liệu, mất Touch ID, dính tài khoản iCloud, MiCloud, SamsungCloud, máy bị cong sườn, cong main, dập nát, cháy nổ.</li>
+                                                    <li>Xgarden Store từ chối bảo hành các lỗi không thể khắc phục được: Mất dữ liệu, mất Touch ID, dính tài khoản iCloud, MiCloud, SamsungCloud, máy bị cong sườn, cong main, dập nát, cháy nổ.</li>
                                                     <li>Các vấn đề về thẩm mỹ bên ngoài như cấn, móp, tróc sơn, trầy xước, sẽ không thuộc phạm vi bảo hành.</li>
-                                                    <li>Máy bị can thiệp phần cứng mà không có chỉ định từ NSX hoặc The Phoner Store/ Viện Di Động</li>
+                                                    <li>Máy bị can thiệp phần cứng mà không có chỉ định từ NSX hoặc Xgarden Store/ Viện Di Động</li>
                                                 </ul>
 
                                             <h3 class="change-h3">III. BẢO HÀNH MỞ RỘNG</h3>
-                                            <p class="change-p">Ngoài gói bảo hành tiêu chuẩn (mặc định), tại The Phoner Store quý khách hàng được chọn thêm gói bảo hành mở rộng: Rơi vỡ, rớt nước với những quyền lợi bảo hành vượt trội. Nổi bật như: Bảo hành ngay cả khi rơi vỡ, rớt bể, 1 đổi 1 trong 1 năm...</p>
+                                            <p class="change-p">Ngoài gói bảo hành tiêu chuẩn (mặc định), tại Xgarden Store quý khách hàng được chọn thêm gói bảo hành mở rộng: Rơi vỡ, rớt nước với những quyền lợi bảo hành vượt trội. Nổi bật như: Bảo hành ngay cả khi rơi vỡ, rớt bể, 1 đổi 1 trong 1 năm...</p>
                                              <p class="change-p">Ghi chú:</p>   
                                              <p class="change-p">1. Thời gian đổi máy:</p>
                                                 <ul class="change-ul-warranty-policy">
-                                                    <li>Ngay khi kỹ thuật viên The Phoner Store hoặc Viện Di Động hoặc hãng thẩm định chính xác lỗi phần cứng từ phía nhà sản xuất</li>
+                                                    <li>Ngay khi kỹ thuật viên Xgarden Store hoặc Viện Di Động hoặc hãng thẩm định chính xác lỗi phần cứng từ phía nhà sản xuất</li>
                                                     <li>Máy được đổi là máy mới 100% chưa ACTIVE, không phải máy trả bảo hành</li>
                                                 </ul>
                                              <p class="change-p">2. Thời gian sữa chữa: Từ 1 đến 3 ngày, có thề sớm hơn hoặc lâu hơn tùy vào tình trạng tiếp nhận</p>
                                             <p class="change-p">Lưu ý:</p>
                                                 <ul class="change-ul-warranty-policy">
                                                     <li>Việc đổi máy có thể không đúng với màu sắc như sản phẩm ban đầu</li>
-                                                    <li>The Phoner Store từ chối bảo hành các lỗi không thể khắc phục được: Mất dữ liệu, dính tài khoản iCloud, MiCloud, SamsungCloud M, cong main, dập nát, cháy nổ. Touch ID và Face ID vẫn bảo hành khi không có tác động của người dùng.</li>
+                                                    <li>Xgarden Store từ chối bảo hành các lỗi không thể khắc phục được: Mất dữ liệu, dính tài khoản iCloud, MiCloud, SamsungCloud M, cong main, dập nát, cháy nổ. Touch ID và Face ID vẫn bảo hành khi không có tác động của người dùng.</li>
                                                     <li>Các vấn đề về thẩm mỹ bên ngoài như cấn, móp, tróc sơn, trầy xước, sẽ không thuộc phạm vi bảo hành.</li>
                                                 </ul>
                                   </div>

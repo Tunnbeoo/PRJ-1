@@ -62,13 +62,6 @@ foreach ($product_list as $item) {
                                         <h6 class="product-title">
                                             <a href="index.php?act=detailproduct&id=' . $item['masanpham'] . '">' . $item['tensp'] . '</a>
                                         </h6>
-                                        <div class="pro-rating">
-                                            <a href="#"><i class="zmdi zmdi-star"></i></a>
-                                            <a href="#"><i class="zmdi zmdi-star"></i></a>
-                                            <a href="#"><i class="zmdi zmdi-star"></i></a>
-                                            <a href="#"><i class="zmdi zmdi-star-half"></i></a>
-                                            <a href="#"><i class="zmdi zmdi-star-outline"></i></a>
-                                        </div>
                                         <h6 class="brand-name mb-30">' . $item['ma_danhmuc'] . '</h6>
                                         <h3 class="pro-price"> ' . $price_format . ' VND</h3>
                                         <p>

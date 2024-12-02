@@ -48,7 +48,7 @@
                               <div class="blog-details-photo bg-img-1 p-20 mb-30">
                                   <div class="f-start">
 
-                                        <h2 class="change-h2">CHÍNH SÁCH SỬ DỤNG THE PHONER STORE</h2>
+                                        <h2 class="change-h2">CHÍNH SÁCH SỬ DỤNG Xgarden STORE</h2>
                                         <!--  -->
                                         <h3 class="change-h3">1. Chấp nhận các điều khoản sử dụng</h3>
                                             <p class="change-p">Các điều khoản và điều kiện sau đây (gọi chung là các “Điều khoản sử dụng”) quy định việc truy cập và sử dụng các dịch vụ, thông tin từ Xgarden.vn.</p>

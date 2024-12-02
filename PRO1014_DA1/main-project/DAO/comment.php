@@ -99,10 +99,10 @@ function count_comment_has_approved($ma_sanpham)
     $sql = "select * from tbl_binhluan where ma_sanpham = $ma_sanpham and duyet = 1";
     return count(pdo_query($sql));
 }
-function comment_blog($makh,$content,$idblog, $date){
-    $sql = "insert into tbl_blog_comment(ma_kh,id_blog,noi_dungbl,ngay_bl) values('$makh','$idblog','$content','$date')";
-    pdo_execute($sql);
-}
+// function comment_blog($makh,$content,$idblog, $date){
+//     $sql = "insert into tbl_blog_comment(ma_kh,id_blog,noi_dungbl,ngay_bl) values('$makh','$idblog','$content','$date')";
+//     pdo_execute($sql);
+// }
 function comment_product($makh,$noidung,$idproduct, $date){
     $sql = "insert into tbl_binhluan(noi_dung,ma_sanpham,ma_nguoidung,ngay_binhluan) values('$noidung','$idproduct','$makh','$date')";
     pdo_execute($sql);
@@ -131,14 +131,14 @@ function showcommentproduct_admin(){
     $showcomment = pdo_query($sql);
     return $showcomment;
 }
-function showcomment_admin(){
-    $sql = "SELECT * FROM tbl_blog_comment 
-    JOIN tbl_blog ON tbl_blog_comment.id_blog = tbl_blog.blog_id 
-    JOIN tbl_nguoidung ON tbl_blog_comment.ma_kh = tbl_nguoidung.id
-    ORDER BY ngay_bl DESC ";
-    $showcomment = pdo_query($sql);
-    return $showcomment;
-}
+// function showcomment_admin(){
+//     $sql = "SELECT * FROM tbl_blog_comment 
+//     JOIN tbl_blog ON tbl_blog_comment.id_blog = tbl_blog.blog_id 
+//     JOIN tbl_nguoidung ON tbl_blog_comment.ma_kh = tbl_nguoidung.id
+//     ORDER BY ngay_bl DESC ";
+//     $showcomment = pdo_query($sql);
+//     return $showcomment;
+// }
 function deletecomment_blog($id){
     $sql = "delete from tbl_blog_comment where id_bl='$id'";
     pdo_execute($sql);

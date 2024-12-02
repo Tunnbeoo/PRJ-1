@@ -1,12 +1,4 @@
 <?php
-// session_start();
-/*
- * Định nghĩa các url cần thiết được sử dụng trong website
- */
-// $ROOT_URL = "/xshop";
-// $CONTENT_URL = "$ROOT_URL/content";
-// $ADMIN_URL = "$ROOT_URL/admin";
-// $SITE_URL = "$ROOT_URL/site";
 
 $FOLDER_VAR = "/PRO1014_DA1/main-project";
 $ROOT_URL = $_SERVER['DOCUMENT_ROOT'] . "$FOLDER_VAR";
@@ -163,7 +155,7 @@ function renderCardShoppage($productList)
     }
 }
 
-function cardItem($item, $thumbnail, $addcartfunc, $addwishlistfunc, $cate_name, $price_format, $result_stars)
+function cardItem($item, $thumbnail, $addcartfunc, $cate_name, $price_format)
 {
     return '
                                         <form action="./index.php?act=addtocart" method="post">
@@ -185,10 +177,7 @@ function cardItem($item, $thumbnail, $addcartfunc, $addwishlistfunc, $cate_name,
                                                     <h3 class="pro-price"> ' . $price_format . ' VND</h3>
 
                                                         <ul class="action-button">
-                                                        <li>
-                                                            <a onclick="' . $addwishlistfunc . '" class="add-to-wishlist" href="#" title="Wishlist"><i class="zmdi zmdi-favorite"></i></a>
-                                                            <input type="submit" class="add-to-wishlist__submit-input d-none" name="addtowishlistbtn" value="Thêm vào sản phẩm yêu thích">
-                                                        </li>
+
                                                         <li>
                                                             <a class="zoom-detail-product" href="#" data-bs-toggle="modal" data-bs-target="#productModal"
                                                                 title="Quickview"><i class="zmdi zmdi-zoom-in"></i></a>
@@ -318,51 +307,8 @@ function is_email($str)
     return (!preg_match("/^([a-z0-9\+_\-]+)(\.[a-z0-9\+_\-]+)*@([a-z0-9\-]+\.)+[a-z]{2,6}$/ix", $str)) ? false : true;
 }
 
-function validateUploadImage($fileName)
-{
-//     $check = getimagesize($_FILES["$fileName"]["tmp_name"]);
-    //     if ($check !== false) {
-    //         echo "File is an image - " . $check["mime"] . ".";
-    //         $uploadOk = 1;
-    //     } else {
-    //         echo "File is not an image.";
-    //         $uploadOk = 0;
-    //     }
 
-// // Check if file already exists
-    //     if (file_exists($target_file)) {
-    //         echo "Sorry, file already exists.";
-    //         $uploadOk = 0;
-    //     }
 
-// // Check file size
-    //     if ($_FILES["$fileName"]["size"] > 500000) {
-    //         echo "Sorry, your file is too large.";
-    //         $uploadOk = 0;
-    //     }
-
-// // Allow certain file formats
-    //     if ($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg"
-    //         && $imageFileType != "gif") {
-    //         echo "Sorry, only JPG, JPEG, PNG & GIF files are allowed.";
-    //         $uploadOk = 0;
-    //     }
-
-// // Check if $uploadOk is set to 0 by an error
-    //     if ($uploadOk == 0) {
-    //         echo "Sorry, your file was not uploaded.";
-    //         // if everything is ok, try to upload file
-    //     } else {
-    //         if (move_uploaded_file($_FILES["$fileName"]["tmp_name"], $target_file)) {
-    //             echo "The file " . htmlspecialchars(basename($_FILES["$fileName"]["name"])) . " has been uploaded.";
-    //         } else {
-    //             echo "Sorry, there was an error uploading your file.";
-    //         }
-    //     }
-
-}
-
-// include "./site/model/connectdb.php";
 
 function createDataWithPagination($conn, $sql, $_limit)
 {
@@ -371,7 +317,6 @@ function createDataWithPagination($conn, $sql, $_limit)
     $stmt = $conn->prepare($sql);
     $stmt->execute();
 
-// set the resulting array to associative
     $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
     $finalresult = $stmt->fetchAll();
     $total_records = count($finalresult);
@@ -446,18 +391,15 @@ function showStatus($num)
 function showPayment($num)
 {
     $trangthai = '';
-    $statusMess = '';
 
     switch ($num) {
         case '0':
-            # code...
             $trangthai = "Chưa thanh toán";
             break;
         case '1':
             $trangthai = "Đã thanh toán";
             break;
         default:
-            # code...
             break;
     }
 
@@ -470,7 +412,6 @@ function getthumbnail($image_list)
     foreach ($image_list as $image_item) {
 
         if (substr($image_item, 0, 6) == "thumb-") {
-            // echo $image_item;
             $thumbnail = "../uploads/" . $image_item;
             return $thumbnail;
         }

@@ -140,13 +140,6 @@ function cate_select_by_id($ma_loai)
                                             ';
                                     }
                                     ?>
-
-                                    <li id="topWishlist" class="top-header-menu__item">
-                                        <a href="index.php?act=wishlist">
-                                            <i class="zmdi zmdi-favorite"></i>
-                                            Yêu thích (<?php echo count($_SESSION['wishlist']) ?> sp)
-                                        </a>
-                                    </li>
                                     <?php
                                     if (!isset($_SESSION['iduser'])) {
                                         echo '

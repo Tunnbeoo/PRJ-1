@@ -31,29 +31,29 @@ if (isset($_GET['id']) && $_GET['id'] > 0) {
         }
     }
 
-#Thumbnail Image
-$image_list = explode(',', $product['images']);
-$price_format = number_format($product['don_gia']);
+    #Thumbnail Image
+    $image_list = explode(',', $product['images']);
+    $price_format = number_format($product['don_gia']);
 
-$old_price = number_format($product['don_gia']);
-$new_price = number_format($product['don_gia'] * (1 - $product['giam_gia'] / 100));
+    $old_price = number_format($product['don_gia']);
+    $new_price = number_format($product['don_gia'] * (1 - $product['giam_gia'] / 100));
 
-// Initialize thumbnail with a default value
-$thumbnail = "";
+    // Initialize thumbnail with a default value
+    $thumbnail = "";
 
-// Find thumbnail image
-foreach ($image_list as $image_item) {
-    $image_item = trim($image_item);
-    if (substr($image_item, 0, 6) == "thumb-") {
-        $thumbnail = "uploads/" . $image_item;
-        break;
+    // Find thumbnail image
+    foreach ($image_list as $image_item) {
+        $image_item = trim($image_item);
+        if (substr($image_item, 0, 6) == "thumb-") {
+            $thumbnail = "uploads/" . $image_item;
+            break;
+        }
     }
-}
 
-// Set default thumbnail if none found
-if (empty($thumbnail) && !empty($image_list)) {
-    $thumbnail = "uploads/" . trim($image_list[0]);
-}
+    // Set default thumbnail if none found
+    if (empty($thumbnail) && !empty($image_list)) {
+        $thumbnail = "uploads/" . trim($image_list[0]);
+    }
 ?>
 
     <!-- Start page content -->
@@ -70,9 +70,9 @@ if (empty($thumbnail) && !empty($image_list)) {
                                 <!-- imgs-zoom-area start -->
                                 <div class="col-lg-5">
                                     <div class="imgs-zoom-area">
-                                        <img id="zoom_03" 
+                                        <img id="zoom_03"
                                             src="../<?php echo $thumbnail ?>"
-                                            data-zoom-image="../<?php echo $thumbnail ?>" 
+                                            data-zoom-image="../<?php echo $thumbnail ?>"
                                             alt="">
                                         <div class="row">
                                             <div class="col-lg-12">
@@ -106,7 +106,7 @@ if (empty($thumbnail) && !empty($image_list)) {
                                                     class="fs-4 fw-light">
                                                     (<?php echo count_sold_product_by_id($_GET['id']) ?>
                                                     đã bán )</span>
-                                            </h3>   
+                                            </h3>
                                             <h6 class="my-4">Dòng sản phẩm: <?php echo $subcate_name ?></h6>
                                             <h6 class="single-product__views">
                                                 <span class="">(<?php echo $product['so_luot_xem'] ?> lượt
@@ -143,17 +143,7 @@ if (empty($thumbnail) && !empty($image_list)) {
 
                                                     <div class="sin-pro-action ml-100">
                                                         <ul class="action-button">
-                                                            <li class="text-center d-flex justify-content-center mb-3">
-                                                                <a onclick="handleAddCart('addtowishlist', 'addwishlist')"
-                                                                    class="add-to-wishlist text-center mr-10" href="#"
-                                                                    title="Wishlist" tabindex="0"><i
-                                                                        class="zmdi zmdi-favorite"></i></a>
-                                                                <input type="submit"
-                                                                    class="add-to-wishlist__submit-input d-none"
-                                                                    name="addtowishlistbtn"
-                                                                    value="Thêm vào sản phẩm yêu thích">
-                                                                <label for="">Yêu thích</label>
-                                                            </li>
+
                                                             <li class="text-center d-flex justify-content-center mb-3">
                                                                 <a onclick="handleAddCart('addtocart', 'addcart');"
                                                                     class="add-to-cart text-center mr-10" href="#"
@@ -179,22 +169,7 @@ if (empty($thumbnail) && !empty($image_list)) {
                                                         </ul>
                                                     </div>
                                                 </div>
-                                                <div onclick="viewAllReviews()" class="pro-rating sin-pro-rating f-right">
-                                                    <!-- <a href="#" tabindex="0"><i class="zmdi zmdi-star"></i></a>
-                                                <a href="#" tabindex="0"><i class="zmdi zmdi-star"></i></a>
-                                                <a href="#" tabindex="0"><i class="zmdi zmdi-star"></i></a>
-                                                <a href="#" tabindex="0"><i class="zmdi zmdi-star"></i></a>
-                                                <a href="#" tabindex="0"><i class="zmdi zmdi-star-outline"></i></a> -->
-                                                    <?php
-                                                    $avg_stars = avg_star_reviews_of_product($_GET['id']);
-                                                    // echo $avg_stars;
-                                                    // $result = renderStarRatings(round($avg_stars, 0));
-                                                    // echo $result;
-                                                    ?>
-                                                    <span class="text-black-5">(
-                                                        <?php echo count_number_reviews_of_product($_GET['id']) ?> đã đánh
-                                                        giá)</span>
-                                                </div>
+
                                             </div>
                                             <!-- hr -->
                                             <hr>
@@ -248,8 +223,8 @@ if (empty($thumbnail) && !empty($image_list)) {
                                                     phẩm</a>
                                             </li>
                                             <li><a href="#information" data-bs-toggle="tab">Thông tin sản phẩm</a></li>
-                                            <li><a id="reviews-tab-btn" href="#reviews" data-bs-toggle="tab">reviews/đánh
-                                                    giá</a></li>
+                                            <!-- <li><a id="reviews-tab-btn" href="#reviews" data-bs-toggle="tab">reviews/đánh
+                                                    giá</a></li> -->
                                         </ul>
                                         <div class="tab-content">
                                             <div role="tabpanel" class="tab-pane active show" id="description">
@@ -260,59 +235,19 @@ if (empty($thumbnail) && !empty($image_list)) {
                                                         <div class="row">
                                                             <div class="col-lg-12">
                                                                 <div class="message-box box-shadow white-bg">
-                                                                    <form
-                                                                        action="index.php?act=commentproduct&id=<?= $product_id ?>"
-                                                                        method="post">
-                                                                        <h4 class="blog-section-title border-left mb-10">
-                                                                            Bình Luận</h4>;
-                                                                        <?php
-                                                                        if (!isset($_SESSION['iduser'])) {
-                                                                            $thongbao = "<div><a href='./auth/login.php' class='btn btn-outline-dark'>Đăng Nhập</a> Để Bình Luận</div>";
-                                                                            echo '<div class="alert alert-primary" role="alert">' . $thongbao . '</div>';
-                                                                        }
-                                                                        ?>
-                                                                        <div>
-                                                                            <textarea class="custom-textarea" name="noidung"
-                                                                                id="" cols="30" rows="10"></textarea>
+                                                                    <form action="index.php?act=commentproduct&id=PRODUCT_ID" method="post">
+                                                                        <h4 class="blog-section-title border-left mb-10">Bình Luận</h4>
+                                                                        <div class="alert alert-primary" role="alert">
+                                                                            <div><a href='./index.php' class='btn btn-outline-dark'>Đăng Nhập</a> Để Bình Luận</div>
                                                                         </div>
                                                                         <div>
-                                                                            <input class="submit-btn-1 mt-30 btn-hover-1"
-                                                                                type="submit" name="sentcommentproduct"
-                                                                                value="Bình Luận">
+                                                                            <textarea class="custom-textarea" name="noidung" id="" cols="30" rows="10" placeholder="Nhập bình luận của bạn..."></textarea>
+                                                                        </div>
+                                                                        <div>
+                                                                            <input class="submit-btn-1 mt-30 btn-hover-1" type="submit" name="sentcommentproduct" value="Bình Luận">
                                                                         </div>
                                                                     </form>
                                                                     <div>
-                                                                        <?php
-                                                                        $showcomment = showcommentproduct($product_id);
-                                                                        if (!empty($showcomment)):
-                                                                            foreach ($showcomment as $comment):
-                                                                        ?>
-                                                                                <div class="col-lg-12 comment">
-                                                                                    <div class="name-comment">
-                                                                                        <h6 class="media-heading mt-20">
-                                                                                            <?= $comment['ho_ten'] ?></h6>
-                                                                                        <p class="mb-10">
-                                                                                            <?= $comment['ngay_binhluan'] ?></p>
-                                                                                    </div>
-                                                                                    <div>
-                                                                                        <p class="mb-10"><?= $comment['noi_dung'] ?>
-                                                                                        </p>
-                                                                                    </div>
-                                                                                    <?php
-                                                                                    $showprofile = getprofile($comment['id']);
-                                                                                    if (!empty($showprofile)):
-                                                                                        foreach ($showprofile as $profile):
-                                                                                            if (isset($_SESSION['iduser'])) {
-                                                                                                if ($_SESSION['iduser'] == $profile['id']) {
-                                                                                                    echo '<a class="xoa_btn" href="index.php?act=deletecmtproduct&idproduct=' . $comment['ma_binhluan'] . '&idprofile=' . $comment['ma_sanpham'] . '"> Xóa</a>';
-                                                                                                }
-                                                                                            }
-                                                                                    ?>
-                                                                                    <?php endforeach;
-                                                                                    endif ?>
-                                                                                </div>
-                                                                        <?php endforeach;
-                                                                        endif ?>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -382,10 +317,6 @@ if (empty($thumbnail) && !empty($image_list)) {
             </div>
             <div class="media-body">
                 <div class="clearfix">
-                    <div class="pro-rating sin-pro-rating ">
-                        ' . $result . '
-                        <span class="text-black-5">(' . $review['rating_star'] . ' sao)</span>
-                    </div>
                     <div class="name-commenter pull-left">
                         <h6 class="media-heading"><a href="#">' . $review['ho_ten'] . '</a> </h6>
                         <p class="mb-10">' . $review['date_create'] . '</p>
@@ -516,9 +447,11 @@ if (empty($thumbnail) && !empty($image_list)) {
         display: flex;
         margin-bottom: 10px;
     }
+
     #zoom_03 {
         width: 420px;
         height: 420px;
-        object-fit: cover; /* Đảm bảo hình ảnh không bị méo */
+        object-fit: cover;
+        /* Đảm bảo hình ảnh không bị méo */
     }
 </style>

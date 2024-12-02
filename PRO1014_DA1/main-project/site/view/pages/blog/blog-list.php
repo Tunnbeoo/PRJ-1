@@ -38,7 +38,7 @@
                             </button>
                             <div class="dropdown-menu dropdown-width mt-30">
                                 <aside class="widget widget-categories box-shadow">
-                                    <h6 class="widget-title border-left mb-20">Categories</h6>
+                                    <h6 class="widget-title border-left mb-20">Danh Mục</h6>
                                     <?php
 $list_catename_blog = get_all_catename_blog();
 foreach ($list_catename_blog as $items) {
@@ -57,63 +57,7 @@ foreach ($list_catename_blog as $items) {
                                 </aside>
                             </div>
                         </div>
-                        <!-- recent-product -->
-                        <div class="dropdown f-left">
-                            <button class="option-btn">
-                                Các bài viết gần đây
-                                <i class="zmdi zmdi-chevron-down"></i>
-                            </button>
-                            <div class="dropdown-menu dropdown-width mt-30">
-                                <aside class="widget widget-product box-shadow">
-                                    <h6 class="widget-title border-left mb-20">recent blog</h6>
-                                    <!-- product-item start -->
-                                    <div class="product-item">
-                                        <div class="product-img">
-                                            <a href="./index.php?act=blogdetail">
-                                                <img src="img/cart/4.jpg" alt="" />
-                                            </a>
-                                        </div>
-                                        <div class="product-info">
-                                            <h6 class="product-title multi-line mt-10">
-                                                <a href="./index.php?act=blogdetai./index.php?act=blogdetail">Dummy Blog
-                                                    Name</a>
-                                            </h6>
-                                        </div>
-                                    </div>
-                                    <!-- product-item end -->
-                                    <!-- product-item start -->
-                                    <div class="product-item">
-                                        <div class="product-img">
-                                            <a href="./index.php?act=blogdetail">
-                                                <img src="img/cart/5.jpg" alt="" />
-                                            </a>
-                                        </div>
-                                        <div class="product-info">
-                                            <h6 class="product-title multi-line mt-10">
-                                                <a href="./index.php?act=blogdetai./index.php?act=blogdetail">Dummy Blog
-                                                    Name</a>
-                                            </h6>
-                                        </div>
-                                    </div>
-                                    <!-- product-item end -->
-                                    <!-- product-item start -->
-                                    <div class="product-item">
-                                        <div class="product-img">
-                                            <a href="./index.php?act=blogdetail">
-                                                <img src="img/cart/6.jpg" alt="" />
-                                            </a>
-                                        </div>
-                                        <div class="product-info">
-                                            <h6 class="product-title multi-line mt-10">
-                                                <a href="./index.php?act=blogdetai./index.php?act=blogdetail">Dummy Blog
-                                                    Name</a>
-                                            </h6>
-                                        </div>
-                                    </div>
-                                    <!-- product-item end -->
-                                </aside>
-                            </div>
-                        </div>
+
                         <!-- Tags -->
                         <!-- <div class="dropdown f-left">
                             <button class="option-btn">

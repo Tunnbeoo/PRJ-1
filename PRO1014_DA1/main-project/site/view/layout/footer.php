@@ -1,119 +1,119 @@
 <style>
-.wrap {
-    width: 250px;
-    height: 50px;
-    background: #fff;
-    /* position: absolute; */
+    .wrap {
+        width: 250px;
+        height: 50px;
+        background: #fff;
+        /* position: absolute; */
 
-    /* transform: translate(-50%, -50%); */
-    border-radius: 10px;
-}
+        /* transform: translate(-50%, -50%); */
+        border-radius: 10px;
+    }
 
-.stars {
-    width: fit-content;
-    /* margin: 0 auto; */
-    cursor: pointer;
-}
+    .stars {
+        width: fit-content;
+        /* margin: 0 auto; */
+        cursor: pointer;
+    }
 
-.star {
-    color: var(--main-color) !important;
-}
+    .star {
+        color: var(--main-color) !important;
+    }
 
-.rate {
-    height: 50px;
-    margin-left: -5px;
-    padding: 5px;
-    font-size: 25px;
-    position: relative;
-    cursor: pointer;
-}
+    .rate {
+        height: 50px;
+        margin-left: -5px;
+        padding: 5px;
+        font-size: 25px;
+        position: relative;
+        cursor: pointer;
+    }
 
-.rate input[type="radio"] {
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, 0%);
-    pointer-events: none;
-}
+    .rate input[type="radio"] {
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        pointer-events: none;
+    }
 
-.star-over::after {
-    font-family: 'Font Awesome 5 Free';
-    font-weight: 900;
-    font-size: 16px;
-    content: "\f005";
-    display: inline-block;
-    color: #d3dcff;
-    z-index: 1;
-    position: absolute;
-    top: 17px;
-    left: 10px;
-}
+    .star-over::after {
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 900;
+        font-size: 16px;
+        content: "\f005";
+        display: inline-block;
+        color: #d3dcff;
+        z-index: 1;
+        position: absolute;
+        top: 17px;
+        left: 10px;
+    }
 
-.rate:nth-child(1) .face::after {
-    content: "\f119";
-    /* ☹ */
-}
+    .rate:nth-child(1) .face::after {
+        content: "\f119";
+        /* ☹ */
+    }
 
-.rate:nth-child(2) .face::after {
-    content: "\f11a";
-    /* 😐 */
-}
+    .rate:nth-child(2) .face::after {
+        content: "\f11a";
+        /* 😐 */
+    }
 
-.rate:nth-child(3) .face::after {
-    content: "\f118";
-    /* 🙂 */
-}
+    .rate:nth-child(3) .face::after {
+        content: "\f118";
+        /* 🙂 */
+    }
 
-.rate:nth-child(4) .face::after {
-    content: "\f580";
-    /* 😊 */
-}
+    .rate:nth-child(4) .face::after {
+        content: "\f580";
+        /* 😊 */
+    }
 
-.rate:nth-child(5) .face::after {
-    content: "\f59a";
-    /* 😄 */
-}
+    .rate:nth-child(5) .face::after {
+        content: "\f59a";
+        /* 😄 */
+    }
 
-.face {
-    opacity: 0;
-    position: absolute;
-    width: 35px;
-    height: 35px;
-    background: #91a6ff;
-    border-radius: 5px;
-    top: -50px;
-    left: 2px;
-    transition: 0.2s;
-    pointer-events: none;
-}
+    .face {
+        opacity: 0;
+        position: absolute;
+        width: 35px;
+        height: 35px;
+        background: #91a6ff;
+        border-radius: 5px;
+        top: -50px;
+        left: 2px;
+        transition: 0.2s;
+        pointer-events: none;
+    }
 
-.face::before {
-    font-family: 'Font Awesome 5 Free';
-    font-weight: 900;
-    content: "\f0dd";
-    display: inline-block;
-    color: #91a6ff;
-    z-index: 1;
-    position: absolute;
-    left: 9px;
-    bottom: -15px;
-}
+    .face::before {
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 900;
+        content: "\f0dd";
+        display: inline-block;
+        color: #91a6ff;
+        z-index: 1;
+        position: absolute;
+        left: 9px;
+        bottom: -15px;
+    }
 
-.face::after {
-    font-family: 'Font Awesome 5 Free';
-    font-weight: 900;
-    display: inline-block;
-    color: #fff;
-    z-index: 1;
-    position: absolute;
-    left: 5px;
-    top: -1px;
-}
+    .face::after {
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 900;
+        display: inline-block;
+        color: #fff;
+        z-index: 1;
+        position: absolute;
+        left: 5px;
+        top: -1px;
+    }
 
-.rate:hover .face {
-    opacity: 1;
-}
+    .rate:hover .face {
+        opacity: 1;
+    }
 </style>
 
 
@@ -428,11 +428,6 @@
                                                 tôi</span></a>
                                     </li>
                                     <li>
-                                        <a href="./index.php?act=wishlist"><i class="zmdi zmdi-circle"></i><span>Sản
-                                                phẩm yêu
-                                                thích</span></a>
-                                    </li>
-                                    <li>
                                         <a href="./index.php?act=viewcart"><i class="zmdi zmdi-circle"></i><span>Giỏ
                                                 hàng của
                                                 tôi</span></a>
@@ -458,69 +453,24 @@
                                 <div class="footer-message">
                                     <form action="index.php?act=feedback" method="post">
                                         <input type="text" name="name" placeholder="Tên của bạn ...">
-                                        <p class="error-message">
-                                            <?php if (isset($error['name'])) {echo $error['name'];}?></p>
-                                        <input type="text" name="email" placeholder="Email của bạn ...">
-                                        <p class="error-message">
-                                            <?php if (isset($error['email'])) {echo $error['email'];}?></p>
+                                        <p class="error-message"></p>
 
-                                        </p>
+                                        <input type="text" name="email" placeholder="Email của bạn ...">
+                                        <p class="error-message"></p>
+
                                         <input type="text" name="phone" placeholder="Điện của bạn ...">
-                                        <p class="error-message">
-                                            <?php if (isset($error['phone'])) {echo $error['phone'];}?></p>
-                                        </p>
+                                        <p class="error-message"></p>
 
                                         <input type="text" name="title" placeholder="Chủ đề">
-                                        <p class="error-message">
-                                            <?php if (isset($error['title'])) {echo $error['title'];}?></p>
-                                        </p>
+                                        <p class="error-message"></p>
 
-                                        <textarea name="content" class="height-80" name="message"
-                                            placeholder="Để lại lời nhắn ở đây..."></textarea>
-                                        <p class="error-message">
-                                            <?php if (isset($error['content'])) {echo $error['content'];}?></p>
-                                        </p>
+                                        <textarea name="content" class="height-80" placeholder="Để lại lời nhắn ở đây..."></textarea>
+                                        <p class="error-message"></p>
 
-                                        <input type="submit" name="guitn" value="Gửi tin nhắn"
-                                            class="submit-btn-1 mt-20">
+                                        <input type="submit" name="guitn" value="Gửi tin nhắn" class="submit-btn-1 mt-20">
                                     </form>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="footer-bottom black-bg">
-        <div class="container-fluid">
-            <div class="plr-185">
-                <div class="copyright">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="copyright-text">
-                                <p class="copy-text"> © 2024 <strong>Xgarden </strong> Tạo bởi <i
-                                        class="zmdi zmdi-favorite" style="color: red;" aria-hidden="true"></i>
-                                    By <a class="company-name" href="#">
-                                        <strong> Xgarden Group</strong></a>.</p>
-
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <ul class="footer-payment text-end">
-                                <li>
-                                    <a href="#"><img src="assets/img/payment/1.jpg" alt=""></a>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="assets/img/payment/2.jpg" alt=""></a>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="assets/img/payment/3.jpg" alt=""></a>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="assets/img/payment/4.jpg" alt=""></a>
-                                </li>
-                            </ul>
                         </div>
                     </div>
                 </div>
@@ -567,46 +517,46 @@
 <script src="assets/js/pages/account.js"></script>
 <script src="assets/js/pages/checkout.js"></script>
 <script>
-$(function() {
+    $(function() {
 
-    $(document).on({
-        mouseover: function(event) {
-            $(this).find('.far').addClass('star-over');
-            $(this).prevAll().find('.far').addClass('star-over');
-        },
-        mouseleave: function(event) {
-            $(this).find('.far').removeClass('star-over');
-            $(this).prevAll().find('.far').removeClass('star-over');
-        }
-    }, '.rate');
-
-
-    $(document).on('click', '.rate', function() {
-        if (!$(this).find('.star').hasClass('rate-active')) {
-            $(this).siblings().find('.star').addClass('far').removeClass('fas rate-active');
-            $(this).find('.star').addClass('rate-active fas').removeClass('far star-over');
-            $(this).prevAll().find('.star').addClass('fas').removeClass('far star-over');
-        } else {
-            console.log('has', this);
-            const starRating = $(this).find(".star").attr("class");
-
-            console.log(starRating.includes("five-star"));
-            const starRatingHiden = document.getElementById("star-rating-hidden");
-            if (starRating.includes("five-star")) {
-                $("#star-rating-hidden").val("5");
-            } else if (starRating.includes("four-star")) {
-                $("#star-rating-hidden").val("4");
-            } else if (starRating.includes("three-star")) {
-                $("#star-rating-hidden").val("3");
-            } else if (starRating.includes("two-star")) {
-                $("#star-rating-hidden").val("2");
-            } else if (starRating.includes("one-star")) {
-                $("#star-rating-hidden").val("1");
+        $(document).on({
+            mouseover: function(event) {
+                $(this).find('.far').addClass('star-over');
+                $(this).prevAll().find('.far').addClass('star-over');
+            },
+            mouseleave: function(event) {
+                $(this).find('.far').removeClass('star-over');
+                $(this).prevAll().find('.far').removeClass('star-over');
             }
-        }
-    });
+        }, '.rate');
 
-});
+
+        $(document).on('click', '.rate', function() {
+            if (!$(this).find('.star').hasClass('rate-active')) {
+                $(this).siblings().find('.star').addClass('far').removeClass('fas rate-active');
+                $(this).find('.star').addClass('rate-active fas').removeClass('far star-over');
+                $(this).prevAll().find('.star').addClass('fas').removeClass('far star-over');
+            } else {
+                console.log('has', this);
+                const starRating = $(this).find(".star").attr("class");
+
+                console.log(starRating.includes("five-star"));
+                const starRatingHiden = document.getElementById("star-rating-hidden");
+                if (starRating.includes("five-star")) {
+                    $("#star-rating-hidden").val("5");
+                } else if (starRating.includes("four-star")) {
+                    $("#star-rating-hidden").val("4");
+                } else if (starRating.includes("three-star")) {
+                    $("#star-rating-hidden").val("3");
+                } else if (starRating.includes("two-star")) {
+                    $("#star-rating-hidden").val("2");
+                } else if (starRating.includes("one-star")) {
+                    $("#star-rating-hidden").val("1");
+                }
+            }
+        });
+
+    });
 </script>
 
 <?php
@@ -626,13 +576,6 @@ $_SESSION['alert'] = "";
 if (isset($_GET['act'])) {
     switch ($_GET['act']) {
 
-        // case 'settingaccount':
-        // case 'updateaccount':
-        //     echo '
-        //         <script src="assets/js/pages/account.js"></script>
-        //     ';
-        //     break;
-
         case 'detailproduct':
             # code...
             echo '
@@ -650,7 +593,6 @@ if (isset($_GET['act'])) {
         case 'shoppingcart':
         case 'checkout':
         case 'addtocart':
-        case 'wishlist':
             echo '
                 <script src="assets/js/pages/cart.js"></script>
             ';
@@ -682,28 +624,28 @@ if (isset($_GET['act'])) {
 </div>
 
 <script>
-var chatbox = document.getElementById('fb-customer-chat');
-chatbox.setAttribute("page_id", "129450700050325");
-chatbox.setAttribute("attribution", "biz_inbox");
+    var chatbox = document.getElementById('fb-customer-chat');
+    chatbox.setAttribute("page_id", "129450700050325");
+    chatbox.setAttribute("attribution", "biz_inbox");
 </script>
 
 <!-- Your SDK code -->
 <script>
-window.fbAsyncInit = function() {
-    FB.init({
-        xfbml: true,
-        version: 'v16.0'
-    });
-};
+    window.fbAsyncInit = function() {
+        FB.init({
+            xfbml: true,
+            version: 'v16.0'
+        });
+    };
 
-(function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s);
-    js.id = id;
-    js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
-    fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));
+    (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
 </script>
 
 </body>

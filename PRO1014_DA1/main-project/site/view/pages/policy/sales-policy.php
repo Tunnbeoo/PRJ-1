@@ -55,8 +55,8 @@
                               <div class="blog-details-photo bg-img-1 p-20 mb-30">
                                   <div class="f-start">
 
-                                        <h2 class="change-h2">Chào mừng quý khách đến với The Phoner Store</h2>
-                                        <p class="change-p">Công ty TNHH Công Nghệ Di Động The phoner Store được thành lập năm 2022, chuyên kinh doanh điện thoại di động, 
+                                        <h2 class="change-h2">Chào mừng quý khách đến với Xgarden Store</h2>
+                                        <p class="change-p">Công ty TNHH Công Nghệ Di Động Xgarden Store được thành lập năm 2022, chuyên kinh doanh điện thoại di động, 
                                             hàng công nghệ. Khi quý khách 
                                             truy cập vào trang web của chúng tôi có nghĩa là quý khách đồng ý với các điều khoản này. 
                                             Trang web có quyền thay đổi, chỉnh sửa, thêm hoặc lược bỏ bất kỳ phần nào trong Quy định và 
@@ -86,15 +86,15 @@
                                                 </p>
                                         <!--  -->
                                             <h4 class="change-h4">3.  Đặt hàng và xác nhận đơn hàng</h4>
-                                                <p class="change-p">Khi quý khách đặt hàng tại The Phoner Store, chúng tôi sẽ nhận được yêu cầu đặt hàng và gửi đến quý khách mã số đơn hàng. Tuy nhiên, yêu cầu đặt hàng cần thông qua một bước xác nhận đơn hàng, 
-                                                    The Phoner Store chỉ xác nhận đơn hàng nếu yêu cầu đặt hàng của quý khách thỏa mãn các tiêu chí thực hiện đơn hàng tại The Phoner Store.
+                                                <p class="change-p">Khi quý khách đặt hàng tại Xgarden Store, chúng tôi sẽ nhận được yêu cầu đặt hàng và gửi đến quý khách mã số đơn hàng. Tuy nhiên, yêu cầu đặt hàng cần thông qua một bước xác nhận đơn hàng, 
+                                                    Xgarden Store chỉ xác nhận đơn hàng nếu yêu cầu đặt hàng của quý khách thỏa mãn các tiêu chí thực hiện đơn hàng tại Xgarden Store.
                                                     Để yêu cầu đặt hàng được xác nhận nhanh chóng, quý khách vui lòng cung cấp đúng và đầy đủ các thông tin liên quan đến việc giao nhận, hoặc các điều khoản và điều kiện của chương trình khuyến mãi (nếu có) mà quý khách tham gia.
                                                 </p>
                                         <!--  -->
                                             <h4 class="change-h4">4. Giá trị đơn hàng và hình thức thanh toán</h4>
-                                                <p class="change-p">The Phoner Store cung cấp các hình thức thanh toán: tiền mặt khi nhận hàng, thẻ Thanh toán Quốc tế hoặc thẻ Thanh toán Nội địa.</p>
+                                                <p class="change-p">Xgarden Store cung cấp các hình thức thanh toán: tiền mặt khi nhận hàng, thẻ Thanh toán Quốc tế hoặc thẻ Thanh toán Nội địa.</p>
                                                 <p class="change-p">Trừ một số trường hợp có ghi chú riêng, thông thường quý khách có thể lựa chọn một trong 3 hình thức thanh toán trên khi tiến hành đặt hàng. Tuy nhiên, 
-                                                để đảm bảo tính an toàn dành cho quý khách trong quá trình thanh toán, đối những đơn hàng có giá trị cao từ 40 (bốn mươi) triệu trở lên, The Phoner Store chỉ chấp nhận hình thức thanh toán trước bằng thẻ Thanh toán Quốc tế hoặc thẻ Thanh toán Nội địa.
+                                                để đảm bảo tính an toàn dành cho quý khách trong quá trình thanh toán, đối những đơn hàng có giá trị cao từ 40 (bốn mươi) triệu trở lên, Xgarden Store chỉ chấp nhận hình thức thanh toán trước bằng thẻ Thanh toán Quốc tế hoặc thẻ Thanh toán Nội địa.
                                                 </p>
 
                                         <!--  -->
@@ -103,13 +103,13 @@
                                                 Không cần trực tiếp đến cửa hàng, khách hàng có thể lựa chọn cách mua hàng online bằng cách chọn một trong những cách sau:
                                                 </p>
                                                 <p class="change-p">
-                                                Cách 1: Gọi điện thoại đến tổng đài 0866732171 (miễn phí) từ 8h30-21h30 (cả CN & ngày lễ) để đặt hàng, nhân viên The Phoner Store luôn sẵn sàng phục vụ, tư vấn và hỗ trợ quý khách mua được sản phẩm ưng ý.
+                                                Cách 1: Gọi điện thoại đến tổng đài 0866732171 (miễn phí) từ 8h30-21h30 (cả CN & ngày lễ) để đặt hàng, nhân viên Xgarden Store luôn sẵn sàng phục vụ, tư vấn và hỗ trợ quý khách mua được sản phẩm ưng ý.
                                                 </p>
                                                 <p class="change-p">
                                                 Cách 2: Đặt mua hàng online trên website Xgarden.vn
                                                 </p>
                                                 <p class="change-p">
-                                                Đối với đơn hàng nội thành, The Phoner Store giao hàng trong ngày. Đối với đơn hàng ngoại thành, thời gian giao hàng từ 2 - 3 ngày.
+                                                Đối với đơn hàng nội thành, Xgarden Store giao hàng trong ngày. Đối với đơn hàng ngoại thành, thời gian giao hàng từ 2 - 3 ngày.
                                                 </p>
                                         <!--  -->
                                             <h4 class="change-h4">6. Chương trình khuyến mãi</h4>

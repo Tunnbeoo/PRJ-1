@@ -37,8 +37,6 @@
                 </li>
                 <li> <a href="index.php?act=addproduct"><i class="bi bi-circle"></i>Thêm sản phẩm</a>
                 </li>
-                <li> <a href="index.php?act=commentproductlist"><i class="bi bi-circle"></i>Bình Luận Sản Phẩm</a>
-                </li>
         </li>
     </ul>
     </li>
@@ -68,7 +66,6 @@
             <li> <a href="index.php?act=blogcate"><i class="bi bi-circle"></i>Danh mục bài viết</a>
             </li>
             <li> <a href="index.php?act=addblog"><i class="bi bi-circle"></i>Thêm Bài Viết</a></li>
-            <li> <a href="index.php?act=binhluanblog"><i class="bi bi-circle"></i>Bình Luận Bài Viết</a></li>
         </ul>
 
     </li>
@@ -126,22 +123,6 @@ if (isset($_SESSION['idadmin']) && $_SESSION['role'] == 1) {
             </li>
             <li> <a href="index.php?act=addslider"><i class="bi bi-circle"></i>Thêm Slider</a>
             </li>
-        </ul>
-    </li>
-    <li>
-        <a href="javascript:;" class="has-arrow">
-            <div class="parent-icon"> <i class="lni lni-wechat"></i>
-            </div>
-            <div class="menu-title">Phản hồi</div>
-        </a>
-
-        <ul class="">
-            <li class=""> <a href="index.php?act=feedback-list"><i class="bi bi-circle"></i>Danh sách phản hồi</a>
-            </li>
-            <li> <a href="index.php?act=reviews-product"><i class="bi bi-circle"></i>Danh sách đánh giá sp</a>
-            </li>
-            <!-- <li> <a href="index.php?act=adduser"><i class="bi bi-circle"></i>Thêm người dùng</a>
-            </li> -->
         </ul>
     </li>
     <li>

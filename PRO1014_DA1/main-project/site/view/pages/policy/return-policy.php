@@ -51,12 +51,12 @@
                               <div class="blog-details-photo bg-img-1 p-20 mb-30">
                                   <div class="f-start">
 
-                                        <h2 class="change-h2">CHÍNH SÁCH ĐỔI TRẢ THE PHONER STORE</h2>
+                                        <h2 class="change-h2">CHÍNH SÁCH ĐỔI TRẢ Xgarden STORE</h2>
                                        
                                             <h3 class="change-h3">1. Chính sách đổi trả dành cho sản phẩm mới</h3>
                                                 <p class="change-p"><strong>Ghi chú:</strong> </p>
                                                 <ul class="change-ul-return-policy">
-                                                    <li>1. The Phoner Store có quyền từ chối thu lại một số sản phẩm The Phoner Store đánh giá là không thể thu lại được.</li>
+                                                    <li>1. Xgarden Store có quyền từ chối thu lại một số sản phẩm Xgarden Store đánh giá là không thể thu lại được.</li>
                                                     <li>2. Trong tháng đầu tiên, nếu máy không còn đủ hộp, phụ kiện sẽ tính phí 5% mỗi phụ kiện thiếu (Tai nghe, sạc, cáp) và 2% nếu không có hộp</li>
                                                     <li>3. Chính sách đổi trả này không áp dụng đối với sản phẩm iPhone chính hãng mã VN/A. (Sản phẩm iPhone máy công ty có chính sách riêng.)</li>
                                                 </ul>   
@@ -64,16 +64,16 @@
                                             <h3 class="change-h3">2. Chính sách đổi trả dành cho sản phẩm đã qua sử dụng</h3>
                                                 <p class="change-p"><strong>Ghi chú:</strong> </p>
                                                 <ul class="change-ul-return-policy">
-                                                    <li>1. The Phoner Store có quyền từ chối thu lại 01 số sản phẩm The Phoner Store đánh giá là không thể thu lại được.</li>
+                                                    <li>1. Xgarden Store có quyền từ chối thu lại một số sản phẩm Xgarden Store đánh giá là không thể thu lại được.</li>
                                                     <li>2. Trong tháng đầu tiên, nếu máy không còn đủ hộp, phụ kiện sẽ tính phí 5% mỗi phụ kiện thiếu (Tai nghe, sạc, cáp) và 2% nếu không có hộp</li>
                                                     <li>3. Chính sách đổi trả này không áp dụng đối với sản phẩm iPhone chính hãng mã VN/A. (Sản phẩm iPhone máy công ty có chính sách riêng.)</li>
                                                 </ul>
                                             <h3 class="change-h3">3. Điều kiện đổi trả sản phẩm:</h3>
                                                 <ul class="change-ul-return-policy">
                                                     <li>1. Với các sản phẩm mua trả góp, trước khi tiến hành trả máy, vui lòng thanh lý hợp đồng trả góp với công ty tài chính.</li>
-                                                    <li>2. Đối với các sản phẩm lỗi do người sử dụng: The Phoner Store có quyền từ chối đổi trả với sản phẩm bị va chạm, cấn móp, vào nước...không đủ điều kiện bảo hành, The Phoner Store tiếp nhận bảo hành có tính phí.</li>
+                                                    <li>2. Đối với các sản phẩm lỗi do người sử dụng: Xgarden Store có quyền từ chối đổi trả với sản phẩm bị va chạm, cấn móp, vào nước...không đủ điều kiện bảo hành, Xgarden Store tiếp nhận bảo hành có tính phí.</li>
                                                     <li>3. Máy còn như lúc mới mua, không trầy xướt, cấn móp, đầy đủ phụ kiện đi kèm, đã đăng xuất các tài khoản bảo mật như iCloud, Micloud, Samsung Cloud...</li>
-                                                    <li>4. Trong trường hợp máy bị trầy xướt, cấn móp, không như tình trạng ban đầu, The Phoner Store hỗ trợ thu lại theo mức giá thoả thuận (Có tính phí hao mòn hình thức)</li>
+                                                    <li>4. Trong trường hợp máy bị trầy xướt, cấn móp, không như tình trạng ban đầu, Xgarden Store hỗ trợ thu lại theo mức giá thoả thuận (Có tính phí hao mòn hình thức)</li>
                                                 </ul>
                                   </div>
                               </div>

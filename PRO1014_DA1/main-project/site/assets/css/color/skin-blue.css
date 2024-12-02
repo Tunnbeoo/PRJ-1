@@ -120,9 +120,6 @@ a:hover {
   background: #1a237e none repeat scroll 0 0;
 }
 /*Theme */
-.pro-rating a {
-  color: #1a237e;
-}
 .action-button > li:hover > a {
   background: #1a237e;
   border-color: #1a237e;

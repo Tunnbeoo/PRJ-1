@@ -72,35 +72,30 @@
                 <div class="col-lg-12">
                     <div class="message-box box-shadow white-bg">
                         <form id="contact-form" action="index.php?act=feedback-ct" method="post">
-                            <div class="row">
+                        <div class="row">
                                 <div class="col-lg-12">
                                     <h4 class="blog-section-title border-left mb-30">Liên Lạc</h4>
                                 </div>
                                 <div class="col-lg-6">
                                     <input type="text" name="name" placeholder="Tên của bạn">
-                                    <p class="error-message">
-                                        <?php echo isset($error['name']) ? $error['name'] : ''; ?></p>
+                                    <p class="error-message"> <!-- Placeholder for error message --> </p>
                                 </div>
                                 <div class="col-lg-6">
                                     <input type="text" name="email" placeholder="Email của bạn">
-                                    <p class="error-message">
-                                        <?php echo isset($error['email']) ? $error['email'] : ''; ?></p>
+                                    <p class="error-message"> <!-- Placeholder for error message --> </p>
                                 </div>
                                 <div class="col-lg-6">
                                     <input type="text" name="title" placeholder="Chủ đề">
-                                    <p class="error-message">
-                                        <?php echo isset($error['title']) ? $error['title'] : ''; ?></p>
+                                    <p class="error-message"> <!-- Placeholder for error message --> </p>
                                 </div>
                                 <div class="col-lg-6">
                                     <input type="text" name="phone" placeholder="Điện thoại của bạn">
-                                    <p class="error-message">
-                                        <?php echo isset($error['phone']) ? $error['phone'] : ''; ?></p>
+                                    <p class="error-message"> <!-- Placeholder for error message --> </p>
                                 </div>
                                 <div class="col-lg-12">
                                     <textarea class="custom-textarea" name="content"
                                         placeholder="Tin nhắn của bạn"></textarea>
-                                    <p class="error-message">
-                                        <?php echo isset($error['content']) ? $error['content'] : ''; ?></p>
+                                    <p class="error-message"> <!-- Placeholder for error message --> </p>
                                 </div>
                                 <input type="submit" name="guitn" value="Gửi tin nhắn"
                                     class="submit-btn-1 mt-30 btn-hover-1">

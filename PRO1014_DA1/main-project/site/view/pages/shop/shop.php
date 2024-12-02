@@ -30,44 +30,6 @@
                     <div class="shop-content">
                         <!-- shop-option start -->
                         <div class="shop-option box-shadow mb-30 clearfix">
-                            <!-- Nav tabs -->
-                            <ul class="nav shop-tab f-left align-item-center" role="tablist">
-                                <li>
-                                    <a class="active" href="#grid-view" data-bs-toggle="tab"><i
-                                            class="zmdi zmdi-view-module"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#list-view" data-bs-toggle="tab"><i
-                                            class="zmdi zmdi-view-list-alt"></i></a>
-                                </li>
-                                <!-- <li>Tìm kiếm: Tên sản phẩm</li> -->
-                            </ul>
-                            <!-- short-by -->
-                            <div class="short-by f-left text-center">
-                                <span>Lọc bởi :</span>
-                                <select onchange="filterProducts(this)">
-                                    <option value="">Lọc sản phẩm ở đây</option>
-                                    <option <?php if (isset($_GET['filter']) && $_GET['filter'] == 'newest') {
-                                                echo 'selected';
-                                            }
-                                            ?> value="newest">Sản
-                                        phẩm mới nhất
-                                    </option>
-                                    <option <?php if (isset($_GET['filter']) && $_GET['filter'] == 'pricedesc') {
-                                                echo 'selected';
-                                            }
-                                            ?> value="pricedesc">Giá từ cao đến thấp</option>
-                                    <option <?php if (isset($_GET['filter']) && $_GET['filter'] == 'priceinsc') {
-                                                echo 'selected';
-                                            }
-                                            ?> value="priceinsc">Giá từ thấp đến cao</option>
-                                    <option <?php if (isset($_GET['filter']) && $_GET['filter'] == 'mostview') {
-                                                echo 'selected';
-                                            }
-                                            ?> value="mostview">
-                                        Sản phẩm xem nhiều nhất</option>
-                                </select>
-                            </div>
                             <!-- showing -->
                             <div class="showing f-right text-end">Kết quả tìm được :
                                 <span id="show-search-result">
@@ -275,9 +237,6 @@
                                         <h6 class="product-title">
                                             <a  href="index.php?act=detailproduct&id=' . $item['masanpham'] . '">' . $item['tensp'] . '</a>
                                         </h6>
-                                        <div class="pro-rating">
-                                            ' . $result_stars . '
-                                        </div>
                                         <h6 class="brand-name mb-30">Brand: ' . $cate_name . '</h6>
                                         <h3 class="pro-price"> ' . $price_format . ' VND</h3>
                                         <p>
@@ -346,29 +305,7 @@
                         </form>
                     </aside>
                     <?php if (isset($_SESSION['iduser'])): ?>
-                        <aside class="widget widget-product box-shadow">
-                            <h6 class="widget-title border-left mb-20 bg-warning p-3 bg-opacity-75">Gợi ý mua hàng</h6>
-                            <!-- product-item start -->
-                            <!-- Chưa đúng làm lại -->
-                            <?php $recommend_products = select_all_recommend_products_by_iduser($_SESSION['iduser'], 3); ?>
-                            <?php foreach ($recommend_products as $product): ?>
-                                <div class="product-item product-best-sell">
-                                    <div class="product-img">
-                                        <a href="index.php?act=detailproduct&id=<?php echo $product['idsanpham'] ?>">
-                                            <img src="../uploads/<?php echo $product['hinhanh'] ?>" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="product-info">
-                                        <h6 class="product-title">
-                                            <a
-                                                href="index.php?act=detailproduct&id=<?php echo $product['idsanpham'] ?>"><?php echo $product['tensp'] ?></a>
-                                        </h6>
-                                        <h3 class="pro-price"><?php echo $product['dongia'] ?> VND</h3>
-                                    </div>
-                                </div>
-                            <?php endforeach; ?>
-                            <!-- product-item product-best-sell end -->
-                        </aside>
+
                     <?php endif ?>
 
                     <!-- widget-categories -->

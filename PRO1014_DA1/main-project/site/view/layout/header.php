@@ -104,22 +104,6 @@
                                             ';
                                     }
                                     ?>
-
-                                    <li id="topWishlist" class="top-header-menu__item">
-                                        <a href="index.php?act=wishlist">
-
-                                            <i class="zmdi zmdi-favorite"></i>
-                                            <?php
-                                            $amount_wishlists = array_reduce($_SESSION['wishlist'], function ($prev_value, $curr_val) {
-                                                // var_dump($prev_value);
-                                                // var_dump($curr_val['sl']);
-
-                                                return $curr_val['sl'] + $prev_value;
-                                            }, 0);
-                                            ?>
-                                            Yêu thích (<?php echo $amount_wishlists ?> sp)
-                                        </a>
-                                    </li>
                                     <?php
 
                                     if (!isset($_SESSION['iduser'])) {
@@ -151,7 +135,7 @@
                             <div class="col-lg-2 col-md-4">
                                 <div class="logo">
                                     <a href="index.php">
-                                        <img src="/PRO1014_DA1/main-project/uploads/logo.png" alt="" style="width: 100px; height: 83px;">
+                                        <img src="/PRO1014_DA1/main-project/uploads/logo.png" alt="" style="width: 120px; height: 103px;">
                                     </a>
                                 </div>
                             </div>

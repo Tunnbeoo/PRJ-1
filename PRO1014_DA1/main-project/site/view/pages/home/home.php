@@ -103,15 +103,9 @@
                                         <h6 class="product-title">
                                             <a href="index.php?act=detailproduct&id=' . $item['masanpham'] . '">' . $item['tensp'] . '</a>
                                         </h6>
-                                        <div class="pro-rating">
-                                            ' . $result_stars . '
-                                        </div>
                                         <h3 class="pro-price"> ' . $price_format . ' VND</h3>
                                             <ul class="action-button">
-                                                <li>
-                                                    <a onclick="' . $addwishlistfunc . '" class="add-to-wishlist" href="#" title="Wishlist"><i class="zmdi zmdi-favorite"></i></a>
-                                                    <input type="submit" class="add-to-wishlist__submit-input d-none" name="addtowishlistbtn" value="Thêm vào sản phẩm yêu thích">
-                                                </li>
+
                                                 <li>
                                                     <a product-id="' . $item['masanpham'] . '" class="zoom-detail-product" href="#" data-bs-toggle="modal" data-bs-target="#productModal"
                                                         title="Quickview"><i class="zmdi zmdi-zoom-in"></i></a>
@@ -164,9 +158,6 @@
                                 </a></li>
                             <li><a id="new-arrival-tab-btn" href="#new-arrival" data-bs-toggle="tab">Sản phẩm mới về</a>
                             </li>
-                            <li><a id="best-seller-tab-btn" href="#best-seller" data-bs-toggle="tab">Bán chạy</a></li>
-                            <li><a id="special-offer-tab-btn" href="#special-offer" data-bs-toggle="tab">Ưu đãi đặt
-                                    biệt</a></li>
                         </ul>
                     </div>
                 </div>
@@ -200,7 +191,7 @@
 
                                     $price_format = number_format($item['don_gia'] * (1 - $item['giam_gia'] / 100));
                                     $addcartfunc = "handleAddCart('addtocart', 'addcart')";
-                                    $addwishlistfunc = "handleAddCart('addtowishlist', 'addwishlist')";
+                                    // $addwishlistfunc = "handleAddCart('addtowishlist', 'addwishlist')";
                                     $category = catename_select_by_id($item['ma_danhmuc']);
                                     if ($category !== false && isset($category['ten_danhmuc'])) {
                                         $cate_name = $category['ten_danhmuc'];
@@ -241,15 +232,9 @@
                                                     <h6 class="product-title">
                                                         <a href="index.php?act=detailproduct&id=' . $item['masanpham'] . '">' . $item['tensp'] . '</a>
                                                     </h6>
-                                                    <div class="pro-rating">
-                                                    ' . $result_stars . '
-                                                    </div>
                                                     <h3 class="pro-price"> ' . $price_format . ' VND</h3>
                                                         <ul class="action-button">
-                                                        <li>
-                                                            <a onclick="' . $addwishlistfunc . '" class="add-to-wishlist" href="#" title="Wishlist"><i class="zmdi zmdi-favorite"></i></a>
-                                                            <input type="submit" class="add-to-wishlist__submit-input d-none" name="addtowishlistbtn" value="Thêm vào sản phẩm yêu thích">
-                                                        </li>
+
                                                         <li>
                                                             <a class="zoom-detail-product" href="#" data-bs-toggle="modal" data-bs-target="#productModal"
                                                                 title="Quickview"><i class="zmdi zmdi-zoom-in"></i></a>
@@ -351,6 +336,7 @@
                                     $addcartfunc = "handleAddCart('addtocart', 'addcart')";
                                     $addwishlistfunc = "handleAddCart('addtowishlist', 'addwishlist')";
                                     $avg_stars = avg_star_reviews_of_product($item['masanpham']);
+                                    $avg_stars = $avg_stars !== null ? $avg_stars : 0; // Default to 0 if null
                                     $result_stars = renderStarRatings(round($avg_stars, 0));
                                     foreach ($image_list as $image_item) {
 
@@ -380,15 +366,9 @@
                                                     <h6 class="product-title">
                                                         <a href="index.php?act=detailproduct&id=' . $item['masanpham'] . '">' . $item['tensp'] . '</a>
                                                     </h6>
-                                                    <div class="pro-rating">
-                                                        ' . $result_stars . '
-                                                    </div>
                                                     <h3 class="pro-price"> ' . $price_format . ' VND</h3>
                                                         <ul class="action-button">
-                                                        <li>
-                                                            <a onclick="' . $addwishlistfunc . '" class="add-to-wishlist" href="#" title="Wishlist"><i class="zmdi zmdi-favorite"></i></a>
-                                                            <input type="submit" class="add-to-wishlist__submit-input d-none" name="addtowishlistbtn" value="Thêm vào sản phẩm yêu thích">
-                                                        </li>
+
                                                         <li>
                                                             <a class="zoom-detail-product" href="#" data-bs-toggle="modal" data-bs-target="#productModal"
                                                                 title="Quickview"><i class="zmdi zmdi-zoom-in"></i></a>
@@ -521,15 +501,9 @@
                                                                                     <h6 class="product-title">
                                                                                         <a href="index.php?act=detailproduct&id=' . $item['masanpham'] . '">' . $item['tensp'] . '</a>
                                                                                     </h6>
-                                                                                    <div class="pro-rating">
-                                                                                       ' . $result_stars . '
-                                                                                    </div>
                                                                                     <h3 class="pro-price"> ' . $price_format . ' VND</h3>
                                                                                         <ul class="action-button">
-                                                                                        <li>
-                                                                                            <a onclick="' . $addwishlistfunc . '" class="add-to-wishlist" href="#" title="Wishlist"><i class="zmdi zmdi-favorite"></i></a>
-                                                                                            <input type="submit" class="add-to-wishlist__submit-input d-none" name="addtowishlistbtn" value="Thêm vào sản phẩm yêu thích">
-                                                                                        </li>
+
                                                                                         <li>
                                                                                             <a class="zoom-detail-product" href="#" data-bs-toggle="modal" data-bs-target="#productModal"
                                                                                                 title="Quickview"><i class="zmdi zmdi-zoom-in"></i></a>
@@ -660,15 +634,9 @@
                                                     <h6 class="product-title">
                                                         <a href="index.php?act=detailproduct&id=' . $item['masanpham'] . '">' . $item['tensp'] . '</a>
                                                     </h6>
-                                                    <div class="pro-rating">
-                                                        ' . $result_stars . '
-                                                    </div>
                                                     <h3 class="pro-price"> ' . $price_format . ' VND</h3>
                                                         <ul class="action-button">
-                                                        <li>
-                                                            <a onclick="' . $addwishlistfunc . '" class="add-to-wishlist" href="#" title="Wishlist"><i class="zmdi zmdi-favorite"></i></a>
-                                                            <input type="submit" class="add-to-wishlist__submit-input d-none" name="addtowishlistbtn" value="Thêm vào sản phẩm yêu thích">
-                                                        </li>
+
                                                         <li>
                                                             <a class="zoom-detail-product" href="#" data-bs-toggle="modal" data-bs-target="#productModal"
                                                                 title="Quickview"><i class="zmdi zmdi-zoom-in"></i></a>
