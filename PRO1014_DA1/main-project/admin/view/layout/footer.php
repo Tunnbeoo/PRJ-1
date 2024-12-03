@@ -178,11 +178,11 @@
 <!-- END QUICKVIEW PRODUCT -->
 
 <!--start footer-->
-<footer class="footer">
+<!-- <footer class="footer">
     <div class="footer-text">
         
     </div>
-</footer>
+</footer> -->
 <!--end footer-->
 
 

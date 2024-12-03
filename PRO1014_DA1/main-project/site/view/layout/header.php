@@ -135,7 +135,7 @@
                             <div class="col-lg-2 col-md-4">
                                 <div class="logo">
                                     <a href="index.php">
-                                        <img src="/PRO1014_DA1/main-project/uploads/logo.png" alt="" style="width: 120px; height: 103px;">
+                                        <img src="/PRO1014_DA1/main-project/uploads/logo.png" alt="" style="width: 100px; height: 83px;">
                                     </a>
                                 </div>
                             </div>

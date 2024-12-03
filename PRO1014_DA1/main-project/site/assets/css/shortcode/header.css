@@ -22,6 +22,7 @@ NOTE: This is Header style file. All Header related style included in this file.
   color: #303030;
   display: block;
   text-transform: capitalize;
+  font-size: larger;
 }
 .main-menu > li > a, .dropdwn li a, .single-mega-item li a {
    position: relative; 
