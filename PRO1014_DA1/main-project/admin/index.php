@@ -795,20 +795,6 @@ if (isset($_SESSION['idadmin'])) {
                 }
 
                 break;
-
-            // case 'orderconfirm':
-            //     if (isset($_GET['id'])) {
-            //         $id = $_GET['id'];
-            //         echo $id;
-            //         $is_updated = updateorderbyid($_GET['id']);
-
-            //         if ($is_updated) {
-            //             echo 'update successfully!';
-            //         }
-            //         header('location: index.php?act=orderlist');
-            //     }
-            //     echo 'Hello world';
-            //     break;
             case 'updateorder':
                 if (isset($_POST['updateorderbtn']) && $_POST['updateorderbtn']) {
 

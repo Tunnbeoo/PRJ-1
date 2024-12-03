@@ -180,7 +180,7 @@
 <!--start footer-->
 <footer class="footer">
     <div class="footer-text">
-        XgardenGroup . Make By XgardenGroup Team
+        
     </div>
 </footer>
 <!--end footer-->

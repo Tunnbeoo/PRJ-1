@@ -65,14 +65,6 @@ function editProduct(productId) {
                     contentType: false,
                     processData: false,
                     success: function (response) {
-                        
-                        // const productTableContentUrl = `${ADMIN_URL}/view/pages/products/table-product-content.php`;
-                        // console.log('url: ', productTableContentUrl);
-                        // $.get(productTableContentUrl, function(responseHtml) {
-                        //     $("#table-product-content").html(responseHtml);
-                        // })
-
-                        // console.log('res: ', JSON.parse(response));
                         const {status, content, error} = JSON.parse(response);
                         if(status== 1) {
                             $("#liveToastBtn").trigger("click");
@@ -172,34 +164,7 @@ function deleteProduct(btnElement,productId) {
     $("#cartModal .action-btn").click(function(e) {
         e.preventDefault();
         
-        location.assign("./index.php?act=deleteproduct&id="+productId);
-        // $.ajax({
-        //     type: "POST",
-        //     url: "./logic/product.php?act=deleteproduct",
-        //     data: {
-        //         id: productId
-        //     },
-        //     // dataType: "dataType",
-        //     success: function (response) {
-        //         $("#cartModalBtn").trigger("click");
-        //         // const ROOT_URL = location.origin +"/PRO1014_DA1/main-project";
-        //         // location.assign("index.php?act=deleteproduct&id="+productId);
-        //         location.href="index.php?act=productlist";
-        //         const productTableContentUrl = `${ADMIN_URL}/view/pages/products/table-product-content.php`;
-        //             console.log('url: ', productTableContentUrl);
-        //             $.get(productTableContentUrl, function(responseHtml) {
-        //                 $("#table-product-content").html(responseHtml);
-        //             })
-        //             $("#liveToastBtn").trigger("click");
-        //             $("#toast-content").html(`<strong id="toast-content" class="me-auto">Sản phẩm #${productId}</strong>`);
-        //             $("#liveToast .toast-body").text(`Bạn đã xóa sản phẩm #${productId} khỏi danh sách ` );
-                    
-              
-        //     }
-        // });
-
-
-        
+        location.assign("./index.php?act=deleteproduct&id="+productId);   
     })
 }
 
@@ -208,25 +173,6 @@ function alertModal(title, message) {
     $("#cartModal #cartModalLabel").text(`${title}`);
     $("#cartModal .modal-body").text(`${message}`);
 }
-
-// $(document).ready(function(){
-//     $('.image-list').slick({
-//         speed: 700,
-//         arrows: true,
-//         margin: 30,
-//         slidesToShow: 4,
-//         slidesToScroll: 1,
-//         prevArrow: '<button type="button" class="arrow-prev"><i class="zmdi zmdi-long-arrow-left"></i></button>',
-//         nextArrow: '<button type="button" class="arrow-next"><i class="zmdi zmdi-long-arrow-right"></i></button>',
-//         responsive: [
-//             { breakpoint: 991, settings: { slidesToShow: 3 }  },
-//             { breakpoint: 767, settings: { slidesToShow: 1 }  },
-//             { breakpoint: 479, settings: { slidesToShow: 1 }  }
-//         ]
-    
-//     });
-//   });
-
 
   function filterByCate(cateItem) {
     console.log('changed', cateItem.value);

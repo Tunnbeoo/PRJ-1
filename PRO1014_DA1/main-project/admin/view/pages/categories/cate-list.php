@@ -13,7 +13,9 @@
                                 <label class="form-label">Tên danh mục</label>
                                 <input type="text" class="form-control" name="catename" placeholder="Tên danh mục">
                                 <p class="error-message">
-                                    <?php if (isset($error['catename'])) {echo $error['catename'];}?></p>
+                                    <?php if (isset($error['catename'])) {
+                                        echo $error['catename'];
+                                    } ?></p>
 
                             </div>
                             <div class="col-12">
@@ -21,7 +23,9 @@
                                 <input type="file" class="form-control" name="cateimage" accept="image/png, image/jpeg, image/jpg"
                                     placeholder="Hình ảnh">
                                 <p class="error-message">
-                                    <?php if (isset($error['image'])) {echo $error['image'];}?></p>
+                                    <?php if (isset($error['image'])) {
+                                        echo $error['image'];
+                                    } ?></p>
 
                             </div>
                             <div class="col-12">
@@ -29,14 +33,14 @@
                                 <select class="form-select" name="cateparent">
                                     <option value="">Không có</option>
                                     <?php
-$cate_list = cate_select_all();
-foreach ($cate_list as $cate_item) {
-    # code...
-    echo '
+                                    $cate_list = cate_select_all();
+                                    foreach ($cate_list as $cate_item) {
+                                        # code...
+                                        echo '
                                                 <option value="' . $cate_item['ma_danhmuc'] . '">' . $cate_item['ten_danhmuc'] . '</option>
                                                 ';
-}
-?>
+                                    }
+                                    ?>
 
                                 </select>
                             </div>
@@ -77,10 +81,10 @@ foreach ($cate_list as $cate_item) {
                                 </thead>
                                 <tbody>
                                     <?php
-foreach ($cate_list as $cate_item) {
-    // var_dump(count_products_by_cate($cate_item['ma_danhmuc']));
-    # code...
-    echo '
+                                    foreach ($cate_list as $cate_item) {
+                                        // var_dump(count_products_by_cate($cate_item['ma_danhmuc']));
+                                        # code...
+                                        echo '
                                             <tr>
                                                 <td><input class="form-check-input" type="checkbox"></td>
                                                 <td>#' . $cate_item['ma_danhmuc'] . '</td>
@@ -106,8 +110,8 @@ foreach ($cate_list as $cate_item) {
                                                 </td>
                                             </tr>
                                             ';
-}
-?>
+                                    }
+                                    ?>
                                 </tbody>
                             </table>
                         </div>

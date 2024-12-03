@@ -69,37 +69,6 @@ foreach ($order_list as $order) {
                     </table>
                 </div>
                 <nav class="float-end" aria-label="Page navigation">
-                    <?php
-// // HIỂN THỊ PHÂN TRANG
-// // nếu current_page > 1 và total_page > 1 mới hiển thị nút prev
-// if ($current_page > 1 && $total_page > 1) {
-//     echo '<a class="page-item btn btn-secondary" href="index.php?act=orderlist&page=' . ($current_page - 1) . '">Trước</a> | ';
-// }
-
-// // Lặp khoảng giữa
-// for ($i = 1; $i <= $total_page; $i++) {
-//     // Nếu là trang hiện tại thì hiển thị thẻ span
-//     // ngược lại hiển thị thẻ a
-//     if ($i == $current_page) {
-//         echo '<span class="page-item btn btn-primary">' . $i . '</span> | ';
-//     } else {
-//         echo '<a class="page-item btn btn-light" href="index.php?act=orderlist&page=' . $i . '">' . $i . '</a> | ';
-//     }
-// }
-
-// // nếu current_page < $total_page và total_page > 1 mới hiển thị nút Next
-// if ($current_page < $total_page && $total_page > 1) {
-//     echo '<a class="page-item btn btn-secondary" href="index.php?act=orderlist&page=' . ($current_page + 1) . '">Sau</a> | ';
-// }
-
-?>
-                    <!-- <ul class="pagination">
-                            <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
-                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                            <li class="page-item"><a class="page-link" href="#">2</a></li>
-                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                            <li class="page-item"><a class="page-link" href="#">Next</a></li>
-                        </ul> -->
                 </nav>
             </div>
         </div>

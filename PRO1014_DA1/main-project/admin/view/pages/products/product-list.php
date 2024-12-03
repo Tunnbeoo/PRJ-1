@@ -6,16 +6,16 @@
                     <option value="-1">Tất cả danh mục</option>
                     <?php
 
-$cate_list = cate_select_all();
+                    $cate_list = cate_select_all();
 
-foreach ($cate_list as $cate_item) {
-    # code...
-    echo '
+                    foreach ($cate_list as $cate_item) {
+                        # code...
+                        echo '
                                 <option value="' . $cate_item['ma_danhmuc'] . '"><a href="./index.php?act=">' . $cate_item['ten_danhmuc'] . '</a></option>
                             ';
-}
+                    }
 
-?>
+                    ?>
 
                     <!-- <option>Fashion</option>
                     <option>Electronics</option>
@@ -53,32 +53,32 @@ foreach ($cate_list as $cate_item) {
                     <!-- Row Item -->
                     <!-- Show list product here -->
                     <?php
-// PHẦN XỬ LÝ PHP
-// B1: KET NOI CSDL
-$conn = connectdb();
+                    // PHẦN XỬ LÝ PHP
+                    // B1: KET NOI CSDL
+                    $conn = connectdb();
 
-$sql = "SELECT * FROM tbl_sanpham"; // Total Product
-$_limit = 8;
-$pagination = createDataWithPagination($conn, $sql, $_limit);
-$product_list = $pagination['datalist'];
-// var_dump($productList);
-$total_page = $pagination['totalpage'];
-$start = $pagination['start'];
-$current_page = $pagination['current_page'];
-$total_records = $pagination['total_records'];
+                    $sql = "SELECT * FROM tbl_sanpham"; // Total Product
+                    $_limit = 8;
+                    $pagination = createDataWithPagination($conn, $sql, $_limit);
+                    $product_list = $pagination['datalist'];
+                    // var_dump($productList);
+                    $total_page = $pagination['totalpage'];
+                    $start = $pagination['start'];
+                    $current_page = $pagination['current_page'];
+                    $total_records = $pagination['total_records'];
 
-// $product_list = product_select_all();
+                    // $product_list = product_select_all();
 
-// var_dump($product_list);
-foreach ($product_list as $product_item) {
+                    // var_dump($product_list);
+                    foreach ($product_list as $product_item) {
 
-    $image_list = explode(",", $product_item['images']);
+                        $image_list = explode(",", $product_item['images']);
 
-    $price_item = $product_item['don_gia'] * (1 - $product_item['giam_gia'] / 100);
-    $thumbnail = getthumbnail($image_list);
-    $is_danger_class = $product_item['ton_kho'] <= 10 ? 'bg-danger' : "bg-success";
-    # code...
-    echo '
+                        $price_item = $product_item['don_gia'] * (1 - $product_item['giam_gia'] / 100);
+                        $thumbnail = getthumbnail($image_list);
+                        $is_danger_class = $product_item['ton_kho'] <= 10 ? 'bg-danger' : "bg-success";
+                        # code...
+                        echo '
                             <tr>
                                 <td>
                                     ' . $product_item['masanpham'] . '
@@ -112,42 +112,12 @@ foreach ($product_list as $product_item) {
                                 </td>
                             </tr>
                             ';
-}
-?>
+                    }
+                    ?>
                 </tbody>
             </table>
             <nav class="float-end mt-4" aria-label="Page navigation">
-                <?php
-// HIỂN THỊ PHÂN TRANG
-// nếu current_page > 1 và total_page > 1 mới hiển thị nút prev
-// if ($current_page > 1 && $total_page > 1) {
-//     echo '<a class="page-item btn btn-secondary" href="index.php?act=productlist&page=' . ($current_page - 1) . '">Trước</a> | ';
-// }
 
-// // Lặp khoảng giữa
-// for ($i = 1; $i <= $total_page; $i++) {
-//     // Nếu là trang hiện tại thì hiển thị thẻ span
-//     // ngược lại hiển thị thẻ a
-//     if ($i == $current_page) {
-//         echo '<span class="page-item btn btn-primary">' . $i . '</span> | ';
-//     } else {
-//         echo '<a class="page-item btn btn-light" href="index.php?act=productlist&page=' . $i . '">' . $i . '</a> | ';
-//     }
-// }
-
-// // nếu current_page < $total_page và total_page > 1 mới hiển thị nút Next
-// if ($current_page < $total_page && $total_page > 1) {
-//     echo '<a class="page-item btn btn-secondary" href="index.php?act=productlist&page=' . ($current_page + 1) . '">Sau</a> | ';
-// }
-
-?>
-                <!-- <ul class="pagination">
-                      <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
-                      <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                      <li class="page-item"><a class="page-link" href="#">2</a></li>
-                      <li class="page-item"><a class="page-link" href="#">3</a></li>
-                      <li class="page-item"><a class="page-link" href="#">Next</a></li>
-                  </ul> -->
             </nav>
         </div>
 
