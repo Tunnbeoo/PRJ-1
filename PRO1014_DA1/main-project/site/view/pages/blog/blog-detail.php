@@ -177,7 +177,7 @@
                             </div>
                             <style>
                                 .color_btn {
-                                    background-color: #ff7f00;
+                                    background-color: #398801;
                                     border: none;
                                     width: 128px;
                                     height: 35px;
@@ -191,7 +191,7 @@
                                 .xoa_btn {
                                     font-size: 13px;
                                     font-weight: 600;
-                                    color: #ff7f00;
+                                    color: #398801;
                                 }
 
                                 .xoa_btn:hover {

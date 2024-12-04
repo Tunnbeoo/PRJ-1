@@ -41,20 +41,14 @@
                             </a>
                         </li>
                         <li>
-                            <a href="./index.php?act=wishlist">
-                                <span>02</span>
-                                Sản phẩm yêu thích
-                            </a>
-                        </li>
-                        <li>
                             <a href="./index.php?act=checkout">
-                                <span>03</span>
+                                <span>02</span>
                                 Thanh toán
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <span>04</span>
+                                <span>03</span>
                                 Đặt hàng thành công
                             </a>
                         </li>

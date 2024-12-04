@@ -93,7 +93,7 @@ a:focus,
 }
 a:focus,
 a:hover {
-  color: #ff7f00;
+  color: #398801;
   text-decoration: none;
 }
 a,
@@ -206,11 +206,11 @@ button:focus{
   outline: none;
 }
 .mark, mark {
-  background: #ff7f00 none repeat scroll 0 0;
+  background: #398801 none repeat scroll 0 0;
   color: #fff;
 }
 span.tooltip-content {
-  color: #ff7f00;
+  color: #398801;
   cursor: help;
   font-weight: 600;
 }
@@ -321,7 +321,7 @@ textarea {
   3. button
 *************************/
 a.button {
-  background: #ff7f00;
+  background: #398801;
   border: 0 none;
   border-radius: 3px;
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.03) inset;
@@ -606,7 +606,7 @@ a.button.extra-small i { padding: 11px; width: 38px; font-size: 13px; }
 .text-black-4 { color: #999; }
 .text-black-5 { color: #666; }
 .text-gray { color: #666; }
-.text-theme { color: #ff7f00; }
+.text-theme { color: #398801; }
 
 /*************************
   6. Input 
@@ -656,7 +656,7 @@ textarea {
   width: 100%;
 }
 textarea:focus {
-  border-color: #ff7f00;
+  border-color: #398801;
   outline: none;
 }
 .height-80 {
@@ -667,7 +667,7 @@ textarea:focus {
     font-size: 13px;
 }
 .submit-btn-1 {
-  background: rgb(255, 127, 0) none repeat scroll 0 0;
+  background: rgb(57, 136, 1) none repeat scroll 0 0;
   border: medium none;
   color: rgb(255, 255, 255);
   font-size: 13px;
@@ -702,7 +702,7 @@ textarea:focus {
   width: 100%;
 }
 .btn-hover-2::before {
-  background: #ff7f00 none repeat scroll 0 0;
+  background: #398801 none repeat scroll 0 0;
 }
 /*************************
   8. back-to-top 
@@ -752,7 +752,7 @@ textarea:focus {
   right: -60px;
 }
 .slick-arrow-1 .slick-arrow:hover {
-  color: #ff7f00;
+  color: #398801;
 }
 /* 9.2 slick-arrow-2 */
 .slick-arrow-2 .slick-arrow {
@@ -781,8 +781,8 @@ textarea:focus {
     visibility: visible;
 }
 .slick-arrow-2 .arrow-prev.slick-arrow:hover, .slick-arrow-2 .arrow-next.slick-arrow:hover {
-  color: #FF7F00;
-  border-color: #FF7F00;
+  color: #398801;
+  border-color: #398801;
 }
 /* 9.3 slick-arrow-3 */
 .slick-arrow-3 .slick-arrow {
@@ -805,7 +805,7 @@ textarea:focus {
 }
 .slick-arrow-3:hover .slick-arrow {}
 .slick-arrow-3 .arrow-prev.slick-arrow:hover, .slick-arrow-3 .arrow-next.slick-arrow:hover {
-  color: #FF7F00;
+  color: #398801;
 }
 /*************************
   10. slick-dots
@@ -828,7 +828,7 @@ textarea:focus {
   display: none;
 }
 .slick-dots-1 .slick-dots li.slick-active {
-  background: #FF7F00;
+  background: #398801;
 }
 /*************************
   11. quick view (modal)
@@ -979,7 +979,7 @@ textarea:focus {
   transition: all 0.3s ease 0s;
 }
 .quick-add-to-cart .single_add_to_cart_button:hover {
-  background: #FF7F00 none repeat scroll 0 0;
+  background: #398801 none repeat scroll 0 0;
 }
 .modal-product .product-info .quick-desc {
   border-bottom: 1px solid #e5e5e5;
@@ -1283,7 +1283,7 @@ textarea:focus {
   line-height: 40px;
 }
 #scrollUp:hover {
-  background: #FF7F00 none repeat scroll 0 0;
+  background: #398801 none repeat scroll 0 0;
   color: #ffffff;
 }
 /*Call to action*/
@@ -1337,7 +1337,7 @@ textarea:focus {
   16. Background variation set 
  **************************************/
 /*colored background*/
-.theme-bg { background: #ff7f00; }
+.theme-bg { background: #398801; }
 .black-bg { background: #222222; }
 .white-bg { background: #fff; }
 .gray-bg { background: #f6f6f6; }

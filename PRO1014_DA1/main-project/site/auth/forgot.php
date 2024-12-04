@@ -62,12 +62,12 @@ if (isset($_POST['forgotbtn']) && $_POST['forgotbtn']) {
     <link href="../../admin/assets/css/pace.min.css" rel="stylesheet" />
     <style>
     .bg-gui {
-        background-color: #ff7f00;
+        background-color: #398801;
         border: none;
     }
 
     .bg-gui:hover {
-        background-color: #ff7f00;
+        background-color: #398801;
     }
 
     .error-message {

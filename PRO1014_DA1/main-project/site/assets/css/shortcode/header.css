@@ -28,7 +28,7 @@ NOTE: This is Header style file. All Header related style included in this file.
    position: relative; 
 }
 .main-menu > li > a::before, .dropdwn li a:before, .single-mega-item li a:before {
-  background: #ffbf7f none repeat scroll 0 0;
+  background: #398801 none repeat scroll 0 0;
   bottom: 0;
   content: "";
   height: 1px;
@@ -52,13 +52,13 @@ NOTE: This is Header style file. All Header related style included in this file.
   transition: all 0.3s ease 0s;
 }
 .main-menu > li:hover > a{
-  color: #FF7F00;
+  color: #398801;
 } 
 .dropdwn > li:hover > a{
-  color: #ff7f00;
+  color: #398801;
 }
 .single-mega-item > li:hover > a{
-  color: #ff7f00;
+  color: #398801;
 } 
 /*dropdwn Style*/
 .dropdwn {
@@ -239,7 +239,7 @@ NOTE: This is Header style file. All Header related style included in this file.
   padding: 22px 0;
 }
  .sticky .main-menu > li:hover > a{
-  color: #FF7F00;
+  color: #398801;
  }
 
 .logo {
@@ -427,7 +427,7 @@ NOTE: This is Header style file. All Header related style included in this file.
   text-align: center;
 }
 .total-cart-in:hover .cart-toggler > a {
-  color: #ff7f00;
+  color: #398801;
 }
 .cart-icon {
   font-size: 20px;
@@ -502,7 +502,7 @@ NOTE: This is Header style file. All Header related style included in this file.
   z-index: 2;
 }
 .del-icon > a:hover > i {
-  color: #ff7f00;
+  color: #398801;
 }
 .cart-info {
   padding: 10px 0 0 20px;
@@ -527,7 +527,7 @@ NOTE: This is Header style file. All Header related style included in this file.
   font-weight: 700;
 }
 .top-cart-inner.subtotal span {
-  color: #ff7f00;
+  color: #398801;
 }
 .top-cart-inner.view-cart h4, .top-cart-inner.check-out h4 {
   color: #666;
@@ -591,7 +591,7 @@ NOTE: This is Header style file. All Header related style included in this file.
   line-height: 20px;
 }
 .user-meta > li > ul > li > a:hover {
-  color: #FF7F00;
+  color: #398801;
 }
 .user-meta > li:hover > ul {
   opacity: 1;
@@ -657,7 +657,7 @@ NOTE: This is Header style file. All Header related style included in this file.
   width: 100%;
 }
 .dropdwn > li .dropdwn-repeat li:hover > a {
-  color: #ff7f00;
+  color: #398801;
 }
 /* Normal desktop :992px. */
 @media (min-width: 992px) and (max-width: 1169px) {

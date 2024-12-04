@@ -400,10 +400,6 @@
                                                 trả</span></a>
                                     </li>
                                     <li>
-                                        <a href="index.php?act=csbaohanh"><i class="zmdi zmdi-circle"></i><span>Bảo
-                                                hành</span></a>
-                                    </li>
-                                    <li>
                                         <a href="index.php?act=csbaomat"><i class="zmdi zmdi-circle"></i><span>Bảo
                                                 mật</span></a>
                                     </li>

@@ -177,9 +177,6 @@
                                       <li class="closed"><a href="index.php?act=csdoitra">Chính sách đổi trả</a>
                                          
                                       </li>
-                                      <li class="closed"><a href="index.php?act=csbaohanh">Chính sách bảo hành</a>
-                                          
-                                      </li>
                                       <li class="closed"><a href="index.php?act=csbaomat">Chính sách bảo mật</a>
                                           
                                       </li>

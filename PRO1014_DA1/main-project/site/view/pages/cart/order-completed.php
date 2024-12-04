@@ -49,20 +49,14 @@ if (isset($iddh)) {
                             </a>
                         </li>
                         <li>
-                            <a class="active" href="./index.php?act=wishlist">
+                            <a href="./index.php?act=checkout">
                                 <span>02</span>
-                                Sản phẩm yêu thích
-                            </a>
-                        </li>
-                        <li>
-                            <a class="active" href="./index.php?act=checkout">
-                                <span>03</span>
                                 Thanh toán
                             </a>
                         </li>
                         <li>
-                            <a class="active" href="#">
-                                <span>04</span>
+                            <a href="#">
+                                <span>03</span>
                                 Đặt hàng thành công
                             </a>
                         </li>

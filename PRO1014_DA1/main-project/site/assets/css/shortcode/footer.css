@@ -84,14 +84,14 @@
   font-weight: 500;
 }
 .footer-menu li:hover a, .footer-menu li:hover a i {
-  color: #ff7f00;
+  color: #398801;
 }
 .border-left {
   position: relative;
   padding-left: 10px;
 }
 .border-left::before {
-  background: #ff7f00 none repeat scroll 0 0;
+  background: #398801 none repeat scroll 0 0;
   content: "";
   height: 12px;
   left: 0;
@@ -126,7 +126,7 @@
   color: #999999;
 }
 .copyright-text p a:hover {
-  color: #ff7f00;
+  color: #398801;
 }
 .footer-payment {
   line-height: 1;
@@ -151,7 +151,7 @@
   position: relative;
 }
 .footer-menu-2 li::before {
-  background: #ff7f00 none repeat scroll 0 0;
+  background: #398801 none repeat scroll 0 0;
   content: "";
   height: 11px;
   left: 0;

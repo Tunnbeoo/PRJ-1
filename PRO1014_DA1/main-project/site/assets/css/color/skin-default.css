@@ -7,15 +7,15 @@
   Design and Developed by: codecarnival
 
 -----------------------------------------------------------------------------------*/
-.theme-bg {background: #ff7f00;}
+.theme-bg {background: #398801;}
 .blog-item .blog-desc {
   background: rgba(255, 127, 0, 0.95) none repeat scroll 0 0;
 }
 .mark, mark {
-  background: #ff7f00 none repeat scroll 0 0;
+  background: #398801 none repeat scroll 0 0;
 }
 .mean-container .mean-nav ul li a:hover {
-  color: #ff7f00;
+  color: #398801;
 }
 textarea:focus {
   border-color: #fcab5b;
@@ -24,173 +24,173 @@ textarea:focus {
   border: 1px solid #fcab5b;
 }
 .contact-address:hover i {
-  background: #ff7f00 none repeat scroll 0 0;
+  background: #398801 none repeat scroll 0 0;
 }
 span.tooltip-content {
-  color: #ff7f00;
+  color: #398801;
 }
 a.button {
-  background: #ff7f00;
+  background: #398801;
 }
 .pro-tab-menu ul li.active a {
-  border-bottom: 1px solid #ff7f00;
+  border-bottom: 1px solid #398801;
 }
 .nivo-controlNav a.active {
-  background: #ff7f00 none repeat scroll 0 0;
+  background: #398801 none repeat scroll 0 0;
 }
 .submit-btn-1 {
-  background: #ff7f00;
+  background: #398801;
 }
 .header-search-inner::before {
-  background: #ff7f00 none repeat scroll 0 0;
+  background: #398801 none repeat scroll 0 0;
 }
 input[type="text"]:focus,
 input[type="password"]:focus {
-  border: 1px solid #ff7f00;
+  border: 1px solid #398801;
 }
 /*default*/
 a:focus,
 a:hover {
-    color: #ff7f00;
+    color: #398801;
     text-decoration: none;
 }
-.text-theme { color: #ff7f00; }
+.text-theme { color: #398801; }
 .btn-hover-2::before {
-  background: #ff7f00 none repeat scroll 0 0;
+  background: #398801 none repeat scroll 0 0;
 }
 .slick-arrow-1 .slick-arrow:hover {
-  color: #ff7f00;
+  color: #398801;
 }
 .slick-arrow-2 .arrow-prev.slick-arrow:hover, .slick-arrow-2 .arrow-next.slick-arrow:hover {
-  color: #FF7F00;
-  border-color: #FF7F00;
+  color: #398801;
+  border-color: #398801;
 }
 .slick-arrow-3 .arrow-prev.slick-arrow:hover, .slick-arrow-3 .arrow-next.slick-arrow:hover {
-  color: #FF7F00;
+  color: #398801;
 }
 .slick-dots-1 .slick-dots li.slick-active {
-  background: #FF7F00;
+  background: #398801;
 }
 .quick-add-to-cart .single_add_to_cart_button:hover {
-  background: #FF7F00 none repeat scroll 0 0;
+  background: #398801 none repeat scroll 0 0;
 }
 #scrollUp:hover {
-  background: #FF7F00 none repeat scroll 0 0;
+  background: #398801 none repeat scroll 0 0;
 }
 /*header*/
 .main-menu > li:hover > a{
-  color: #FF7F00;
+  color: #398801;
 } 
 .dropdwn > li:hover > a{
-  color: #ff7f00;
+  color: #398801;
 }
 .main-menu > li > a::before, .dropdwn li a::before, .single-mega-item li a::before {
-  background: #ff7f00 none repeat scroll 0 0;
+  background: #398801 none repeat scroll 0 0;
 }
 .single-mega-item > li:hover > a{
-  color: #ff7f00;
+  color: #398801;
 } 
 .sticky .main-menu > li:hover > a{
-  color: #FF7F00;
+  color: #398801;
 }
 .total-cart-in:hover .cart-toggler > a {
-  color: #ff7f00;
+  color: #398801;
 }
 .del-icon > a:hover > i {
-  color: #ff7f00;
+  color: #398801;
 }
 .top-cart-inner.subtotal span {
-  color: #ff7f00;
+  color: #398801;
 }
 .user-meta > li > ul > li > a:hover {
-  color: #FF7F00;
+  color: #398801;
 }
 /*footer*/ 
 .footer-menu li:hover a, .footer-menu li:hover a i {
-  color: #ff7f00;
+  color: #398801;
 }
 .border-left::before {
-  background: #ff7f00 none repeat scroll 0 0;
+  background: #398801 none repeat scroll 0 0;
 }
 .copyright-text p a:hover {
-  color: #ff7f00;
+  color: #398801;
 }
 .footer-menu-2 li::before {
-  background: #ff7f00 none repeat scroll 0 0;
+  background: #398801 none repeat scroll 0 0;
 }
 /*Theme */
 .action-button > li:hover > a {
-  background: #FF7F00;
-  border-color: #FF7F00;
+  background: #398801;
+  border-color: #398801;
 }
 .banner-button a:hover {
-  color: #FF7F00;
+  color: #398801;
 }
 .product-item-2 .action-button > li:hover > a {
-  color: #ff7f00;
+  color: #398801;
 }
 .pro-tab-menu-2 ul li a.active::before {
-  background: #ff7f00 none repeat scroll 0 0;
+  background: #398801 none repeat scroll 0 0;
 }
 .breadcrumb-list > li:hover::before {
-  color: #ff7f00; 
+  color: #398801; 
 }
 .breadcrumb-list > li:hover > a {
-  color: #ff7f00;
+  color: #398801;
 }
 .shop-tab li a.active {
-  color: #ff7f00;
+  color: #398801;
 }
 .shop-pagination > li.active a,
 .shop-pagination > li:hover a {
-  border-color: #ff7f00;
-  color: #ff7f00;
+  border-color: #398801;
+  color: #398801;
 }
 .widget-search button:hover {
-  color: #ff7f00;
+  color: #398801;
 }
 .product-cat .treeview .collapsable > a {
-  color: #ff7f00;
+  color: #398801;
 }
 .ui-slider .ui-slider-range {
-  background: #ff7f00 none repeat scroll 0 0;
+  background: #398801 none repeat scroll 0 0;
 }
 .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
-  background: #ff7f00 none repeat scroll 0 0;
+  background: #398801 none repeat scroll 0 0;
 }
 .widget-color ul li::before {
-  background: #ff7f00 none repeat scroll 0 0;
+  background: #398801 none repeat scroll 0 0;
 }
 .p-c a.active img {
-  border: 1px solid #FF7F00;
+  border: 1px solid #398801;
 }
 .cart-tab li a.active {
-  color: #ff7f00;
+  color: #398801;
 }
 .cart-tab li a.active span {
-  border: 1px solid #ff7f00;
+  border: 1px solid #398801;
 }
 .product-remove a:hover {
-  color: #ff7f00;
+  color: #398801;
 }
 .product-add-cart a:hover {
-  color: #ff7f00;
+  color: #398801;
 }
 .order-total {
-  color: #ff7f00;
+  color: #398801;
 }
 .order-total-price {
-  color: #ff7f00;
+  color: #398801;
 }
 .widget-tags-list li:hover a {
-  color: #ff7f00;
+  color: #398801;
 }
 .blog-like-share li a:hover {
-  color: #ff7f00;
+  color: #398801;
 }
 .reply-delate li:hover a {
-  color: #ff7f00;
+  color: #398801;
 }
 .bg-shape:hover:before {
- background: #ff7f00 none repeat scroll 0 0;
+ background: #398801 none repeat scroll 0 0;
 }

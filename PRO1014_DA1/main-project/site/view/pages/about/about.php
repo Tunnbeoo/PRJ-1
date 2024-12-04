@@ -130,7 +130,7 @@
                         <div class="team-member-item">
                             <div class="team-member box-shadow">
                                 <div class="team-photo">
-                                    <img src="assets/img/team/" alt="">
+                                    <img src="assets/img/team/thanhThien - Copy.jpg" alt="">
                                 </div>
                                 <div class="team-info pt-20">
                                     <h5 class="member-name"><a href="#!">Thanh Thiên</a></h5>

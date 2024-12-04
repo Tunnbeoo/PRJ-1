@@ -85,7 +85,7 @@
  **************************************/
 
 :root {
-  --main-color: #ff7f00;
+  --main-color: #398801;
 }
 
 .main-color {
@@ -220,8 +220,8 @@ label.error {color: red};
   line-height: 28px;
 }
 .action-button > li:hover > a, .action-button > li > button.add-to-cart:hover {
-  background: #FF7F00;
-  border-color: #FF7F00;
+  background: #398801;
+  border-color: #398801;
   color: #fff;
 }
 
@@ -422,7 +422,7 @@ label.error {color: red};
 }
 .blog-item .blog-desc {
   backface-visibility: hidden;
-  background: rgba(255, 127, 0, 0.95) none repeat scroll 0 0;
+  background: rgba(57, 136, 1, 1) none repeat scroll 0 0;
   height: 100%;
   left: 0;
   padding: 40px;
@@ -504,7 +504,7 @@ transform: scale(1);
   font-size: 13px;
 }
 .banner-button a:hover {
-  color: #FF7F00;
+  color: #398801;
 }
 .banner-2::before {
   border-right: 270px solid #f6f6f6;
@@ -603,7 +603,7 @@ transform: scale(1);
 }
 .product-item-2 .action-button > li:hover > a {
   background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
-  color: #ff7f00;
+  color: #398801;
 }
 .product-item-2:hover {
   box-shadow: 0 5px 2px rgba(0, 0, 0, 0.15);
@@ -623,7 +623,7 @@ transform: scale(1);
   position: relative;
 }
 .pro-tab-menu-2 ul li a.active::before{
-  background: #ff7f00 none repeat scroll 0 0;
+  background: #398801 none repeat scroll 0 0;
   content: "";
   height: 11px;
   left: 0;
@@ -820,13 +820,13 @@ transform: scale(1);
   transition: all 0.3s ease 0s;
 }
 .breadcrumb-list > li:hover::before {
-  color: #ff7f00; 
+  color: #398801; 
 }
 .breadcrumb-list > li > a {
   color: #666666;
 }
 .breadcrumb-list > li:hover > a {
-  color: #ff7f00;
+  color: #398801;
 }
 /* -------------------------------------
     9.2 Shop Option
@@ -856,7 +856,7 @@ transform: scale(1);
   line-height: 30px;
 }
 .shop-tab li a.active  {
-  color: #ff7f00;
+  color: #398801;
 }
 .shop-tab, .short-by, .showing {
   width: 33.3337%;
@@ -927,8 +927,8 @@ transform: scale(1);
 }
 .shop-pagination > li.active a,
 .shop-pagination > li:hover a {
-  border-color: #ff7f00;
-  color: #ff7f00;
+  border-color: #398801;
+  color: #398801;
 }
 /* -------------------------------------
     9.5 Sidebar Widget
@@ -964,7 +964,7 @@ transform: scale(1);
   width: 50px;
 }
 .widget-search button:hover {
-  color: #ff7f00;
+  color: #398801;
 }
 /* -------------------------------------
     9.7 Widget categories
@@ -998,7 +998,7 @@ transform: scale(1);
   width: 100%;
 }
 .product-cat .treeview .collapsable > a {
-  color: #ff7f00;
+  color: #398801;
 }
 /* -------------------------------------
     9.8 Price Filter
@@ -1027,10 +1027,10 @@ transform: scale(1);
   height: 3px;
 }
 .ui-slider .ui-slider-range {
-  background: #ff7f00 none repeat scroll 0 0;
+  background: #398801 none repeat scroll 0 0;
 }
 .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
-  background: #ff7f00 none repeat scroll 0 0;
+  background: #398801 none repeat scroll 0 0;
   border: medium none;
   border-radius: 0;
   height: 12px;
@@ -1047,7 +1047,7 @@ transform: scale(1);
   position: relative;
 }
 .widget-color ul li::before {
-  background: #ff7f00 none repeat scroll 0 0;
+  background: #398801 none repeat scroll 0 0;
   border-radius: 50%;
   content: "";
   height: 12px;
@@ -1130,7 +1130,7 @@ transform: scale(1);
   padding: 0 5px;
 }
 .p-c a.active img {
-  border: 1px solid #FF7F00;
+  border: 1px solid #398801;
 }
 #gallery_01.slick-arrow-3 .arrow-next.slick-arrow {
   right: -3px;
@@ -1276,11 +1276,11 @@ input.cart-plus-minus-box {
   width: 50px;
 }
 .cart-tab li a.active {
-  color: #ff7f00;
+  color: #398801;
 }
 .cart-tab li a.active span {
   box-shadow: 0 0 4px rgba(255, 127, 0, 0.1);
-  border: 1px solid #ff7f00;
+  border: 1px solid #398801;
 }
 /* -------------------------------------
     11.2 Cart table content
@@ -1352,7 +1352,7 @@ table {width: 100%}
   width: 20px;
 }
 .product-remove a:hover {
-  color: #ff7f00;
+  color: #398801;
 }
 .product-stock {
   font-weight: 600;
@@ -1363,7 +1363,7 @@ table {width: 100%}
   font-size: 25px;
 }
 .product-add-cart a:hover {
-  color: #ff7f00;
+  color: #398801;
 }
 /* -------------------------------------
     11.2 Coupon-discount
@@ -1395,12 +1395,12 @@ table {width: 100%}
   text-align: right;
 }
 .order-total {
-  color: #ff7f00;
+  color: #398801;
   font-weight: 500;
   text-align: left;
 }
 .order-total-price {
-  color: #ff7f00;
+  color: #398801;
   font-family: roboto;
   font-weight: 700;
   text-align: right;
@@ -1552,7 +1552,7 @@ table {width: 100%}
   font-size: 13px;
 }
 .widget-tags-list li:hover a {
-  color: #ff7f00;
+  color: #398801;
 }
 /* -------------------------------------
     12.2 blog main post
@@ -1608,7 +1608,7 @@ table {width: 100%}
   line-height: 14px;
 }
 .blog-like-share li a:hover {
-  color: #ff7f00;
+  color: #398801;
 }
 .blog-like-share li a i {
   margin-right: 10px;
@@ -1704,7 +1704,7 @@ table {width: 100%}
   font-size: 13px;
 }
 .reply-delate li:hover a {
-  color: #ff7f00;
+  color: #398801;
   display: block;
 }
 /* --------------------
@@ -1773,7 +1773,7 @@ table {width: 100%}
   z-index: -1;
 }
 .bg-shape:hover:before {
- background: #ff7f00 none repeat scroll 0 0;
+ background: #398801 none repeat scroll 0 0;
 }
 /*====================================
   14. Contact Page
@@ -1799,7 +1799,7 @@ table {width: 100%}
   transition: all 0.3s ease 0s;
 }
 .contact-address:hover i {
-  background: #ff7f00 none repeat scroll 0 0;
+  background: #398801 none repeat scroll 0 0;
   color: #fff;
 }
 .contact-address h6 {

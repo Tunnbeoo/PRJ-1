@@ -5,7 +5,7 @@
     }
 
     .dangnhap .bg-dangnhapp {
-        background-color: #fd7e00;
+        background-color: #398801;
         border: none;
         color: white;
     }

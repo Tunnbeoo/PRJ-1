@@ -115,16 +115,16 @@ if (isset($_POST['signupbtn']) && $_POST['signupbtn']) {
     <link href="../../admin/assets/css/pace.min.css" rel="stylesheet" />
     <style>
     .bg-dangky {
-        background-color: #ff7f00;
+        background-color: #398801;
         border: none;
     }
 
     .bg-dangky:hover {
-        background-color: #ff7f00;
+        background-color: #398801;
     }
 
     .text-center a {
-        color: #ff7f00;
+        color: #398801;
     }
 
     .images img {
@@ -136,13 +136,13 @@ if (isset($_POST['signupbtn']) && $_POST['signupbtn']) {
     }
 
     .navigate-login-btn {
-        background-color: #ff7f00;
-        border-color: #ff7f00;
+        background-color: #398801;
+        border-color: #398801;
     }
 
     .navigate-login-btn:hover {
-        background-color: #ff7f00;
-        border-color: #ff7f00;
+        background-color: #398801;
+        border-color: #398801;
     }
 
     label.error {

@@ -41,31 +41,31 @@ if (!isset($_SESSION['toastAlert'])) {
     <link rel="stylesheet" href="style.css">
     <style>
         .btn-primary-login {
-            background-color: #ff7f00;
+            background-color: #398801;
             color: white;
             border: none;
         }
 
         .btn-primary-login:hover {
-            background-color: #ff7f00;
+            background-color: #398801;
             border: none;
         }
 
         .color-regis {
-            color: #ff7f00;
+            color: #398801;
         }
 
         .mb-0 a {
-            color: #ff7f00;
+            color: #398801;
         }
 
         .form-check-input-change:checked {
-            border: #ff7f00;
-            background-color: #ff7f00;
+            border: #398801;
+            background-color: #398801;
         }
 
         .text-end a {
-            color: #ff7f00;
+            color: #398801;
         }
 
         .images img {
