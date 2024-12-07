@@ -203,6 +203,9 @@
                 </div>
             </div>
         </div>
+        <!-- Total Comment -->
+        <!-- Total Comment -->
+
         <!-- Total phản hồi -->
     </div>
     <div class="row">
@@ -217,6 +220,21 @@
                         <div class="col-2">
                             <div class="d-flex align-items-center justify-content-end gap-3 cursor-pointer">
                                 <div class="dropdown">
+                                    <a class="dropdown-toggle dropdown-toggle-nocaret" href="#"
+                                        data-bs-toggle="dropdown" aria-expanded="false"><i
+                                            class="bx bx-dots-horizontal-rounded font-22 text-option"></i>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="javascript:;">Action</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="javascript:;">Another action</a>
+                                        </li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="javascript:;">Something else here</a>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -241,24 +259,24 @@
                                 }
                             }
                             echo '
-                                    <div class="best-product-item">
-                                        <div class="d-flex align-items-center gap-3">
-                                            <div class="product-box border">
-                                                <img src="../uploads/' . $thumbnail . '" alt="' . $product['tensp'] . '">
-                                            </div>
-                                            <div class="product-info flex-grow-1">
-                                                <div class="progress-wrapper">
-                                                    <div class="progress" style="height: 5px;">
-                                                        <div class="progress-bar bg-primary" role="progressbar" style="width: 80%;">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <p class="product-name mb-0 mt-2 fs-6">' . $product['tensp'] . ' <span
-                                                        class="float-end">' . $product['so_luot_xem'] . ' đã xem</span></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                ';
+        <div class="best-product-item">
+            <div class="d-flex align-items-center gap-3">
+                <div class="product-box border">
+                    <img src="../uploads/' . $thumbnail . '" alt="' . $product['tensp'] . '">
+                </div>
+                <div class="product-info flex-grow-1">
+                    <div class="progress-wrapper">
+                        <div class="progress" style="height: 5px;">
+                            <div class="progress-bar bg-primary" role="progressbar" style="width: 80%;">
+                            </div>
+                        </div>
+                    </div>
+                    <p class="product-name mb-0 mt-2 fs-6">' . $product['tensp'] . ' <span
+                            class="float-end">' . $product['so_luot_xem'] . ' đã xem</span></p>
+                </div>
+            </div>
+        </div>
+    ';
                         }
                         ?>
 
@@ -273,10 +291,23 @@
             </div>
         </div>
         <!--end row-->
-    </div>
-    </div>
-    </div>
-    </div>
+        <div class="row">
+            <!-- Top khách hàng mua hàng nhiều nhất -->
+            <div class="col-12 col-lg-6 d-flex">
+                
 
+            </div>
+            <div class="col-12 col-lg-6 d-flex">
+                
+
+            </div>
+        </div>
+
+        <!--end row-->
+
+        <div class="row">
+            
+        </div>
+        <!--end row-->
 </main>
 <!--end page main-->

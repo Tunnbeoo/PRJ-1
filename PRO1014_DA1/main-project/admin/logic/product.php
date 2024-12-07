@@ -14,26 +14,31 @@ include $ROOT_URL . "/global.php";
 switch ($_GET['act']) {
 
     case 'addproduct':
-
+        # code...
         break;
     case 'editproduct':
         $error = array();
         $idproduct = $_POST['id'];
         $product_item = product_select_by_id($idproduct);
-
+        // if (isset($_POST['editproductbtn']) && $_POST['editproductbtn']) {
         $image_files = $_FILES['images'];
         if ($_FILES['images']['name'][0] == "") {
             $image_list = $product_item['images'];
         } else {
             $image_list = implode(',', $image_files['name']);
-
+            // var_dump($image_files);
+            // var_dump($image_list);
             $i = 0;
             foreach ($image_files['name'] as $image_name) {
-
+                # code...
+                // $target_file = "../uploads/" . basename($file_name);
+                // var_dump($image_file_item);
                 move_uploaded_file($image_files["tmp_name"][$i], "$ROOT_URL/uploads/" . $image_name);
                 $i++;
             }
         }
+        // var_dump($image_list);
+        // exit;
 
         $tensp = $_POST['tensp'];
         $ma_danhmuc = $_POST['ma_danhmuc'];
@@ -103,6 +108,7 @@ switch ($_GET['act']) {
     case 'getproduct':
         if (isset($_GET['id'])) {
             $product_item = product_select_by_id($_GET['id']);
+            // var_dump($product_item);
             $result = array(
                 "status" => 1,
                 "content" => $product_item,
@@ -113,6 +119,21 @@ switch ($_GET['act']) {
         break;
     case 'dataproducts':
         $product_list = product_select_all();
+
+        // array(
+        //     "id" => 1,
+        //     "tensp" =>
+        // )
+        // $product_list = array_map(function ($product_item) {
+
+        //     return $product_item;
+        // }, $product_list);
+
+        // echo json_encode(
+        //     array(
+        //         'product_list' => $product_list,
+        //     )
+        // );
         break;
     case 'deleteproduct':
         if (isset($_POST['id'])) {

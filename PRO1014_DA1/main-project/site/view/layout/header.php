@@ -178,8 +178,9 @@
                                                             ?>
 
                                                                 <li>
-                                                                    <a
-                                                                        href="./index.php?act=shop&subcateid=<?php echo $subcate_item['id'] ?>"><?php echo $subcate_item['ten_danhmucphu'] ?></a>
+                                                                    <a href="./index.php?act=shop&subcateid=<?php echo $subcate_item['id'] ?>">
+                                                                        <?php echo $subcate_item['ten_danhmucphu'] ?>
+                                                                    </a>
                                                                 </li>
                                                             <?php
                                                                 # code...

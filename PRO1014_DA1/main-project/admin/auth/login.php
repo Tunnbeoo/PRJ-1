@@ -120,7 +120,7 @@ if (isset($_POST['loginbtn']) && $_POST['loginbtn']) {
     }
     </style>
 
-    <title>Admin Xgarden</title>
+    <title>Admin Golden Bee Group</title>
 
 </head>
 
@@ -189,6 +189,19 @@ if (isset($_POST['loginbtn']) && $_POST['loginbtn']) {
                                     <h5 class="card-title">Đăng nhập</h5>
                                     <p class="card-text mb-5">Đăng nhập để vào trang quản trị admin</p>
                                     <form class="form-body" id="form-login-admin" action="./login.php" method="post">
+                                        <!-- <div class="d-grid">
+                                            <a class="btn btn-white radius-30" href="javascript:;"><span
+                                                    class="d-flex justify-content-center align-items-center">
+                                                    <img class="me-2" src="../assets/images/icons/search.svg" width="16"
+                                                        alt="">
+                                                    <span>Sign in with Google</span>
+                                                </span>
+                                            </a>
+                                        </div>
+                                        <div class="login-separater text-center mb-4"> <span>OR SIGN IN WITH
+                                                EMAIL</span>
+                                            <hr>
+                                        </div> -->
                                         <div class="row g-3">
 
                                             <div class="col-12">
@@ -237,6 +250,10 @@ if (isset($_POST['loginbtn']) && $_POST['loginbtn']) {
                                                         value="Đăng nhập" />
                                                 </div>
                                             </div>
+                                            <!-- <div class="col-12">
+                                                <p class="mb-0">Vẫn chưa có tài khoản ? <a href="./">Đăng ký tại đây</a>
+                                                </p>
+                                            </div> -->
                                         </div>
                                     </form>
                                 </div>

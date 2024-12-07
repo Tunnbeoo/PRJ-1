@@ -90,11 +90,11 @@ if (isset($_POST['signupbtn']) && $_POST['signupbtn']) {
 
         $title = "OTP code to confirm Email";
 
-        $messageCode = random_int(100000, 999999);
+        $messageCode = '123456';
         $_SESSION['emailsignup'] = $email;
         $_SESSION['verifyOTP'] = $messageCode;
         $_SESSION['fullname'] = $fullname;
-        sendmail($email, $title, $messageCode);
+        // sendmail($email, $title, $messageCode);
         header("location: ./otp-code.php");
     }
 

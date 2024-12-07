@@ -17,7 +17,7 @@ $(function() {
                         data: product_list,
                         retrieve: true,
                         lengthChange: false,
-                        buttons: [ ' ', ' ', ' ', ' '],
+                        buttons: [ 'copy', 'excel', 'pdf', 'print'],
                         "ordering":true,
                     });
 
@@ -48,7 +48,7 @@ $(function() {
                         data: order_list,
                         retrieve: true,
                         lengthChange: false,
-                        buttons: [ ' ', ' ', ' ', ' '],
+                        buttons: [ 'copy', 'excel', 'pdf', 'print'],
                         "ordering":true,
                     });
 
@@ -75,7 +75,7 @@ $(function() {
                         data: order_list,
                         retrieve: true,
                         lengthChange: false,
-                        buttons: [ ' ', ' ', ' ', ' '],
+                        buttons: [ 'copy', 'excel', 'pdf', 'print'],
                         "ordering":true,
                     });
                     tableRecentOrder.buttons().container()
@@ -105,7 +105,7 @@ $(function() {
                         data: order_list,
                         retrieve: true,
                         lengthChange: false,
-                        buttons: [ ' ', ' ', ' ', ' '],
+                        buttons: [ 'copy', 'excel', 'pdf', 'print'],
                         "ordering":true,
                     });
                     tableRecentOrder.buttons().container()
@@ -121,7 +121,7 @@ $(function() {
       $(document).ready(function() {
         var table = $('#example2').DataTable( {
             lengthChange: false,
-            buttons: [ ' ', ' ', ' ', ' ']
+            buttons: [ 'copy', 'excel', 'pdf', 'print']
         } );
      
         table.buttons().container()

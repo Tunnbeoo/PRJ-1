@@ -176,20 +176,8 @@
 
 </div>
 <!-- END QUICKVIEW PRODUCT -->
-
-<!--start footer-->
-<!-- <footer class="footer">
-    <div class="footer-text">
-        
-    </div>
-</footer> -->
-<!--end footer-->
-
-
 </div>
 <!--end wrapper-->
-
-
 <!-- Bootstrap bundle JS -->
 
 <script src="assets/js/bootstrap.bundle.min.js"></script>

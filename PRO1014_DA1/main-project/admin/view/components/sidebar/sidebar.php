@@ -91,22 +91,7 @@ if (isset($_SESSION['idadmin']) && $_SESSION['role'] == 1) {
             ';
 }
 ?>
-    <!-- <li>
-        <a href="javascript:;" class="has-arrow">
-            <div class="parent-icon"><i class="lni lni-users"></i>
-            </div>
-            <div class="menu-title">Người dùng</div>
-        </a>
 
-        <ul class="">
-            <li class=""> <a href="index.php?act=userlist"><i class="bi bi-circle"></i>Danh sách khách hàng</a>
-            </li>
-            <li> <a href="index.php?act=adminlist"><i class="bi bi-circle"></i>Danh sách quản trị viên</a>
-            </li>
-            <li> <a href="index.php?act=adduser"><i class="bi bi-circle"></i>Thêm người dùng</a>
-            </li>
-        </ul>
-    </li> -->
     <li>
         <a href="javascript:;" class="has-arrow">
             <div class="parent-icon"><i class="fadeIn animated bx bx-slideshow"></i>
@@ -123,6 +108,21 @@ if (isset($_SESSION['idadmin']) && $_SESSION['role'] == 1) {
             </li>
             <li> <a href="index.php?act=addslider"><i class="bi bi-circle"></i>Thêm Slider</a>
             </li>
+        </ul>
+    </li>
+    <li>
+        <a href="javascript:;" class="has-arrow">
+            <div class="parent-icon"> <i class="lni lni-wechat"></i>
+            </div>
+            <div class="menu-title">Phản hồi</div>
+        </a>
+
+        <ul class="">
+            <li class=""> <a href="index.php?act=feedback-list"><i class="bi bi-circle"></i>Danh sách phản hồi</a>
+            </li>
+            <li> <a href="index.php?act=reviews-product"><i class="bi bi-circle"></i>Danh sách đánh giá sp</a>
+            </li>
+
         </ul>
     </li>
     <li>

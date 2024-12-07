@@ -75,7 +75,7 @@ if (isset($_POST['updatepassbtn']) && $_POST['updatepassbtn']) {
         }
     </style>
 
-    <title>Xgarden Authentication</title>
+    <title>GoldenBeeGroup Authentication</title>
 </head>
 
 <body>
