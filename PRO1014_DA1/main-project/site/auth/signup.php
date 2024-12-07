@@ -56,38 +56,8 @@ if (isset($_POST['signupbtn']) && $_POST['signupbtn']) {
         // echo "Email của bạn đã tồn tại!";
     }
 
-    // if (strlen($phonenumber) == 0) {
-    //     $error['phonenumber'] = "Không để trống số điện thoại!";
-    // } else if (!validating($phonenumber)) {
-    //     $rror['phonenumber'] = "Định dạng số điện thoại không chính xác!";
-    // }
-
-    // if (empty($password)) {
-    //     $error['password'] = "không để trống password!";
-    // }
-
-    // if (empty($reenterpass)) {
-    //     $error['repassword'] = "không để trống repassword!";
-    // } else if ($password != $reenterpass) {
-    //     $error['repassword'] = "Nhập lại mật khẩu không chính xác!";
-    // }
 
     if (!$error) {
-        // $password = md5($_POST['password']);
-        // $is_inserted = user_register($fullname, $email, $password);
-
-        // // echo 'Register successfully!';
-        // // if ($is_inserted) {
-        // //     echo '<div class="register-account-success d-none" style="">HELLO</div>';
-        // // }
-        // if ($is_inserted) {
-        //     echo '<div class="alert alert-success">Sign up successfully</div>';
-        //     // header('location: ./login.php');
-        //     $_SESSION['alert'] = "Đăng ký thành công!, Bạn có muốn chuyển đến trang đăng nhập ?";
-        // }
-
-        // Send email to success account
-
         $title = "OTP code to confirm Email";
 
         $messageCode = '123456';
