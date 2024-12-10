@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th12 09, 2024 lúc 08:48 PM
+-- Thời gian đã tạo: Th12 07, 2024 lúc 05:28 PM
 -- Phiên bản máy phục vụ: 10.4.32-MariaDB
 -- Phiên bản PHP: 8.2.12
 
@@ -379,7 +379,7 @@ CREATE TABLE `tbl_sanpham` (
   `ma_danhmuc` int(11) NOT NULL,
   `id_dmphu` int(3) NOT NULL,
   `information` text NOT NULL,
-  `promote` int(11) NOT NULL DEFAULT 0,
+  `promote` tinyint(1) NOT NULL DEFAULT 0,
   `danhgia` float(1,1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
@@ -787,7 +787,7 @@ ALTER TABLE `tbl_reply_reviews`
 -- AUTO_INCREMENT cho bảng `tbl_sanpham`
 --
 ALTER TABLE `tbl_sanpham`
-  MODIFY `masanpham` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=97;
+  MODIFY `masanpham` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=94;
 
 --
 -- AUTO_INCREMENT cho bảng `tbl_shipping`

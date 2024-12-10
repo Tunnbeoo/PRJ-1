@@ -29,7 +29,7 @@ if (isset($_POST['forgotbtn']) && $_POST['forgotbtn']) {
             $messageCode = random_int(100000, 999999);
             $_SESSION['emailreset'] = $email;
             $_SESSION['verifycode'] = $messageCode;
-
+            sendmail($email, $title, $messageCode);
             header("location: ./verify-code.php");
         } else {
             echo '
@@ -82,7 +82,7 @@ if (isset($_POST['forgotbtn']) && $_POST['forgotbtn']) {
     }
     </style>
 
-    <title>X-garden Authentication</title>
+    <title>GoldenBeeGroup Authentication</title>
 </head>
 
 <body class="bg-surface">

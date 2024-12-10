@@ -101,43 +101,18 @@ function insert_product($cateid, $tensp, $oldprice = 0, $newprice = 0, $shortdes
 {
     try {
         $conn = connectdb();
-        // Set the PDO error mode to exception
+        // set the PDO error mode to exception
         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        
-        // Prepare the SQL statement
         $sql = "INSERT INTO tbl_sanpham (tensp, giasp, iddm, shortdesc, fulldesc, giacu, view, new, sale, hinhanh1, hinhanh2, hinhanh3, hinhanh4, hinhanh5)
-                VALUES (:tensp, :newprice, :cateid, :shortdesc, :fulldesc, :oldprice, :view, :new, :sale, :hinhanh1, :hinhanh2, :hinhanh3, :hinhanh4, :hinhanh5)";
-        
-        // Prepare the statement
-        $stmt = $conn->prepare($sql);
-        
-        // Bind parameters
-        $stmt->bindParam(':tensp', $tensp);
-        $stmt->bindParam(':newprice', $newprice);
-        $stmt->bindParam(':cateid', $cateid);
-        $stmt->bindParam(':shortdesc', $shortdesc);
-        $stmt->bindParam(':fulldesc', $fulldesc);
-        $stmt->bindParam(':oldprice', $oldprice);
-        $stmt->bindParam(':view', $view);
-        $stmt->bindParam(':new', $new);
-        $stmt->bindParam(':sale', $sale);
-        $stmt->bindParam(':hinhanh1', $hinhanh1);
-        $stmt->bindParam(':hinhanh2', $hinhanh2);
-        $stmt->bindParam(':hinhanh3', $hinhanh3);
-        $stmt->bindParam(':hinhanh4', $hinhanh4);
-        $stmt->bindParam(':hinhanh5', $hinhanh5);
-        
-        // Execute the statement
-        $stmt->execute();
-        
-        // Return true to indicate success
+        VALUES ('$tensp', '$newprice', '$cateid', '$shortdesc', '$fulldesc', '$oldprice', '$view', '$new', '$sale','$hinhanh1', '$hinhanh2', '$hinhanh3','$hinhanh4', '$hinhanh5')";
+        // use exec() because no results are returned
+        $conn->exec($sql);
         return true;
-
+        echo "New record created successfully";
     } catch (PDOException $e) {
-        // Log the error message
-        error_log($e->getMessage());
-        return false; // Return false to indicate failure
+        echo $sql . "<br>" . $e->getMessage();
     }
+    $conn = null;
 }
 
 function update_product($id, $cateid, $tensp, $oldprice = 0, $newprice = 0, $shortdesc = null, $fulldesc = null, $new, $view = 1, $sale = 0, $hinhanh1, $hinhanh2 = null, $hinhanh3 = null, $hinhanh4 = null, $hinhanh5 = null)

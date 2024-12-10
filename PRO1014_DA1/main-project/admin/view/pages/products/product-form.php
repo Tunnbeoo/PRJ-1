@@ -23,9 +23,9 @@ include $ROOT_URL . "/DAO/category.php";
         <input type="text" name="tensp" class="form-control" placeholder="Product title">
         <p class="error-message product-name-error">
             <?php if (isset($error['product-name'])) {
-                echo $error['product-name'];
-            }
-            ?></p>
+    echo $error['product-name'];
+}
+?></p>
     </div>
     <div class="col-12">
         <label class="form-label">Mô tả sản phẩm</label>
@@ -33,9 +33,9 @@ include $ROOT_URL . "/DAO/category.php";
             rows="4" cols="4"></textarea>
         <p class="error-message desc-error">
             <?php if (isset($error['desc'])) {
-                echo $error['desc'];
-            }
-            ?></p>
+    echo $error['desc'];
+}
+?></p>
     </div>
     <div class="col-12">
         <label class="form-label">Thông tin sản phẩm</label>
@@ -43,9 +43,9 @@ include $ROOT_URL . "/DAO/category.php";
             cols="4"></textarea>
         <p class="error-message info-error">
             <?php if (isset($error['info'])) {
-                echo $error['info'];
-            }
-            ?>
+    echo $error['info'];
+}
+?>
     </div>
     <div id="image-input-group" class="col-12">
         <label class="form-label">Thêm hình ảnh</label>
@@ -60,7 +60,7 @@ include $ROOT_URL . "/DAO/category.php";
             <h5>Danh sách hình ảnh hiện tại</h5>
             <?php
 
-            ?>
+?>
             <!-- <div class="col-md-4"><img height="100" class="w-100"
                     src="../uploads/41669_laptop_lenovo_thinkpad_x1_yoga_gen_6_20xy00e0vn__6_.jpg" alt=""></div>
             <div class="col-md-4"><img height="100" class="w-100"
@@ -83,9 +83,9 @@ include $ROOT_URL . "/DAO/category.php";
         <input type="number" name="don_gia" class="form-control" placeholder="Đơn giá">
         <p class="error-message price-error">
             <?php if (isset($error['price'])) {
-                echo $error['price'];
-            }
-            ?></p>
+    echo $error['price'];
+}
+?></p>
     </div>
     <div class="col-12">
         <label class="form-label">Giảm giá</label>
@@ -94,9 +94,9 @@ include $ROOT_URL . "/DAO/category.php";
                 <input type="number" name="giam_gia" class="form-control" placeholder="Giảm giá">
                 <p class="error-message discount-error">
                     <?php if (isset($error['discount'])) {
-                        echo $error['discount'];
-                    }
-                    ?></p>
+    echo $error['discount'];
+}
+?></p>
             </div>
             <!-- <div class="col-lg-3">
                 <div class="input-group">
@@ -114,9 +114,9 @@ include $ROOT_URL . "/DAO/category.php";
         <input type="number" min="1" max="200" name="so_luong" id="" value="1">
         <p class="error-message quantity-error">
             <?php if (isset($error['quantity'])) {
-                echo $error['quantity'];
-            }
-            ?></p>
+    echo $error['quantity'];
+}
+?></p>
     </div>
 
     <div class="col-12 col-md-6">
@@ -124,36 +124,36 @@ include $ROOT_URL . "/DAO/category.php";
         <select onchange="onSelectCate(this)" name="ma_danhmuc" class="form-select">
             <?php
 
-            ?>
+?>
             <?php
-            $cate_list = cate_select_all();
-            foreach ($cate_list as $cate_item) {
-                # code...
-                echo '
+$cate_list = cate_select_all();
+foreach ($cate_list as $cate_item) {
+    # code...
+    echo '
                                                 <option value="' . $cate_item['ma_danhmuc'] . '">' . $cate_item['ten_danhmuc'] . '</option>
                                                 ';
-            }
-            ?>
+}
+?>
         </select>
 
         <p class="error-message cate-error">
             <?php if (isset($error['cate'])) {
-                echo $error['cate'];
-            }
-            ?></p>
+    echo $error['cate'];
+}
+?></p>
     </div>
     <div class="col-12 col-md-6">
         <label class="form-label">Danh mục phụ</label>
         <select name="id_dmphu" class="form-select">
             <?php
-            $subcate_list = subcate_select_all();
-            foreach ($subcate_list as $subcate_item) {
-                # code...
-                echo '
+$subcate_list = subcate_select_all();
+foreach ($subcate_list as $subcate_item) {
+    # code...
+    echo '
                                                     <option value="' . $subcate_item['id'] . '">' . $subcate_item['ten_danhmucphu'] . '</option>
                                                     ';
-            }
-            ?>
+}
+?>
         </select>
     </div>
 

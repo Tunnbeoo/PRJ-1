@@ -92,23 +92,31 @@ function check_login()
 function renderCard($productList)
 {
     foreach ($productList as $productItem) {
+        # code...
         $productSelectByCate = cate_select_by_id($productItem['ma_danhmuc']);
         $cateName = $productSelectByCate['ten_danhmuc'];
+        $newPrice = $productItem['don_gia'] * (1 - $productItem['giam_gia'] / 100);
         echo '
         <div class="text-center">
-            <div class="card position-relative" style="">
-                <img src="../' . $productItem['hinhanh1'] . '" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="card-cate fz-5">Phân loại: ' . $cateName . '</p>
-                    <h5 class="card-title">' . $productItem['tensp'] . '</h5>
-                    <div class="card-price mb-3">
-                    ' . number_format($productItem['don_gia']) . ' VND
+                    <div class="card position-relative" style="">
+                        <img src="../' . $productItem['hinhanh1'] . '"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-cate fz-5">Phân loại: ' . $cateName . '</p>
+                            <h5 class="card-title">' . $productItem['tensp'] . '</h5>
+                            <s class="mb-3 card-old-price">' . number_format($productItem['don_gia']) . ' VND</s>
+                            <div class="card-price mb-3">
+                            ' . number_format($newPrice) . ' VND
+                            </div>
+                            <a href="./index.php?act=detailproductpage&id=' . $productItem['masanpham'] . '" class="btn btn-primary">Xem chi tiết</a>
+                        </div>
+                        <span class="card-discount position-absolute  translate-middle badge rounded-pill bg-danger p-2">
+                           - ' . $productItem['giam_gia'] . ' %
+                            <span class="visually-hidden">unread messages</span>
+                        </span>
+                        <span class="card-view position-absolute badge rounded-pill bg-dark">' . $productItem['so_luot_xem'] . ' view</span>
                     </div>
-                    <a href="./index.php?act=detailproductpage&id=' . $productItem['masanpham'] . '" class="btn btn-primary">Xem chi tiết</a>
                 </div>
-                <span class="card-view position-absolute badge rounded-pill bg-dark">' . $productItem['so_luot_xem'] . ' view</span>
-            </div>
-        </div>
         ';
     }
 }

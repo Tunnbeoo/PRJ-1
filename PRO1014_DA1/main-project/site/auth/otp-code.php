@@ -108,7 +108,7 @@ include "./auth-header.php";
                                                 <label for="inputEmailid" class="form-label">Mã code: </label>
                                                 <input type="password" name="code" class="form-control radius-30"
                                                     id="inputEmailid" placeholder="Code">
-                                                    <p class="error-message">
+                                                <p class="error-message">
                                                     <?php if (isset($error['code'])) {echo $error['code'];}?></p>
                                             </div>
                                             <div class="col-12">

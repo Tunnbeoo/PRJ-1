@@ -56,15 +56,45 @@ if (isset($_POST['signupbtn']) && $_POST['signupbtn']) {
         // echo "Email của bạn đã tồn tại!";
     }
 
+    // if (strlen($phonenumber) == 0) {
+    //     $error['phonenumber'] = "Không để trống số điện thoại!";
+    // } else if (!validating($phonenumber)) {
+    //     $rror['phonenumber'] = "Định dạng số điện thoại không chính xác!";
+    // }
+
+    // if (empty($password)) {
+    //     $error['password'] = "không để trống password!";
+    // }
+
+    // if (empty($reenterpass)) {
+    //     $error['repassword'] = "không để trống repassword!";
+    // } else if ($password != $reenterpass) {
+    //     $error['repassword'] = "Nhập lại mật khẩu không chính xác!";
+    // }
 
     if (!$error) {
+        // $password = md5($_POST['password']);
+        // $is_inserted = user_register($fullname, $email, $password);
+
+        // // echo 'Register successfully!';
+        // // if ($is_inserted) {
+        // //     echo '<div class="register-account-success d-none" style="">HELLO</div>';
+        // // }
+        // if ($is_inserted) {
+        //     echo '<div class="alert alert-success">Sign up successfully</div>';
+        //     // header('location: ./login.php');
+        //     $_SESSION['alert'] = "Đăng ký thành công!, Bạn có muốn chuyển đến trang đăng nhập ?";
+        // }
+
+        // Send email to success account
+
         $title = "OTP code to confirm Email";
 
-        $messageCode = '123456';
+        $messageCode = random_int(100000, 999999);
         $_SESSION['emailsignup'] = $email;
         $_SESSION['verifyOTP'] = $messageCode;
         $_SESSION['fullname'] = $fullname;
-        // sendmail($email, $title, $messageCode);
+        sendmail($email, $title, $messageCode);
         header("location: ./otp-code.php");
     }
 
@@ -145,7 +175,7 @@ include "./auth-header.php";
                         <div class="row g-0">
                             <div
                                 class="col-12 order-1 col-xl-8 d-flex align-items-center justify-content-center border-end images bg-surface">
-                                <img src="https://cdn.divineshop.vn/static/235dccb09069e3d4eebc6227236f9dc2.svg" class="img-fluid"
+                                <img src="../../admin/assets/images/error/auth-img-regis-3.png" class="img-fluid"
                                     alt="">
                             </div>
                             <div class="col-12 col-xl-4 order-xl-2">

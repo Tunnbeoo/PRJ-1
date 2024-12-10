@@ -1,10 +1,18 @@
 <?php
 
-function product_insert($tensp, $don_gia, $ton_kho, $images, $giam_gia, $ngay_nhap, $mo_ta, $thong_tin, $ma_danhmuc, $id_dmphu, $promote, $dac_biet = 0)
-{
-    $sql = "INSERT INTO tbl_sanpham (tensp, don_gia, ton_kho, images, giam_gia, dac_biet, ngay_nhap, mo_ta, information, ma_danhmuc, id_dmphu, promote) VALUES (?,?,?,?,?,?,?,?,?,?,?,?)";
-    pdo_execute($sql, $tensp, $don_gia, $ton_kho, $images, $giam_gia, $dac_biet, $ngay_nhap, $mo_ta, $thong_tin, $ma_danhmuc, $id_dmphu, $promote);
-    return true;
+function product_insert($name, $price, $category_id, $image, $discount, $quantity, $date, $description, $info, $sub_category_id, $special) {
+    try {
+        $sql = "INSERT INTO tbl_sanpham (tensp, don_gia, ma_danhmuc, images, giam_gia, ton_kho, ngay_nhap, mo_ta, information, id_dmphu, dac_biet) 
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+        pdo_execute($sql, $name, $price, $category_id, $image, $discount, $quantity, $date, $description, $info, $sub_category_id, $special);
+        return "Product added successfully.";
+    } catch (PDOException $e) {
+        if ($e->getCode() == 23000) { // Integrity constraint violation
+            return "Error: Invalid category ID or sub-category ID.";
+        } else {
+            return "Error: " . $e->getMessage();
+        }
+    }
 }
 
 function product_delete($ma_sanpham)
@@ -21,11 +29,36 @@ function product_delete($ma_sanpham)
 
 }
 
-function product_update($masanpham, $tensp, $don_gia, $ton_kho, $images, $giam_gia, $date_modified, $mo_ta, $thong_tin, $ma_danhmuc, $id_dmphu, $promote, $dac_biet = 0)
-{
-    $sql = "UPDATE tbl_sanpham SET  tensp=?, don_gia=?, ton_kho = ?, images=?,giam_gia=?, dac_biet=?, date_modified=?, mo_ta=?, information=?, ma_danhmuc=?, id_dmphu=?, promote=? WHERE masanpham=?";
-    pdo_execute($sql, $tensp, $don_gia, $ton_kho, $images, $giam_gia, $dac_biet, $date_modified, $mo_ta, $thong_tin, $ma_danhmuc, $id_dmphu, $promote, $masanpham);
-    return true;
+function product_update($masanpham, $tensp, $mo_ta, $thong_tin, $images, $don_gia, $giam_gia, $so_luong, $ma_danhmuc, $id_dmphu, $dac_biet) {
+    try {
+        $sql = "UPDATE tbl_sanpham SET 
+                tensp=?, mo_ta=?, information=?, images=?, 
+                don_gia=?, giam_gia=?, ton_kho=?, 
+                ma_danhmuc=?, id_dmphu=?, dac_biet=? 
+                WHERE masanpham=?";
+        pdo_execute($sql, $tensp, $mo_ta, $thong_tin, $images, 
+                    $don_gia, $giam_gia, $so_luong, 
+                    $ma_danhmuc, $id_dmphu, $dac_biet, $masanpham);
+        return true;
+    } catch (PDOException $e) {
+        return false;
+    }
+}
+
+function product_update_no_image($masanpham, $tensp, $mo_ta, $thong_tin, $don_gia, $giam_gia, $so_luong, $ma_danhmuc, $id_dmphu, $dac_biet) {
+    try {
+        $sql = "UPDATE tbl_sanpham SET 
+                tensp=?, mo_ta=?, information=?,
+                don_gia=?, giam_gia=?, ton_kho=?, 
+                ma_danhmuc=?, id_dmphu=?, dac_biet=? 
+                WHERE masanpham=?";
+        pdo_execute($sql, $tensp, $mo_ta, $thong_tin,
+                    $don_gia, $giam_gia, $so_luong, 
+                    $ma_danhmuc, $id_dmphu, $dac_biet, $masanpham);
+        return true;
+    } catch (PDOException $e) {
+        return false;
+    }
 }
 
 function product_update_quantity($masanpham, $ton_kho)
@@ -91,12 +124,15 @@ function product_select_all_by_sales()
     return pdo_query($sql);
 }
 
-function product_select_by_id($masanpham)
-{
-    $sql = "SELECT * FROM tbl_sanpham WHERE masanpham=?";
-    return pdo_query_one($sql, $masanpham);
-
+function product_select_by_id($masanpham) {
+    try {
+        $sql = "SELECT * FROM tbl_sanpham WHERE masanpham=?";
+        return pdo_query_one($sql, $masanpham);
+    } catch(PDOException $e) {
+        return false;
+    }
 }
+
 function product_select_by_special()
 {
     $sql = "SELECT * FROM tbl_sanpham WHERE dac_biet = 1 ";

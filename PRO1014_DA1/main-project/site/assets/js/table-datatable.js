@@ -34,7 +34,7 @@ $(function() {
     //   $(document).ready(function() {
     //     var table = $('#example2').DataTable( {
     //         lengthChange: false,
-    //         buttons: []
+    //         buttons: [ 'copy', 'excel', 'pdf', 'print']
     //     } );
      
     //     table.buttons().container()

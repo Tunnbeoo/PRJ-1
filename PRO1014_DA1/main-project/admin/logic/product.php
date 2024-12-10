@@ -277,3 +277,10 @@ switch ($_GET['act']) {
         # code...
         break;
 }
+
+// Kiểm tra function lấy danh sách sản phẩm
+function getProducts() {
+    // Thêm log để debug
+    error_log("Fetching products...");
+    // Code lấy sản phẩm
+}

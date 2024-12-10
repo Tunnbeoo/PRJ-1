@@ -75,86 +75,51 @@ if (isset($_SESSION['idadmin'])) {
                 break;
 
             case 'editproduct':
-                $error = array();
-                // if (isset($_POST['editproductbtn']) && $_POST['editproductbtn']) {
-                if (isset($_GET['id'])) {
-                    $idproduct = $_GET['id'];
-                    $product_item = product_select_by_id($idproduct);
-                    // var_dump($product_item);
-                    // exit;
-                    // var_dump($_FILES['images']);
-                    if (!$_FILES['images']['name'][0]) {
-                        $image_list = $product_item['images'];
-                        // var_dump($image_list);
-                    } else {
-                        $image_files = $_FILES['images'];
-                        $image_list = implode(',', $image_files['name']);
-                        $i = 0;
-                        foreach ($image_files['name'] as $image_name) {
-                            # code...
-                            // $target_file = "../uploads/" . basename($file_name);
-                            // var_dump($image_file_item);
-                            move_uploaded_file($image_files["tmp_name"][$i], "../uploads/" . $image_name);
-                            $i++;
+                if(isset($_GET['id'])) {
+                    $id = $_GET['id'];
+                    $product = product_select_by_id($id);
+                    include "view/pages/products/edit-product.php";
+                }
+                break;
+
+            case 'updateproduct':
+                if (isset($_POST['update'])) {
+                    $id = $_POST['masanpham'];
+                    $data = [
+                        'tensp' => $_POST['tensp'],
+                        'don_gia' => $_POST['don_gia'],
+                        'giam_gia' => $_POST['giam_gia'],
+                        'ton_kho' => $_POST['ton_kho'],
+                        'mo_ta' => $_POST['mo_ta'],
+                        'ma_danhmuc' => $_POST['ma_danhmuc']
+                    ];
+
+                    // Handle file upload
+                    if (isset($_FILES['images']) && $_FILES['images']['error'] == UPLOAD_ERR_OK) {
+                        $uploadDir = '../uploads/';
+                        $uploadFile = $uploadDir . basename($_FILES['images']['name']);
+                        if (move_uploaded_file($_FILES['images']['tmp_name'], $uploadFile)) {
+                            $data['images'] = $uploadFile; // Save the file path
+                        } else {
+                            $_SESSION['error'] = "File upload failed.";
                         }
                     }
 
-                    $tensp = $_POST['tensp'];
-                    $ma_danhmuc = $_POST['ma_danhmuc'];
-                    $giam_gia = $_POST['giam_gia'];
-                    $don_gia = $_POST['don_gia'];
-                    $so_luong = $_POST['so_luong'];
-                    // $view = $_POST['view'];
-                    $mo_ta = $_POST['mo_ta'];
-                    $thong_tin = $_POST['thong_tin'];
-                    $dac_biet = 0;
-                    $promote = 1;
-                    date_default_timezone_set('Asia/Ho_Chi_Minh');
-                    $date_create = date('Y-m-d H:i:s');
-
-                    // Validate at server
-
-                    // if (strlen($tensp) == 0) {
-                    //     $error['proname'] = "Không để trống tên sản phẩm!";
-                    // }
-
-                    // if (!is_numeric($ma_danhmuc)) {
-                    //     $error['ma_danhmuc'] = "Không để trống mã danh mục!";
-                    // }
-
-                    // if (empty($don_gia)) {
-                    //     $error['don_gia'] = "không để trống đơn giá";
-                    // } else if ($don_gia < 0) {
-                    //     $error['don_gia'] = "Đơn giá phải lớn hơn 0!";
-                    // }
-
-                    // if (empty($giam_gia)) {
-                    //     $error['giam_gia'] = "Không để trống giảm giá";
-                    // } else if ($giam_gia < 0 || $giam_gia > 100) {
-                    //     $error['giam_gia'] = "Giảm giá phải lớn hơn hoặc bằng 0 và nhỏ hơn bằng 100";
-                    // }
-
-                    // if (empty($_FILES["hinhanh1"]["name"])) {
-                    //     $error['hinhanh1'] = "Không để trống hình ảnh chính, hình ảnh 1";
-                    // }
-
-                    // if (!$error) {
-                    $is_updated = product_update($idproduct, $tensp, $don_gia, $so_luong, $image_list, $giam_gia, $dac_biet, $date_create, $mo_ta, $thong_tin, $ma_danhmuc, $promote);
-                    if ($is_updated) {
-                        echo '<script>
-                           document.addEventListener("DOMContentLoaded", function(e) {
-                                showToast("Cập nhật sản phẩm #' . $idproduct . ' thành công", "Chúc mừng bạn đã Cập nhật sản phẩm #' . $idproduct . ' thành công");
-                           })
-                    </script>';
-                        // header("location: ./index.php?act=productlist");
+                    // Ensure updateProduct function is defined
+                    if (function_exists('updateProduct')) {
+                        if (updateProduct($id, $data)) {
+                            $_SESSION['success'] = "Cập nhật sản phẩm thành công";
+                        } else {
+                            $_SESSION['error'] = "Cập nhật sản phẩm thất bại";
+                        }
+                    } else {
+                        $_SESSION['error'] = "Function updateProduct() is not defined.";
                     }
-                    // } else {
 
-                    // }
+                    header("Location: index.php?act=productlist");
                 }
-
-                include "./view/pages/product-list.productsphp";
                 break;
+
             case 'addproduct':
                 $error = array();
                 if (isset($_POST['addproductbtn']) && $_POST['addproductbtn']) {
@@ -185,7 +150,7 @@ if (isset($_SESSION['idadmin'])) {
 
                     $tensp = $_POST['tensp'];
                     $ma_danhmuc = $_POST['ma_danhmuc'];
-
+                    $id_dmphu = $_POST['id_dmphu'];
                     $giam_gia = $_POST['giam_gia'];
                     $don_gia = $_POST['don_gia'];
                     $so_luong = $_POST['so_luong'];
@@ -205,7 +170,9 @@ if (isset($_SESSION['idadmin'])) {
                         $error['cate'] = "Không để trống mã danh mục!";
                     }
 
-
+                    if (!is_numeric($id_dmphu)) {
+                        $error['subcate'] = "Không để trống mã danh mục phụ";
+                    }
 
                     if (empty($mo_ta)) {
                         $error['desc'] = "Không để trống mô tả sản phẩm";
@@ -228,23 +195,14 @@ if (isset($_SESSION['idadmin'])) {
                     } else if ($giam_gia < 0 || $giam_gia > 100) {
                         $error['discount'] = "Giảm giá phải lớn hơn hoặc bằng 0 và nhỏ hơn bằng 100";
                     }
+
                     if (!$error) {
-                        $so_luot_xem = 0;
-                        $date_modified = $date_create;
-                        $information = $thong_tin;
-                        $danhgia = 0;
-
-                        $is_inserted = product_insert(
-                            $tensp, $don_gia, $so_luong, $image_list, $giam_gia, $dac_biet,
-                            $so_luot_xem, $date_create, $date_modified, $mo_ta, $ma_danhmuc,
-                             $information, $promote, $danhgia
-                        );
-
+                        $is_inserted = product_insert($tensp, $don_gia, $so_luong, $image_list, $giam_gia, $dac_biet, $date_create, $mo_ta, $thong_tin, $ma_danhmuc, $id_dmphu, $promote);
                         if ($is_inserted) {
-                            $_SESSION['alert'] = "Thêm sản phẩm thành công!";
+                            echo '<div class="p-3 alert alert-success text-center mt-5">Chúc mừng bạn đã thêm mới sản phẩm thành công</div>';
                         }
                     } else {
-                        $_SESSION['alert'] = "Thêm sản phẩm thành công!";
+                        $_SESSION['alert'] = "Thêm sản phẩm thất bại!";
                     }
                 }
 
@@ -332,7 +290,7 @@ if (isset($_SESSION['idadmin'])) {
                             echo "Add category failed";
                         }
                     } else {
-                        $_SESSION['alert'] = "Thêm sản phẩm Thành công!";
+                        $_SESSION['alert'] = "Thêm sản phẩm thất bại!";
                     }
                     // include "./index.php?act=subcatelist&cateid=" . $cate_parent;
 
@@ -1095,7 +1053,7 @@ if (isset($_SESSION['idadmin'])) {
                     move_uploaded_file($_FILES["hinh"]["tmp_name"], $target_file);
 
                     if (strlen($catename) == 0) {
-                        $error['catename'] = "Không để trống tiêu đề!";
+                        $error['catename'] = "Không để trống ti��u đề!";
                     }
                     // print_r($error);
                     if (!$error) {

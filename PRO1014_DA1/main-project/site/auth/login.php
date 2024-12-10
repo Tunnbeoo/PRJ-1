@@ -161,7 +161,7 @@ if (!isset($_SESSION['toastAlert'])) {
                         <div class="row g-0">
                             <div
                                 class="col-12 order-1 col-xl-8 d-flex align-items-center justify-content-center border-end images">
-                                <img src="https://cdn.divineshop.vn/static/368e705d45bfc8742aa9d20dbcf4c78c.svg" class="img-fluid" alt="">
+                                <img src="../../admin/assets/images/error/auth-img-1.png" class="img-fluid" alt="">
                             </div>
                             <div class="col-12 col-xl-4 order-xl-2">
                                 <div class="card-body p-4 p-sm-5">
@@ -225,6 +225,22 @@ if (!isset($_SESSION['toastAlert'])) {
                                                         value="Đăng nhập" />
                                                 </div>
                                             </div>
+                                            <!-- <div class="col-12">
+                                                <div class="login-separater text-center"> <span>OR SIGN IN WITH
+                                                        EMAIL</span>
+                                                    <hr>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="d-flex align-items-center gap-3 justify-content-center">
+                                                    <button type="button" class="btn btn-white text-danger"><i
+                                                            class="bi bi-google me-0"></i></button>
+                                                    <button type="button" class="btn btn-white text-primary"><i
+                                                            class="bi bi-linkedin me-0"></i></button>
+                                                    <button type="button" class="btn btn-white text-info"><i
+                                                            class="bi bi-facebook me-0"></i></button>
+                                                </div>
+                                            </div> -->
                                             <div class="col-12 text-center">
                                                 <p class="mb-0">Vẫn chưa có tài khoản? <a href="./signup.php">Đăng ký ở
                                                         đây</a></p>

@@ -415,3 +415,64 @@ function updateReplyReview(idReview, idUser, idReply) {
     });
 
 }
+
+document.getElementById('productForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    const formData = new FormData(this);
+    fetch('/path/to/server/endpoint', {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            alert('Product updated successfully');
+            // Update UI or redirect
+        } else {
+            alert('Error updating product: ' + data.error);
+        }
+    })
+    .catch(error => console.error('Error:', error));
+});
+
+// Kiểm tra xem có id sản phẩm trong form không
+let productId = $('#product-form').data('id');
+let isEdit = productId !== undefined;
+
+$('#product-form').on('submit', function(e) {
+    e.preventDefault();
+    
+    let formData = new FormData(this);
+    if(isEdit) {
+        formData.append('id', productId);
+    }
+    
+    $.ajax({
+        url: 'logic/product.php',
+        type: 'POST',
+        data: formData,
+        processData: false,
+        contentType: false,
+        success: function(response) {
+            let res = JSON.parse(response);
+            if(res.status === 'success') {
+                toastr.success(res.message);
+                setTimeout(() => {
+                    window.location.href = '?page=product-list';
+                }, 1500);
+            } else {
+                toastr.error(res.message);
+            }
+        },
+        error: function(xhr, status, error) {
+            toastr.error('Có lỗi xảy ra, vui lòng thử lại sau');
+        }
+    });
+});
+
+$(document).ready(function() {
+    // Sau khi thêm sản phẩm thành công
+    console.log("Product data:", response);
+    // Refresh lại bảng
+    $('#product-table').DataTable().ajax.reload();
+});

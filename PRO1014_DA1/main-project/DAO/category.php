@@ -171,8 +171,3 @@ function report_list_select()
     $sql = "SELECT dm.ma_danhmuc as madm, dm.ten_danhmuc as tendm, count(sp.masanpham) as `so_luong`, avg(sp.don_gia) as `avg`, min(sp.don_gia) as `min`, max(sp.don_gia) as `max` from tbl_sanpham sp inner join tbl_danhmuc dm on sp.ma_danhmuc = dm.ma_danhmuc group by dm.ma_danhmuc";
     return pdo_query($sql);
 }
-
-function get_all_subcategories() {
-    $sql = "SELECT * FROM tbl_danhmucphu";
-    return pdo_query($sql);
-}

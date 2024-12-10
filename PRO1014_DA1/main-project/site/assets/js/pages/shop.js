@@ -71,6 +71,63 @@ function filterProducts(filterElement) {
     
 }
 
+// $(document).ready(function () {
+//     $("#searchForm").submit(function(e) {
+//         e.preventDefault();
+//         console.log('submited');
+
+//         console.log('this',this.elements['searchvalue'].value);
+//         const searchValue = this.elements['searchvalue'].value;
+//         const shopGridContentUrl = SITE_URL+"/view/pages/shop/shop-grid-content.php";
+//         const shopListContentUrl = SITE_URL+"/view/pages/shop/shop-list-content.php";
+//         const shopPaginationUrl = SITE_URL+"/view/pages/shop/shop-pagination.php";
+//         $.ajax({
+//             type: "POST",
+//             url: shopGridContentUrl,
+//             data: {
+//                 searchValue
+//             },
+//             // dataType: "dataType",
+//             success: function (responseHtml) {
+//                 $("#grid-view").html(responseHtml);
+//                 $.ajax({
+//                     type: "POST",
+//                     url: shopPaginationUrl,
+//                     data: {
+//                         searchValue
+//                     },
+//                     // dataType: "dataType",
+//                     success: function (responseHtml) {
+//                         $("#shop-pagination").html(responseHtml);
+//                     }
+//                 });
+//             }
+//         });
+        
+//         $.ajax({
+//             type: "POST",
+//             url: shopListContentUrl,
+//             data: {
+//                 searchValue
+//             },
+//             // dataType: "dataType",
+//             success: function (responseHtml) {
+//                 $("#list-view").html(responseHtml);
+//                 $.ajax({
+//                     type: "POST",
+//                     url: shopPaginationUrl,
+//                     data: {
+//                         searchValue
+//                     },
+//                     // dataType: "dataType",
+//                     success: function (responseHtml) {
+//                         $("#shop-pagination").html(responseHtml);
+//                     }
+//                 });
+//             }
+//         });
+        
+// })
 // Search by price
 function filterByPrice() {
 
@@ -103,6 +160,10 @@ function filterByPrice() {
 
     const url = new URL(window.location);
     console.log('url', url);
+    // if (!url.searchParams.get('query')) url.searchParams.set('query', '');
+    // if (!url.searchParams.get('minprice')) url.searchParams.set('minprice', '');
+    // if (!url.searchParams.get('maxprice')) url.searchParams.set('maxprice', '');
+    // if (!url.searchParams.get('filter')) url.searchParams.set('filter', '');
     if (!url.searchParams.get('page')) url.searchParams.set('page', 1);
     if (!url.searchParams.get('limit')) url.searchParams.set('limit', 12);
     history.pushState({}, '', url);

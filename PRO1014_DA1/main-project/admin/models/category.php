@@ -2,22 +2,28 @@
 
 function get_all_cates()
 {
-
     try {
         $conn = connectdb();
-        $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         $stmt = $conn->prepare("SELECT * FROM tbl_danhmuc");
         $stmt->execute();
-
-        // set the resulting array to associative
-        $stmt->setFetchMode(PDO::FETCH_ASSOC);
-        $result = $stmt->fetchAll();
-        // var_dump($result);
-        return $result;
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
     } catch (PDOException $e) {
-        echo "Error: " . $e->getMessage();
+        echo "Lỗi: " . $e->getMessage();
+        return false;
     }
-    $conn = null;
+}
+
+function get_cate_by_id($id)
+{
+    try {
+        $conn = connectdb();
+        $stmt = $conn->prepare("SELECT * FROM tbl_danhmuc WHERE ma_danhmuc = ?");
+        $stmt->execute([$id]);
+        return $stmt->fetch(PDO::FETCH_ASSOC);
+    } catch (PDOException $e) {
+        echo "Lỗi: " . $e->getMessage();
+        return false;
+    }
 }
 
 function get_one_cate($id)

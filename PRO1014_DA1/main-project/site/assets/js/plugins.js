@@ -7957,6 +7957,21 @@ if (typeof Object.create !== "function") {
     });
 });
 
+/*
+
+  Template Name: Golden Bee Group Ecommerce Responsive Bootstrap Template
+  Description: This is html5 template
+  Author: codecarnival
+  Version: 1.0
+  Design and Developed by: codecarnival
+
+NOTE: This is js of style customizer, This file Change the styling of color, 
+backgrond patterns, Background images and box layout of the actual Template. 
+so you can change as your requirement.
+
+*/
+
+/* style-customizer */
 
 jQuery(document).ready(function ($) {
   /* ----------------------------
