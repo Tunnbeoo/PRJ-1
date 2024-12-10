@@ -80,27 +80,27 @@ if (isset($_POST['loginbtn']) && $_POST['loginbtn']) {
     <link href="../assets/css/pace.min.css" rel="stylesheet" />
     <style>
     .btn-primary-login {
-        background-color: #398801;
+        background-color: #ff7f00;
         color: white;
         border: none;
     }
 
     .btn-primary-login:hover {
-        background-color: #398801;
+        background-color: #ff7f00;
         border: none;
     }
 
     .mb-0 a {
-        color: #398801;
+        color: #ff7f00;
     }
 
     .form-check-input-change:checked {
-        border: #398801;
-        background-color: #398801;
+        border: #ff7f00;
+        background-color: #ff7f00;
     }
 
     .text-end a {
-        color: #398801;
+        color: #ff7f00;
     }
 
     .images img {
@@ -120,7 +120,7 @@ if (isset($_POST['loginbtn']) && $_POST['loginbtn']) {
     }
     </style>
 
-    <title>Admin Golden Bee Group</title>
+    <title>Admin X-garden</title>
 
 </head>
 
@@ -182,7 +182,7 @@ if (isset($_POST['loginbtn']) && $_POST['loginbtn']) {
                     <div class="card shadow rounded-0 overflow-hidden">
                         <div class="row g-0">
                             <div class="col-lg-6 d-flex align-items-center justify-content-center images">
-                                <img src="../assets/images/error/login-admin.png" class="img-fluid" alt="">
+                                <img src="https://cdn.divineshop.vn/static/368e705d45bfc8742aa9d20dbcf4c78c.svg" class="img-fluid" alt="">
                             </div>
                             <div class="col-lg-6">
                                 <div class="card-body p-4 p-sm-5">

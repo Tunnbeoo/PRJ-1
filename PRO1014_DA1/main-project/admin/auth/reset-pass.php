@@ -58,11 +58,11 @@ if (isset($_POST['updatepassbtn']) && $_POST['updatepassbtn']) {
     <link href="../../admin/assets/css/pace.min.css" rel="stylesheet" />
     <style>
         .bg-reset-pass{
-            background-color: #398801;
+            background-color: #ff7f00;
             border: none;
         }
         .bg-reset-pass:hover{
-            background-color: #398801;
+            background-color: #ff7f00;
         }
         .images img{
             width: 70%;
@@ -75,7 +75,7 @@ if (isset($_POST['updatepassbtn']) && $_POST['updatepassbtn']) {
         }
     </style>
 
-    <title>GoldenBeeGroup Authentication</title>
+    <title>X-garden Authentication</title>
 </head>
 
 <body>

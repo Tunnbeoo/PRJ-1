@@ -145,7 +145,7 @@ include "./auth-header.php";
                         <div class="row g-0">
                             <div
                                 class="col-12 order-1 col-xl-8 d-flex align-items-center justify-content-center border-end images bg-surface">
-                                <img src="../../admin/assets/images/error/auth-img-regis-3.png" class="img-fluid"
+                                <img src="https://cdn.divineshop.vn/static/235dccb09069e3d4eebc6227236f9dc2.svg" class="img-fluid"
                                     alt="">
                             </div>
                             <div class="col-12 col-xl-4 order-xl-2">

@@ -1,72 +1,10 @@
 <?php
-function insert_product($cateid, $tensp, $oldprice = 0, $newprice = 0, $shortdesc = null, $fulldesc = null, $new, $view = 1, $sale = 0, $hinhanh1) {
-    // Kiểm tra dữ liệu đầu vào
-    if (empty($tensp) || empty($newprice) || empty($cateid)) {
-        echo "Vui lòng điền đầy đủ thông tin sản phẩm.";
-        return false; // Dừng thực thi nếu kiểm tra không thành công
-    }
 
-    // Câu lệnh SQL
-    $sql = "INSERT INTO tbl_sanpham (tensp, don_gia, ma_danhmuc, shortdesc, fulldesc, oldprice, view, new, sale, hinhanh1) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
-
-    try {
-        // Kết nối đến cơ sở dữ liệu
-        $conn = connectdb(); // Giả sử bạn có hàm connectdb() để kết nối
-
-        // Chuẩn bị câu lệnh
-        $stmt = $conn->prepare($sql);
-
-        // Thực hiện câu lệnh SQL
-        $stmt->execute([$tensp, $newprice, $cateid, $shortdesc, $fulldesc, $oldprice, $view, $new, $sale, $hinhanh1]);
-
-        echo "Thêm sản phẩm thành công!";
-        return true; // Trả về true nếu thêm thành công
-    } catch (PDOException $e) {
-        // Hiển thị thông báo lỗi nếu có
-        echo "Thêm sản phẩm thất bại! Lỗi: " . $e->getMessage();
-        return false; // Trả về false nếu có lỗi
-    }
-}
-
-function product_insert($pdo, $ten_sanpham, $gia, $ma_danhmuc, $ton_kho, $images, $giam_gia, $ngay_nhap, $mo_ta, $thong_tin, $id_dmphu, $promote, $dac_biet = 0) {
-    // Kiểm tra dữ liệu đầu vào
-    if (empty($ten_sanpham) || empty($gia) || empty($ma_danhmuc)) {
-        echo "Vui lòng điền đầy đủ thông tin sản phẩm.";
-        return; // Dừng thực thi nếu kiểm tra không thành công
-    }
-
-    // Kiểm tra xem ma_danhmuc có tồn tại trong bảng danh mục không
-    $checkCategory = $pdo->prepare("SELECT COUNT(*) FROM tbl_danhmuc WHERE ma_danhmuc = ?");
-    $checkCategory->execute([$ma_danhmuc]);
-    $categoryExists = $checkCategory->fetchColumn();
-
-    if (!$categoryExists) {
-        echo "Danh mục không tồn tại. Vui lòng chọn danh mục hợp lệ.";
-        return; // Dừng thực thi nếu danh mục không tồn tại
-    }
-
-    // Kiểm tra xem id_dmphu có tồn tại trong bảng danh mục phụ không
-    $checkSubCategory = $pdo->prepare("SELECT COUNT(*) FROM tbl_danhmucphu WHERE id = ?");
-    $checkSubCategory->execute([$id_dmphu]);
-    $subCategoryExists = $checkSubCategory->fetchColumn();
-
-    if (!$subCategoryExists) {
-        echo "Danh mục phụ không tồn tại. Vui lòng chọn danh mục phụ hợp lệ.";
-        return; // Dừng thực thi nếu danh mục phụ không tồn tại
-    }
-
-    // Câu lệnh SQL để thêm sản phẩm
-    $sql = "INSERT INTO tbl_sanpham (tensp, don_gia, ma_danhmuc, ton_kho, images, giam_gia, dac_biet, ngay_nhap, mo_ta, information, id_dmphu, promote) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
-
-    try {
-        // Chuẩn bị và thực thi câu lệnh
-        $stmt = $pdo->prepare($sql);
-        $stmt->execute([$ten_sanpham, $gia, $ma_danhmuc, $ton_kho, $images, $giam_gia, $dac_biet, $ngay_nhap, $mo_ta, $thong_tin, $id_dmphu, $promote]);
-        echo "Thêm sản phẩm thành công!";
-    } catch (PDOException $e) {
-        // Hiển thị thông báo lỗi nếu có
-        echo "Thêm sản phẩm thất bại! Lỗi: " . $e->getMessage();
-    }
+function product_insert($tensp, $don_gia, $ton_kho, $images, $giam_gia, $ngay_nhap, $mo_ta, $thong_tin, $ma_danhmuc, $id_dmphu, $promote, $dac_biet = 0)
+{
+    $sql = "INSERT INTO tbl_sanpham (tensp, don_gia, ton_kho, images, giam_gia, dac_biet, ngay_nhap, mo_ta, information, ma_danhmuc, id_dmphu, promote) VALUES (?,?,?,?,?,?,?,?,?,?,?,?)";
+    pdo_execute($sql, $tensp, $don_gia, $ton_kho, $images, $giam_gia, $dac_biet, $ngay_nhap, $mo_ta, $thong_tin, $ma_danhmuc, $id_dmphu, $promote);
+    return true;
 }
 
 function product_delete($ma_sanpham)

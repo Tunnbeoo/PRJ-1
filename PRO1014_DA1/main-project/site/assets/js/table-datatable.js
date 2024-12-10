@@ -19,7 +19,7 @@ $(function() {
                         data: order_list,
                         retrieve: true,
                         lengthChange: false,
-                        buttons: [ 'copy', 'excel', 'pdf', 'print'],
+                        buttons: [],
                         "ordering":true,
                     });
 
@@ -34,7 +34,7 @@ $(function() {
     //   $(document).ready(function() {
     //     var table = $('#example2').DataTable( {
     //         lengthChange: false,
-    //         buttons: [ 'copy', 'excel', 'pdf', 'print']
+    //         buttons: []
     //     } );
      
     //     table.buttons().container()

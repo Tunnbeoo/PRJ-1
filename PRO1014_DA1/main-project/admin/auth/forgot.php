@@ -3,34 +3,45 @@ ob_start();
 session_start();
 include "../models/connectdb.php";
 include "../models/user.php";
-include "../../pdo-library.php";
-include "../../DAO/user.php";
-// var_dump($_SESSION);
 
+include "../../global.php";
+include "$ROOT_URL/pdo-library.php";
+include "$ROOT_URL/DAO/user.php";
+if (!isset($_SESSION['error'])) {
+    $_SESSION['error'] = [];
+}
 ?>
 <?php
 
-if (isset($_POST['verifycodebtn']) && $_POST['verifycodebtn']) {
+if (isset($_POST['forgotbtn']) && $_POST['forgotbtn']) {
     $error = array();
-    $code = $_POST['code'];
+    $email = $_POST['email'];
 
-    if (empty($code)) {
-        $error['code'] = "Không để trống mã code";
+    // Validate
+
+    if (empty($email)) {
+        $error['email'] = "Không để trống email!";
     }
 
-    if (isset($_SESSION['verifycode'])) {
-        $verifycode = $_SESSION['verifycode'];
-        if ($code != $verifycode) {
-            // echo '<div class="alert alert-danger" >Mã code xác nhận không chính xác, mời gửi lại email</div>';
-            unset($_SESSION['verifycode']);
-            header('location: ./forgot.php');
+    if (!$error) {
+        if (email_exist($email)) {
+            $title = "Code Reset Password";
+            $messageCode = random_int(100000, 999999);
+            $_SESSION['emailreset'] = $email;
+            $_SESSION['verifycode'] = $messageCode;
+
+            header("location: ./verify-code.php");
         } else {
-            header('location: ./reset-pass.php');
+            echo '
+            <script>
+                window.alert("Email của bạn không đúng. Xin vui lòng nhập lại!");
+            </script>
+            ';
         }
     }
-
 }
 ?>
+
 <!doctype html>
 <html lang="en">
 
@@ -59,7 +70,11 @@ if (isset($_POST['verifycodebtn']) && $_POST['verifycodebtn']) {
         background-color: #ff7f00;
     }
 
-    .error-message-verify {
+    .images img {
+        width: 80%;
+    }
+
+    .error-message-forgot {
         color: red;
         font-weight: 500;
         margin-top: 5px;
@@ -67,7 +82,7 @@ if (isset($_POST['verifycodebtn']) && $_POST['verifycodebtn']) {
     }
     </style>
 
-    <title>verify-code</title>
+    <title>X-garden Authentication</title>
 </head>
 
 <body class="bg-surface">
@@ -81,27 +96,26 @@ if (isset($_POST['verifycodebtn']) && $_POST['verifycodebtn']) {
                 <div class="authentication-card">
                     <div class="card shadow rounded-0 overflow-hidden">
                         <div class="row g-0">
-                            <div class="col-lg-6 d-flex align-items-center justify-content-center border-end">
-                                <img src="../../admin/assets/images/error/reset-pass-img-1.png" class="img-fluid"
+                            <div class="col-lg-6 d-flex align-items-center justify-content-center border-end images">
+                                <img src="../../admin/assets/images/error/forgot-password-img.png" class="img-fluid"
                                     alt="">
                             </div>
                             <div class="col-lg-6">
                                 <div class="card-body p-4 p-sm-5">
-                                    <h5 class="card-title">Nhập mã code</h5>
-                                    <p class="card-text mb-5">Nhập mã code đã gửi đến email của bạn để lấy lại mật khẩu
-                                    </p>
-                                    <form class="form-body" action="./verify-code.php" method="post">
+                                    <h5 class="card-title">Quên mật khẩu</h5>
+                                    <p class="card-text mb-5">Hãy nhập địa chỉ email của bạn để lấy lại mật khẩu</p>
+                                    <form class="form-body" id="forgot-auth-admin" action="./forgot.php" method="post">
                                         <div class="row g-3">
                                             <div class="col-12">
-                                                <label for="inputEmailid" class="form-label">Mã code: </label>
-                                                <input type="password" name="code" class="form-control radius-30"
-                                                    id="inputEmailid" placeholder="Code" required>
-                                                <p class="error-message-verify">
-                                                    <?php echo isset($error['code']) ? $error['code'] : ''; ?></p>
+                                                <label for="inputEmailid" class="form-label">Email</label>
+                                                <input type="email" class="form-control radius-30" id="inputEmailid"
+                                                    placeholde r="Email" name="email">
+                                                <p class="error-message-forgot">
+                                                    <?php echo isset($error['email']) ? $error['email'] : ''; ?></p>
                                             </div>
                                             <div class="col-12">
                                                 <div class="d-grid gap-3">
-                                                    <input type="submit" name="verifycodebtn"
+                                                    <input type="submit" name="forgotbtn"
                                                         class="btn btn-primary radius-30 bg-guii" value="Gửi" />
                                                     <a href="./login.php" class="btn btn-light radius-30">Trở lại
                                                         đăng nhập</a>
@@ -122,10 +136,18 @@ if (isset($_POST['verifycodebtn']) && $_POST['verifycodebtn']) {
     <!--end wrapper-->
 
 
+    <!-- Bootstrap bundle JS -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
     <!--plugins-->
-    <script src="../../admin/assets/js/jquery.min.js"></script>
-    <script src="../../admin/assets/js/pace.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.validate.min.js"></script>
+    <script>
+    src = "assets/js/additional-methods.min.js"
+    </script>
 
+    <script src="assets/js/pages/validate.js">
+
+    </script>
 
 </body>
 

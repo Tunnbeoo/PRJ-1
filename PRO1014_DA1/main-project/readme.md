@@ -1,19 +1,19 @@
 ## Link Website (Client )
-See more at this website: https://thephoner.online
+See more at this website: https://Xgarden.online
 
-## This is project DA1 - from GoldenBeeGroup
+## This is project DA1 - from X-garden
 
 #### Snapshort at client
 
-![client site thephoner.online](https://trannhatsang.com/wp-content/uploads/2023/04/Screenshot_78.png "thephoner.online client")
+![client site Xgarden.online]("Xgarden.online client")
 
 #### Snapshort at admin
 
-![Admin site thephoner.online/admin](https://trannhatsang.com/wp-content/uploads/2023/04/Screenshot_84.png "thephoner.online client")
+![Admin site Xgarden.online/admin]("Xgarden.online client")
 
 ## Do you want to read more about this project ?
 
->_**Take a look detail understanding about my project at: [THEPHONER.ONLINE - DOCUMENT](https://docs.google.com/document/d/1xMd_pej-JVo3TC4pe9iae346PaNzkQGO/edit?usp=sharing&ouid=113091677324325823626&rtpof=true&sd=true)**_
+>_**Take a look detail understanding about my project at: [Xgarden.ONLINE - DOCUMENT]()**_
 
 #### A short overview Description
 1. At client
@@ -34,8 +34,8 @@ See more at this website: https://thephoner.online
 2. Create a folder PRO1014_DA1 > main-project (Folder url: xampp/htdocs/PRO1014_DA1/main-project ).
  - The source code should in the folder name: `xampp/htdocs/PRO1014_DA1/main-project/`
 
-4. After cloning this project. Copy all source code in QLDA-DA1-GoldenBeeGroup into xampp/htdocs/PRO1014_DA1/main-project/...
-5. Create the database name: `duan1_database` after that import the database: [duan1_database_13_4_2023.sql](duan1_database_13_4_2023.sql) from this source into your table (note: Cannot change table name if you want to continue this project )
+4. After cloning this project. Copy all source code in QLDA-DA1-X-garden into xampp/htdocs/PRO1014_DA1/main-project/...
+5. Create the database name: `duan1_database` after that import the database: [duan1_database.sql](duan1_database.sql) from this source into your table (note: Cannot change table name if you want to continue this project )
 6. Open the file with url 
 - at client: `localhost:[yourport]/PRO1014_DA1/main-project` 
 - Ex: With me: `localhost:8082/PRO1014_DA1/main-project` (maybe with you is: `localhost/PRO1014_DA1/main-project` )

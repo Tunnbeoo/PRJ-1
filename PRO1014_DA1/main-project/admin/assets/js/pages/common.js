@@ -101,7 +101,7 @@ function callAjaxOrders(status) {
                   data: order_list,
                   retrieve: true,
                   lengthChange: true,
-                  buttons: [ 'copy', 'excel', 'pdf', 'print'],
+                  buttons: [],
                   "ordering":true,
                   "pageLength": 8
               });
@@ -147,7 +147,7 @@ function callAjaxProducts() {
                 data: product_list,
                 retrieve: true,
                 // lengthChange: false,
-                buttons: [ 'copy', 'excel', 'pdf', 'print'],
+                buttons: [],
                 "ordering":true,
             });
 
